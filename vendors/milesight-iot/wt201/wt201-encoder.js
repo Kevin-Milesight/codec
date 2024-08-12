@@ -5,16 +5,15 @@
  *
  * @product WT201
  */
+// Chirpstack v4
+function encodeDownlink(input) {
+    var encoded = milesightDeviceEncoder(input.data);
+    return { bytes: encoded };
+}
 
 // Chirpstack v3
 function Encode(fPort, obj) {
     var encoded = milesightDeviceEncoder(obj);
-    return encoded;
-}
-
-// Chirpstack v4
-function encodeDownlink(input) {
-    var encoded = milesightDeviceEncoder(input.data);
     return encoded;
 }
 
@@ -391,6 +390,7 @@ function setTemperatureCalibration(enable, temperature) {
  * @param {number} enable values: (0: disable, 1: enable)
  * @param {number} humidity
  * @example { "humidity_calibration": { "enable": 1, "humidity": 50 } }
+ * @since v1.3
  */
 function setHumidityCalibration(enable, humidity) {
     var humidity_calibrate_enable_values = [0, 1];
@@ -464,6 +464,7 @@ function setTemperatureLevelUpCondition(type, time, temperature_error) {
  * @param {number} temperature_control_mode values: (0: heat, 1: em heat, 2: cool, 3: auto)
  * @param {number} temperature_target unit: celsius
  * @example { "temperature_control_mode": 2, "temperature_target": 25 }
+ * @since v1.3
  */
 function setTemperatureTarget(temperature_control_mode, temperature_target) {
     var temperature_mode_values = [0, 1, 2, 3];
@@ -486,6 +487,7 @@ function setTemperatureTarget(temperature_control_mode, temperature_target) {
  * set temperature control mode
  * @param {number} temperature_control_mode values: (0: heat, 1: em heat, 2: cool, 3: auto)
  * @example { "temperature_control_mode": 2 }
+ * @since v1.3
  */
 function setTemperatureControlMode(temperature_control_mode) {
     var temperature_mode_values = [0, 1, 2, 3];
@@ -507,9 +509,9 @@ function setTemperatureControlMode(temperature_control_mode) {
  * @example { "outside_temperature_control_config": { "enable": 1, "timeout": 10 } }
  */
 function setOutsideTemperatureControl(enable, timeout) {
-    var outside_temperature_control_enable_values = [0, 1];
-    if (outside_temperature_control_enable_values.indexOf(enable) === -1) {
-        throw new Error("outside_temperature_control_config.enable must be one of " + outside_temperature_control_enable_values.join(", "));
+    var outside_temperature_control_config_enable_values = [0, 1];
+    if (outside_temperature_control_config_enable_values.indexOf(enable) === -1) {
+        throw new Error("outside_temperature_control_config.enable must be one of " + outside_temperature_control_config_enable_values.join(", "));
     }
     if (enable && typeof timeout !== "number") {
         throw new Error("outside_temperature_control_config.timeout must be a number");
@@ -548,6 +550,7 @@ function setOutsideTemperature(outside_temperature) {
  * @param {number} min range: [0, 100]
  * @param {number} max range: [0, 100]
  * @example { "humidity_range": { "min": 20, "max": 80 } }
+ * @since v1.3
  */
 function setHumidityRange(min, max) {
     if (typeof min !== "number") {
@@ -579,6 +582,7 @@ function setHumidityRange(min, max) {
  * @param {number} enable values: (0: disable, 1: enable)
  * @param {*} temperature_tolerance unit: celsius, range: [0.1, 5]
  * @example { "temperature_dehumidify": { "enable": 1, "temperature_tolerance": 1 } }
+ * @since v1.3
  */
 function setTemperatureDehumidify(enable, temperature_tolerance) {
     var dehumidify_enable_values = [0, 1];
@@ -611,6 +615,7 @@ function setTemperatureDehumidify(enable, temperature_tolerance) {
  * @param {number} enable values: (0: disable, 1: enable)
  * @param {number} execute_time range: [5, 55], unit: minute
  * @example { "fan_dehumidify": { "enable": 1, "execute_time": 10 } }
+ * @since v1.3
  */
 function setFanDehumidify(enable, execute_time) {
     var fan_dehumidify_enable_values = [0, 1];
@@ -702,6 +707,7 @@ function setFanModeWithDelay(fan_delay_enable, fan_delay_time) {
  * set fan execute time
  * @param {number} fan_execute_time range: [5,55], unit: minute
  * @example { "fan_execute_time": 10 }
+ * @since v1.3
  */
 function setFanExecuteTime(fan_execute_time) {
     if (typeof fan_execute_time !== "number") {
@@ -735,14 +741,15 @@ function setPlanMode(plan_mode) {
     buffer.writeUInt8(plan_mode_values.indexOf(plan_mode));
     return buffer.toBytes();
 }
+
 /**
  * set plan schedule
  * @param {string} type values: (0: "wake", 1: "away", 2: "home", 3: "sleep")
- * @param {number} id range: [0, 15]
+ * @param {number} id range: [1, 16]
  * @param {number} enable
- * @param {Array} week_recycle values: (0: "mon", 1: "tues", 2: "wed", 3: "thur", 4: "fri", 5: "sat", 6: "sun")
+ * @param {Array} week_recycle values: (1: "mon", 2: "tues", 3: "wed", 4: "thur", 5: "fri", 6: "sat", 7: "sun")
  * @param {string} time
- * @example { "plan_schedule": [{ "type": 0, "id": 0, "enable": 1, "week_recycle": [1,3], "time": "04:00" }] }
+ * @example { "plan_schedule": [{ "type": 0, "id": 0, "enable": 1, "week_recycle": [1, 3], "time": "04:00" }] }
  */
 function setPlanSchedule(type, id, enable, week_recycle, time) {
     var plan_schedule_type_values = [0, 1, 2, 3];
@@ -752,8 +759,8 @@ function setPlanSchedule(type, id, enable, week_recycle, time) {
     if (typeof id !== "number") {
         throw new Error("plan_schedule[].id must be a number");
     }
-    if (id < 0 || id > 15) {
-        throw new Error("id must be in range [0, 15]");
+    if (id < 1 || id > 16) {
+        throw new Error("id must be in range [1, 16]");
     }
     var plan_schedule_enable_values = [0, 1];
     if (plan_schedule_enable_values.indexOf(enable) === -1) {
@@ -893,6 +900,7 @@ function setCardConfig(enable, action_type, in_plan_type, out_plan_type, invert)
  * @param {number} g: values: (0: on, 1: off)
  * @param {number} ob: values: (0: on, 1: off)
  * @example { "wires_relay_config": { "y1": 1, "y2_gl": 0, "w1": 1, "w2_aux": 0, "e": 1, "g": 0 },"ob_mode": 1 }
+ * @since v1.3
  */
 function setWiresRelayConfig(wires_relay_config) {
     var wire_relay_enable_values = [0, 1];
@@ -1168,10 +1176,12 @@ function setD2DSlaveConfig(id, enable, d2d_cmd, action_type, action) {
     buffer.writeUInt8(data);
     return buffer.toBytes();
 }
+
 /**
  * set d2d slave group
  * @param {number} control_permissions values: (0: thermostat, 1: remote control)
  * @example { "control_permissions": 0 }
+ * @since v1.3
  */
 function setControlPermissions(control_permissions) {
     var control_permission_values = [0, 1];
@@ -1190,6 +1200,7 @@ function setControlPermissions(control_permissions) {
  * set offline control mode
  * @param {number} offline_control_mode values: (0: keep, 1: thermostat, 2: off)
  * @example { "offline_control_mode": 0 }
+ * @since v1.3
  */
 function setOfflineControlMode(offline_control_mode) {
     var offline_control_mode_values = [0, 1, 2];
@@ -1240,6 +1251,7 @@ function setTemperatureAlarmConfig(alarm_type, condition, min, max, lock_time, c
  *
  * @param {number} screen_display_mode, values: (0: "on", 1: "without plan show", 2: "disable all")
  * @example { "screen_display_mode": 0 }
+ * @since v1.3
  */
 function setScreenDisplayMode(screen_display_mode) {
     var screen_display_mode_values = [0, 1, 2];
