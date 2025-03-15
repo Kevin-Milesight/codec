@@ -318,8 +318,16 @@
             "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
+            "id": "pir_illuminance_threshold",
+            "name": "PIR Illuminance Threshold",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "pir_illuminance_threshold.enable",
-            "name": "PIR Illuminance Threshold (Enable)",
+            "name": "Enable",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -336,7 +344,7 @@
         },
         {
             "id": "pir_illuminance_threshold.upper_limit",
-            "name": "PIR Illuminance Threshold (Upper Limit)",
+            "name": "Upper Limit",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -349,7 +357,7 @@
         },
         {
             "id": "pir_illuminance_threshold.lower_limit",
-            "name": "PIR Illuminance Threshold (Lower Limit)",
+            "name": "Lower Limit",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -361,8 +369,16 @@
             "reference": ["pir_illuminance_threshold.enable", "pir_illuminance_threshold.upper_limit", "pir_illuminance_threshold.lower_limit"]
         },
         {
+            "id": "dst_config",
+            "name": "Daylight Saving Time Config",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "dst_config.enable",
-            "name": "Daylight Saving Time (Enable)",
+            "name": "Enable",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -375,11 +391,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["dst_config.offset", "dst_config.start_month", "dst_config.start_week_num", "dst_config.start_week_day", "dst_config.end_month", "dst_config.end_week_num", "dst_config.end_week_day", "dst_config.end_time"]
+            "reference": ["dst_config.enable", "dst_config.offset", "dst_config.start_month", "dst_config.start_week_num", "dst_config.start_week_day", "dst_config.end_month", "dst_config.end_week_num", "dst_config.end_week_day", "dst_config.end_time"]
         },
         {
             "id": "dst_config.offset",
-            "name": "Daylight Saving Time (Offset)",
+            "name": "Offset",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -392,7 +408,7 @@
         },
         {
             "id": "dst_config.start_month",
-            "name": "Daylight Saving Time (Start Month)",
+            "name": "Start Month",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -419,7 +435,7 @@
         },
         {
             "id": "dst_config.start_week_num",
-            "name": "Daylight Saving Time (Start Week Number)",
+            "name": "Start Week Number",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -432,7 +448,7 @@
         },
         {
             "id": "dst_config.start_week_day",
-            "name": "Daylight Saving Time (Start Week Day)",
+            "name": "Start Week Day",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -454,7 +470,7 @@
         },
         {
             "id": "dst_config.start_time",
-            "name": "Daylight Saving Time (Start Time)",
+            "name": "Start Time",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -467,7 +483,7 @@
         },
         {
             "id": "dst_config.end_month",
-            "name": "Daylight Saving Time (End Month)",
+            "name": "End Month",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -494,7 +510,7 @@
         },
         {
             "id": "dst_config.end_week_num",
-            "name": "Daylight Saving Time (End Week Number)",
+            "name": "End Week Number",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -507,7 +523,7 @@
         },
         {
             "id": "dst_config.end_week_day",
-            "name": "Daylight Saving Time (End Week Day)",
+            "name": "End Week Day",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -529,7 +545,7 @@
         },
         {
             "id": "dst_config.end_time",
-            "name": "Daylight Saving Time (End Time)",
+            "name": "End Time",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -586,8 +602,17 @@
             "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
+            "id": "d2d_master_config",
+            "name": "D2D Master Config",
+            "data_type": "ARRAY",
+            "value_type": "STRUCT",
+            "keys": ["mode"],
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "d2d_master_config._item.mode",
-            "name": "D2D Master Config (Mode)",
+            "name": "Mode",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -608,7 +633,7 @@
         },
         {
             "id": "d2d_master_config._item.enable",
-            "name": "D2D Master Config (Enable)",
+            "name": "Enable",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -625,7 +650,7 @@
         },
         {
             "id": "d2d_master_config._item.d2d_cmd",
-            "name": "D2D Master Config (D2D Command)",
+            "name": "D2D Command",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -639,7 +664,7 @@
         },
         {
             "id": "d2d_master_config._item.lora_uplink_enable",
-            "name": "D2D Master Config (LoRa Uplink Enable)",
+            "name": "LoRa Uplink Enable",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -656,7 +681,7 @@
         },
         {
             "id": "d2d_master_config._item.time_enable",
-            "name": "D2D Master Config (Time Enable)",
+            "name": "Time Enable",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -673,7 +698,7 @@
         },
         {
             "id": "d2d_master_config._item.time",
-            "name": "D2D Master Config (Time)",
+            "name": "Time",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -685,8 +710,17 @@
             "reference": ["d2d_master_config._item.mode", "d2d_master_config._item.enable", "d2d_master_config._item.d2d_cmd", "d2d_master_config._item.lora_uplink_enable", "d2d_master_config._item.time_enable", "d2d_master_config._item.time"]
         },
         {
+            "id": "hibernate_config",
+            "name": "Hibernate Config",
+            "data_type": "ARRAY",
+            "value_type": "STRUCT",
+            "keys": ["id"],
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "hibernate_config._item.enable",
-            "name": "Hibernate Config (Enable)",
+            "name": "Enable",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -703,16 +737,13 @@
         },
         {
             "id": "hibernate_config._item.id",
-            "name": "Hibernate Config (ID)",
+            "name": "ID",
             "value": "",
             "unit": "",
             "access_mode": "RW",
-            "data_type": "ENUM",
+            "data_type": "NUMBER",
             "value_type": "UINT8",
-            "values": [
-                { "value": 1, "name": "group_1" },
-                { "value": 2, "name": "group_2" }
-            ],
+            "range": [1, 2],
             "bacnet_type": "multistate_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
@@ -720,7 +751,7 @@
         },
         {
             "id": "hibernate_config._item.start_time",
-            "name": "Hibernate Config (Start Time)",
+            "name": "Start Time",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -733,7 +764,7 @@
         },
         {
             "id": "hibernate_config._item.end_time",
-            "name": "Hibernate Config (End Time)",
+            "name": "End Time",
             "value": "",
             "unit": "",
             "access_mode": "RW",

@@ -399,8 +399,16 @@
             "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
+            "id": "detection_region_settings",
+            "name": "Detection Region Settings",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "detection_region_settings.x_min",
-            "name": "Detection Region (X Min)",
+            "name": "X Min",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -409,11 +417,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["detection_region_settings.x_max", "detection_region_settings.y_min", "detection_region_settings.y_max", "detection_region_settings.z_max"]
+            "reference": ["detection_region_settings.x_min", "detection_region_settings.x_max", "detection_region_settings.y_min", "detection_region_settings.y_max", "detection_region_settings.z_max"]
         },
         {
             "id": "detection_region_settings.x_max",
-            "name": "Detection Region (X Max)",
+            "name": "X Max",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -422,11 +430,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["detection_region_settings.x_min", "detection_region_settings.y_min", "detection_region_settings.y_max", "detection_region_settings.z_max"]
+            "reference": ["detection_region_settings.x_min", "region_settings._item.x_max", "detection_region_settings.y_min", "detection_region_settings.y_max", "detection_region_settings.z_max"]
         },
         {
             "id": "detection_region_settings.y_min",
-            "name": "Detection Region (Y Min)",
+            "name": "Y Min",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -435,11 +443,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["detection_region_settings.x_min", "detection_region_settings.x_max", "detection_region_settings.y_max", "detection_region_settings.z_max"]
+            "reference": ["detection_region_settings.x_min", "detection_region_settings.x_max", "detection_region_settings.y_min", "detection_region_settings.y_max", "detection_region_settings.z_max"]
         },
         {
             "id": "detection_region_settings.y_max",
-            "name": "Detection Region (Y Max)",
+            "name": "Y Max",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -448,12 +456,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["detection_region_settings.x_min", "detection_region_settings.x_max", "detection_region_settings.y_min", "detection_region_settings.z_max"]
+            "reference": ["detection_region_settings.x_min", "detection_region_settings.x_max", "detection_region_settings.y_min", "detection_region_settings.y_max", "detection_region_settings.z_max"]
         },
-
         {
             "id": "detection_region_settings.z_max",
-            "name": "Detection Region (Z Max)",
+            "name": "Z Max",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -462,11 +469,19 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["detection_region_settings.x_min", "detection_region_settings.x_max", "detection_region_settings.y_min", "detection_region_settings.y_max"]
+            "reference": ["detection_region_settings.x_min", "detection_region_settings.x_max", "detection_region_settings.y_min", "detection_region_settings.y_max", "detection_region_settings.z_max"]
+        },
+        {
+            "id": "detection_settings",
+            "name": "Detection Settings",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
             "id": "detection_settings.mode",
-            "name": "Detection Settings (Mode)",
+            "name": "Mode",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -481,11 +496,11 @@
             "bacnet_type": "multistate_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["detection_settings.sensitivity"]
+            "reference": ["detection_settings.mode", "detection_settings.sensitivity"]
         },
         {
             "id": "detection_settings.sensitivity",
-            "name": "Detection Settings (Sensitivity)",
+            "name": "Sensitivity",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -498,11 +513,19 @@
             "bacnet_type": "multistate_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["detection_settings.mode"]
+            "reference": ["detection_settings.mode", "detection_settings.sensitivity"]
+        },
+        {
+            "id": "fall_detection_settings",
+            "name": "Fall Detection Settings",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
             "id": "fall_detection_settings.confirm_time",
-            "name": "Fall Detection (Confirm Time)",
+            "name": "Confirm Time",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -511,11 +534,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["fall_detection_settings.delay_report_time", "fall_detection_settings.alarm_duration"]
+            "reference": ["fall_detection_settings.confirm_time", "fall_detection_settings.delay_report_time", "fall_detection_settings.alarm_duration"]
         },
         {
             "id": "fall_detection_settings.delay_report_time",
-            "name": "Fall Detection (Delay Report Time)",
+            "name": "Delay Report Time",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -524,11 +547,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["fall_detection_settings.confirm_time", "fall_detection_settings.alarm_duration"]
+            "reference": ["fall_detection_settings.confirm_time", "fall_detection_settings.delay_report_time", "fall_detection_settings.alarm_duration"]
         },
         {
             "id": "fall_detection_settings.alarm_duration",
-            "name": "Fall Detection (Alarm Duration)",
+            "name": "Alarm Duration",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -537,11 +560,19 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["fall_detection_settings.confirm_time", "fall_detection_settings.delay_report_time"]
+            "reference": ["fall_detection_settings.confirm_time", "fall_detection_settings.delay_report_time", "fall_detection_settings.alarm_duration"]
+        },
+        {
+            "id": "dwell_detection_settings",
+            "name": "Dwell Detection Settings",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
             "id": "dwell_detection_settings.enable",
-            "name": "Dwell Detection (Enable)",
+            "name": "Enable",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -554,11 +585,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["dwell_detection_settings.dwell_time"]
+            "reference": ["dwell_detection_settings.enable", "dwell_detection_settings.dwell_time"]
         },
         {
             "id": "dwell_detection_settings.dwell_time",
-            "name": "Dwell Detection (Dwell Time)",
+            "name": "Dwell Time",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -567,11 +598,19 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 72,
             "bacnet_unit_type": "UNITS_MINUTES",
-            "reference": ["dwell_detection_settings.enable"]
+            "reference": ["dwell_detection_settings.enable", "dwell_detection_settings.dwell_time"]
+        },
+        {
+            "id": "motion_detection_settings",
+            "name": "Motion Detection Settings",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
             "id": "motion_detection_settings.enable",
-            "name": "Motion Detection (Enable)",
+            "name": "Enable",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -584,11 +623,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["motion_detection_settings.motionless_time"]
+            "reference": ["motion_detection_settings.enable", "motion_detection_settings.motionless_time"]
         },
         {
             "id": "motion_detection_settings.motionless_time",
-            "name": "Motion Detection (Motionless Time)",
+            "name": "Motionless Time",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -597,7 +636,7 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 72,
             "bacnet_unit_type": "UNITS_MINUTES",
-            "reference": ["motion_detection_settings.enable"]
+            "reference": ["motion_detection_settings.enable", "motion_detection_settings.motionless_time"]
         },
         {
             "id": "led_indicator_enable",
@@ -648,8 +687,16 @@
             "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
+            "id": "radar_settings",
+            "name": "Radar Settings",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "radar_settings.mode",
-            "name": "Radar Settings (Mode)",
+            "name": "Mode",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -661,11 +708,12 @@
             ],
             "bacnet_type": "multistate_value_object",
             "bacnet_unit_type_id": 95,
-            "bacnet_unit_type": "UNITS_NO_UNITS"
+            "bacnet_unit_type": "UNITS_NO_UNITS",
+            "reference": ["radar_settings.mode", "radar_settings.frame_rate"]
         },
         {
             "id": "radar_settings.frame_rate",
-            "name": "Radar Settings (Frame Rate)",
+            "name": "Frame Rate",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -674,11 +722,19 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["radar_settings.mode"]
+            "reference": ["radar_settings.mode", "radar_settings.frame_rate"]
+        },
+        {
+            "id": "existence_detection_settings",
+            "name": "Existence Detection Settings",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
             "id": "existence_detection_settings.exist_confirm_time",
-            "name": "Existence Detection (Exist Confirm Time)",
+            "name": "Exist Confirm Time",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -687,11 +743,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["existence_detection_settings.leaved_confirm_time"]
+            "reference": ["existence_detection_settings.exist_confirm_time", "existence_detection_settings.leaved_confirm_time"]
         },
         {
             "id": "existence_detection_settings.leaved_confirm_time",
-            "name": "Existence Detection (Leaved Confirm Time)",
+            "name": "Leaved Confirm Time",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -700,24 +756,34 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["existence_detection_settings.exist_confirm_time"]
+            "reference": ["existence_detection_settings.exist_confirm_time", "existence_detection_settings.leaved_confirm_time"]
+        },
+        {
+            "id": "region_settings",
+            "name": "Region Settings",
+            "data_type": "ARRAY",
+            "value_type": "STRUCT",
+            "keys": ["region_id"],
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
             "id": "region_settings._item.region_id",
-            "name": "Region Settings (Region ID)",
+            "name": "Region ID",
             "value": "",
             "unit": "",
             "access_mode": "RW",
             "data_type": "NUMBER",
             "value_type": "UINT8",
+            "range": [1, 4],
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["region_settings._item.x_min", "region_settings._item.x_max", "region_settings._item.y_min", "region_settings._item.y_max"]
+            "reference": ["region_settings._item.region_id", "region_settings._item.x_min", "region_settings._item.x_max", "region_settings._item.y_min", "region_settings._item.y_max"]
         },
         {
             "id": "region_settings._item.x_min",
-            "name": "Region Settings (X Min)",
+            "name": "X Min",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -726,11 +792,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["region_settings._item.region_id", "region_settings._item.x_max", "region_settings._item.y_min", "region_settings._item.y_max"]
+            "reference": ["region_settings._item.region_id", "region_settings._item.x_min", "region_settings._item.x_max", "region_settings._item.y_min", "region_settings._item.y_max"]
         },
         {
             "id": "region_settings._item.x_max",
-            "name": "Region Settings (X Max)",
+            "name": "X Max",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -739,11 +805,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["region_settings._item.region_id", "region_settings._item.x_min", "region_settings._item.y_min", "region_settings._item.y_max"]
+            "reference": ["region_settings._item.region_id", "region_settings._item.x_min", "region_settings._item.x_max", "region_settings._item.y_min", "region_settings._item.y_max"]
         },
         {
             "id": "region_settings._item.y_min",
-            "name": "Region Settings (Y Min)",
+            "name": "Y Min",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -752,11 +818,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["region_settings._item.region_id", "region_settings._item.x_min", "region_settings._item.x_max", "region_settings._item.y_max"]
+            "reference": ["region_settings._item.region_id", "region_settings._item.x_min", "region_settings._item.x_max", "region_settings._item.y_min", "region_settings._item.y_max"]
         },
         {
             "id": "region_settings._item.y_max",
-            "name": "Region Settings (Y Max)",
+            "name": "Y Max",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -765,11 +831,19 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["region_settings._item.region_id", "region_settings._item.x_min", "region_settings._item.x_max", "region_settings._item.y_min"]
+            "reference": ["region_settings._item.region_id", "region_settings._item.x_min", "region_settings._item.x_max", "region_settings._item.y_min", "region_settings._item.y_max"]
+        },
+        {
+            "id": "delete_region",
+            "name": "Delete Region",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
             "id": "delete_region.region_1",
-            "name": "Delete Region (Region 1)",
+            "name": "Region 1",
             "value": "",
             "unit": "",
             "access_mode": "W",
@@ -832,21 +906,31 @@
             "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
+            "id": "region_detection_settings",
+            "name": "Region Detection Settings",
+            "data_type": "ARRAY",
+            "value_type": "STRUCT",
+            "keys": ["region_id"],
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "region_detection_settings._item.region_id",
-            "name": "Region Detection Settings (Region ID)",
+            "name": "Region ID",
             "value": "",
             "unit": "",
             "access_mode": "RW",
             "data_type": "NUMBER",
             "value_type": "UINT8",
+            "range": [1, 4],
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["region_detection_settings._item.fall_detection_enable", "region_detection_settings._item.dwell_detection_enable", "region_detection_settings._item.motion_detection_enable", "region_detection_settings._item.region_type"]
+            "reference": ["region_detection_settings._item.region_id", "region_detection_settings._item.fall_detection_enable", "region_detection_settings._item.dwell_detection_enable", "region_detection_settings._item.motion_detection_enable", "region_detection_settings._item.region_type"]
         },
         {
             "id": "region_detection_settings._item.fall_detection_enable",
-            "name": "Region Detection Settings (Fall Detection Enable)",
+            "name": "Fall Detection Enable",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -859,11 +943,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["region_detection_settings._item.region_id", "region_detection_settings._item.dwell_detection_enable", "region_detection_settings._item.motion_detection_enable", "region_detection_settings._item.region_type"]
+            "reference": ["region_detection_settings._item.region_id", "region_detection_settings._item.fall_detection_enable", "region_detection_settings._item.dwell_detection_enable", "region_detection_settings._item.motion_detection_enable", "region_detection_settings._item.region_type"]
         },
         {
             "id": "region_detection_settings._item.dwell_detection_enable",
-            "name": "Region Detection Settings (Dwell Detection Enable)",
+            "name": "Dwell Detection Enable",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -876,11 +960,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["region_detection_settings._item.region_id", "region_detection_settings._item.fall_detection_enable", "region_detection_settings._item.motion_detection_enable", "region_detection_settings._item.region_type"]
+            "reference": ["region_detection_settings._item.region_id", "region_detection_settings._item.fall_detection_enable", "region_detection_settings._item.dwell_detection_enable", "region_detection_settings._item.motion_detection_enable", "region_detection_settings._item.region_type"]
         },
         {
             "id": "region_detection_settings._item.motion_detection_enable",
-            "name": "Region Detection Settings (Motion Detection Enable)",
+            "name": "Motion Detection Enable",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -893,11 +977,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["region_detection_settings._item.region_id", "region_detection_settings._item.fall_detection_enable", "region_detection_settings._item.dwell_detection_enable", "region_detection_settings._item.region_type"]
+            "reference": ["region_detection_settings._item.region_id", "region_detection_settings._item.fall_detection_enable", "region_detection_settings._item.dwell_detection_enable", "region_detection_settings._item.motion_detection_enable", "region_detection_settings._item.region_type"]
         },
         {
             "id": "region_detection_settings._item.region_type",
-            "name": "Region Detection Settings (Region Type)",
+            "name": "Region Type",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -911,24 +995,34 @@
             "bacnet_type": "multistate_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["region_detection_settings._item.region_id", "region_detection_settings._item.fall_detection_enable", "region_detection_settings._item.dwell_detection_enable", "region_detection_settings._item.motion_detection_enable"]
+            "reference": ["region_detection_settings._item.region_id", "region_detection_settings._item.fall_detection_enable", "region_detection_settings._item.dwell_detection_enable", "region_detection_settings._item.motion_detection_enable", "region_detection_settings._item.region_type"]
+        },
+        {
+            "id": "bed_detection_settings",
+            "name": "Bed Detection Settings",
+            "data_type": "ARRAY",
+            "value_type": "STRUCT",
+            "keys": ["bed_id"],
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
             "id": "bed_detection_settings._item.bed_id",
-            "name": "Bed Detection Settings (Bed ID)",
+            "name": "Bed ID",
             "value": "",
             "unit": "",
             "access_mode": "RW",
             "data_type": "NUMBER",
             "value_type": "UINT8",
+            "range": [1, 4],
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["bed_detection_settings._item.enable", "bed_detection_settings._item.start_time", "bed_detection_settings._item.end_time", "bed_detection_settings._item.out_of_bed_time", "bed_detection_settings._item.bed_height"]
+            "reference": ["bed_detection_settings._item.enable", "bed_detection_settings._item.bed_id", "bed_detection_settings._item.start_time", "bed_detection_settings._item.end_time", "bed_detection_settings._item.out_of_bed_time", "bed_detection_settings._item.bed_height"]
         },
         {
             "id": "bed_detection_settings._item.enable",
-            "name": "Bed Detection Settings (Enable)",
+            "name": "Enable",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -941,12 +1035,12 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["bed_detection_settings._item.bed_id", "bed_detection_settings._item.start_time", "bed_detection_settings._item.end_time", "bed_detection_settings._item.out_of_bed_time", "bed_detection_settings._item.bed_height"]
+            "reference": ["bed_detection_settings._item.bed_id", "bed_detection_settings._item.enable", "bed_detection_settings._item.start_time", "bed_detection_settings._item.end_time", "bed_detection_settings._item.out_of_bed_time", "bed_detection_settings._item.bed_height"]
         },
 
         {
             "id": "bed_detection_settings._item.start_time",
-            "name": "Bed Detection Settings (Start Time)",
+            "name": "Start Time",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -955,11 +1049,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 72,
             "bacnet_unit_type": "UNITS_MINUTES",
-            "reference": ["bed_detection_settings._item.bed_id", "bed_detection_settings._item.enable", "bed_detection_settings._item.end_time", "bed_detection_settings._item.out_of_bed_time", "bed_detection_settings._item.bed_height"]
+            "reference": ["bed_detection_settings._item.bed_id", "bed_detection_settings._item.enable", "bed_detection_settings._item.start_time", "bed_detection_settings._item.end_time", "bed_detection_settings._item.out_of_bed_time", "bed_detection_settings._item.bed_height"]
         },
         {
             "id": "bed_detection_settings._item.end_time",
-            "name": "Bed Detection Settings (End Time)",
+            "name": "End Time",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -968,11 +1062,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 72,
             "bacnet_unit_type": "UNITS_MINUTES",
-            "reference": ["bed_detection_settings._item.bed_id", "bed_detection_settings._item.enable", "bed_detection_settings._item.start_time", "bed_detection_settings._item.out_of_bed_time", "bed_detection_settings._item.bed_height"]
+            "reference": ["bed_detection_settings._item.bed_id", "bed_detection_settings._item.enable", "bed_detection_settings._item.start_time", "bed_detection_settings._item.end_time", "bed_detection_settings._item.out_of_bed_time", "bed_detection_settings._item.bed_height"]
         },
         {
             "id": "bed_detection_settings._item.bed_height",
-            "name": "Bed Detection Settings (Bed Height)",
+            "name": "Bed Height",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -981,11 +1075,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["bed_detection_settings._item.bed_id", "bed_detection_settings._item.enable", "bed_detection_settings._item.start_time", "bed_detection_settings._item.end_time", "bed_detection_settings._item.out_of_bed_time"]
+            "reference": ["bed_detection_settings._item.bed_id", "bed_detection_settings._item.enable", "bed_detection_settings._item.start_time", "bed_detection_settings._item.end_time", "bed_detection_settings._item.out_of_bed_time", "bed_detection_settings._item.bed_height"]
         },
         {
             "id": "bed_detection_settings._item.out_of_bed_time",
-            "name": "Bed Detection Settings (Out of Bed Time)",
+            "name": "Out of Bed Time",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -994,7 +1088,7 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 72,
             "bacnet_unit_type": "UNITS_MINUTES",
-            "reference": ["bed_detection_settings._item.bed_id", "bed_detection_settings._item.enable", "bed_detection_settings._item.start_time", "bed_detection_settings._item.end_time", "bed_detection_settings._item.bed_height"]
+            "reference": ["bed_detection_settings._item.bed_id", "bed_detection_settings._item.enable", "bed_detection_settings._item.start_time", "bed_detection_settings._item.end_time", "bed_detection_settings._item.out_of_bed_time", "bed_detection_settings._item.bed_height"]
         },
         {
             "id": "retransmit_enable",
@@ -1025,21 +1119,16 @@
             "bacnet_unit_type": "UNITS_SECONDS"
         },
         {
-            "id": "fetch_history_data.start_time",
-            "name": "Fetch History Data (Start Time)",
-            "value": "",
-            "unit": "",
-            "access_mode": "W",
-            "data_type": "NUMBER",
-            "value_type": "UINT8",
-            "bacnet_type": "analog_output_object",
-            "bacnet_unit_type_id": 73,
-            "bacnet_unit_type": "UNITS_SECONDS",
-            "reference": ["fetch_history_data.end_time"]
+            "id": "fetch_history",
+            "name": "Fetch History",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
-            "id": "fetch_history_data.end_time",
-            "name": "Fetch History Data (End Time)",
+            "id": "fetch_history.start_time",
+            "name": "Start Time",
             "value": "",
             "unit": "",
             "access_mode": "W",
@@ -1048,7 +1137,20 @@
             "bacnet_type": "analog_output_object",
             "bacnet_unit_type_id": 73,
             "bacnet_unit_type": "UNITS_SECONDS",
-            "reference": ["fetch_history_data.start_time"]
+            "reference": ["fetch_history.start_time", "fetch_history.end_time"]
+        },
+        {
+            "id": "fetch_history.end_time",
+            "name": "End Time",
+            "value": "",
+            "unit": "",
+            "access_mode": "W",
+            "data_type": "NUMBER",
+            "value_type": "UINT8",
+            "bacnet_type": "analog_output_object",
+            "bacnet_unit_type_id": 73,
+            "bacnet_unit_type": "UNITS_SECONDS",
+            "reference": ["fetch_history.start_time", "fetch_history.end_time"]
         },
         {
             "id": "stop_transmit",
@@ -1127,8 +1229,17 @@
             "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
+            "id": "d2d_master_config",
+            "name": "D2D Master Config",
+            "data_type": "ARRAY",
+            "value_type": "STRUCT",
+            "keys": ["mode"],
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "d2d_master_config._item.mode",
-            "name": "D2D Master Config (Mode)",
+            "name": "Mode",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -1145,11 +1256,11 @@
             "bacnet_type": "multistate_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["d2d_master_config._item.enable", "d2d_master_config._item.lora_uplink_enable", "d2d_master_config._item.d2d_cmd", "d2d_master_config._item.time_enable", "d2d_master_config._item.time"]
+            "reference": ["d2d_master_config._item.mode", "d2d_master_config._item.enable", "d2d_master_config._item.lora_uplink_enable", "d2d_master_config._item.d2d_cmd", "d2d_master_config._item.time_enable", "d2d_master_config._item.time"]
         },
         {
             "id": "d2d_master_config._item.enable",
-            "name": "D2D Master Config (Enable)",
+            "name": "Enable",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -1162,11 +1273,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["d2d_master_config._item.mode", "d2d_master_config._item.lora_uplink_enable", "d2d_master_config._item.d2d_cmd", "d2d_master_config._item.time_enable", "d2d_master_config._item.time"]
+            "reference": ["d2d_master_config._item.mode", "d2d_master_config._item.enable", "d2d_master_config._item.lora_uplink_enable", "d2d_master_config._item.d2d_cmd", "d2d_master_config._item.time_enable", "d2d_master_config._item.time"]
         },
         {
             "id": "d2d_master_config._item.lora_uplink_enable",
-            "name": "D2D Master Config (Lora Uplink Enable)",
+            "name": "Lora Uplink Enable",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -1179,11 +1290,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["d2d_master_config._item.mode", "d2d_master_config._item.enable", "d2d_master_config._item.d2d_cmd", "d2d_master_config._item.time_enable", "d2d_master_config._item.time"]
+            "reference": ["d2d_master_config._item.mode", "d2d_master_config._item.enable", "d2d_master_config._item.lora_uplink_enable", "d2d_master_config._item.d2d_cmd", "d2d_master_config._item.time_enable", "d2d_master_config._item.time"]
         },
         {
             "id": "d2d_master_config._item.d2d_cmd",
-            "name": "D2D Master Config (D2D Cmd)",
+            "name": "D2D Cmd",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -1193,11 +1304,11 @@
             "bacnet_type": "character_string_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["d2d_master_config._item.mode", "d2d_master_config._item.enable", "d2d_master_config._item.lora_uplink_enable", "d2d_master_config._item.time_enable", "d2d_master_config._item.time"]
+            "reference": ["d2d_master_config._item.mode", "d2d_master_config._item.enable", "d2d_master_config._item.lora_uplink_enable", "d2d_master_config._item.d2d_cmd", "d2d_master_config._item.time_enable", "d2d_master_config._item.time"]
         },
         {
             "id": "d2d_master_config._item.time_enable",
-            "name": "D2D Master Config (Time Enable)",
+            "name": "Time Enable",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -1210,11 +1321,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["d2d_master_config._item.mode", "d2d_master_config._item.enable", "d2d_master_config._item.lora_uplink_enable", "d2d_master_config._item.d2d_cmd", "d2d_master_config._item.time"]
+            "reference": ["d2d_master_config._item.mode", "d2d_master_config._item.enable", "d2d_master_config._item.lora_uplink_enable", "d2d_master_config._item.d2d_cmd", "d2d_master_config._item.time_enable", "d2d_master_config._item.time"]
         },
         {
             "id": "d2d_master_config._item.time",
-            "name": "D2D Master Config (Time)",
+            "name": "Time",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -1223,11 +1334,20 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 72,
             "bacnet_unit_type": "UNITS_MINUTES",
-            "reference": ["d2d_master_config._item.mode", "d2d_master_config._item.enable", "d2d_master_config._item.lora_uplink_enable", "d2d_master_config._item.d2d_cmd", "d2d_master_config._item.time_enable"]
+            "reference": ["d2d_master_config._item.mode", "d2d_master_config._item.enable", "d2d_master_config._item.lora_uplink_enable", "d2d_master_config._item.d2d_cmd", "d2d_master_config._item.time_enable", "d2d_master_config._item.time"]
+        },
+        {
+            "id": "d2d_slave_config",
+            "name": "D2D Slave Config",
+            "data_type": "ARRAY",
+            "value_type": "STRUCT",
+            "keys": ["mode"],
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
             "id": "d2d_slave_config._item.mode",
-            "name": "D2D Slave Config (Mode)",
+            "name": "Mode",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -1244,11 +1364,11 @@
             "bacnet_type": "multistate_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["d2d_slave_config._item.d2d_cmd", "d2d_slave_config._item.control_type", "d2d_slave_config._item.alarm_type"]
+            "reference": ["d2d_slave_config._item.mode", "d2d_master_config._item.d2d_cmd", "d2d_slave_config._item.control_type", "d2d_slave_config._item.alarm_type"]
         },
         {
             "id": "d2d_slave_config._item.d2d_cmd",
-            "name": "D2D Slave Config (D2D Cmd)",
+            "name": "D2D Cmd",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -1258,11 +1378,11 @@
             "bacnet_type": "character_string_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["d2d_slave_config._item.mode", "d2d_slave_config._item.control_type", "d2d_slave_config._item.alarm_type"]
+            "reference": ["d2d_slave_config._item.mode", "d2d_slave_config._item.d2d_cmd", "d2d_slave_config._item.control_type", "d2d_slave_config._item.alarm_type"]
         },
         {
             "id": "d2d_slave_config._item.control_type",
-            "name": "D2D Slave Config (Control Type)",
+            "name": "Control Type",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -1272,11 +1392,11 @@
             "bacnet_type": "multistate_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["d2d_slave_config._item.mode", "d2d_slave_config._item.d2d_cmd", "d2d_slave_config._item.alarm_type"]
+            "reference": ["d2d_slave_config._item.mode", "d2d_slave_config._item.d2d_cmd", "d2d_slave_config._item.control_type", "d2d_slave_config._item.alarm_type"]
         },
         {
             "id": "d2d_slave_config._item.alarm_type",
-            "name": "D2D Slave Config (Alarm Type)",
+            "name": "Alarm Type",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -1290,7 +1410,7 @@
             "bacnet_type": "multistate_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["d2d_slave_config._item.mode", "d2d_slave_config._item.d2d_cmd", "d2d_slave_config._item.control_type"]
+            "reference": ["d2d_slave_config._item.mode", "d2d_slave_config._item.d2d_cmd", "d2d_slave_config._item.control_type", "d2d_slave_config._item.alarm_type"]
         },
         {
             "id": "wifi_enable",

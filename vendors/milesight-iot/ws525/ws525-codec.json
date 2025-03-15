@@ -209,8 +209,16 @@
             "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
+            "id": "overcurrent_protection",
+            "name": "Overcurrent Protection",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "overcurrent_protection.enable",
-            "name": "Overcurrent Protection Enable",
+            "name": "Enable",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -223,11 +231,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["overcurrent_protection.trip_current"]
+            "reference": ["overcurrent_protection.enable", "overcurrent_protection.trip_current"]
         },
         {
             "id": "overcurrent_protection.trip_current",
-            "name": "Overcurrent Protection Trip Current",
+            "name": "Trip Current",
             "value": "10",
             "unit": "A",
             "access_mode": "RW",
@@ -236,11 +244,19 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 3,
             "bacnet_unit_type": "UNITS_AMPERES",
-            "reference": ["overcurrent_protection.enable"]
+            "reference": ["overcurrent_protection.enable", "overcurrent_protection.trip_current"]
+        },
+        {
+            "id": "current_threshold",
+            "name": "Current Threshold",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
             "id": "current_threshold.enable",
-            "name": "Current Threshold Enable",
+            "name": "Enable",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -253,11 +269,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["current_threshold.threshold"]
+            "reference": ["current_threshold.enable", "current_threshold.threshold"]
         },
         {
             "id": "current_threshold.threshold",
-            "name": "Current Threshold",
+            "name": "Threshold",
             "value": "10",
             "unit": "A",
             "access_mode": "RW",
@@ -266,11 +282,19 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 3,
             "bacnet_unit_type": "UNITS_AMPERES",
-            "reference": ["current_threshold.enable"]
+            "reference": ["current_threshold.enable", "current_threshold.threshold"]
+        },
+        {
+            "id": "child_lock_config",
+            "name": "Child Lock Config",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
             "id": "child_lock_config.enable",
-            "name": "Child Lock Config Enable",
+            "name": "Enable",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -283,11 +307,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["child_lock_config.lock_time"]
+            "reference": ["child_lock_config.enable", "child_lock_config.lock_time"]
         },
         {
             "id": "child_lock_config.lock_time",
-            "name": "Child Lock Config Lock Time",
+            "name": "Lock Time",
             "value": "10",
             "unit": "min",
             "access_mode": "RW",
@@ -296,7 +320,7 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 72,
             "bacnet_unit_type": "UNITS_MINUTES",
-            "reference": ["child_lock_config.enable"]
+            "reference": ["child_lock_config.enable", "child_lock_config.lock_time"]
         },
         {
             "id": "power_consumption_enable",

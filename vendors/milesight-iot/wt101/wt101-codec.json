@@ -401,8 +401,16 @@
             "bacnet_unit_type": "UNITS_MINUTES"
         },
         {
+            "id": "temperature_calibration",
+            "name": "Temperature Calibration",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "temperature_calibration.enable",
-            "name": "Temperature Calibration Enable",
+            "name": "Enable",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -415,11 +423,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["temperature_calibration.temperature"]
+            "reference": ["temperature_calibration.enable", "temperature_calibration.temperature"]
         },
         {
             "id": "temperature_calibration.temperature",
-            "name": "Temperature Calibration Temperature",
+            "name": "Temperature",
             "value": "0",
             "unit": "°C",
             "access_mode": "RW",
@@ -428,11 +436,19 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 62,
             "bacnet_unit_type": "UNITS_DEGREES_CELSIUS",
-            "reference": ["temperature_calibration.enable"]
+            "reference": ["temperature_calibration.enable", "temperature_calibration.temperature"]
+        },
+        {
+            "id": "temperature_control",
+            "name": "Temperature Control",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
             "id": "temperature_control.enable",
-            "name": "Temperature Control Enable",
+            "name": "Enable",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -444,7 +460,8 @@
             ],
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
-            "bacnet_unit_type": "UNITS_NO_UNITS"
+            "bacnet_unit_type": "UNITS_NO_UNITS",
+            "reference": ["temperature_control.enable", "temperature_control.mode"]
         },
         {
             "id": "temperature_control.mode",
@@ -460,7 +477,8 @@
             ],
             "bacnet_type": "multistate_value_object",
             "bacnet_unit_type_id": 95,
-            "bacnet_unit_type": "UNITS_NO_UNITS"
+            "bacnet_unit_type": "UNITS_NO_UNITS",
+            "reference": ["temperature_control.enable", "temperature_control.mode"]
         },
         {
             "id": "temperature_tolerance",
@@ -476,8 +494,16 @@
             "reference": ["target_temperature"]
         },
         {
+            "id": "open_window_detection",
+            "name": "Open Window Detection",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "open_window_detection.enable",
-            "name": "Open Window Detection Enable",
+            "name": "Enable",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -490,11 +516,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["open_window_detection.temperature_threshold", "open_window_detection.time"]
+            "reference": ["open_window_detection.enable", "open_window_detection.temperature_threshold", "open_window_detection.time"]
         },
         {
             "id": "open_window_detection.temperature_threshold",
-            "name": "Open Window Detection Temperature Threshold",
+            "name": "Temperature Threshold",
             "value": "0",
             "unit": "℃",
             "access_mode": "RW",
@@ -503,11 +529,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 62,
             "bacnet_unit_type": "UNITS_DEGREES_CELSIUS",
-            "reference": ["open_window_detection.enable", "open_window_detection.time"]
+            "reference": ["open_window_detection.enable", "open_window_detection.temperature_threshold", "open_window_detection.time"]
         },
         {
             "id": "open_window_detection.time",
-            "name": "Open Window Detection Time",
+            "name": "Time",
             "value": "0",
             "unit": "min",
             "access_mode": "RW",
@@ -516,7 +542,7 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 72,
             "bacnet_unit_type": "UNITS_MINUTES",
-            "reference": ["open_window_detection.enable", "open_window_detection.temperature_threshold"]
+            "reference": ["open_window_detection.enable", "open_window_detection.temperature_threshold", "open_window_detection.time"]
         },
         {
             "id": "restore_open_window_detection",
@@ -567,8 +593,16 @@
             "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
+            "id": "freeze_protection_config",
+            "name": "Freeze Protection Configuration",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "freeze_protection_config.enable",
-            "name": "Freeze Protection Enable",
+            "name": "Enable",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -581,11 +615,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["freeze_protection_config.temperature"]
+            "reference": ["freeze_protection_config.enable", "freeze_protection_config.temperature"]
         },
         {
             "id": "freeze_protection_config.temperature",
-            "name": "Freeze Protection Temperature",
+            "name": "Temperature",
             "value": "0",
             "unit": "°C",
             "access_mode": "RW",
@@ -594,11 +628,19 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 62,
             "bacnet_unit_type": "UNITS_DEGREES_CELSIUS",
-            "reference": ["freeze_protection_config.enable"]
+            "reference": ["freeze_protection_config.enable", "freeze_protection_config.temperature"]
+        },
+        {
+            "id": "child_lock_config",
+            "name": "Child Lock Configuration",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
             "id": "child_lock_config.enable",
-            "name": "Child Lock Enable",
+            "name": "Enable",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -610,7 +652,8 @@
             ],
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
-            "bacnet_unit_type": "UNITS_NO_UNITS"
+            "bacnet_unit_type": "UNITS_NO_UNITS",
+            "reference": ["child_lock_config.enable"]
         },
         {
             "id": "offline_control_mode",
@@ -642,8 +685,16 @@
             "bacnet_unit_type": "UNITS_DEGREES_CELSIUS"
         },
         {
+            "id": "outside_temperature_control",
+            "name": "Outside Temperature Control",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "outside_temperature_control.enable",
-            "name": "Outside Temperature Control Enable",
+            "name": "Enable",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -656,11 +707,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["outside_temperature_control.timeout"]
+            "reference": ["outside_temperature_control.enable", "outside_temperature_control.timeout"]
         },
         {
             "id": "outside_temperature_control.timeout",
-            "name": "Outside Temperature Control Timeout",
+            "name": "Timeout",
             "value": "0",
             "unit": "min",
             "access_mode": "RW",
@@ -669,7 +720,7 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 72,
             "bacnet_unit_type": "UNITS_MINUTES",
-            "reference": ["outside_temperature_control.enable"]
+            "reference": ["outside_temperature_control.enable", "outside_temperature_control.timeout"]
         },
         {
             "id": "display_ambient_temperature",
@@ -704,8 +755,16 @@
             "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
+            "id": "dst_config",
+            "name": "Daylight Saving Time",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "dst_config.enable",
-            "name": "Daylight Saving Time Enable",
+            "name": "Enable",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -718,11 +777,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["dst_config.offset", "dst_config.start_month", "dst_config.start_week_num", "dst_config.start_week_day", "dst_config.start_time", "dst_config.end_month", "dst_config.end_week_num", "dst_config.end_week_day", "dst_config.end_time"]
+            "reference": ["dst_config.enable", "dst_config.offset", "dst_config.start_month", "dst_config.start_week_num", "dst_config.start_week_day", "dst_config.start_time", "dst_config.end_month", "dst_config.end_week_num", "dst_config.end_week_day", "dst_config.end_time"]
         },
         {
             "id": "dst_config.offset",
-            "name": "Daylight Saving Time Offset",
+            "name": "Offset",
             "value": "0",
             "unit": "min",
             "access_mode": "RW",
@@ -731,11 +790,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 72,
             "bacnet_unit_type": "UNITS_MINUTES",
-            "reference": ["dst_config.enable", "dst_config.start_month", "dst_config.start_week_num", "dst_config.start_week_day", "dst_config.start_time", "dst_config.end_month", "dst_config.end_week_num", "dst_config.end_week_day", "dst_config.end_time"]
+            "reference": ["dst_config.enable", "dst_config.offset", "dst_config.start_month", "dst_config.start_week_num", "dst_config.start_week_day", "dst_config.start_time", "dst_config.end_month", "dst_config.end_week_num", "dst_config.end_week_day", "dst_config.end_time"]
         },
         {
             "id": "dst_config.start_month",
-            "name": "Daylight Saving Time Start Month",
+            "name": "Start Month",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -758,11 +817,11 @@
             "bacnet_type": "multistate_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["dst_config.enable", "dst_config.offset", "dst_config.start_week_num", "dst_config.start_week_day", "dst_config.start_time", "dst_config.end_month", "dst_config.end_week_num", "dst_config.end_week_day", "dst_config.end_time"]
+            "reference": ["dst_config.enable", "dst_config.offset", "dst_config.start_month", "dst_config.start_week_num", "dst_config.start_week_day", "dst_config.start_time", "dst_config.end_month", "dst_config.end_week_num", "dst_config.end_week_day", "dst_config.end_time"]
         },
         {
             "id": "dst_config.start_week_num",
-            "name": "Daylight Saving Time Start Week Number",
+            "name": "Start Week Number",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -775,7 +834,7 @@
         },
         {
             "id": "dst_config.start_week_day",
-            "name": "Daylight Saving Time Start Week Day",
+            "name": "Start Week Day",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -797,7 +856,7 @@
         },
         {
             "id": "dst_config.start_time",
-            "name": "Daylight Saving Time Start Time",
+            "name": "Start Time",
             "value": "0",
             "unit": "min",
             "access_mode": "RW",
@@ -810,7 +869,7 @@
         },
         {
             "id": "dst_config.end_month",
-            "name": "Daylight Saving Time End Month",
+            "name": "End Month",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -837,7 +896,7 @@
         },
         {
             "id": "dst_config.end_week_num",
-            "name": "Daylight Saving Time End Week Number",
+            "name": "End Week Number",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -850,7 +909,7 @@
         },
         {
             "id": "dst_config.end_week_day",
-            "name": "Daylight Saving Time End Week Day",
+            "name": "End Week Day",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -872,7 +931,7 @@
         },
         {
             "id": "dst_config.end_time",
-            "name": "Daylight Saving Time End Time",
+            "name": "End Time",
             "value": "0",
             "unit": "min",
             "access_mode": "RW",
@@ -884,8 +943,16 @@
             "reference": ["dst_config.enable", "dst_config.offset", "dst_config.start_month", "dst_config.start_week_num", "dst_config.start_week_day", "dst_config.start_time", "dst_config.end_month", "dst_config.end_week_num", "dst_config.end_week_day", "dst_config.end_time"]
         },
         {
+            "id": "effective_stroke",
+            "name": "Effective Stroke",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "effective_stroke.enable",
-            "name": "Effective Stroke Enable",
+            "name": "Enable",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -898,11 +965,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["effective_stroke.rate"]
+            "reference": ["effective_stroke.enable", "effective_stroke.rate"]
         },
         {
             "id": "effective_stroke.rate",
-            "name": "Effective Stroke Rate",
+            "name": "Rate",
             "value": "50",
             "unit": "%",
             "access_mode": "RW",
@@ -911,11 +978,19 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["effective_stroke.enable"]
+            "reference": ["effective_stroke.enable", "effective_stroke.rate"]
+        },
+        {
+            "id": "heating_date",
+            "name": "Heating Date",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
             "id": "heating_date.enable",
-            "name": "Heating Date Enable",
+            "name": "Enable",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -928,11 +1003,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["heating_date.report_interval", "heating_date.start_month", "heating_date.start_day", "heating_date.end_month", "heating_date.end_day"]
+            "reference": ["heating_date.enable", "heating_date.report_interval", "heating_date.start_month", "heating_date.start_day", "heating_date.end_month", "heating_date.end_day"]
         },
         {
             "id": "heating_date.report_interval",
-            "name": "Heating Date Report Interval",
+            "name": "Report Interval",
             "value": "10",
             "unit": "min",
             "access_mode": "RW",
@@ -941,11 +1016,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 72,
             "bacnet_unit_type": "UNITS_MINUTES",
-            "reference": ["heating_date.enable", "heating_date.start_month", "heating_date.start_day", "heating_date.end_month", "heating_date.end_day"]
+            "reference": ["heating_date.enable", "heating_date.report_interval", "heating_date.start_month", "heating_date.start_day", "heating_date.end_month", "heating_date.end_day"]
         },
         {
             "id": "heating_date.start_month",
-            "name": "Heating Date Start Month",
+            "name": "Start Month",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -968,11 +1043,11 @@
             "bacnet_type": "multistate_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["heating_date.enable", "heating_date.report_interval", "heating_date.start_day", "heating_date.end_month", "heating_date.end_day"]
+            "reference": ["heating_date.enable", "heating_date.report_interval", "heating_date.start_month", "heating_date.start_day", "heating_date.end_month", "heating_date.end_day"]
         },
         {
             "id": "heating_date.start_day",
-            "name": "Heating Date Start Day",
+            "name": "Start Day",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -981,11 +1056,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["heating_date.enable", "heating_date.report_interval", "heating_date.start_month", "heating_date.end_month", "heating_date.end_day"]
+            "reference": ["heating_date.enable", "heating_date.report_interval", "heating_date.start_month", "heating_date.start_day", "heating_date.end_month", "heating_date.end_day"]
         },
         {
             "id": "heating_date.end_month",
-            "name": "Heating Date End Month",
+            "name": "End Month",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -1008,11 +1083,11 @@
             "bacnet_type": "multistate_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["heating_date.enable", "heating_date.report_interval", "heating_date.start_month", "heating_date.start_day", "heating_date.end_day"]
+            "reference": ["heating_date.enable", "heating_date.report_interval", "heating_date.start_month", "heating_date.start_day", "heating_date.end_month", "heating_date.end_day"]
         },
         {
             "id": "heating_date.end_day",
-            "name": "Heating Date End Day",
+            "name": "End Day",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -1021,7 +1096,17 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["heating_date.enable", "heating_date.report_interval", "heating_date.start_month", "heating_date.start_day", "heating_date.end_month"]
+            "reference": ["heating_date.enable", "heating_date.report_interval", "heating_date.start_month", "heating_date.start_day", "heating_date.end_month", "heating_date.end_day"]
+        },
+        {
+            "id": "heating_schedule",
+            "name": "Heating Schedule",
+            "data_type": "ARRAY",
+            "value_type": "STRUCT",
+            "keys": ["index"],
+            "max_length": 16,
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
             "id": "heating_schedule._item.index",
@@ -1031,14 +1116,15 @@
             "access_mode": "RW",
             "data_type": "NUMBER",
             "value_type": "UINT8",
+            "range": [1, 16],
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["heating_schedule._item.enable", "heating_schedule._item.temperature_control_mode", "heating_schedule._item.value", "heating_schedule._item.report_interval", "heating_schedule._item.execute_time", "heating_schedule._item.week_recycle.monday", "heating_schedule._item.week_recycle.tuesday", "heating_schedule._item.week_recycle.wednesday", "heating_schedule._item.week_recycle.thursday", "heating_schedule._item.week_recycle.friday", "heating_schedule._item.week_recycle.saturday", "heating_schedule._item.week_recycle.sunday"]
+            "reference": ["heating_schedule._item.index", "heating_schedule._item.enable", "heating_schedule._item.temperature_control_mode", "heating_schedule._item.value", "heating_schedule._item.report_interval", "heating_schedule._item.execute_time", "heating_schedule._item.week_recycle.monday", "heating_schedule._item.week_recycle.tuesday", "heating_schedule._item.week_recycle.wednesday", "heating_schedule._item.week_recycle.thursday", "heating_schedule._item.week_recycle.friday", "heating_schedule._item.week_recycle.saturday", "heating_schedule._item.week_recycle.sunday"]
         },
         {
             "id": "heating_schedule._item.enable",
-            "name": "Heating Schedule Enable",
+            "name": "Enable",
             "value": "1",
             "unit": "",
             "access_mode": "RW",
@@ -1055,7 +1141,7 @@
         },
         {
             "id": "heating_schedule._item.temperature_control_mode",
-            "name": "Heating Schedule Temperature Control Mode",
+            "name": "Temperature Control Mode",
             "value": "0",
             "unit": "",
             "access_mode": "RW",
@@ -1072,7 +1158,7 @@
         },
         {
             "id": "heating_schedule._item.value",
-            "name": "Heating Schedule Value",
+            "name": "Value",
             "value": "0",
             "unit": "",
             "access_mode": "RW",
@@ -1085,7 +1171,7 @@
         },
         {
             "id": "heating_schedule._item.report_interval",
-            "name": "Heating Schedule Report Interval",
+            "name": "Report Interval",
             "value": "0",
             "unit": "min",
             "access_mode": "RW",
@@ -1098,7 +1184,7 @@
         },
         {
             "id": "heating_schedule._item.execute_time",
-            "name": "Heating Schedule Execute Time",
+            "name": "Execute Time",
             "value": "0",
             "unit": "min",
             "access_mode": "RW",
@@ -1110,8 +1196,16 @@
             "reference": ["heating_schedule._item.index", "heating_schedule._item.enable", "heating_schedule._item.temperature_control_mode", "heating_schedule._item.value", "heating_schedule._item.report_interval", "heating_schedule._item.execute_time", "heating_schedule._item.week_recycle.monday", "heating_schedule._item.week_recycle.tuesday", "heating_schedule._item.week_recycle.wednesday", "heating_schedule._item.week_recycle.thursday", "heating_schedule._item.week_recycle.friday", "heating_schedule._item.week_recycle.saturday", "heating_schedule._item.week_recycle.sunday"]
         },
         {
+            "id": "heating_schedule._item.week_recycle",
+            "name": "Week Recycle",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "heating_schedule._item.week_recycle.monday",
-            "name": "Heating Schedule Week Recycle (Monday)",
+            "name": "Monday",
             "value": "0",
             "unit": "",
             "access_mode": "RW",
@@ -1128,7 +1222,7 @@
         },
         {
             "id": "heating_schedule._item.week_recycle.tuesday",
-            "name": "Heating Schedule Week Recycle (Tuesday)",
+            "name": "Tuesday",
             "value": "0",
             "unit": "",
             "access_mode": "RW",
@@ -1145,7 +1239,7 @@
         },
         {
             "id": "heating_schedule._item.week_recycle.wednesday",
-            "name": "Heating Schedule Week Recycle (Wednesday)",
+            "name": "Wednesday",
             "value": "0",
             "unit": "",
             "access_mode": "RW",
@@ -1162,7 +1256,7 @@
         },
         {
             "id": "heating_schedule._item.week_recycle.thursday",
-            "name": "Heating Schedule Week Recycle (Thursday)",
+            "name": "Thursday",
             "value": "0",
             "unit": "",
             "access_mode": "RW",
@@ -1179,7 +1273,7 @@
         },
         {
             "id": "heating_schedule._item.week_recycle.friday",
-            "name": "Heating Schedule Week Recycle (Friday)",
+            "name": "Friday",
             "value": "0",
             "unit": "",
             "access_mode": "RW",
@@ -1196,7 +1290,7 @@
         },
         {
             "id": "heating_schedule._item.week_recycle.saturday",
-            "name": "Heating Schedule Week Recycle (Saturday)",
+            "name": "Saturday",
             "value": "0",
             "unit": "",
             "access_mode": "RW",
@@ -1213,7 +1307,7 @@
         },
         {
             "id": "heating_schedule._item.week_recycle.sunday",
-            "name": "Heating Schedule Week Recycle (Sunday)",
+            "name": "Sunday",
             "value": "0",
             "unit": "",
             "access_mode": "RW",
