@@ -401,6 +401,7 @@
         {
             "id": "detection_region_settings",
             "name": "Detection Region Settings",
+            "access_mode": "RW",
             "data_type": "OBJECT",
             "value_type": "STRUCT",
             "bacnet_unit_type_id": 95,
@@ -474,6 +475,7 @@
         {
             "id": "detection_settings",
             "name": "Detection Settings",
+            "access_mode": "RW",
             "data_type": "OBJECT",
             "value_type": "STRUCT",
             "bacnet_unit_type_id": 95,
@@ -518,6 +520,7 @@
         {
             "id": "fall_detection_settings",
             "name": "Fall Detection Settings",
+            "access_mode": "RW",
             "data_type": "OBJECT",
             "value_type": "STRUCT",
             "bacnet_unit_type_id": 95,
@@ -565,6 +568,7 @@
         {
             "id": "dwell_detection_settings",
             "name": "Dwell Detection Settings",
+            "access_mode": "RW",
             "data_type": "OBJECT",
             "value_type": "STRUCT",
             "bacnet_unit_type_id": 95,
@@ -603,6 +607,7 @@
         {
             "id": "motion_detection_settings",
             "name": "Motion Detection Settings",
+            "access_mode": "RW",
             "data_type": "OBJECT",
             "value_type": "STRUCT",
             "bacnet_unit_type_id": 95,
@@ -689,6 +694,7 @@
         {
             "id": "radar_settings",
             "name": "Radar Settings",
+            "access_mode": "RW",
             "data_type": "OBJECT",
             "value_type": "STRUCT",
             "bacnet_unit_type_id": 95,
@@ -727,6 +733,7 @@
         {
             "id": "existence_detection_settings",
             "name": "Existence Detection Settings",
+            "access_mode": "RW",
             "data_type": "OBJECT",
             "value_type": "STRUCT",
             "bacnet_unit_type_id": 95,
@@ -761,6 +768,7 @@
         {
             "id": "region_settings",
             "name": "Region Settings",
+            "access_mode": "RW",
             "data_type": "ARRAY",
             "value_type": "STRUCT",
             "keys": ["region_id"],
@@ -836,6 +844,7 @@
         {
             "id": "delete_region",
             "name": "Delete Region",
+            "access_mode": "RW",
             "data_type": "OBJECT",
             "value_type": "STRUCT",
             "bacnet_unit_type_id": 95,
@@ -908,6 +917,7 @@
         {
             "id": "region_detection_settings",
             "name": "Region Detection Settings",
+            "access_mode": "RW",
             "data_type": "ARRAY",
             "value_type": "STRUCT",
             "keys": ["region_id"],
@@ -1000,6 +1010,7 @@
         {
             "id": "bed_detection_settings",
             "name": "Bed Detection Settings",
+            "access_mode": "RW",
             "data_type": "ARRAY",
             "value_type": "STRUCT",
             "keys": ["bed_id"],
@@ -1121,6 +1132,7 @@
         {
             "id": "fetch_history",
             "name": "Fetch History",
+            "access_mode": "RW",
             "data_type": "OBJECT",
             "value_type": "STRUCT",
             "bacnet_unit_type_id": 95,
@@ -1231,6 +1243,7 @@
         {
             "id": "d2d_master_config",
             "name": "D2D Master Config",
+            "access_mode": "RW",
             "data_type": "ARRAY",
             "value_type": "STRUCT",
             "keys": ["mode"],
@@ -1339,6 +1352,7 @@
         {
             "id": "d2d_slave_config",
             "name": "D2D Slave Config",
+            "access_mode": "RW",
             "data_type": "ARRAY",
             "value_type": "STRUCT",
             "keys": ["mode"],

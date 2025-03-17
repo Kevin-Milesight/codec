@@ -320,6 +320,7 @@
         {
             "id": "pir_illuminance_threshold",
             "name": "PIR Illuminance Threshold",
+            "access_mode": "RW",
             "data_type": "OBJECT",
             "value_type": "STRUCT",
             "bacnet_unit_type_id": 95,
@@ -371,6 +372,7 @@
         {
             "id": "dst_config",
             "name": "Daylight Saving Time Config",
+            "access_mode": "RW",
             "data_type": "OBJECT",
             "value_type": "STRUCT",
             "bacnet_unit_type_id": 95,
@@ -604,6 +606,7 @@
         {
             "id": "d2d_master_config",
             "name": "D2D Master Config",
+            "access_mode": "RW",
             "data_type": "ARRAY",
             "value_type": "STRUCT",
             "keys": ["mode"],
@@ -712,6 +715,7 @@
         {
             "id": "hibernate_config",
             "name": "Hibernate Config",
+            "access_mode": "RW",
             "data_type": "ARRAY",
             "value_type": "STRUCT",
             "keys": ["id"],
@@ -744,7 +748,7 @@
             "data_type": "NUMBER",
             "value_type": "UINT8",
             "range": [1, 2],
-            "bacnet_type": "multistate_value_object",
+            "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
             "reference": ["hibernate_config._item.id", "hibernate_config._item.enable", "hibernate_config._item.start_time", "hibernate_config._item.end_time"]

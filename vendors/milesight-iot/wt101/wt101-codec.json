@@ -403,6 +403,7 @@
         {
             "id": "temperature_calibration",
             "name": "Temperature Calibration",
+            "access_mode": "RW",
             "data_type": "OBJECT",
             "value_type": "STRUCT",
             "bacnet_unit_type_id": 95,
@@ -441,6 +442,7 @@
         {
             "id": "temperature_control",
             "name": "Temperature Control",
+            "access_mode": "RW",
             "data_type": "OBJECT",
             "value_type": "STRUCT",
             "bacnet_unit_type_id": 95,
@@ -496,6 +498,7 @@
         {
             "id": "open_window_detection",
             "name": "Open Window Detection",
+            "access_mode": "RW",
             "data_type": "OBJECT",
             "value_type": "STRUCT",
             "bacnet_unit_type_id": 95,
@@ -595,6 +598,7 @@
         {
             "id": "freeze_protection_config",
             "name": "Freeze Protection Configuration",
+            "access_mode": "RW",
             "data_type": "OBJECT",
             "value_type": "STRUCT",
             "bacnet_unit_type_id": 95,
@@ -633,6 +637,7 @@
         {
             "id": "child_lock_config",
             "name": "Child Lock Configuration",
+            "access_mode": "RW",
             "data_type": "OBJECT",
             "value_type": "STRUCT",
             "bacnet_unit_type_id": 95,
@@ -687,6 +692,7 @@
         {
             "id": "outside_temperature_control",
             "name": "Outside Temperature Control",
+            "access_mode": "RW",
             "data_type": "OBJECT",
             "value_type": "STRUCT",
             "bacnet_unit_type_id": 95,
@@ -757,6 +763,7 @@
         {
             "id": "dst_config",
             "name": "Daylight Saving Time",
+            "access_mode": "RW",
             "data_type": "OBJECT",
             "value_type": "STRUCT",
             "bacnet_unit_type_id": 95,
@@ -945,6 +952,7 @@
         {
             "id": "effective_stroke",
             "name": "Effective Stroke",
+            "access_mode": "RW",
             "data_type": "OBJECT",
             "value_type": "STRUCT",
             "bacnet_unit_type_id": 95,
@@ -983,6 +991,7 @@
         {
             "id": "heating_date",
             "name": "Heating Date",
+            "access_mode": "RW",
             "data_type": "OBJECT",
             "value_type": "STRUCT",
             "bacnet_unit_type_id": 95,
@@ -1101,6 +1110,7 @@
         {
             "id": "heating_schedule",
             "name": "Heating Schedule",
+            "access_mode": "RW",
             "data_type": "ARRAY",
             "value_type": "STRUCT",
             "keys": ["index"],
@@ -1198,6 +1208,7 @@
         {
             "id": "heating_schedule._item.week_recycle",
             "name": "Week Recycle",
+            "access_mode": "RW",
             "data_type": "OBJECT",
             "value_type": "STRUCT",
             "bacnet_unit_type_id": 95,
