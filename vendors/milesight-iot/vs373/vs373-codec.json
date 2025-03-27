@@ -290,6 +290,18 @@
             "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
+            "id": "events",
+            "name": "Events",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "ARRAY",
+            "value_type": "STRUCT",
+            "max_length": 5,
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "events._item.alarm_id",
             "name": "Events (Alarm ID)",
             "value": "",
@@ -431,7 +443,7 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["detection_region_settings.x_min", "region_settings._item.x_max", "detection_region_settings.y_min", "detection_region_settings.y_max", "detection_region_settings.z_max"]
+            "reference": ["detection_region_settings.x_min", "detection_region_settings.x_max", "detection_region_settings.y_min", "detection_region_settings.y_max", "detection_region_settings.z_max"]
         },
         {
             "id": "detection_region_settings.y_min",

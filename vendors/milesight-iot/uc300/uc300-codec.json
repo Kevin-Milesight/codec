@@ -1011,6 +1011,17 @@
             "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
+            "id": "sniffer_config",
+            "name": "Sniffer Config",
+            "value": "",
+            "unit": "",
+            "access_mode": "RW",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "sniffer_config.channel_id",
             "name": "Sniffer Config Channel ID",
             "value": "",
@@ -1029,7 +1040,7 @@
             "bacnet_type": "multistate_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["sniffer_config.sniffer_interval"]
+            "reference": ["sniffer_config.channel_id", "sniffer_config.sniffer_interval"]
         },
         {
             "id": "sniffer_config.sniffer_interval",
@@ -1042,7 +1053,7 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 159,
             "bacnet_unit_type": "UNITS_MILLISECONDS",
-            "reference": ["sniffer_config.channel_id"]
+            "reference": ["sniffer_config.channel_id", "sniffer_config.sniffer_interval"]
         },
         {
             "id": "gpio_output_2_time",

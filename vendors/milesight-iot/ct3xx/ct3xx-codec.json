@@ -313,8 +313,19 @@
             "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
+            "id": "current_chn1_alarm",
+            "name": "Current Channel 1 Alarm",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "current_chn1_alarm.current_threshold_alarm",
-            "name": "Current Channel 1 Alarm (Current Threshold Alarm)",
+            "name": "Current Threshold Alarm",
             "value": "",
             "unit": "",
             "access_mode": "R",
@@ -330,7 +341,7 @@
         },
         {
             "id": "current_chn1_alarm.current_threshold_alarm_release",
-            "name": "Current Channel 1 Alarm (Current Threshold Alarm Release)",
+            "name": "Current Threshold Alarm Release",
             "value": "",
             "unit": "",
             "access_mode": "R",
@@ -346,7 +357,7 @@
         },
         {
             "id": "current_chn1_alarm.current_over_range_alarm",
-            "name": "Current Channel 1 Alarm (Current Over Range Alarm)",
+            "name": "Current Over Range Alarm",
             "value": "",
             "unit": "",
             "access_mode": "R",
@@ -362,7 +373,7 @@
         },
         {
             "id": "current_chn1_alarm.current_over_range_alarm_release",
-            "name": "Current Channel 1 Alarm (Current Over Range Alarm Release)",
+            "name": "Current Over Range Alarm Release",
             "value": "",
             "unit": "",
             "access_mode": "R",
@@ -377,8 +388,19 @@
             "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
+            "id": "current_chn2_alarm",
+            "name": "Current Channel 2 Alarm",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "current_chn2_alarm.current_threshold_alarm",
-            "name": "Current Channel 2 Alarm (Current Threshold Alarm)",
+            "name": "Current Threshold Alarm",
             "value": "",
             "unit": "",
             "access_mode": "R",
@@ -394,7 +416,7 @@
         },
         {
             "id": "current_chn2_alarm.current_threshold_alarm_release",
-            "name": "Current Channel 2 Alarm (Current Threshold Alarm Release)",
+            "name": "Current Threshold Alarm Release",
             "value": "",
             "unit": "",
             "access_mode": "R",
@@ -410,7 +432,7 @@
         },
         {
             "id": "current_chn2_alarm.current_over_range_alarm",
-            "name": "Current Channel 2 Alarm (Current Over Range Alarm)",
+            "name": "Current Over Range Alarm",
             "value": "",
             "unit": "",
             "access_mode": "R",
@@ -426,7 +448,7 @@
         },
         {
             "id": "current_chn2_alarm.current_over_range_alarm_release",
-            "name": "Current Channel 2 Alarm (Current Over Range Alarm Release)",
+            "name": "Current Over Range Alarm Release",
             "value": "",
             "unit": "",
             "access_mode": "R",
@@ -441,8 +463,19 @@
             "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
+            "id": "current_chn3_alarm",
+            "name": "Current Channel 3 Alarm",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "current_chn3_alarm.current_threshold_alarm",
-            "name": "Current Channel 3 Alarm (Current Threshold Alarm)",
+            "name": "Current Threshold Alarm",
             "value": "",
             "unit": "",
             "access_mode": "R",
@@ -458,7 +491,7 @@
         },
         {
             "id": "current_chn3_alarm.current_threshold_alarm_release",
-            "name": "Current Channel 3 Alarm (Current Threshold Alarm Release)",
+            "name": "Current Threshold Alarm Release",
             "value": "",
             "unit": "",
             "access_mode": "R",
@@ -474,7 +507,7 @@
         },
         {
             "id": "current_chn3_alarm.current_over_range_alarm",
-            "name": "Current Channel 3 Alarm (Current Over Range Alarm)",
+            "name": "Current Over Range Alarm",
             "value": "",
             "unit": "",
             "access_mode": "R",
@@ -490,7 +523,7 @@
         },
         {
             "id": "current_chn3_alarm.current_over_range_alarm_release",
-            "name": "Current Channel 3 Alarm (Current Over Range Alarm Release)",
+            "name": "Current Over Range Alarm Release",
             "value": "",
             "unit": "",
             "access_mode": "R",
@@ -642,8 +675,19 @@
             "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
+            "id": "current_ch1_threshold_alarm_config",
+            "name": "Current Channel 1 Threshold Alarm Config",
+            "value": "",
+            "unit": "",
+            "access_mode": "RW",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "current_ch1_threshold_alarm_config.condition",
-            "name": "Current Channel 1 Threshold Alarm Config (Condition)",
+            "name": "Condition",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -663,7 +707,7 @@
         },
         {
             "id": "current_ch1_threshold_alarm_config.min_threshold",
-            "name": "Current Channel 1 Threshold Alarm Config (Min Threshold)",
+            "name": "Min Threshold",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -676,7 +720,7 @@
         },
         {
             "id": "current_ch1_threshold_alarm_config.max_threshold",
-            "name": "Current Channel 1 Threshold Alarm Config (Max Threshold)",
+            "name": "Max Threshold",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -689,7 +733,7 @@
         },
         {
             "id": "current_ch1_threshold_alarm_config.alarm_interval",
-            "name": "Current Channel 1 Threshold Alarm Config (Alarm Interval)",
+            "name": "Alarm Interval",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -702,7 +746,7 @@
         },
         {
             "id": "current_ch1_threshold_alarm_config.alarm_counts",
-            "name": "Current Channel 1 Threshold Alarm Config (Alarm Counts)",
+            "name": "Alarm Counts",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -714,8 +758,19 @@
             "reference": ["current_ch1_threshold_alarm_config.condition", "current_ch1_threshold_alarm_config.min_threshold", "current_ch1_threshold_alarm_config.max_threshold", "current_ch1_threshold_alarm_config.alarm_interval", "current_ch1_threshold_alarm_config.alarm_counts"]
         },
         {
+            "id": "current_ch2_threshold_alarm_config",
+            "name": "Current Channel 2 Threshold Alarm Config",
+            "value": "",
+            "unit": "",
+            "access_mode": "RW",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "current_ch2_threshold_alarm_config.condition",
-            "name": "Current Channel 2 Threshold Alarm Config (Condition)",
+            "name": "Condition",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -735,7 +790,7 @@
         },
         {
             "id": "current_ch2_threshold_alarm_config.min_threshold",
-            "name": "Current Channel 2 Threshold Alarm Config (Min Threshold)",
+            "name": "Min Threshold",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -748,7 +803,7 @@
         },
         {
             "id": "current_ch2_threshold_alarm_config.max_threshold",
-            "name": "Current Channel 2 Threshold Alarm Config (Max Threshold)",
+            "name": "Max Threshold",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -761,7 +816,7 @@
         },
         {
             "id": "current_ch2_threshold_alarm_config.alarm_interval",
-            "name": "Current Channel 2 Threshold Alarm Config (Alarm Interval)",
+            "name": "Alarm Interval",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -774,7 +829,7 @@
         },
         {
             "id": "current_ch2_threshold_alarm_config.alarm_counts",
-            "name": "Current Channel 2 Threshold Alarm Config (Alarm Counts)",
+            "name": "Alarm Counts",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -786,8 +841,19 @@
             "reference": ["current_ch2_threshold_alarm_config.condition", "current_ch2_threshold_alarm_config.min_threshold", "current_ch2_threshold_alarm_config.max_threshold", "current_ch2_threshold_alarm_config.alarm_interval", "current_ch2_threshold_alarm_config.alarm_counts"]
         },
         {
+            "id": "current_ch3_threshold_alarm_config",
+            "name": "Current Channel 3 Threshold Alarm Config",
+            "value": "",
+            "unit": "",
+            "access_mode": "RW",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "current_ch3_threshold_alarm_config.condition",
-            "name": "Current Channel 3 Threshold Alarm Config (Condition)",
+            "name": "Condition",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -807,7 +873,7 @@
         },
         {
             "id": "current_ch3_threshold_alarm_config.min_threshold",
-            "name": "Current Channel 3 Threshold Alarm Config (Min Threshold)",
+            "name": "Min Threshold",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -820,7 +886,7 @@
         },
         {
             "id": "current_ch3_threshold_alarm_config.max_threshold",
-            "name": "Current Channel 3 Threshold Alarm Config (Max Threshold)",
+            "name": "Max Threshold",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -833,7 +899,7 @@
         },
         {
             "id": "current_ch3_threshold_alarm_config.alarm_interval",
-            "name": "Current Channel 3 Threshold Alarm Config (Alarm Interval)",
+            "name": "Alarm Interval",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -846,7 +912,7 @@
         },
         {
             "id": "current_ch3_threshold_alarm_config.alarm_counts",
-            "name": "Current Channel 3 Threshold Alarm Config (Alarm Counts)",
+            "name": "Alarm Counts",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -858,8 +924,30 @@
             "reference": ["current_ch3_threshold_alarm_config.condition", "current_ch3_threshold_alarm_config.min_threshold", "current_ch3_threshold_alarm_config.max_threshold", "current_ch3_threshold_alarm_config.alarm_interval", "current_ch3_threshold_alarm_config.alarm_counts"]
         },
         {
+            "id": "current_ch1_threshold_alarm_config",
+            "name": "Current Channel 1 Threshold Alarm Config",
+            "value": "",
+            "unit": "",
+            "access_mode": "RW",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "temperature_threshold_alarm_config",
+            "name": "Temperature Threshold Alarm Config",
+            "value": "",
+            "unit": "",
+            "access_mode": "RW",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "temperature_threshold_alarm_config.condition",
-            "name": "Temperature Threshold Alarm Config (Condition)",
+            "name": "Condition",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -879,7 +967,7 @@
         },
         {
             "id": "temperature_threshold_alarm_config.min_threshold",
-            "name": "Temperature Threshold Alarm Config (Min Threshold)",
+            "name": "Min Threshold",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -892,7 +980,7 @@
         },
         {
             "id": "temperature_threshold_alarm_config.max_threshold",
-            "name": "Temperature Threshold Alarm Config (Max Threshold)",
+            "name": "Max Threshold",
             "value": "",
             "unit": "",
             "access_mode": "RW",

@@ -486,8 +486,19 @@
             "bacnet_unit_type": "UNITS_SECONDS"
         },
         {
+            "id": "valve_1_task",
+            "name": "Valve 1 Task",
+            "value": "",
+            "unit": "",
+            "access_mode": "RW",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "valve_1_task.time_rule_enable",
-            "name": "Valve 1 Task (Time Rule Enable)",
+            "name": "Time Rule Enable",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -500,11 +511,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["valve_1_task.pulse_rule_enable", "valve_1_task.valve_status", "valve_1_task.duration", "valve_1_task.valve_pulse"]
+            "reference": ["valve_1_task.time_rule_enable", "valve_1_task.pulse_rule_enable", "valve_1_task.sequence_id", "valve_1_task.valve_status", "valve_1_task.duration"]
         },
         {
             "id": "valve_1_task.pulse_rule_enable",
-            "name": "Valve 1 Task (Pulse Rule Enable)",
+            "name": "Pulse Rule Enable",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -517,11 +528,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["valve_1_task.time_rule_enable", "valve_1_task.valve_status", "valve_1_task.duration", "valve_1_task.valve_pulse"]
+            "reference": ["valve_1_task.time_rule_enable", "valve_1_task.pulse_rule_enable", "valve_1_task.sequence_id", "valve_1_task.valve_status", "valve_1_task.valve_pulse"]
         },
         {
             "id": "valve_1_task.sequence_id",
-            "name": "Valve 1 Task (Sequence ID)",
+            "name": "Sequence ID",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -530,11 +541,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["valve_1_task.time_rule_enable", "valve_1_task.pulse_rule_enable", "valve_1_task.valve_status", "valve_1_task.duration", "valve_1_task.valve_pulse"]
+            "reference": ["valve_1_task.time_rule_enable", "valve_1_task.pulse_rule_enable", "valve_1_task.sequence_id", "valve_1_task.valve_status"]
         },
         {
             "id": "valve_1_task.duration",
-            "name": "Valve 1 Task (Duration)",
+            "name": "Duration",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -543,7 +554,7 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 73,
             "bacnet_unit_type": "UNITS_SECONDS",
-            "reference": ["valve_1_task.time_rule_enable", "valve_1_task.pulse_rule_enable", "valve_1_task.valve_status", "valve_1_task.valve_pulse"]
+            "reference": ["valve_1_task.time_rule_enable", "valve_1_task.pulse_rule_enable", "valve_1_task.sequence_id", "valve_1_task.valve_status", "valve_1_task.duration"]
         },
         {
             "id": "valve_1_task.valve_status",
@@ -560,7 +571,7 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["valve_1_task.time_rule_enable", "valve_1_task.pulse_rule_enable", "valve_1_task.duration", "valve_1_task.valve_pulse"]
+            "reference": ["valve_1_task.time_rule_enable", "valve_1_task.pulse_rule_enable", "valve_1_task.sequence_id", "valve_1_task.valve_status"]
         },
         {
             "id": "valve_1_task.valve_pulse",
@@ -573,11 +584,22 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 73,
             "bacnet_unit_type": "UNITS_SECONDS",
-            "reference": ["valve_1_task.time_rule_enable", "valve_1_task.pulse_rule_enable", "valve_1_task.valve_status", "valve_1_task.duration"]
+            "reference": ["valve_1_task.time_rule_enable", "valve_1_task.pulse_rule_enable", "valve_1_task.sequence_id", "valve_1_task.valve_status", "valve_1_task.valve_pulse"]
+        },
+        {
+            "id": "valve_2_task",
+            "name": "Valve 2 Task",
+            "value": "",
+            "unit": "",
+            "access_mode": "RW",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
             "id": "valve_2_task.time_rule_enable",
-            "name": "Valve 2 Task (Time Rule Enable)",
+            "name": "Time Rule Enable",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -590,11 +612,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["valve_2_task.pulse_rule_enable", "valve_2_task.valve_status", "valve_2_task.duration", "valve_2_task.valve_pulse"]
+            "reference": ["valve_2_task.time_rule_enable", "valve_2_task.pulse_rule_enable", "valve_2_task.sequence_id", "valve_2_task.valve_status", "valve_2_task.duration"]
         },
         {
             "id": "valve_2_task.pulse_rule_enable",
-            "name": "Valve 2 Task (Pulse Rule Enable)",
+            "name": "Pulse Rule Enable",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -607,11 +629,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["valve_2_task.time_rule_enable", "valve_2_task.valve_status", "valve_2_task.duration", "valve_2_task.valve_pulse"]
+            "reference": ["valve_2_task.time_rule_enable", "valve_2_task.pulse_rule_enable", "valve_2_task.sequence_id", "valve_2_task.valve_status", "valve_2_task.valve_pulse"]
         },
         {
             "id": "valve_2_task.sequence_id",
-            "name": "Valve 2 Task (Sequence ID)",
+            "name": "Sequence ID",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -620,11 +642,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["valve_2_task.time_rule_enable", "valve_2_task.pulse_rule_enable", "valve_2_task.valve_status", "valve_2_task.duration", "valve_2_task.valve_pulse"]
+            "reference": ["valve_2_task.time_rule_enable", "valve_2_task.pulse_rule_enable", "valve_2_task.sequence_id", "valve_2_task.valve_status"]
         },
         {
             "id": "valve_2_task.duration",
-            "name": "Valve 2 Task (Duration)",
+            "name": "Duration",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -633,11 +655,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 73,
             "bacnet_unit_type": "UNITS_SECONDS",
-            "reference": ["valve_2_task.time_rule_enable", "valve_2_task.pulse_rule_enable", "valve_2_task.valve_status", "valve_2_task.valve_pulse"]
+            "reference": ["valve_2_task.time_rule_enable", "valve_2_task.pulse_rule_enable", "valve_2_task.sequence_id", "valve_2_task.valve_status", "valve_2_task.duration"]
         },
         {
             "id": "valve_2_task.valve_status",
-            "name": "Valve 2 Task (Valve Status)",
+            "name": "Valve Status",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -650,11 +672,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["valve_2_task.time_rule_enable", "valve_2_task.pulse_rule_enable", "valve_2_task.duration", "valve_2_task.valve_pulse"]
+            "reference": ["valve_2_task.time_rule_enable", "valve_2_task.pulse_rule_enable", "valve_2_task.sequence_id", "valve_2_task.valve_status"]
         },
         {
             "id": "valve_2_task.valve_pulse",
-            "name": "Valve 2 Task (Valve Pulse)",
+            "name": "Valve Pulse",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -663,7 +685,7 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 73,
             "bacnet_unit_type": "UNITS_SECONDS",
-            "reference": ["valve_2_task.time_rule_enable", "valve_2_task.pulse_rule_enable", "valve_2_task.valve_status", "valve_2_task.duration"]
+            "reference": ["valve_2_task.time_rule_enable", "valve_2_task.pulse_rule_enable", "valve_2_task.sequence_id", "valve_2_task.valve_status", "valve_2_task.valve_pulse"]
         },
         {
             "id": "clear_valve_1_pulse",
@@ -698,8 +720,19 @@
             "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
+            "id": "pulse_filter_config",
+            "name": "Pulse Filter Config",
+            "value": "",
+            "unit": "",
+            "access_mode": "RW",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "pulse_filter_config.mode",
-            "name": "Pulse Filter Config (Mode)",
+            "name": "Mode",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -712,11 +745,11 @@
             "bacnet_type": "multistate_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["pulse_filter_config.time"]
+            "reference": ["pulse_filter_config.mode", "pulse_filter_config.time"]
         },
         {
             "id": "pulse_filter_config.time",
-            "name": "Pulse Filter Config (Time)",
+            "name": "Time",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -725,7 +758,7 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 73,
             "bacnet_unit_type": "UNITS_SECONDS",
-            "reference": ["pulse_filter_config.mode"]
+            "reference": ["pulse_filter_config.mode", "pulse_filter_config.time"]
         },
         {
             "id": "gpio_jitter_time",
@@ -740,8 +773,19 @@
             "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
+            "id": "valve_power_supply_config",
+            "name": "Valve Power Supply Config",
+            "value": "",
+            "unit": "",
+            "access_mode": "RW",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "valve_power_supply_config.counts",
-            "name": "Valve Power Supply Config (Counts)",
+            "name": "Counts",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -750,11 +794,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["valve_power_supply_config.control_pulse_time", "valve_power_supply_config.power_time"]
+            "reference": ["valve_power_supply_config.counts", "valve_power_supply_config.control_pulse_time", "valve_power_supply_config.power_time"]
         },
         {
             "id": "valve_power_supply_config.control_pulse_time",
-            "name": "Valve Power Supply Config (Control Pulse Time)",
+            "name": "Control Pulse Time",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -763,11 +807,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 159,
             "bacnet_unit_type": "UNITS_MILLISECONDS",
-            "reference": ["valve_power_supply_config.counts", "valve_power_supply_config.power_time"]
+            "reference": ["valve_power_supply_config.counts", "valve_power_supply_config.control_pulse_time", "valve_power_supply_config.power_time"]
         },
         {
             "id": "valve_power_supply_config.power_time",
-            "name": "Valve Power Supply Config (Power Time)",
+            "name": "Power Time",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -776,11 +820,22 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 159,
             "bacnet_unit_type": "UNITS_MILLISECONDS",
-            "reference": ["valve_power_supply_config.counts", "valve_power_supply_config.control_pulse_time"]
+            "reference": ["valve_power_supply_config.counts", "valve_power_supply_config.control_pulse_time", "valve_power_supply_config.power_time"]
+        },
+        {
+            "id": "pressure_calibration",
+            "name": "Pressure Calibration",
+            "value": "",
+            "unit": "",
+            "access_mode": "RW",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
             "id": "pressure_calibration.enable",
-            "name": "Pressure Calibration (Enable)",
+            "name": "Enable",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -793,11 +848,11 @@
             "bacnet_type": "binary_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["pressure_calibration.calibration_value"]
+            "reference": ["pressure_calibration.enable", "pressure_calibration.calibration_value"]
         },
         {
             "id": "pressure_calibration.calibration_value",
-            "name": "Pressure Calibration (Calibration Value)",
+            "name": "Calibration Value",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -806,7 +861,7 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 159,
             "bacnet_unit_type": "UNITS_MILLISECONDS",
-            "reference": ["pressure_calibration.enable"]
+            "reference": ["pressure_calibration.enable", "pressure_calibration.calibration_value"]
         },
         {
             "id": "history_enable",
@@ -841,8 +896,19 @@
             "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
+            "id": "fetch_history",
+            "name": "Fetch History",
+            "value": "",
+            "unit": "",
+            "access_mode": "W",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "fetch_history.start_time",
-            "name": "Fetch History (Start Time)",
+            "name": "Start Time",
             "value": "",
             "unit": "",
             "access_mode": "W",
@@ -854,7 +920,7 @@
         },
         {
             "id": "fetch_history.end_time",
-            "name": "Fetch History (End Time)",
+            "name": "End Time",
             "value": "",
             "unit": "",
             "access_mode": "W",

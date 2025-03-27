@@ -311,8 +311,19 @@
             "bacnet_unit_type": "UNITS_NO_UNITS"
         },
         {
+            "id": "current_threshold_alarm_config",
+            "name": "Current Threshold Alarm Config",
+            "value": "",
+            "unit": "",
+            "access_mode": "RW",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "current_threshold_alarm_config.condition",
-            "name": "Current Threshold Alarm Config (Condition)",
+            "name": "Condition",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -332,7 +343,7 @@
         },
         {
             "id": "current_threshold_alarm_config.min_threshold",
-            "name": "Current Threshold Alarm Config (Min Threshold)",
+            "name": "Min Threshold",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -341,11 +352,11 @@
             "bacnet_type": "analog_value_object",
             "bacnet_unit_type_id": 95,
             "bacnet_unit_type": "UNITS_NO_UNITS",
-            "reference": ["current_threshold_alarm_config.condition", "current_threshold_alarm_config.max_threshold", "current_threshold_alarm_config.min_threshold", "current_threshold_alarm_config.alarm_interval", "current_threshold_alarm_config.alarm_counts"]
+            "reference": ["current_threshold_alarm_config.condition", "current_threshold_alarm_config.min_threshold", "current_threshold_alarm_config.max_threshold", "current_threshold_alarm_config.alarm_interval", "current_threshold_alarm_config.alarm_counts"]
         },
         {
             "id": "current_threshold_alarm_config.max_threshold",
-            "name": "Current Threshold Alarm Config (Max Threshold)",
+            "name": "Max Threshold",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -358,7 +369,7 @@
         },
         {
             "id": "current_threshold_alarm_config.alarm_interval",
-            "name": "Current Threshold Alarm Config (Alarm Interval)",
+            "name": "Alarm Interval",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -371,7 +382,7 @@
         },
         {
             "id": "current_threshold_alarm_config.alarm_counts",
-            "name": "Current Threshold Alarm Config (Alarm Counts)",
+            "name": "Alarm Counts",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -383,8 +394,19 @@
             "reference": ["current_threshold_alarm_config.condition", "current_threshold_alarm_config.min_threshold", "current_threshold_alarm_config.max_threshold", "current_threshold_alarm_config.alarm_interval", "current_threshold_alarm_config.alarm_counts"]
         },
         {
+            "id": "temperature_threshold_alarm_config",
+            "name": "Temperature Threshold Alarm Config",
+            "value": "",
+            "unit": "",
+            "access_mode": "RW",
+            "data_type": "OBJECT",
+            "value_type": "STRUCT",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
             "id": "temperature_threshold_alarm_config.condition",
-            "name": "Temperature Threshold Alarm Config (Condition)",
+            "name": "Condition",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -404,7 +426,7 @@
         },
         {
             "id": "temperature_threshold_alarm_config.min_threshold",
-            "name": "Temperature Threshold Alarm Config (Min Threshold)",
+            "name": "Min Threshold",
             "value": "",
             "unit": "",
             "access_mode": "RW",
@@ -417,7 +439,7 @@
         },
         {
             "id": "temperature_threshold_alarm_config.max_threshold",
-            "name": "Temperature Threshold Alarm Config (Max Threshold)",
+            "name": "Max Threshold",
             "value": "",
             "unit": "",
             "access_mode": "RW",
