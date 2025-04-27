@@ -3,16 +3,30 @@
  *
  * Copyright 2025 Milesight IoT
  *
- * @product WS523
+ * @product WS52x
  */
-function Decode(fPort, bytes) {
-    return milesight(bytes);
+var RAW_VALUE = 0x01;
+
+// Chirpstack v4
+function decodeUplink(input) {
+    var decoded = milesightDeviceDecode(input.bytes);
+    return { data: decoded };
 }
 
-function milesight(bytes) {
+// Chirpstack v3
+function Decode(fPort, bytes) {
+    return milesightDeviceDecode(bytes);
+}
+
+// The Things Network
+function Decoder(bytes, port) {
+    return milesightDeviceDecode(bytes);
+}
+
+function milesightDeviceDecode(bytes) {
     var decoded = {};
 
-    for (var i = 0; i < bytes.length; ) {
+    for (var i = 0; i < bytes.length;) {
         var channel_id = bytes[i++];
         var channel_type = bytes[i++];
 
@@ -31,20 +45,30 @@ function milesight(bytes) {
             decoded.firmware_version = readFirmwareVersion(bytes.slice(i, i + 2));
             i += 2;
         }
-        // DEVICE STATUS
-        else if (channel_id === 0xff && channel_type === 0x0b) {
-            decoded.device_status = 1;
-            i += 1;
-        }
-        // LORAWAN CLASS TYPE
-        else if (channel_id === 0xff && channel_type === 0x0f) {
-            decoded.lorawan_class = bytes[i];
-            i += 1;
+        // TSL VERSION
+        else if (channel_id === 0xff && channel_type === 0xff) {
+            decoded.tsl_version = readTslVersion(bytes.slice(i, i + 2));
+            i += 2;
         }
         // SERIAL NUMBER
         else if (channel_id === 0xff && channel_type === 0x16) {
             decoded.sn = readSerialNumber(bytes.slice(i, i + 8));
             i += 8;
+        }
+        // LORAWAN CLASS TYPE
+        else if (channel_id === 0xff && channel_type === 0x0f) {
+            decoded.lorawan_class = readLoRaWANClass(bytes[i]);
+            i += 1;
+        }
+        // RESET EVENT
+        else if (channel_id === 0xff && channel_type === 0xfe) {
+            decoded.reset_event = readResetEvent(1);
+            i += 1;
+        }
+        // DEVICE STATUS
+        else if (channel_id === 0xff && channel_type === 0x0b) {
+            decoded.device_status = readDeviceStatus(1);
+            i += 1;
         }
         // VOLTAGE
         else if (channel_id === 0x03 && channel_type === 0x74) {
@@ -73,12 +97,12 @@ function milesight(bytes) {
         }
         // SOCKET STATUS
         else if (channel_id === 0x08 && channel_type == 0x70) {
-            decoded.socket_status = bytes[i] & 0x01;
-            i += 1;
+            var data = bytes[i++];
+            decoded.socket_status = readSocketStatus(data & 0x01);
         }
         // DOWNLINK RESPONSE
-        else if (channel_id === 0xfe) {
-            result = handle_downlink_response(channel_type, bytes, i);
+        else if (channel_id === 0xfe || channel_id === 0xff) {
+            var result = handle_downlink_response(channel_type, bytes, i);
             decoded = Object.assign(decoded, result.data);
             i = result.offset;
         } else {
@@ -88,14 +112,73 @@ function milesight(bytes) {
     return decoded;
 }
 
-function readUInt16LE(bytes) {
-    var value = (bytes[1] << 8) + bytes[0];
-    return value & 0xffff;
-}
+function handle_downlink_response(channel_type, bytes, offset) {
+    var decoded = {};
 
-function readUInt32LE(bytes) {
-    var value = (bytes[3] << 24) + (bytes[2] << 16) + (bytes[1] << 8) + bytes[0];
-    return (value & 0xffffffff) >>> 0;
+    switch (channel_type) {
+        case 0x03:
+            decoded.report_interval = readUInt16LE(bytes.slice(offset, offset + 2));
+            offset += 2;
+            break;
+        case 0x10:
+            decoded.reboot = readYesNoStatus(1);
+            offset += 1;
+            break;
+        case 0x28:
+            decoded.report_status = readYesNoStatus(1);
+            offset += 1;
+            break;
+        case 0x22:
+            // skip first byte
+            decoded.delay_time = readUInt16LE(bytes.slice(offset + 1, offset + 3));
+            decoded.socket_status = readOnOffStatus(bytes[offset + 3] & 0x0F);
+            offset += 4;
+            break;
+        case 0x23:
+            decoded.cancel_delay_task = readUInt8(bytes[offset]);
+            // skip next byte
+            offset += 2;
+            break;
+        case 0x24:
+            decoded.current_threshold_config = {};
+            decoded.current_threshold_config.enable = readEnableStatus(bytes[offset]);
+            decoded.current_threshold_config.threshold = readUInt8(bytes[offset + 1]);
+            offset += 2;
+            break;
+        case 0x25:
+            var child_lock_data = readUInt16LE(bytes.slice(offset, offset + 2));
+            decoded.child_lock_config = {};
+            decoded.child_lock_config.enable = readEnableStatus((child_lock_data >>> 15) & 0x01);
+            decoded.child_lock_config.lock_time = child_lock_data & 0x7fff;
+            offset += 2;
+            break;
+        case 0x26:
+            decoded.power_consumption_enable = readEnableStatus(bytes[offset]);
+            offset += 1;
+            break;
+        case 0x27:
+            decoded.reset_power_consumption = readYesNoStatus(1);
+            offset += 1;
+            break;
+        case 0x2c:
+            decoded.report_attribute = readYesNoStatus(1);
+            offset += 1;
+            break;
+        case 0x2f:
+            decoded.led_enable = readEnableStatus(bytes[offset]);
+            offset += 1;
+            break;
+        case 0x30:
+            decoded.over_current_protection = {};
+            decoded.over_current_protection.enable = readEnableStatus(bytes[offset]);
+            decoded.over_current_protection.trip_current = readUInt8(bytes[offset + 1]);
+            offset += 2;
+            break;
+        default:
+            throw new Error("unknown downlink response");
+    }
+
+    return { data: decoded, offset: offset };
 }
 
 function readProtocolVersion(bytes) {
@@ -116,6 +199,12 @@ function readFirmwareVersion(bytes) {
     return "v" + major + "." + minor;
 }
 
+function readTslVersion(bytes) {
+    var major = bytes[0] & 0xff;
+    var minor = bytes[1] & 0xff;
+    return "v" + major + "." + minor;
+}
+
 function readSerialNumber(bytes) {
     var temp = [];
     for (var idx = 0; idx < bytes.length; idx++) {
@@ -124,59 +213,71 @@ function readSerialNumber(bytes) {
     return temp.join("");
 }
 
-function handle_downlink_response(channel_type, bytes, offset) {
-    var decoded = {};
+function readLoRaWANClass(type) {
+    var class_map = {
+        0: "Class A",
+        1: "Class B",
+        2: "Class C",
+        3: "Class CtoB",
+    };
+    return getValue(class_map, type);
+}
 
-    switch (channel_type) {
-        case 0x03: // report_interval
-            decoded.report_interval = readUInt16LE(bytes.slice(offset, offset + 2));
-            offset += 2;
-            break;
-        case 0x22: // delay_time
-            // skip 1 byte
-            decoded.delay_time = readUInt16LE(bytes.slice(offset + 1, offset + 3));
-            decoded.socket_status = bytes[offset + 3] & 0x01;
-            offset += 4;
-            break;
-        case 0x23: // cancel_delay
-            decoded.cancel_delay = 1;
-            offset += 2;
-            break;
-        case 0x24: // current_threshold
-            decoded.current_threshold = {};
-            decoded.current_threshold.enable = bytes[offset];
-            decoded.current_threshold.threshold = bytes[offset + 1];
-            offset += 2;
-            break;
-        case 0x25: // child_lock_config
-            decoded.child_lock_config = {};
-            var lock_config = readUInt16LE(bytes.slice(offset, offset + 2));
-            decoded.child_lock_config.enable = (lock_config >>> 15) & 0x01;
-            decoded.child_lock_config.lock_time = lock_config & 0x7fff;
-            break;
-        case 0x26: // power_consumption_enable
-            decoded.power_consumption_enable = bytes[offset];
-            offset += 1;
-            break;
-        case 0x27: // reset_power_consumption
-            decoded.reset_power_consumption = 1;
-            offset += 1;
-            break;
-        case 0x2f: // led_enable
-            decoded.led_enable = bytes[offset];
-            offset += 1;
-            break;
-        case 0x30: // overcurrent_protection
-            decoded.overcurrent_protection = {};
-            decoded.overcurrent_protection.enable = bytes[offset];
-            decoded.overcurrent_protection.trip_current = bytes[offset + 1];
-            offset += 2;
-            break;
-        default:
-            throw new Error("unknown downlink response");
-    }
+function readResetEvent(status) {
+    var status_map = { 0: "normal", 1: "reset" };
+    return getValue(status_map, status);
+}
 
-    return { data: decoded, offset: offset };
+function readDeviceStatus(status) {
+    var status_map = { 0: "off", 1: "on" };
+    return getValue(status_map, status);
+}
+
+function readSocketStatus(status) {
+    var on_off_map = { 0: "off", 1: "on" };
+    return getValue(on_off_map, status);
+}
+
+function readEnableStatus(status) {
+    var enable_map = { 0: "disable", 1: "enable" };
+    return getValue(enable_map, status);
+}
+
+function readYesNoStatus(status) {
+    var yes_no_map = { 0: "no", 1: "yes" };
+    return getValue(yes_no_map, status);
+}
+
+function readOnOffStatus(status) {
+    var on_off_map = { 0: "off", 1: "on" };
+    return getValue(on_off_map, status);
+}
+
+function readUInt8(bytes) {
+    return bytes & 0xff;
+}
+
+function readInt8(bytes) {
+    var ref = readUInt8(bytes);
+    return ref > 0x7f ? ref - 0x100 : ref;
+}
+
+function readUInt16LE(bytes) {
+    var value = (bytes[1] << 8) + bytes[0];
+    return value & 0xffff;
+}
+
+function readUInt32LE(bytes) {
+    var value = (bytes[3] << 24) + (bytes[2] << 16) + (bytes[1] << 8) + bytes[0];
+    return (value & 0xffffffff) >>> 0;
+}
+
+function getValue(map, key) {
+    if (RAW_VALUE) return key;
+
+    var value = map[key];
+    if (!value) value = "unknown";
+    return value;
 }
 
 if (!Object.assign) {
@@ -187,7 +288,6 @@ if (!Object.assign) {
         value: function (target) {
             "use strict";
             if (target == null) {
-                // TypeError if undefined or null
                 throw new TypeError("Cannot convert first argument to object");
             }
 
@@ -195,7 +295,6 @@ if (!Object.assign) {
             for (var i = 1; i < arguments.length; i++) {
                 var nextSource = arguments[i];
                 if (nextSource == null) {
-                    // Skip over if undefined or null
                     continue;
                 }
                 nextSource = Object(nextSource);
@@ -205,7 +304,12 @@ if (!Object.assign) {
                     var nextKey = keysArray[nextIndex];
                     var desc = Object.getOwnPropertyDescriptor(nextSource, nextKey);
                     if (desc !== undefined && desc.enumerable) {
-                        to[nextKey] = nextSource[nextKey];
+                        // concat array
+                        if (Array.isArray(to[nextKey]) && Array.isArray(nextSource[nextKey])) {
+                            to[nextKey] = to[nextKey].concat(nextSource[nextKey]);
+                        } else {
+                            to[nextKey] = nextSource[nextKey];
+                        }
                     }
                 }
             }

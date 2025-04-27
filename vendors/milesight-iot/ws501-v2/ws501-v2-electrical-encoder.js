@@ -5,7 +5,7 @@
  *
  * @product WS501_EU
  */
-var RAW_VALUE = 0x00;
+var RAW_VALUE = 0x01;
 
 // Chirpstack v4
 function encodeDownlink(input) {

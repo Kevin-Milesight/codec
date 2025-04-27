@@ -23,12 +23,12 @@ function Decoder(bytes, port) {
     return milesightDeviceDecode(bytes);
 }
 
-total_in_chns = [0x03, 0x06, 0x09, 0x0c];
-total_out_chns = [0x04, 0x07, 0x0a, 0x0d];
-period_chns = [0x05, 0x08, 0x0b, 0x0e];
-child_total_in_chns = [0x11, 0x14, 0x17, 0x1a];
-child_total_out_chns = [0x12, 0x15, 0x18, 0x1b];
-child_period_chns = [0x13, 0x16, 0x19, 0x1c];
+var total_in_chns = [0x03, 0x06, 0x09, 0x0c];
+var total_out_chns = [0x04, 0x07, 0x0a, 0x0d];
+var period_chns = [0x05, 0x08, 0x0b, 0x0e];
+var child_total_in_chns = [0x11, 0x14, 0x17, 0x1a];
+var child_total_out_chns = [0x12, 0x15, 0x18, 0x1b];
+var child_period_chns = [0x13, 0x16, 0x19, 0x1c];
 
 function milesightDeviceDecode(bytes) {
     var decoded = {};
@@ -134,7 +134,7 @@ function milesightDeviceDecode(bytes) {
         }
         // DOWNLINK RESPONSE
         else if (channel_id === 0xfe || channel_id === 0xff) {
-            result = handle_downlink_response(channel_type, bytes, i);
+            var result = handle_downlink_response(channel_type, bytes, i);
             decoded = Object.assign(decoded, result.data);
             i = result.offset;
         }

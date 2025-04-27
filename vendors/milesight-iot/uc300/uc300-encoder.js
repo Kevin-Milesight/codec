@@ -5,150 +5,81 @@
  *
  * @product UC300
  */
-function Encode(fPort, obj) {
-    var encoded = milesightDeviceEncoder(obj);
-    return encoded;
+var RAW_VALUE = 0x01;
+
+// Chirpstack v4
+function encodeDownlink(input) {
+    var encoded = milesightDeviceEncode(input.data);
+    return { bytes: encoded };
 }
 
-function milesightDeviceEncoder(payload) {
+// Chirpstack v3
+function Encode(fPort, obj) {
+    return milesightDeviceEncode(obj);
+}
+
+// The Things Network
+function Encoder(obj, port) {
+    return milesightDeviceEncode(obj);
+}
+
+function milesightDeviceEncode(payload) {
     var encoded = [];
 
-    if ("reboot" in payload) {
-        encoded = encoded.concat(reboot(payload.reboot));
-    }
-    if ("report_status" in payload) {
-        encoded = encoded.concat(reportStatus(payload.report_status));
+    if ("collection_interval" in payload) {
+        encoded = encoded.concat(setCollectionInterval(payload.collection_interval));
     }
     if ("report_interval" in payload) {
         encoded = encoded.concat(setReportInterval(payload.report_interval));
     }
-    if ("collection_interval" in payload) {
-        encoded = encoded.concat(setCollectionInterval(payload.collection_interval));
+    if ("rejoin" in payload) {
+        encoded = encoded.concat(rejoin(payload.rejoin));
     }
-    if ("timestamp" in payload) {
-        encoded = encoded.concat(setTime(payload.timestamp));
-    }
-    if ("timezone" in payload) {
-        encoded = encoded.concat(setTimeZone(payload.timezone));
+    if ("reboot" in payload) {
+        encoded = encoded.concat(reboot(payload.reboot));
     }
     if ("sync_time" in payload) {
         encoded = encoded.concat(syncTime(payload.sync_time));
     }
-    if ("sniffer_config" in payload) {
-        encoded = encoded.concat(setSniffer(payload.sniffer_config.channel_id, payload.sniffer_config.sniffer_interval));
+    if ("timezone" in payload) {
+        encoded = encoded.concat(setTimeZone(payload.timezone));
     }
-    if ("gpio_output_1" in payload) {
-        if ("gpio_output_1_time" in payload) {
-            encoded = encoded.concat(setGpio1WithTime(payload.gpio_output_1, payload.gpio_output_1_time));
-        } else {
-            encoded = encoded.concat(setGpio1(payload.gpio_output_1));
-        }
+    if ("timestamp" in payload) {
+        encoded = encoded.concat(setTimestamp(payload.timestamp));
     }
-    if ("gpio_output_2" in payload) {
-        if ("gpio_output_2_time" in payload) {
-            encoded = encoded.concat(setGpio2WithTime(payload.gpio_output_2, payload.gpio_output_2_time));
-        } else {
-            encoded = encoded.concat(setGpio2(payload.gpio_output_2));
-        }
+    if ("report_status" in payload) {
+        encoded = encoded.concat(reportStatus(payload.report_status));
+    }
+    if ("jitter_config" in payload) {
+        encoded = encoded.concat(setJitterConfig(payload.jitter_config));
+    }
+    if ("gpio_out_1_control" in payload) {
+        encoded = encoded.concat(controlOutputStatusWithDuration(1, payload.gpio_out_1_control));
+    }
+    if ("gpio_out_2_control" in payload) {
+        encoded = encoded.concat(controlOutputStatusWithDuration(2, payload.gpio_out_2_control));
+    }
+    if ("gpio_out_1" in payload) {
+        encoded = encoded.concat(controlOutputStatus(1, payload.gpio_out_1));
+    }
+    if ("gpio_out_2" in payload) {
+        encoded = encoded.concat(controlOutputStatus(2, payload.gpio_out_2));
     }
 
     return encoded;
 }
 
 /**
- * device reboot
- * @param {number} reboot values: (0: no, 1: yes)
- * @example payload: { "reboot": 1 }, output: FF10FF
- */
-function reboot(reboot) {
-    var reboot_values = [0, 1];
-    if (reboot_values.indexOf(reboot) === -1) {
-        throw new Error("reboot must be 0 or 1");
-    }
-
-    if (reboot === 0) {
-        return [];
-    }
-    return [0xff, 0x10, 0xff];
-}
-
-/**
- * request device report status
- * @param {number} report_status (0: no, 1: yes)
- * @example payload: { "report_status": 1 }, output: FF28FF
- */
-function reportStatus(report_status) {
-    var report_status_values = [0, 1];
-    if (report_status_values.indexOf(report_status) === -1) {
-        throw new Error("report_status must be 0 or 1");
-    }
-
-    if (report_status === 0) {
-        return [];
-    }
-    return [0xff, 0x94, 0xff];
-}
-
-/**
- * sync time
- * @param {number} sync_time values: (0: no, 1: yes)
- * @example payload: { "sync_time": true }, output: FF4AFF
- */
-function syncTime(sync_time) {
-    var sync_time_values = [0, 1];
-    if (sync_time_values.indexOf(sync_time) === -1) {
-        throw new Error("sync_time must be 0 or 1");
-    }
-
-    if (sync_time === 0) {
-        return [];
-    }
-    return [0xff, 0x4a, 0xff];
-}
-
-/**
- * update device time
- * @param {number} timestamp unit: second
- */
-function setTime(timestamp) {
-    if (typeof timestamp !== "number") {
-        throw new Error("timestamp must be a number");
-    }
-    var buffer = new Buffer(6);
-    buffer.writeUInt8(0xff);
-    buffer.writeUInt8(0x11);
-    buffer.writeUInt32LE(timestamp);
-    return buffer.toBytes();
-}
-
-/**
- * time zone configuration
- * @param {number} timezone range: [-12, 12]
- * @example payload: { "timezone": -4 }, output: FF17D8FF
- * @example payload: { "timezone": 8 }, output: FF175000
- */
-function setTimeZone(timezone) {
-    if (typeof timezone !== "number") {
-        throw new Error("timezone must be a number");
-    }
-    if (timezone < -12 || timezone > 12) {
-        throw new Error("timezone must be between -12 and 12");
-    }
-
-    var buffer = new Buffer(4);
-    buffer.writeUInt8(0xff);
-    buffer.writeUInt8(0x17);
-    buffer.writeInt16LE(timezone * 10);
-    return buffer.toBytes();
-}
-
-/**
- * collection interval configuration
+ * Set collection interval
  * @param {number} collection_interval unit: second
+ * @example { "collection_interval": 300 }
  */
 function setCollectionInterval(collection_interval) {
     if (typeof collection_interval !== "number") {
         throw new Error("collection_interval must be a number");
+    }
+    if (collection_interval < 0) {
+        throw new Error("collection_interval must be greater than 0");
     }
 
     var buffer = new Buffer(4);
@@ -159,16 +90,16 @@ function setCollectionInterval(collection_interval) {
 }
 
 /**
- * report interval configuration
- * @param {number} report_interval uint: second
- * @example payload: { "report_interval": 600 }
+ * Set report interval
+ * @param {number} report_interval unit: second
+ * @example { "report_interval": 300 }
  */
 function setReportInterval(report_interval) {
     if (typeof report_interval !== "number") {
         throw new Error("report_interval must be a number");
     }
-    if (report_interval < 1) {
-        throw new Error("report_interval must be greater than 1");
+    if (report_interval < 0) {
+        throw new Error("report_interval must be greater than 0");
     }
 
     var buffer = new Buffer(4);
@@ -179,99 +110,222 @@ function setReportInterval(report_interval) {
 }
 
 /**
- * sniffer configuration
- * @param {number} channel_id
- * @param {*} sniffer_interval unit: ms
+ * Set rejoin
+ * @param {number} rejoin values: (0: no, 1: yes)
+ * @example { "rejoin": 1 }
  */
-function setSniffer(channel_id, sniffer_interval) {
-    if (typeof channel_id !== "number") {
-        throw new Error("sniffer_config.channel_id must be a number");
+function rejoin(rejoin) {
+    var yes_no_map = { 0: "no", 1: "yes" };
+    var rejoin_values = getValues(yes_no_map);
+    if (rejoin_values.indexOf(rejoin) === -1) {
+        throw new Error("rejoin must be one of " + rejoin_values.join(", "));
     }
-    if (typeof sniffer_interval !== "number") {
-        throw new Error("sniffer_config.sniffer_interval must be a number");
+    if (getValue(yes_no_map, rejoin) === 0) {
+        return [];
     }
-
-    var buffer = new Buffer(5);
-    buffer.writeUInt8(0xff);
-    buffer.writeUInt8(0x91);
-    buffer.writeUInt8(channel_id);
-    buffer.writeUInt32LE(sniffer_interval);
-    return buffer.toBytes();
+    return [0xff, 0x04, 0xff];
 }
 
 /**
- * update gpio output 1
- * @param {number} gpio_output_1 values: (0: low, 1: high)
+ * Reboot
+ * @param {number} reboot values: (0: no, 1: yes)
+ * @example { "reboot": 1 }
  */
-function setGpio1(gpio_output_1) {
-    var gpio_values = [0, 1];
-    if (gpio_values.indexOf(gpio_output_1) === -1) {
-        throw new Error("gpio_output_1 must be 0 or 1");
+function reboot(reboot) {
+    var yes_no_map = { 0: "no", 1: "yes" };
+    var reboot_values = getValues(yes_no_map);
+    if (reboot_values.indexOf(reboot) === -1) {
+        throw new Error("reboot must be one of " + reboot_values.join(", "));
     }
-
-    var buffer = new Buffer(3);
-    buffer.writeUInt8(0x07);
-    buffer.writeUInt8(gpio_output_1);
-    buffer.writeUInt8(0xff);
-    return buffer.toBytes();
+    if (getValue(yes_no_map, reboot) === 0) {
+        return [];
+    }
+    return [0xff, 0x10, 0xff];
 }
 
 /**
- * update gpio output 1 with delay time
- * @param {number} gpio_output_1 values: (0: low, 1: high)
- * @param {number} gpio_output_1_time unit: second
+ * Set timestamp
+ * @param {number} timestamp unit: second
+ * @example { "timestamp": 1710489600 }
  */
-function setGpio1WithTime(gpio_output_1, gpio_output_1_time) {
-    var gpio_values = [0, 1];
-    if (gpio_values.indexOf(gpio_output_1) === -1) {
-        throw new Error("gpio_output_1 must be 0 or 1");
+function setTimestamp(timestamp) {
+    if (typeof timestamp !== "number") {
+        throw new Error("timestamp must be a number");
+    }
+    if (timestamp < 0) {
+        throw new Error("timestamp must be greater than 0");
     }
 
     var buffer = new Buffer(6);
     buffer.writeUInt8(0xff);
-    buffer.writeUInt8(0x93);
-    buffer.writeUInt8(0x01);
-    buffer.writeUInt8(gpio_output_1);
-    buffer.writeUInt32LE(gpio_output_1_time);
+    buffer.writeUInt8(0x11);
+    buffer.writeUInt32LE(timestamp);
     return buffer.toBytes();
 }
 
 /**
- * update gpio output 2
- * @param {number} gpio_output_2 values: (0: low, 1: high)
+ * set timezone
+ * @param {number} timezone
+ * @example { "timezone": -4 }
+ * @example { "timezone": 8 }
  */
-function setGpio2(gpio_output_2) {
-    var gpio_values = [0, 1];
-    if (gpio_values.indexOf(gpio_output_2) === -1) {
-        throw new Error("gpio_output_2 must be 0 or 1");
+function setTimeZone(timezone) {
+    if (typeof timezone !== "number") {
+        throw new Error("timezone must be a number");
     }
 
+    var buffer = new Buffer(4);
+    buffer.writeUInt8(0xff);
+    buffer.writeUInt8(0x17);
+    buffer.writeInt16LE(timezone * 10);
+    return buffer.toBytes();
+}
+
+/**
+ * Sync time
+ * @param {number} sync_time values: (0: no, 1: yes)
+ * @example { "sync_time": 1 }
+ */
+function syncTime(sync_time) {
+    var yes_no_map = { 0: "no", 1: "yes" };
+    var sync_time_values = getValues(yes_no_map);
+    if (sync_time_values.indexOf(sync_time) === -1) {
+        throw new Error("sync_time must be one of " + sync_time_values.join(", "));
+    }
+
+    if (getValue(yes_no_map, sync_time) === 0) {
+        return [];
+    }
+    return [0xff, 0x4a, 0xff];
+}
+
+/**
+ * Report status
+ * @param {number} report_status values: (0: no, 1: yes)
+ * @example { "report_status": 1 }
+ */
+function reportStatus(report_status) {
+    var yes_no_map = { 0: "no", 1: "yes" };
+    var yes_no_values = getValues(yes_no_map);
+    if (yes_no_values.indexOf(report_status) === -1) {
+        throw new Error("report_status must be one of " + yes_no_values.join(", "));
+    }
+
+    if (getValue(yes_no_map, report_status) === 0) {
+        return [];
+    }
+    return [0xff, 0x94, 0xff];
+}
+
+/**
+ * Set jitter config
+ * @param {object} jitter_config
+ * @param {number} jitter_config.all unit: millisecond
+ * @param {number} jitter_config.gpio_in_2 unit: millisecond
+ * @param {number} jitter_config.gpio_in_3 unit: millisecond
+ * @param {number} jitter_config.gpio_in_4 unit: millisecond
+ * @param {number} jitter_config.gpio_out_1 unit: millisecond
+ * @param {number} jitter_config.gpio_out_2 unit: millisecond
+ * @example { "jitter_config": { "all": 100 } }
+ * @example { "jitter_config": { "gpio_in_1": 1000, "gpio_in_2": 1000 } }
+ */
+function setJitterConfig(jitter_config) {
+    var channel_map = { all: 0, gpio_in_1: 1, gpio_in_2: 2, gpio_in_3: 3, gpio_in_4: 4, gpio_out_1: 5, gpio_out_2: 6 };
+
+    var data = [];
+    for (var key in channel_map) {
+        if (key in jitter_config) {
+            var buffer = new Buffer(7);
+            buffer.writeUInt8(0xff);
+            buffer.writeUInt8(0x91);
+            buffer.writeUInt8(channel_map[key]);
+            buffer.writeUInt32LE(jitter_config[key]);
+            data.push(buffer.toBytes());
+        }
+    }
+    return data;
+}
+
+/**
+ * Control output with time
+ * @param {object} gpio_out_x_control
+ * @param {number} gpio_out_x_control.duration unit: millisecond
+ * @param {number} gpio_out_x_control.status values: (0: off, 1: on)
+ * @example { "gpio_out_1_control": { "duration": 1000, "status": 1 } }
+ * @example { "gpio_out_2_control": { "duration": 1000, "status": 0 } }
+ */
+function controlOutputStatusWithDuration(gpio_index, gpio_out_x_control) {
+    var duration = gpio_out_x_control.duration;
+    var status = gpio_out_x_control.status;
+    var gpio_chns = [1, 2];
+    if (gpio_chns.indexOf(gpio_index) === -1) {
+        throw new Error("gpio_out_x_control must be one of " + gpio_chns.join(", "));
+    }
+    var on_off_map = { 0: "off", 1: "on" };
+    var on_off_values = getValues(on_off_map);
+    if (on_off_values.indexOf(status) === -1) {
+        throw new Error("gpio_out_" + gpio_index + "_control.status must be one of " + on_off_values.join(", "));
+    }
+
+    var buffer = new Buffer(7);
+    buffer.writeUInt8(0xff);
+    buffer.writeUInt8(0x92);
+    buffer.writeUInt8(gpio_index);
+    buffer.writeUInt8(getValue(on_off_map, status));
+    buffer.writeUInt32LE(duration);
+    return buffer.toBytes();
+}
+
+/**
+ * Control output status
+ * @param {number} gpio_index values: (1: gpio_out_1, 2: gpio_out_2)
+ * @param {number} status values: (0: off, 1: on)
+ * @example { "gpio_out_1": 1 }
+ * @example { "gpio_out_2": 0 }
+ */
+function controlOutputStatus(gpio_index, status) {
+    var gpio_chns = [1, 2];
+    if (gpio_chns.indexOf(gpio_index) === -1) {
+        throw new Error("gpio_index must be one of " + gpio_chns.join(", "));
+    }
+    var on_off_map = { 0: "off", 1: "on" };
+    var on_off_values = getValues(on_off_map);
+    if (on_off_values.indexOf(status) === -1) {
+        throw new Error("gpio_out_" + gpio_index + "_control.status must be one of " + on_off_values.join(", "));
+    }
+
+    var channel_ids = [0x07, 0x08];
     var buffer = new Buffer(3);
-    buffer.writeUInt8(0x08);
-    buffer.writeUInt8(gpio_output_2);
+    buffer.writeUInt8(channel_ids[gpio_index - 1]);
+    buffer.writeUInt8(getValue(on_off_map, status));
     buffer.writeUInt8(0xff);
     return buffer.toBytes();
 }
 
-/**
- * update gpio output 2 with delay time
- * @param {number} gpio_output_2 values: (0: low, 1: high)
- * @param {number} gpio_output_2_time unit: second
- * @returns
- */
-function setGpio2WithTime(gpio_output_2, gpio_output_2_time) {
-    var gpio_values = [0, 1];
-    if (gpio_values.indexOf(gpio_output_2) === -1) {
-        throw new Error("gpio_output_2 must be 0 or 1");
+function getValues(map) {
+    var values = [];
+    if (RAW_VALUE) {
+        for (var key in map) {
+            values.push(parseInt(key));
+        }
+    } else {
+        for (var key in map) {
+            values.push(map[key]);
+        }
+    }
+    return values;
+}
+
+function getValue(map, value) {
+    if (RAW_VALUE) return value;
+
+    for (var key in map) {
+        if (map[key] === value) {
+            return parseInt(key);
+        }
     }
 
-    var buffer = new Buffer(6);
-    buffer.writeUInt8(0xff);
-    buffer.writeUInt8(0x93);
-    buffer.writeUInt8(0x02);
-    buffer.writeUInt8(gpio_output_2);
-    buffer.writeUInt32LE(gpio_output_2_time);
-    return buffer.toBytes();
+    throw new Error("not match in " + JSON.stringify(map));
 }
 
 function Buffer(size) {

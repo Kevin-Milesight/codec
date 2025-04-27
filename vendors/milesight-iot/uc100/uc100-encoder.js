@@ -5,12 +5,25 @@
  *
  * @product UC100
  */
-function Encode(fPort, obj) {
-    var encoded = milesightDeviceEncoder(obj);
-    return encoded;
+var RAW_VALUE = 0x01;
+
+// Chirpstack v4
+function encodeDownlink(input) {
+    var encoded = milesightDeviceEncode(input.data);
+    return { bytes: encoded };
 }
 
-function milesightDeviceEncoder(payload) {
+// Chirpstack v3
+function Encode(fPort, obj) {
+    return milesightDeviceEncode(obj);
+}
+
+// The Things Network
+function Encoder(obj, port) {
+    return milesightDeviceEncode(obj);
+}
+
+function milesightDeviceEncode(payload) {
     var encoded = [];
 
     if ("reboot" in payload) {
@@ -19,40 +32,49 @@ function milesightDeviceEncoder(payload) {
     if ("report_interval" in payload) {
         encoded = encoded.concat(setReportInterval(payload.report_interval));
     }
-    if ("modbus_config" in payload) {
-        encoded = encoded.concat(modbusChannelConfig(payload.modbus_config));
+    if ("modbus_channels" in payload) {
+        encoded = encoded.concat(setModbusChannel(payload.modbus_channels));
+    }
+    if ("modbus_channels_name" in payload) {
+        encoded = encoded.concat(setModbusChannelName(payload.modbus_channels_name));
+    }
+    if ("remove_modbus_channels" in payload) {
+        encoded = encoded.concat(removeModbusChannel(payload.remove_modbus_channels));
     }
 
     return encoded;
 }
 
 /**
- * device reboot
- * @param {boolean} reboot values: (0: false, 1: true)
- * @example payload: { "reboot": 1 }, output: FF10FF
+ * Reboot device
+ * @param {number} reboot values: (0: no, 1: yes)
+ * @example { "reboot": 1 }
  */
 function reboot(reboot) {
-    var reboot_values = [0, 1];
-    if (!reboot_values.indexOf(reboot)) {
-        throw new Error("reboot must be one of " + reboot_values.join(", "));
+    var yes_no_map = { 0: "no", 1: "yes" };
+    var yes_no_values = getValues(yes_no_map);
+    if (yes_no_values.indexOf(reboot) === -1) {
+        throw new Error("reboot must be one of " + yes_no_values.join(", "));
     }
-    if (reboot === 0) {
+
+    if (getValue(yes_no_map, reboot) === 0) {
         return [];
     }
+
     return [0xff, 0x10, 0xff];
 }
 
 /**
- * report interval configuration
- * @param {number} report_interval uint: second
- * @example payload: { "report_interval": 600 }
+ * set report interval
+ * @param {number} report_interval unit: second
+ * @example { "report_interval": 600 }
  */
 function setReportInterval(report_interval) {
     if (typeof report_interval !== "number") {
         throw new Error("report_interval must be a number");
     }
-    if (report_interval < 1) {
-        throw new Error("report_interval must be greater than 1");
+    if (report_interval < 0) {
+        throw new Error("report_interval must be greater than 0");
     }
 
     var buffer = new Buffer(4);
@@ -63,49 +85,154 @@ function setReportInterval(report_interval) {
 }
 
 /**
- *
- * @param {*} modbus_config
+ * Set modbus channel config
+ * @param {object} modbus_channels
+ * @param {number} modbus_channels._item.channel_id range: [1, 32]
+ * @param {number} modbus_channels._item.slave_id range: [1, 255]
+ * @param {number} modbus_channels._item.address range: [0, 65535]
+ * @param {number} modbus_channels._item.quantity range: [1, 16]
+ * @param {number} modbus_channels._item.type values: (
+ *              0: MB_REG_COIL, 1: MB_REG_DIS,
+ *              2: MB_REG_INPUT_AB, 3: MB_REG_INPUT_BA,
+ *              4: MB_REG_INPUT_INT32_ABCD, 5: MB_REG_INPUT_INT32_BADC, 6: MB_REG_INPUT_INT32_CDAB, 7: MB_REG_INPUT_INT32_DCBA,
+ *              8: MB_REG_INPUT_INT32_AB, 9: MB_REG_INPUT_INT32_CD,
+ *              10: MB_REG_INPUT_FLOAT_ABCD, 11: MB_REG_INPUT_FLOAT_BADC, 12: MB_REG_INPUT_FLOAT_CDAB, 13: MB_REG_INPUT_FLOAT_DCBA,
+ *              14: MB_REG_HOLD_INT16_AB, 15: MB_REG_HOLD_INT16_BA,
+ *              16: MB_REG_HOLD_INT32_ABCD, 17: MB_REG_HOLD_INT32_BADC, 18: MB_REG_HOLD_INT32_CDAB, 19: MB_REG_HOLD_INT32_DCBA,
+ *              20: MB_REG_HOLD_INT32_AB, 21: MB_REG_HOLD_INT32_CD,
+ *              22: MB_REG_HOLD_FLOAT_ABCD, 23: MB_REG_HOLD_FLOAT_BADC, 24: MB_REG_HOLD_FLOAT_CDAB, 25: MB_REG_HOLD_FLOAT_DCBA)
+ * @example { "modbus_channels": [ { "channel_id": 1, "slave_id": 1, "address": 1, "quantity": 1, "type": 1 } ] }
  */
-function modbusChannelConfig(modbus_config) {
-    var action_values = [0, 1, 2]; // 0: delete, 1: add, 2: update modbus channel name
-    if (!action_values.indexOf(modbus_config.action)) {
-        throw new Error("modbus_config.action must be one of " + action_values.join(", "));
+function setModbusChannel(modbus_channels) {
+    var channel_id = modbus_channels.channel_id;
+    var slave_id = modbus_channels.slave_id;
+    var register_address = modbus_channels.address;
+    var quantity = modbus_channels.quantity;
+    var register_type = modbus_channels.type;
+
+    if (channel_id < 1 || channel_id > 32) {
+        throw new Error("modbus_channels._item.channel_id must be between 1 and 32");
+    }
+    if (slave_id < 1 || slave_id > 255) {
+        throw new Error("modbus_channels._item.slave_id must be between 1 and 255");
+    }
+    if (register_address < 0 || register_address > 65535) {
+        throw new Error("modbus_channels._item.address must be between 0 and 65535");
+    }
+    if (quantity < 1 || quantity > 16) {
+        throw new Error("modbus_channels._item.quantity must be between 1 and 16");
+    }
+    var register_type_map = {
+        0: "MB_REG_COIL",
+        1: "MB_REG_DIS",
+        2: "MB_REG_INPUT_AB",
+        3: "MB_REG_INPUT_BA",
+        4: "MB_REG_INPUT_INT32_ABCD",
+        5: "MB_REG_INPUT_INT32_BADC",
+        6: "MB_REG_INPUT_INT32_CDAB",
+        7: "MB_REG_INPUT_INT32_DCBA",
+        8: "MB_REG_INPUT_INT32_AB",
+        9: "MB_REG_INPUT_INT32_CD",
+        10: "MB_REG_INPUT_FLOAT_ABCD",
+        11: "MB_REG_INPUT_FLOAT_BADC",
+        12: "MB_REG_INPUT_FLOAT_CDAB",
+        13: "MB_REG_INPUT_FLOAT_DCBA",
+        14: "MB_REG_HOLD_INT16_AB",
+        15: "MB_REG_HOLD_INT16_BA",
+        16: "MB_REG_HOLD_INT32_ABCD",
+        17: "MB_REG_HOLD_INT32_BADC",
+        18: "MB_REG_HOLD_INT32_CDAB",
+        19: "MB_REG_HOLD_INT32_DCBA",
+        20: "MB_REG_HOLD_INT32_AB",
+        21: "MB_REG_HOLD_INT32_CD",
+        22: "MB_REG_HOLD_FLOAT_ABCD",
+        23: "MB_REG_HOLD_FLOAT_BADC",
+        24: "MB_REG_HOLD_FLOAT_CDAB",
+        25: "MB_REG_HOLD_FLOAT_DCBA",
+    };
+    var register_type_values = getValues(register_type_map);
+    if (register_type_values.indexOf(register_type) === -1) {
+        throw new Error("modbus_channels._item.type must be one of " + register_type_values.join(", "));
     }
 
-    var action = modbus_config.action;
-    var buffer;
-    switch (action) {
-        case 0x00: // delete
-            buffer = new Buffer(4);
-            buffer.writeUInt8(0xff);
-            buffer.writeUInt8(0xef);
-            buffer.writeUInt8(0x00);
-            buffer.writeUInt8(modbus_config.channel_id);
-            break;
-        case 0x01: // add
-            buffer = new Buffer(8);
-            buffer.writeUInt8(0xff);
-            buffer.writeUInt8(0xef);
-            buffer.writeUInt8(0x01);
-            buffer.writeUInt8(modbus_config.channel_id);
-            buffer.writeUInt8(modbus_config.slave_id);
-            buffer.writeUInt8(modbus_config.address);
-            buffer.writeUInt8(modbus_config.type);
-            buffer.writeUInt8((modbus_config.sign << 4) | modbus_config.quantity);
-            break;
-        case 0x02: // update modbus channel name
-            var name = modbus_config.name;
-            var bytes = utf8ToBytes(name);
-            buffer = new Buffer(5 + bytes.length);
-            buffer.writeUInt8(0xff);
-            buffer.writeUInt8(0xef);
-            buffer.writeUInt8(0x02);
-            buffer.writeUInt8(modbus_config.channel_id);
-            buffer.writeUInt8(bytes.length);
-            buffer.writeBytes(bytes);
-            break;
-    }
+    var buffer = new Buffer(9);
+    buffer.writeUInt8(0xff);
+    buffer.writeUInt8(0xef);
+    buffer.writeUInt8(0x01); // config modbus channel
+    buffer.writeUInt8(channel_id);
+    buffer.writeUInt8(slave_id);
+    buffer.writeUInt16LE(register_address);
+    buffer.writeUInt8(quantity);
+    buffer.writeUInt8(getValue(register_type_map, register_type));
     return buffer.toBytes();
+}
+
+/**
+ * Set modbus channel name
+ * @param {object} modbus_channels_name
+ * @param {number} modbus_channels_name._item.channel_id range: [1, 32]
+ * @param {string} modbus_channels_name._item.name
+ * @example { "modbus_channels_name": [ { "channel_id": 1, "name": "modbus_channel_1" } ] }
+ */
+function setModbusChannelName(modbus_channels_name) {
+    var channel_id = modbus_channels_name.channel_id;
+    var name = modbus_channels_name.name;
+
+    var buffer = new Buffer(5 + name.length);
+    buffer.writeUInt8(0xff);
+    buffer.writeUInt8(0xef);
+    buffer.writeUInt8(0x02); // config modbus channel name
+    buffer.writeUInt8(channel_id);
+    buffer.writeUInt8(name.length);
+    buffer.writeASCII(name);
+    return buffer.toBytes();
+}
+
+/**
+ * Remove modbus channel
+ * @param {object} remove_modbus_channels
+ * @param {number} remove_modbus_channels._item.channel_id range: [1, 32]
+ * @example { "remove_modbus_channels": [ { "channel_id": 1 } ] }
+ */
+function removeModbusChannel(remove_modbus_channels) {
+    var channel_id = remove_modbus_channels.channel_id;
+
+    if (channel_id < 1 || channel_id > 32) {
+        throw new Error("remove_modbus_channels._item.channel_id must be between 1 and 32");
+    }
+
+    var buffer = new Buffer(4);
+    buffer.writeUInt8(0xff);
+    buffer.writeUInt8(0xef);
+    buffer.writeUInt8(0x00); // remove modbus channel
+    buffer.writeUInt8(channel_id);
+    return buffer.toBytes();
+}
+
+function getValues(map) {
+    var values = [];
+    if (RAW_VALUE) {
+        for (var key in map) {
+            values.push(parseInt(key));
+        }
+    } else {
+        for (var key in map) {
+            values.push(map[key]);
+        }
+    }
+    return values;
+}
+
+function getValue(map, value) {
+    if (RAW_VALUE) return value;
+
+    for (var key in map) {
+        if (map[key] === value) {
+            return parseInt(key);
+        }
+    }
+
+    throw new Error("not match in " + JSON.stringify(map));
 }
 
 function Buffer(size) {
@@ -118,9 +245,10 @@ function Buffer(size) {
 }
 
 Buffer.prototype._write = function (value, byteLength, isLittleEndian) {
+    var offset = 0;
     for (var index = 0; index < byteLength; index++) {
-        var shift = isLittleEndian ? index << 3 : (byteLength - 1 - index) << 3;
-        this.buffer[this.offset + index] = (value & (0xff << shift)) >> shift;
+        offset = isLittleEndian ? index << 3 : (byteLength - 1 - index) << 3;
+        this.buffer[this.offset + index] = (value >> offset) & 0xff;
     }
 };
 
@@ -154,40 +282,13 @@ Buffer.prototype.writeInt32LE = function (value) {
     this.offset += 4;
 };
 
-Buffer.prototype.writeBytes = function (bytes) {
-    for (var i = 0; i < bytes.length; i++) {
-        this.buffer[this.offset + i] = bytes[i];
+Buffer.prototype.writeASCII = function (value) {
+    for (var i = 0; i < value.length; i++) {
+        this.buffer[this.offset + i] = value.charCodeAt(i);
     }
-    this.offset += bytes.length;
+    this.offset += value.length;
 };
 
 Buffer.prototype.toBytes = function () {
     return this.buffer;
 };
-
-function utf8ToBytes(str) {
-    var bytes = [];
-
-    for (var i = 0; i < str.length; i++) {
-        var charCode = str.charCodeAt(i);
-
-        if (charCode < 0x80) {
-            bytes.push(charCode);
-        } else if (charCode < 0x800) {
-            bytes.push(0xc0 | (charCode >> 6));
-            bytes.push(0x80 | (charCode & 0x3f));
-        } else if (charCode < 0x10000) {
-            bytes.push(0xe0 | (charCode >> 12));
-            bytes.push(0x80 | ((charCode >> 6) & 0x3f));
-            bytes.push(0x80 | (charCode & 0x3f));
-        } else {
-            charCode = 0x10000 + (((charCode & 0x3ff) << 10) | (str.charCodeAt(i) & 0x3ff));
-            bytes.push(0xf0 | (charCode >> 18));
-            bytes.push(0x80 | ((charCode >> 12) & 0x3f));
-            bytes.push(0x80 | ((charCode >> 6) & 0x3f));
-            bytes.push(0x80 | (charCode & 0x3f));
-        }
-    }
-
-    return bytes;
-}
