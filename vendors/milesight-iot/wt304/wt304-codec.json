@@ -1,0 +1,453 @@
+{
+    "version": "1.0.0",
+    "bytes": "",
+    "object": [
+        {
+            "id": "tsl_version",
+            "name": "TSL Version",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "TEXT",
+            "value_type": "STRING",
+            "max_length": 6,
+            "bacnet_type": "character_string_value_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "product_name",
+            "name": "Product Name",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "TEXT",
+            "value_type": "STRING",
+            "max_length": 32,
+            "bacnet_type": "character_string_value_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "product_pn",
+            "name": "Product PN",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "TEXT",
+            "value_type": "STRING",
+            "max_length": 32,
+            "bacnet_type": "character_string_value_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "product_sn",
+            "name": "Product SN",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "TEXT",
+            "value_type": "STRING",
+            "max_length": 8,
+            "bacnet_type": "character_string_value_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "version.hardware_version",
+            "name": "Hardware Version",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "TEXT",
+            "value_type": "STRING",
+            "max_length": 6,
+            "bacnet_type": "character_string_value_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "version.firmware_version",
+            "name": "Firmware Version",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "TEXT",
+            "value_type": "STRING",
+            "max_length": 6,
+            "bacnet_type": "character_string_value_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "oem_id",
+            "name": "OEM ID",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "TEXT",
+            "value_type": "STRING",
+            "max_length": 2,
+            "bacnet_type": "character_string_value_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "product_frequency_band",
+            "name": "Product Frequency Band",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "TEXT",
+            "value_type": "STRING",
+            "max_length": 16,
+            "bacnet_type": "character_string_value_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "device_status",
+            "name": "Device Status",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "ENUM",
+            "value_type": "UINT8",
+            "values": [
+                { "value": 0, "name": "off" },
+                { "value": 1, "name": "on" }
+            ],
+            "bacnet_type": "multistate_value_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "lorawan_class",
+            "name": "LoRaWAN Class Type",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "ENUM",
+            "value_type": "UINT8",
+            "values": [
+                { "value": 0, "name": "Class A" },
+                { "value": 1, "name": "Class B" },
+                { "value": 2, "name": "Class C" },
+                { "value": 3, "name": "Class CtoB" }
+            ],
+            "bacnet_type": "multistate_value_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "temperature",
+            "name": "Temperature",
+            "value": "26",
+            "unit": "°C",
+            "access_mode": "R",
+            "data_type": "NUMBER",
+            "value_type": "FLOAT",
+            "bacnet_type": "analog_input_object",
+            "bacnet_unit_type_id": 62,
+            "bacnet_unit_type": "UNITS_DEGREES_CELSIUS"
+        },
+        {
+            "id": "humidity",
+            "name": "Humidity",
+            "value": "61.5",
+            "unit": "%r.h.",
+            "access_mode": "R",
+            "data_type": "NUMBER",
+            "value_type": "FLOAT",
+            "bacnet_type": "analog_input_object",
+            "bacnet_unit_type_id": 29,
+            "bacnet_unit_type": "UNITS_PERCENT_RELATIVE_HUMIDITY"
+        },
+        {
+            "id": "target_temperature",
+            "name": "Target Temperature",
+            "value": "26",
+            "unit": "°C",
+            "access_mode": "R",
+            "data_type": "NUMBER",
+            "value_type": "FLOAT",
+            "bacnet_type": "analog_input_object",
+            "bacnet_unit_type_id": 62,
+            "bacnet_unit_type": "UNITS_DEGREES_CELSIUS"
+        },
+        {
+            "id": "temperature_data_source",
+            "name": "Temperature Data Source",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "ENUM",
+            "value_type": "UINT8",
+            "values": [
+                { "value": 0, "name": "internal" },
+                { "value": 1, "name": "ntc" },
+                { "value": 2, "name": "lorawan" },
+                { "value": 3, "name": "d2d" }
+            ],
+            "bacnet_type": "multistate_value_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "temperature_control_status",
+            "name": "Temperature Control Status",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "ENUM",
+            "value_type": "UINT8",
+            "values": [
+                { "value": 0, "name": "standby" },
+                { "value": 1, "name": "heating" },
+                { "value": 2, "name": "cooling" }
+            ],
+            "bacnet_type": "multistate_value_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "temperature_control_mode",
+            "name": "Temperature Control Mode",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "ENUM",
+            "value_type": "UINT8",
+            "values": [
+                { "value": 0, "name": "fan" },
+                { "value": 1, "name": "heating" },
+                { "value": 2, "name": "cooling" }
+            ],
+            "bacnet_type": "multistate_value_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "valve_status",
+            "name": "Valve Status",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "NUMBER",
+            "value_type": "UINT8",
+            "bacnet_type": "analog_input_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "fan_status",
+            "name": "Fan Status",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "ENUM",
+            "value_type": "UINT8",
+            "values": [
+                { "value": 0, "name": "off" },
+                { "value": 1, "name": "low" },
+                { "value": 2, "name": "medium" },
+                { "value": 3, "name": "high" }
+            ],
+            "bacnet_type": "multistate_value_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "fan_mode",
+            "name": "Fan Mode",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "ENUM",
+            "value_type": "UINT8",
+            "values": [
+                { "value": 0, "name": "auto" },
+                { "value": 1, "name": "low" },
+                { "value": 2, "name": "medium" },
+                { "value": 3, "name": "high" }
+            ],
+            "bacnet_type": "multistate_value_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "plan_id",
+            "name": "Plan ID",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "NUMBER",
+            "value_type": "UINT8",
+            "bacnet_type": "analog_input_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "temperature_alarm.type",
+            "name": "Temperature Alarm (Type)",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "ENUM",
+            "value_type": "UINT8",
+            "values": [
+                { "value": 0, "name": "collection error" },
+                { "value": 1, "name": "lower range error" },
+                { "value": 2, "name": "over range error" },
+                { "value": 3, "name": "no data" },
+                { "value": 16, "name": "below threshold temperature alarm release" },
+                { "value": 17, "name": "below threshold temperature alarm" },
+                { "value": 18, "name": "above threshold temperature alarm release" },
+                { "value": 19, "name": "above threshold temperature alarm" },
+                { "value": 20, "name": "between threshold temperature alarm release" },
+                { "value": 21, "name": "between threshold temperature alarm" },
+                { "value": 22, "name": "outside threshold temperature alarm release" },
+                { "value": 23, "name": "outside threshold temperature alarm" },
+                { "value": 32, "name": "continuous low temperature alarm release" },
+                { "value": 33, "name": "continuous low temperature alarm" },
+                { "value": 34, "name": "continuous high temperature alarm" },
+                { "value": 48, "name": "freeze alarm release" },
+                { "value": 49, "name": "freeze alarm" },
+                { "value": 50, "name": "window open alarm release" },
+                { "value": 51, "name": "window open alarm" }
+            ],
+            "bacnet_type": "multistate_value_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "temperature_alarm.temperature",
+            "name": "Temperature Alarm (Temperature)",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "NUMBER",
+            "value_type": "FLOAT",
+            "bacnet_type": "analog_input_object",
+            "bacnet_unit_type_id": 62,
+            "bacnet_unit_type": "UNITS_DEGREES_CELSIUS"
+        },
+        {
+            "id": "humidity_alarm",
+            "name": "Humidity Alarm",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "ENUM",
+            "value_type": "UINT8",
+            "values": [
+                { "value": 0, "name": "collection error" },
+                { "value": 1, "name": "lower range error" },
+                { "value": 2, "name": "over range error" },
+                { "value": 3, "name": "no data" }
+            ],
+            "bacnet_type": "multistate_value_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "target_temperature_alarm",
+            "name": "Target Temperature Alarm",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "ENUM",
+            "value_type": "UINT8",
+            "values": [
+                { "value": 0, "name": "collection error" },
+                { "value": 1, "name": "lower range error" },
+                { "value": 2, "name": "over range error" },
+                { "value": 3, "name": "no data" }
+            ],
+            "bacnet_type": "multistate_value_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "relay_status.gl_status",
+            "name": "Relay Status (GL)",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "BOOL",
+            "value_type": "UINT8",
+            "values": [
+                { "value": 0, "name": "disable" },
+                { "value": 1, "name": "enable" }
+            ],
+            "bacnet_type": "binary_input_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "relay_status.gm_status",
+            "name": "Relay Status (GM)",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "BOOL",
+            "value_type": "UINT8",
+            "values": [
+                { "value": 0, "name": "disable" },
+                { "value": 1, "name": "enable" }
+            ],
+            "bacnet_type": "binary_input_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "relay_status.gh_status",
+            "name": "Relay Status (GH)",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "BOOL",
+            "value_type": "UINT8",
+            "values": [
+                { "value": 0, "name": "disable" },
+                { "value": 1, "name": "enable" }
+            ],
+            "bacnet_type": "binary_input_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "relay_status.valve_1_status",
+            "name": "Relay Status (Valve 1)",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "BOOL",
+            "value_type": "UINT8",
+            "values": [
+                { "value": 0, "name": "disable" },
+                { "value": 1, "name": "enable" }
+            ],
+            "bacnet_type": "binary_input_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        },
+        {
+            "id": "relay_status.valve_2_status",
+            "name": "Relay Status (Valve 2)",
+            "value": "",
+            "unit": "",
+            "access_mode": "R",
+            "data_type": "BOOL",
+            "value_type": "UINT8",
+            "values": [
+                { "value": 0, "name": "disable" },
+                { "value": 1, "name": "enable" }
+            ],
+            "bacnet_type": "binary_input_object",
+            "bacnet_unit_type_id": 95,
+            "bacnet_unit_type": "UNITS_NO_UNITS"
+        }
+    ]
+}
