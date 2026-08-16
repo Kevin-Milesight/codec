@@ -35,6 +35,10 @@ jobs:
 
           CHANGED_FILES=$(printf '%s\n' "$CHANGED_FILES" | while IFS= read -r file; do
             if [ -n "$file" ] && [ -f "$file" ]; then
+              # 跳过 Modbus 格式（含 modbus_register_type 字段，由 Modbus 校验器单独处理）
+              if grep -q 'modbus_register_type' "$file" 2>/dev/null; then
+                continue
+              fi
               echo "$file"
             fi
           done)
