@@ -1,0 +1,202 @@
+{
+  "object": [
+    {
+      "id": "serial_number",
+      "name": "Serial number",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 0,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "energy_index",
+      "name": "Energy index",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 2,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "volume",
+      "name": "Volume",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4,
+      "modbus_unit_type": "l",
+      "modbus_unit_type_id": 82,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "instantaneous_power",
+      "name": "Instantaneous power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 6,
+      "modbus_unit_type": "kW",
+      "modbus_unit_type_id": 48,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "instantaneous_flowrate",
+      "name": "Instantaneous flowrate",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 8,
+      "modbus_unit_type": "l/h",
+      "modbus_unit_type_id": 136,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "outgoing_temperature",
+      "name": "Outgoing temperature",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 10,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "return_temperature",
+      "name": "Return temperature",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 12,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "temperature_difference",
+      "name": "Temperature difference",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 14,
+      "modbus_unit_type": "K",
+      "modbus_unit_type_id": 63,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "cooling_energy_index",
+      "name": "Air conditioning energy index",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 16,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "water_meter_1_index",
+      "name": "Water meter 1 inlet",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 18,
+      "modbus_unit_type": "l",
+      "modbus_unit_type_id": 82,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "water_meter_2_index",
+      "name": "Water meter 2 inlet",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20,
+      "modbus_unit_type": "l",
+      "modbus_unit_type_id": 82,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    }
+  ]
+}

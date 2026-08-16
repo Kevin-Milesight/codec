@@ -1,0 +1,256 @@
+{
+  "object": [
+    {
+      "id": "temperature",
+      "name": "Temperature",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 500,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "digital_input_status",
+      "name": "Status digital contact",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 514,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "sensor_setup",
+      "name": "Sensor Setup",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 1025,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "hardware_version",
+      "name": "Hardware Version",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 1034,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "firmware_version",
+      "name": "Firmware Version (Main/Subversion)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 1035,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "firmware_revision",
+      "name": "Firmware Version (Revision/Build)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 1036,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "unit_system",
+      "name": "Selection of units System (1=SI, 2=Imperial)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 1100,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "relative_humidity",
+      "name": "Relative Humidity",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 501,
+      "modbus_unit_type": "%RH",
+      "modbus_unit_type_id": 29,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "absolute_humidity",
+      "name": "Absolute humidity",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 502,
+      "modbus_unit_type": "g/m³",
+      "modbus_unit_type_id": 217,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "enthalpy",
+      "name": "Enthalpy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 503,
+      "modbus_unit_type": "kJ/kg",
+      "modbus_unit_type_id": 149,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "dew_point",
+      "name": "Dew point",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 504,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "co2",
+      "name": "CO2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 505,
+      "modbus_unit_type": "ppm",
+      "modbus_unit_type_id": 96,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "voc",
+      "name": "VOC",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 506,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "co2_voc_mix",
+      "name": "CO2 VOC Mix",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 507,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    }
+  ]
+}

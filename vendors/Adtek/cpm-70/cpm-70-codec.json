@@ -1,0 +1,1156 @@
+{
+  "object": [
+    {
+      "id": "voltage_phase_1",
+      "name": "Phase 1 Voltage",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 305,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "voltage_phase_2",
+      "name": "Phase 2 Voltage",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 307,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "voltage_phase_3",
+      "name": "Phase 3 Voltage",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 309,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "voltage_phase_avg",
+      "name": "Average Phase Voltage",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 311,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "voltage_line_12",
+      "name": "Line Voltage 1-2",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 313,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "voltage_line_23",
+      "name": "Line Voltage 2-3",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 315,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "voltage_line_31",
+      "name": "Line Voltage 3-1",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 317,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "voltage_line_avg",
+      "name": "Average Line Voltage",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 319,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "current_phase_1",
+      "name": "Phase 1 Current",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 321,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "current_phase_2",
+      "name": "Phase 2 Current",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 323,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "current_phase_3",
+      "name": "Phase 3 Current",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 325,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "current_avg",
+      "name": "Average Current",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 327,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "current_neutral",
+      "name": "Neutral Current",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 329,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "active_power_phase_1",
+      "name": "Phase 1 Active Power",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 331,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "active_power_phase_2",
+      "name": "Phase 2 Active Power",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 333,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "active_power_phase_3",
+      "name": "Phase 3 Active Power",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 335,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "active_power_total",
+      "name": "Total Active Power",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 337,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_power_phase_1",
+      "name": "Phase 1 Reactive Power",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 339,
+      "modbus_unit_type": "var",
+      "modbus_unit_type_id": 11,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_power_phase_2",
+      "name": "Phase 2 Reactive Power",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 341,
+      "modbus_unit_type": "var",
+      "modbus_unit_type_id": 11,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_power_phase_3",
+      "name": "Phase 3 Reactive Power",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 343,
+      "modbus_unit_type": "var",
+      "modbus_unit_type_id": 11,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_power_total",
+      "name": "Total Reactive Power",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 345,
+      "modbus_unit_type": "var",
+      "modbus_unit_type_id": 11,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "apparent_power_phase_1",
+      "name": "Phase 1 Apparent Power",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 347,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "apparent_power_phase_2",
+      "name": "Phase 2 Apparent Power",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 349,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "apparent_power_phase_3",
+      "name": "Phase 3 Apparent Power",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 351,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "apparent_power_total",
+      "name": "Total Apparent Power",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 353,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "active_power_demand",
+      "name": "Total Active Power Demand",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 362,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_power_demand",
+      "name": "Total Reactive Power Demand",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 364,
+      "modbus_unit_type": "var",
+      "modbus_unit_type_id": 11,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "apparent_power_demand",
+      "name": "Total Apparent Power Demand",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 366,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "current_demand_1",
+      "name": "Phase 1 Current Demand",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 368,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "current_demand_2",
+      "name": "Phase 2 Current Demand",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 370,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "current_demand_3",
+      "name": "Phase 3 Current Demand",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 372,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "current_demand_avg",
+      "name": "Average Current Demand",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 374,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "active_energy_import",
+      "name": "Import Active Energy",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 385,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "active_energy_export",
+      "name": "Export Active Energy",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 387,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "active_energy_total",
+      "name": "Total Active Energy",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 389,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "active_energy_net",
+      "name": "Net Active Energy",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 391,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_import",
+      "name": "Import Reactive Energy",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 393,
+      "modbus_unit_type": "kVArh",
+      "modbus_unit_type_id": 243,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_export",
+      "name": "Export Reactive Energy",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 395,
+      "modbus_unit_type": "kVArh",
+      "modbus_unit_type_id": 243,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_total",
+      "name": "Total Reactive Energy",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 397,
+      "modbus_unit_type": "kVArh",
+      "modbus_unit_type_id": 243,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_net",
+      "name": "Net Reactive Energy",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 399,
+      "modbus_unit_type": "kVArh",
+      "modbus_unit_type_id": 243,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "apparent_energy_total",
+      "name": "Total Apparent Energy",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 401,
+      "modbus_unit_type": "kVAh",
+      "modbus_unit_type_id": 240,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "operation_time",
+      "name": "Operation Time",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 408,
+      "modbus_unit_type": "min",
+      "modbus_unit_type_id": 72,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "running_time",
+      "name": "Running Time",
+      "description": "IEEE754 FLOAT32, Big-Endian (High Word first), raw value is engineering value; 32-bit register pair",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 410,
+      "modbus_unit_type": "min",
+      "modbus_unit_type_id": 72,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "frequency",
+      "name": "Frequency",
+      "description": "16-bit signed integer, apply modbus_scale",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 304,
+      "modbus_unit_type": "Hz",
+      "modbus_unit_type_id": 27,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "power_factor_1",
+      "name": "Phase 1 Power Factor",
+      "description": "16-bit signed integer, apply modbus_scale",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 355,
+      "modbus_unit_type": "no-units",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 0.001,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "power_factor_2",
+      "name": "Phase 2 Power Factor",
+      "description": "16-bit signed integer, apply modbus_scale",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 356,
+      "modbus_unit_type": "no-units",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 0.001,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "power_factor_3",
+      "name": "Phase 3 Power Factor",
+      "description": "16-bit signed integer, apply modbus_scale",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 357,
+      "modbus_unit_type": "no-units",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 0.001,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "power_factor_avg",
+      "name": "Average Power Factor",
+      "description": "16-bit signed integer, apply modbus_scale",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 358,
+      "modbus_unit_type": "no-units",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 0.001,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "voltage_unbalance",
+      "name": "Voltage Unbalance",
+      "description": "16-bit signed integer, apply modbus_scale",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 359,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "current_unbalance",
+      "name": "Current Unbalance",
+      "description": "16-bit signed integer, apply modbus_scale",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 360,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "u1_thd",
+      "name": "Phase 1 Voltage THD",
+      "description": "16-bit signed integer, apply modbus_scale",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 671,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "u2_thd",
+      "name": "Phase 2 Voltage THD",
+      "description": "16-bit signed integer, apply modbus_scale",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 672,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "u3_thd",
+      "name": "Phase 3 Voltage THD",
+      "description": "16-bit signed integer, apply modbus_scale",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 673,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "u_avg_thd",
+      "name": "Average Voltage THD",
+      "description": "16-bit signed integer, apply modbus_scale",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 674,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "i1_thd",
+      "name": "Phase 1 Current THD",
+      "description": "16-bit signed integer, apply modbus_scale",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 675,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "i2_thd",
+      "name": "Phase 2 Current THD",
+      "description": "16-bit signed integer, apply modbus_scale",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 676,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "i3_thd",
+      "name": "Phase 3 Current THD",
+      "description": "16-bit signed integer, apply modbus_scale",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 677,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "i_avg_thd",
+      "name": "Average Current THD",
+      "description": "16-bit signed integer, apply modbus_scale",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 678,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "di1_status",
+      "name": "Digital Input 1 Status",
+      "description": "0: OFF 1: ON",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "flag",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 0,
+      "modbus_unit_type": "no-units",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "di2_status",
+      "name": "Digital Input 2 Status",
+      "description": "0: OFF 1: ON",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "flag",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 1,
+      "modbus_unit_type": "no-units",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "di3_status",
+      "name": "Digital Input 3 Status",
+      "description": "0: OFF 1: ON",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "flag",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2,
+      "modbus_unit_type": "no-units",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "di4_status",
+      "name": "Digital Input 4 Status",
+      "description": "0: OFF 1: ON",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "flag",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 3,
+      "modbus_unit_type": "no-units",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ro1_status",
+      "name": "Relay Output 1 Status",
+      "description": "0: OFF 1: ON",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "flag",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 0,
+      "modbus_unit_type": "no-units",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ro2_status",
+      "name": "Relay Output 2 Status",
+      "description": "0: OFF 1: ON",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "flag",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 1,
+      "modbus_unit_type": "no-units",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    }
+  ]
+}

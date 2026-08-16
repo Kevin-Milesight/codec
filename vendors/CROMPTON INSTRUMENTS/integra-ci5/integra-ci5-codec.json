@@ -1,0 +1,1084 @@
+{
+  "object": [
+    {
+      "id": "voltage_l1",
+      "name": "Spannung L1/N",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 0,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "voltage_l2",
+      "name": "Spannung L2/N",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 2,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "voltage_l3",
+      "name": "Spannung L3/N",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "current_l1",
+      "name": "Strom L1",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 6,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "current_l2",
+      "name": "Strom L2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 8,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "current_l3",
+      "name": "Strom L3",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 10,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "power_l1",
+      "name": "Wirkleistung L1",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 12,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "power_l2",
+      "name": "Wirkleistung L2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 14,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "power_l3",
+      "name": "Wirkleistung L3",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 16,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "apparent_power_l1",
+      "name": "Scheinleistung L1",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 18,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "apparent_power_l2",
+      "name": "Scheinleistung L2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "apparent_power_l3",
+      "name": "Scheinleistung L3",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 22,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_power_l1",
+      "name": "Blindleistung L1",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 24,
+      "modbus_unit_type": "var",
+      "modbus_unit_type_id": 11,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_power_l2",
+      "name": "Blindleistung L2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 26,
+      "modbus_unit_type": "var",
+      "modbus_unit_type_id": 11,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_power_l3",
+      "name": "Blindleistung L3",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 28,
+      "modbus_unit_type": "var",
+      "modbus_unit_type_id": 11,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "power_factor_l1",
+      "name": "Leistungsfaktor L1",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 30,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "power_factor_l2",
+      "name": "Leistungsfaktor L2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 32,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "power_factor_l3",
+      "name": "Leistungsfaktor L3",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 34,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "voltage_ln_average",
+      "name": "Durchschnittswert Spannungen L/N",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 42,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "current_average",
+      "name": "Durchschnittswert Phasenströme",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 46,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "current_sum",
+      "name": "Summe Phasenströme",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 48,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "power_total",
+      "name": "Systemwirkleistung",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 52,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "apparent_power_total",
+      "name": "Systemscheinleistung",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 56,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_power_total",
+      "name": "Systemblindleistung",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 60,
+      "modbus_unit_type": "var",
+      "modbus_unit_type_id": 11,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "power_factor_total",
+      "name": "Gesamtleistungsfaktor",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 62,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "frequency",
+      "name": "Frequenz der Messspannung",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 70,
+      "modbus_unit_type": "Hz",
+      "modbus_unit_type_id": 27,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "energy_import_active",
+      "name": "Importierte Wirkenergie",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 72,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "energy_export_active",
+      "name": "Exportierte Wirkenergie",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 74,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "energy_import_reactive",
+      "name": "Importierte Blindenergie",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 76,
+      "modbus_unit_type": "kVArh",
+      "modbus_unit_type_id": 243,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "energy_export_reactive",
+      "name": "Exportierte Blindenergie",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 78,
+      "modbus_unit_type": "kVArh",
+      "modbus_unit_type_id": 243,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "energy_apparent",
+      "name": "Scheinenergie",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 80,
+      "modbus_unit_type": "kVAh",
+      "modbus_unit_type_id": 240,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ampere_hours",
+      "name": "Amperstunden",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 82,
+      "modbus_unit_type": "Ah",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "demand_active_power",
+      "name": "Bezogene Systemwirkleistung Mittelwert",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 84,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "demand_active_power_max",
+      "name": "Bezogene Systemwirkleistung Maximalwert",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 86,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "demand_apparent_power",
+      "name": "Bezogene Systemscheinleistung Mittelwert",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 100,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "demand_apparent_power_max",
+      "name": "Bezogene Systemscheinleistung Maximalwert",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 102,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "demand_current",
+      "name": "Neutralleiter Strom Mittelwert",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 104,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "demand_current_max",
+      "name": "Neutralleiter Strom Maximalwert",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 106,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "voltage_l1_l2",
+      "name": "Spannung L1-L2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 200,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "voltage_l2_l3",
+      "name": "Spannung L2-L3",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 202,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "voltage_l3_l1",
+      "name": "Spannung L3-L1",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 204,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "voltage_ll_average",
+      "name": "Durchschnittswert Spannung L-L",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 206,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "current_neutral",
+      "name": "Neutralleiterstrom",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 224,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "thd_voltage_l1",
+      "name": "Klirrfaktor (%THD) Spannung L1-N",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 234,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "thd_voltage_l2",
+      "name": "Klirrfaktor (%THD) Spannung L2-N",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 236,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "thd_voltage_l3",
+      "name": "Klirrfaktor (%THD) Spannung L3-N",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 238,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "thd_current_l1",
+      "name": "Klirrfaktor (%THD) Strom L1",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 240,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "thd_current_l2",
+      "name": "Klirrfaktor (%THD) Strom L2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 242,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "thd_current_l3",
+      "name": "Klirrfaktor (%THD) Strom L3",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 244,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "power_factor_minus_one",
+      "name": "Negativer Gesamtleistungsfaktor",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 254,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "current_demand_l1",
+      "name": "Strom L1 Mittelwert",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 258,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "current_demand_l2",
+      "name": "Strom L2 Mittelwert",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 260,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "current_demand_l3",
+      "name": "Strom L3 Mittelwert",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 262,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "demand_time",
+      "name": "Zeit (Δt) zur Mittelwertbildung (Lesen: Minuten)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 0,
+      "modbus_unit_type": "min",
+      "modbus_unit_type_id": 72,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "demand_period",
+      "name": "Zeit (Δt) zur Mittelwertbildung (Schreiben: Minuten)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 2,
+      "modbus_unit_type": "min",
+      "modbus_unit_type_id": 72,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "system_voltage",
+      "name": "Systemspannung",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 6,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "system_current",
+      "name": "Systemstrom",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 8,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "system_type",
+      "name": "Netzform (1:1P2W, 2:3P3W, 3:3P4W)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 10,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "relay_pulse_width",
+      "name": "Impulsbreite Relaisausgang (ms)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 12,
+      "modbus_unit_type": "ms",
+      "modbus_unit_type_id": 159,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "system_power",
+      "name": "Systemleistung",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 36,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    }
+  ]
+}
