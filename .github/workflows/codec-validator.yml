@@ -1,0 +1,134 @@
+name: Codec Validator
+
+on:
+  push:
+    branches:
+      - '**'
+    paths:
+      - '**/*codec*.json'
+  pull_request:
+    branches:
+      - '**'
+    paths:
+      - '**/*codec*.json'
+
+jobs:
+  codec-detect-files:
+    name: Detect changed codec files
+    runs-on: ubuntu-latest
+    outputs:
+      files: ${{ steps.changed_files.outputs.files }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Get changed codec files
+        id: changed_files
+        run: |
+          if [ "${{ github.event_name }}" == "pull_request" ]; then
+            CHANGED_FILES=$(git diff --name-only --diff-filter=ACMR ${{ github.event.pull_request.base.sha }} ${{ github.sha }} -- | grep -E '.*codec.*\.json$' || true)
+          else
+            CHANGED_FILES=$(git diff --name-only --diff-filter=ACMR HEAD~1 HEAD -- | grep -E '.*codec.*\.json$' || true)
+          fi
+
+          CHANGED_FILES=$(printf '%s\n' "$CHANGED_FILES" | while IFS= read -r file; do
+            if [ -n "$file" ] && [ -f "$file" ]; then
+              echo "$file"
+            fi
+          done)
+
+          # 转换为 JSON 数组
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "files=[]" >> $GITHUB_OUTPUT
+          else
+            FILES_JSON=$(echo "$CHANGED_FILES" | jq -R -s -c 'split("\n") | map(select(length > 0))')
+            echo "files=$FILES_JSON" >> $GITHUB_OUTPUT
+          fi
+
+  codec-validate:
+    name: Validate codec file
+    needs: codec-detect-files
+    if: needs.codec-detect-files.outputs.files != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        file: ${{ fromJson(needs.codec-detect-files.outputs.files) }}
+      fail-fast: false  # 即使某个文件失败，也继续验证其他文件
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate ${{ matrix.file }}
+        id: validate
+        uses: FengFuLiu/codec-validator-action@main
+        with:
+          codec-path: ${{ matrix.file }}
+          fail-on-warning: false
+
+  codec-notify:
+    name: Notify codec validation failure
+    needs: [codec-detect-files, codec-validate]
+    if: always() && failure() && needs.codec-detect-files.outputs.files != '[]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Feishu notification
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK_URL }}
+          REPOSITORY: ${{ github.repository }}
+          BRANCH: ${{ github.ref_name }}
+          ACTOR: ${{ github.actor }}
+          COMMIT_MSG: ${{ github.event.head_commit.message }}
+          COMMIT_URL: ${{ github.event.head_commit.url }}
+          ACTIONS_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if [ -n "$FEISHU_WEBHOOK" ]; then
+            payload=$(jq -n \
+              --arg repository "$REPOSITORY" \
+              --arg branch "$BRANCH" \
+              --arg actor "$ACTOR" \
+              --arg commit_msg "$COMMIT_MSG" \
+              --arg commit_url "$COMMIT_URL" \
+              --arg actions_url "$ACTIONS_URL" \
+              '{
+                msg_type: "interactive",
+                card: {
+                  header: {
+                    title: { tag: "plain_text", content: "Codec 校验失败" },
+                    template: "red"
+                  },
+                  elements: [
+                    {
+                      tag: "div",
+                      text: {
+                        tag: "lark_md",
+                        content: "**代码仓库：** \($repository)\n**分支：** <font color=\"orange\">\($branch)</font>\n**提交者：** \($actor)\n**提交信息：** \($commit_msg)"
+                      }
+                    },
+                    {
+                      tag: "action",
+                      actions: [
+                        {
+                          tag: "button",
+                          text: { tag: "plain_text", content: "查看 Actions" },
+                          url: $actions_url,
+                          type: "primary"
+                        },
+                        {
+                          tag: "button",
+                          text: { tag: "plain_text", content: "查看提交" },
+                          url: $commit_url,
+                          type: "default"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }')
+            curl --fail --silent --show-error -X POST "$FEISHU_WEBHOOK" \
+              -H 'Content-Type: application/json' \
+              -d "$payload"
+          else
+            echo "Warning: FEISHU_WEBHOOK_URL secret is not configured, skipping notification"
+          fi
