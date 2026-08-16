@@ -82,7 +82,7 @@ function decode(bytes) {
         result.number_of_starts = bytes[1];
         result.param_id = bytes[4];
         result.firmware_version = bytes[5].toString();
-        result.meter_type = bytes[6] === 0 ? "e-mech" : "elec";
+        result.meter_type = bytes[6] === 0 ? "electromechanical" : "infrared";
         result.battery_status = bytes[7] === 0 ? "ok" : "low";
         result.index_energy_value = (bytes[8] << 24) + (bytes[9] << 16) + (bytes[10] << 8) + bytes[11];
         result.time_step = bytes[12];

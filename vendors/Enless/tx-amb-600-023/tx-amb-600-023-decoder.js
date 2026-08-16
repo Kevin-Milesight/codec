@@ -18,7 +18,7 @@ function toHexString(byteArray) {
         return ('0' + (byte & 0xFF).toString(16)).slice(-2);
     }).join('')
 }
-function decodeUplink(input) {
+function _origDecodeUplink(input) {
     try {
 
         var payload = toHexString(input.bytes)
@@ -562,7 +562,6 @@ function _toHex(bytes) {
   return bytes.map(function(b) { return ('0' + (b & 0xff).toString(16)).slice(-2); }).join('').toUpperCase();
 }
 
-var _origDecodeUplink = decodeUplink;
 
 function decodeUplink(input) {
   var raw = _toHex(input.bytes);

@@ -2382,9 +2382,7 @@ function enlinkDecode(bytes) {
 //  - variables contains the device variables e.g. {"calibration": "3.5"} (both the key / value are of type string)
 // The function must return an object, e.g. {"temperature": 22.5}
 function Decode(fPort, bytes, variables) {
-    return {
-        data: enlinkDecode(bytes)
-    };
+    return enlinkDecode(bytes);
 }
 
 // --------------------------------------------------------------------------------------

@@ -1863,7 +1863,7 @@ function _atimFlatten(data){
 
 function _atimDecode(bytes,fPort){
   try{
-    var r=decodeUplink({bytes:bytes,fPort:fPort||1});
+    var r=__atimOrigDecodeUplink({bytes:bytes,fPort:fPort||1});
     var out=_atimFlatten(r&&r.data);
   // PIR: remap to wattsense IDs
   if(out.compteur_pir!==undefined){out.motion_detection_count=out.compteur_pir;delete out.compteur_pir;}
@@ -1883,3 +1883,6 @@ function Decode(fPort,bytes){return _atimDecode(bytes,fPort);}
 function Decoder(bytes,port){return _atimDecode(bytes,port);}
 function encodeDownlink(input){return _encodeRaw(input&&input.data);}
 if(typeof module!=="undefined"){module.exports={decodeUplink:function(i){return{data:_atimDecode(i.bytes,i.fPort)};},Decode:Decode,Decoder:Decoder};}
+
+var __atimOrigDecodeUplink = decodeUplink;
+decodeUplink = function(input) { return { data: _atimDecode(input.bytes, input.fPort) }; };

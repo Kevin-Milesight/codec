@@ -1863,7 +1863,7 @@ function _atimFlatten(data){
 
 function _atimDecode(bytes,fPort){
   try{
-    var r=decodeUplink({bytes:bytes,fPort:fPort||1});
+    var r=__atimOrigDecodeUplink({bytes:bytes,fPort:fPort||1});
     var out=_atimFlatten(r&&r.data);
   if(out.temperature0!==undefined){out.temperature=out.temperature0;delete out.temperature0;}
   if(out.humidity0!==undefined){out.humidity=out.humidity0;delete out.humidity0;}
@@ -1878,3 +1878,6 @@ function Decode(fPort,bytes){return _atimDecode(bytes,fPort);}
 function Decoder(bytes,port){return _atimDecode(bytes,port);}
 function encodeDownlink(input){return _encodeRaw(input&&input.data);}
 if(typeof module!=="undefined"){module.exports={decodeUplink:function(i){return{data:_atimDecode(i.bytes,i.fPort)};},Decode:Decode,Decoder:Decoder};}
+
+var __atimOrigDecodeUplink = decodeUplink;
+decodeUplink = function(input) { return { data: _atimDecode(input.bytes, input.fPort) }; };

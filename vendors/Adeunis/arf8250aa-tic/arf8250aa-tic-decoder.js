@@ -14,11 +14,11 @@ function _decode(bytes){
       out.tic_error = !!(bytes[1] & 0x10);
       out.config_error = st.configurationInconsistency;
       out.hardware_error = !!(bytes[1] & 0x40);
-      out.data_PTCOUR1_index = bytes[2];
+      out.data_ptcour1_index = bytes[2];
       var regs = [330,332,334,336,338,340,342,344,346,348,350,352];
       var ridx = 0;
       for (var p = 3; p + 3 < bytes.length && ridx < regs.length; p += 4) {
-        out['data_S' + regs[ridx]] = _u32be(bytes, p);
+        out['data_s' + regs[ridx]] = _u32be(bytes, p);
         ridx++;
       }
       break;

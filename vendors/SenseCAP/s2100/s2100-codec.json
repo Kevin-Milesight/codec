@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "bytes": "010610DC500000010710687400009091",
+  "bytes": "0100C832000003E80000000200000000000027100364",
   "object": [
     {
       "id": "raw_uplink",
@@ -27,6 +27,150 @@
       "bacnet_type": "character_string_value_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS"
+    },
+    {
+      "id": "air_temperature",
+      "name": "Air Temperature",
+      "value": "20",
+      "unit": "°C",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "FLOAT",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 62,
+      "bacnet_unit_type": "UNITS_DEGREES_CELSIUS"
+    },
+    {
+      "id": "air_humidity",
+      "name": "Air Humidity",
+      "value": "50",
+      "unit": "%",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "FLOAT",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 98,
+      "bacnet_unit_type": "UNITS_PERCENT"
+    },
+    {
+      "id": "light_intensity",
+      "name": "Light Intensity",
+      "value": "1000",
+      "unit": "lx",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "FLOAT",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 37,
+      "bacnet_unit_type": "UNITS_LUXES"
+    },
+    {
+      "id": "co2",
+      "name": "CO2",
+      "value": "",
+      "unit": "ppm",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "FLOAT",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 96,
+      "bacnet_unit_type": "UNITS_PARTS_PER_MILLION"
+    },
+    {
+      "id": "barometric_pressure",
+      "name": "Barometric Pressure",
+      "value": "100000",
+      "unit": "Pa",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "FLOAT",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 53,
+      "bacnet_unit_type": "UNITS_PASCALS"
+    },
+    {
+      "id": "soil_temperature",
+      "name": "Soil Temperature",
+      "value": "",
+      "unit": "°C",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "FLOAT",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 62,
+      "bacnet_unit_type": "UNITS_DEGREES_CELSIUS"
+    },
+    {
+      "id": "soil_moisture",
+      "name": "Soil Moisture",
+      "value": "",
+      "unit": "%",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "FLOAT",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 98,
+      "bacnet_unit_type": "UNITS_PERCENT"
+    },
+    {
+      "id": "wind_direction",
+      "name": "Wind Direction",
+      "value": "0",
+      "unit": "°",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "FLOAT",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 90,
+      "bacnet_unit_type": "UNITS_DEGREES_ANGULAR"
+    },
+    {
+      "id": "wind_speed",
+      "name": "Wind Speed",
+      "value": "0",
+      "unit": "m/s",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "FLOAT",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 74,
+      "bacnet_unit_type": "UNITS_METERS_PER_SECOND"
+    },
+    {
+      "id": "rainfall_hourly",
+      "name": "Rainfall Hourly",
+      "value": "0",
+      "unit": "mm/h",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "FLOAT",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 266,
+      "bacnet_unit_type": "UNITS_CUSTOM_266"
+    },
+    {
+      "id": "uv_index",
+      "name": "UV Index",
+      "value": "0",
+      "unit": "",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "FLOAT",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 95,
+      "bacnet_unit_type": "UNITS_NO_UNITS"
+    },
+    {
+      "id": "tvoc",
+      "name": "TVOC",
+      "value": "",
+      "unit": "ppb",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "FLOAT",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 97,
+      "bacnet_unit_type": "UNITS_PARTS_PER_BILLION"
     },
     {
       "id": "battery_percentage",

@@ -1842,7 +1842,7 @@ function encodeDownlink(input) {
 
 function _atimDecode(bytes, fPort) {
   try {
-    var r = decodeUplink({ bytes: bytes, fPort: fPort });
+    var r = __atimOrigDecodeUplink({ bytes: bytes, fPort: fPort });
     if (!r || !r.data) return {};
     var d = r.data;
     var out = {};
@@ -1906,3 +1906,6 @@ if (typeof module !== 'undefined') {
     Decoder: Decoder
   };
 }
+
+var __atimOrigDecodeUplink = decodeUplink;
+decodeUplink = function(input) { return { data: _atimDecode(input.bytes, input.fPort) }; };

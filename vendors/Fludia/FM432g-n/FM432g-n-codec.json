@@ -19,7 +19,7 @@
     {
       "id": "index_gas_value",
       "name": "Index Gas Value",
-      "value": "2856.2",
+      "value": "28562",
       "description": "Cumulative gas index from the optical head reading the gas meter digits. FLOAT in liters.",
       "unit": "l",
       "access_mode": "R",
@@ -45,7 +45,7 @@
     {
       "id": "index_gas_increment_t0",
       "name": "Index Gas Increment (t0)",
-      "value": "37.6",
+      "value": "376",
       "description": "Gas volume increment during time slot t0 (most recent interval). FLOAT in liters.",
       "unit": "l",
       "access_mode": "R",
@@ -58,7 +58,7 @@
     {
       "id": "index_gas_increment_t1",
       "name": "Index Gas Increment (t1)",
-      "value": "37.9",
+      "value": "379",
       "description": "Gas volume increment during time slot t1. FLOAT in liters.",
       "unit": "l",
       "access_mode": "R",
@@ -71,7 +71,7 @@
     {
       "id": "index_gas_increment_t2",
       "name": "Index Gas Increment (t2)",
-      "value": "38.5",
+      "value": "385",
       "description": "Gas volume increment during time slot t2. FLOAT in liters.",
       "unit": "l",
       "access_mode": "R",
@@ -84,7 +84,7 @@
     {
       "id": "index_gas_increment_t3",
       "name": "Index Gas Increment (t3)",
-      "value": "39.6",
+      "value": "396",
       "description": "Gas volume increment during time slot t3. FLOAT in liters.",
       "unit": "l",
       "access_mode": "R",
@@ -97,7 +97,7 @@
     {
       "id": "index_gas_increment_t4",
       "name": "Index Gas Increment (t4)",
-      "value": "40.8",
+      "value": "408",
       "description": "Gas volume increment during time slot t4. FLOAT in liters.",
       "unit": "l",
       "access_mode": "R",
@@ -110,7 +110,7 @@
     {
       "id": "index_gas_increment_t5",
       "name": "Index Gas Increment (t5)",
-      "value": "40.6",
+      "value": "406",
       "description": "Gas volume increment during time slot t5. FLOAT in liters.",
       "unit": "l",
       "access_mode": "R",
@@ -123,7 +123,7 @@
     {
       "id": "index_gas_increment_t6",
       "name": "Index Gas Increment (t6)",
-      "value": "41.2",
+      "value": "412",
       "description": "Gas volume increment during time slot t6. FLOAT in liters.",
       "unit": "l",
       "access_mode": "R",
@@ -136,7 +136,7 @@
     {
       "id": "index_gas_increment_t7",
       "name": "Index Gas Increment (t7)",
-      "value": "41.5",
+      "value": "415",
       "description": "Gas volume increment during time slot t7 (oldest in 8-slot history). FLOAT in liters.",
       "unit": "l",
       "access_mode": "R",
@@ -149,7 +149,7 @@
     {
       "id": "number_of_starts",
       "name": "Number of Starts",
-      "value": "0",
+      "value": "",
       "description": "Count of flow start detections by the optical sensor. 1 byte UINT8.",
       "unit": "",
       "access_mode": "R",
@@ -162,7 +162,7 @@
     {
       "id": "param_id",
       "name": "Parameter ID",
-      "value": "0",
+      "value": "",
       "description": "Configuration parameter identifier for the device. 1 byte UINT8.",
       "unit": "",
       "access_mode": "R",
@@ -175,7 +175,7 @@
     {
       "id": "firmware_version",
       "name": "Firmware Version",
-      "value": "60",
+      "value": "",
       "description": "Device firmware version identifier. 1 byte UINT8.",
       "unit": "",
       "access_mode": "R",
@@ -188,7 +188,7 @@
     {
       "id": "number_of_values",
       "name": "Number of Values",
-      "value": "8",
+      "value": "",
       "description": "Count of gas increment values included in the payload (t0 through tN). 1 byte UINT8.",
       "unit": "",
       "access_mode": "R",
@@ -201,15 +201,21 @@
     {
       "id": "redundancy",
       "name": "Redundancy",
-      "value": "0",
+      "value": "",
       "description": "Redundancy status of the meter reading. 0=No redundancy, 1=Redundancy enabled.",
       "unit": "",
       "access_mode": "R",
       "data_type": "BOOL",
       "value_type": "UINT8",
       "values": [
-        { "value": 0, "name": "No redundancy" },
-        { "value": 1, "name": "Redundancy" }
+        {
+          "value": 0,
+          "name": "No redundancy"
+        },
+        {
+          "value": 1,
+          "name": "Redundancy"
+        }
       ],
       "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,

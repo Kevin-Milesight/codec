@@ -31,7 +31,7 @@
     {
       "id": "battery_voltage",
       "name": "Battery Voltage",
-      "value": "3.0",
+      "value": "1.6",
       "unit": "V",
       "access_mode": "R",
       "data_type": "NUMBER",
@@ -46,16 +46,26 @@
       "value": "1",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
+      "data_type": "BOOL",
       "value_type": "UINT8",
-      "bacnet_type": "analog_input_object",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "Disconnected"
+        },
+        {
+          "value": 1,
+          "name": "Connected"
+        }
+      ]
     },
     {
       "id": "sensor_temp",
       "name": "Sensor Temperature",
-      "value": "22.0",
+      "value": "0",
       "unit": "°C",
       "access_mode": "R",
       "data_type": "NUMBER",
@@ -67,7 +77,7 @@
     {
       "id": "press_event",
       "name": "Press Event",
-      "value": "0",
+      "value": "",
       "unit": "",
       "access_mode": "R",
       "data_type": "NUMBER",
@@ -79,7 +89,7 @@
     {
       "id": "single_press_counter",
       "name": "Single Press Counter",
-      "value": "0",
+      "value": "",
       "unit": "",
       "access_mode": "R",
       "data_type": "NUMBER",
@@ -91,7 +101,7 @@
     {
       "id": "double_press_counter",
       "name": "Double Press Counter",
-      "value": "0",
+      "value": "",
       "unit": "",
       "access_mode": "R",
       "data_type": "NUMBER",
@@ -103,7 +113,7 @@
     {
       "id": "triple_press_counter",
       "name": "Triple Press Counter",
-      "value": "0",
+      "value": "",
       "unit": "",
       "access_mode": "R",
       "data_type": "NUMBER",

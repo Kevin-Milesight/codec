@@ -17,20 +17,20 @@ function decode(bytes) {
         if (header === 0x1D) result.time_step = 10;
         else if (header === 0x1E) result.time_step = 15;
         else result.time_step = 60;
-        result.index_gas_value = ((bytes[1] << 16) + (bytes[2] << 8) + bytes[3]) / 10;
+        result.index_gas_value = ((bytes[1] << 16) + (bytes[2] << 8) + bytes[3]);
         for (var i = 0; i < 8; i++) {
-            result["index_gas_increment_t" + i] = ((bytes[4 + i * 2] << 8) + bytes[4 + i * 2 + 1]) / 10;
+            result["index_gas_increment_t" + i] = ((bytes[4 + i * 2] << 8) + bytes[4 + i * 2 + 1]);
         }
     }
     // T1: AP variant
     else if (header === 0x6D) {
         result.message_type = "ap_data";
         result.time_step = bytes[1];
-        result.index_gas_value = ((bytes[2] << 24) + (bytes[3] << 16) + (bytes[4] << 8) + bytes[5]) / 10;
+        result.index_gas_value = ((bytes[2] << 24) + (bytes[3] << 16) + (bytes[4] << 8) + bytes[5]);
         var n = 0;
         for (var i = 6; i + 1 < bytes.length; i += 2) {
             n++;
-            result["index_gas_increment_t" + (n - 1)] = ((bytes[i] << 8) + bytes[i + 1]) / 10;
+            result["index_gas_increment_t" + (n - 1)] = ((bytes[i] << 8) + bytes[i + 1]);
         }
     }
     // T2: nc_10/15/60-min service
@@ -39,7 +39,7 @@ function decode(bytes) {
         result.number_of_starts = bytes[1];
         result.param_id = bytes[3];
         result.firmware_version = (bytes[4] >> 2).toString();
-        result.index_gas_value = ((bytes[5] << 24) + (bytes[6] << 16) + (bytes[7] << 8) + bytes[8]) / 10;
+        result.index_gas_value = ((bytes[5] << 24) + (bytes[6] << 16) + (bytes[7] << 8) + bytes[8]);
         var ts = bytes[11];
         result.time_step = ts === 0x00 ? 10 : ts === 0x03 ? 15 : ts === 0x01 ? 60 : ts;
     }
@@ -49,7 +49,7 @@ function decode(bytes) {
         result.number_of_starts = bytes[1];
         result.param_id = bytes[4];
         result.firmware_version = bytes[5].toString();
-        result.index_gas_value = ((bytes[8] << 24) + (bytes[9] << 16) + (bytes[10] << 8) + bytes[11]) / 10;
+        result.index_gas_value = ((bytes[8] << 24) + (bytes[9] << 16) + (bytes[10] << 8) + bytes[11]);
         result.time_step = bytes[12];
         result.number_of_values = bytes[13];
         result.redundancy = bytes[14] === 0x01;

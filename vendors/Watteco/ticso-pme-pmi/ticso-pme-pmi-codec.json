@@ -45,7 +45,7 @@
     },
     {
       "id": "eap_i",
-      "name": "EAP_i - Energie active injectée de la période P pour la période tarifaire en cour",
+      "name": "EAP_i - Energie active injectée de la période P pour la période tarifaire en cours",
       "value": "410640",
       "unit": "kWh",
       "access_mode": "R",
@@ -67,7 +67,7 @@
       "bacnet_type": "analog_input_object",
       "bacnet_unit_type_id": 5,
       "bacnet_unit_type": "UNITS_VOLTS",
-      "description": "Voltage of the power supply (mV)"
+      "description": "Voltage of the power supply (V)"
     },
     {
       "id": "lorawan_retries",
@@ -1074,11 +1074,11 @@
       "bacnet_type": "analog_input_object",
       "bacnet_unit_type_id": 239,
       "bacnet_unit_type": "UNITS_VOLT_AMPERE_HOURS",
-      "description": "Previous active energy (drawing)"
+      "description": "Apparent energy (drawing)"
     },
     {
       "id": "er_p_s",
-      "name": "ER+P_s - Energie Réactive positive de la période P pour la période tarifaire en cours en période de soutirage d'énergie...",
+      "name": "ER+P_s - Energie Réactive positive de la période P pour la période tarifaire en cours en soutirage d'énergie active",
       "value": "",
       "unit": "kVArh",
       "access_mode": "R",
@@ -1091,7 +1091,7 @@
     },
     {
       "id": "er_p_s_2",
-      "name": "ER-P_s - Energie Réactive négative de la période P pour la période tarifaire en cours en période de soutirage d'énergie...",
+      "name": "ER-P_s - Energie Réactive négative de la période P pour la période tarifaire en cours en soutirage d'énergie active",
       "value": "",
       "unit": "kVArh",
       "access_mode": "R",
@@ -1117,7 +1117,7 @@
     },
     {
       "id": "er_p_1_s",
-      "name": "ER+P-1_s - Energie Réactive positive de la période P-1 pour la période tarifaire en cours en période de soutirage...",
+      "name": "ER+P-1_s - Energie Réactive positive de la période P-1 pour la période tarifaire en cours en soutirage d'énergie active",
       "value": "",
       "unit": "kVArh",
       "access_mode": "R",
@@ -1130,7 +1130,7 @@
     },
     {
       "id": "er_p_1_s_2",
-      "name": "ER-P1_s - Energie Réactive négative de la période P-1 pour la période tarifaire en cours en période de soutirage...",
+      "name": "ER-P-1_s - Energie Réactive négative de la période P-1 pour la période tarifaire en cours en soutirage d'énergie active",
       "value": "",
       "unit": "kVArh",
       "access_mode": "R",
@@ -1233,7 +1233,7 @@
       "bacnet_type": "analog_input_object",
       "bacnet_unit_type_id": 239,
       "bacnet_unit_type": "UNITS_VOLT_AMPERE_HOURS",
-      "description": "Previous active energy (injection)"
+      "description": "Apparent energy (injection)"
     },
     {
       "id": "tarifdyn",
@@ -1386,7 +1386,7 @@
       "bacnet_type": "analog_input_object",
       "bacnet_unit_type_id": 48,
       "bacnet_unit_type": "UNITS_KILOWATTS",
-      "description": "Active power phase 1 (drawing)"
+      "description": "Active power Tc window 1 (drawing)"
     },
     {
       "id": "pa1_i",
@@ -1399,7 +1399,7 @@
       "bacnet_type": "analog_input_object",
       "bacnet_unit_type_id": 48,
       "bacnet_unit_type": "UNITS_KILOWATTS",
-      "description": "Active power phase 1 (injection)"
+      "description": "Active power Tc window 1 (injection)"
     },
     {
       "id": "datepa2",
@@ -1426,7 +1426,7 @@
       "bacnet_type": "analog_input_object",
       "bacnet_unit_type_id": 48,
       "bacnet_unit_type": "UNITS_KILOWATTS",
-      "description": "Active power phase 2 (drawing)"
+      "description": "Active power Tc window 2 (drawing)"
     },
     {
       "id": "pa2_i",
@@ -1439,7 +1439,7 @@
       "bacnet_type": "analog_input_object",
       "bacnet_unit_type_id": 48,
       "bacnet_unit_type": "UNITS_KILOWATTS",
-      "description": "Active power phase 2 (injection)"
+      "description": "Active power Tc window 2 (injection)"
     },
     {
       "id": "datepa3",
@@ -1466,7 +1466,7 @@
       "bacnet_type": "analog_input_object",
       "bacnet_unit_type_id": 48,
       "bacnet_unit_type": "UNITS_KILOWATTS",
-      "description": "Active power phase 3 (drawing)"
+      "description": "Active power Tc window 3 (drawing)"
     },
     {
       "id": "pa3_i",
@@ -1479,7 +1479,7 @@
       "bacnet_type": "analog_input_object",
       "bacnet_unit_type_id": 48,
       "bacnet_unit_type": "UNITS_KILOWATTS",
-      "description": "Active power phase 3 (injection)"
+      "description": "Active power Tc window 3 (injection)"
     },
     {
       "id": "datepa4",
@@ -1506,7 +1506,7 @@
       "bacnet_type": "analog_input_object",
       "bacnet_unit_type_id": 48,
       "bacnet_unit_type": "UNITS_KILOWATTS",
-      "description": "Active power phase 4 (drawing)"
+      "description": "Active power Tc window 4 (drawing)"
     },
     {
       "id": "pa4_i",
@@ -1519,7 +1519,7 @@
       "bacnet_type": "analog_input_object",
       "bacnet_unit_type_id": 48,
       "bacnet_unit_type": "UNITS_KILOWATTS",
-      "description": "Active power phase 4 (injection)"
+      "description": "Active power Tc window 4 (injection)"
     },
     {
       "id": "datepa5",
@@ -1546,7 +1546,7 @@
       "bacnet_type": "analog_input_object",
       "bacnet_unit_type_id": 48,
       "bacnet_unit_type": "UNITS_KILOWATTS",
-      "description": "Active power phase 5 (drawing)"
+      "description": "Active power Tc window 5 (drawing)"
     },
     {
       "id": "pa5_i",
@@ -1559,7 +1559,7 @@
       "bacnet_type": "analog_input_object",
       "bacnet_unit_type_id": 48,
       "bacnet_unit_type": "UNITS_KILOWATTS",
-      "description": "Active power phase 5 (injection)"
+      "description": "Active power Tc window 5 (injection)"
     },
     {
       "id": "datepa6",
@@ -1586,7 +1586,7 @@
       "bacnet_type": "analog_input_object",
       "bacnet_unit_type_id": 48,
       "bacnet_unit_type": "UNITS_KILOWATTS",
-      "description": "Active power phase 6 (drawing)"
+      "description": "Active power Tc window 6 (drawing)"
     },
     {
       "id": "pa6_i",
@@ -1599,7 +1599,7 @@
       "bacnet_type": "analog_input_object",
       "bacnet_unit_type_id": 48,
       "bacnet_unit_type": "UNITS_KILOWATTS",
-      "description": "Active power phase 6 (injection)"
+      "description": "Active power Tc window 6 (injection)"
     },
     {
       "id": "er_p_i",

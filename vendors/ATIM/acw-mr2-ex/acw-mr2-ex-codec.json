@@ -32,25 +32,25 @@
       "id": "voltage_idle",
       "name": "Idle Supply Voltage",
       "value": "",
-      "unit": "mV",
+      "unit": "V",
       "access_mode": "R",
       "data_type": "NUMBER",
       "value_type": "UINT32",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 124,
-      "bacnet_unit_type": "UNITS_MILLIVOLTS"
+      "bacnet_unit_type_id": 5,
+      "bacnet_unit_type": "UNITS_VOLTS"
     },
     {
       "id": "voltage_tx",
       "name": "Tx Supply Voltage",
       "value": "",
-      "unit": "mV",
+      "unit": "V",
       "access_mode": "R",
       "data_type": "NUMBER",
       "value_type": "UINT32",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 124,
-      "bacnet_unit_type": "UNITS_MILLIVOLTS"
+      "bacnet_unit_type_id": 5,
+      "bacnet_unit_type": "UNITS_VOLTS"
     },
     {
       "id": "humidity",
@@ -115,7 +115,7 @@
     {
       "id": "first_index",
       "name": "Meter Index 1",
-      "value": "",
+      "value": "5",
       "unit": "",
       "access_mode": "R",
       "data_type": "NUMBER",
@@ -127,7 +127,7 @@
     {
       "id": "second_index",
       "name": "Meter Index 2",
-      "value": "",
+      "value": "50",
       "unit": "",
       "access_mode": "R",
       "data_type": "NUMBER",
@@ -692,13 +692,13 @@
       "id": "battery_dead_error",
       "name": "The battery level is critical",
       "value": "",
-      "unit": "mV",
+      "unit": "V",
       "access_mode": "R",
       "data_type": "NUMBER",
       "value_type": "UINT32",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 124,
-      "bacnet_unit_type": "UNITS_MILLIVOLTS"
+      "bacnet_unit_type_id": 5,
+      "bacnet_unit_type": "UNITS_VOLTS"
     },
     {
       "id": "eeprom_error",
@@ -924,13 +924,13 @@
       "id": "battery_low_error",
       "name": "The battery level is low",
       "value": "",
-      "unit": "mV",
+      "unit": "V",
       "access_mode": "R",
       "data_type": "NUMBER",
       "value_type": "UINT32",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 124,
-      "bacnet_unit_type": "UNITS_MILLIVOLTS"
+      "bacnet_unit_type_id": 5,
+      "bacnet_unit_type": "UNITS_VOLTS"
     },
     {
       "id": "transmission_error",

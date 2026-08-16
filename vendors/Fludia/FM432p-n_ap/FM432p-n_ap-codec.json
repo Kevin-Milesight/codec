@@ -149,7 +149,7 @@
     {
       "id": "firmware_version",
       "name": "Firmware Version",
-      "value": "3.1.6",
+      "value": "",
       "description": "Device firmware version. T2 AP (0x6C) field, 3 ASCII chars 'X.Y.Z' at bytes 1-3.",
       "unit": "",
       "access_mode": "R",
@@ -163,7 +163,7 @@
     {
       "id": "number_of_values",
       "name": "Number of Increment Values",
-      "value": "8",
+      "value": "",
       "description": "Count of increment values in T1 payload. T2 AP (0x6C) field, byte #9.",
       "unit": "",
       "access_mode": "R",
@@ -176,15 +176,21 @@
     {
       "id": "redundancy",
       "name": "Redundancy",
-      "value": "0",
+      "value": "",
       "description": "Redundancy status: 0=No redundancy, 1=Redundancy enabled. T2 AP (0x6C) byte #11.",
       "unit": "",
       "access_mode": "R",
       "data_type": "BOOL",
       "value_type": "UINT8",
       "values": [
-        { "value": 0, "name": "No redundancy" },
-        { "value": 1, "name": "Redundancy" }
+        {
+          "value": 0,
+          "name": "No redundancy"
+        },
+        {
+          "value": 1,
+          "name": "Redundancy"
+        }
       ],
       "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,

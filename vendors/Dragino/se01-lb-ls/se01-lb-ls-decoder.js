@@ -9,7 +9,7 @@ function _decode(bytes, fPort) {
         var v = (bytes[6] << 8) | bytes[7];
         if (v & 0x8000) v -= 0x10000;
         out.soil_temperature = parseFloat((v / 100).toFixed(2));
-        out.soil_conductivity = (bytes[8] << 8) | bytes[9];
+        out.soil_conductivity = ((bytes[8] << 8) | bytes[9]) / 10000;
     }
     return out;
 }

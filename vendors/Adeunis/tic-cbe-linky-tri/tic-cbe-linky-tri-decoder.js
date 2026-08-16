@@ -16,7 +16,7 @@ function _decode(bytes){
       out.appflag_2 = !!(bytes[1] & 0x10);
       var p = 3;
       while (p + 3 < bytes.length) {
-        out.BASE = _u32be(bytes, p);
+        out.base = _u32be(bytes, p);
         p += 4;
       }
       break;

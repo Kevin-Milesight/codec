@@ -4,7 +4,7 @@
   "object": [
     {
       "id": "battery",
-      "name": "Battery Level",
+      "name": "Battery Status",
       "value": "ok",
       "unit": "",
       "access_mode": "R",
@@ -166,10 +166,10 @@
       "access_mode": "R",
       "data_type": "NUMBER",
       "value_type": "FLOAT",
-      "unit": "",
+      "unit": "cm",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type_id": 118,
+      "bacnet_unit_type": "UNITS_CENTIMETERS"
     },
     {
       "id": "pm_1",
@@ -178,10 +178,10 @@
       "access_mode": "R",
       "data_type": "NUMBER",
       "value_type": "UINT16",
-      "unit": "",
+      "unit": "µg/m³",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type_id": 219,
+      "bacnet_unit_type": "UNITS_MICROGRAMS_PER_CUBIC_METER"
     },
     {
       "id": "pm_2_5",
@@ -190,10 +190,10 @@
       "access_mode": "R",
       "data_type": "NUMBER",
       "value_type": "UINT16",
-      "unit": "",
+      "unit": "µg/m³",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type_id": 219,
+      "bacnet_unit_type": "UNITS_MICROGRAMS_PER_CUBIC_METER"
     },
     {
       "id": "pm_10",
@@ -202,10 +202,10 @@
       "access_mode": "R",
       "data_type": "NUMBER",
       "value_type": "UINT16",
-      "unit": "",
+      "unit": "µg/m³",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type_id": 219,
+      "bacnet_unit_type": "UNITS_MICROGRAMS_PER_CUBIC_METER"
     },
     {
       "id": "raw_downlink",

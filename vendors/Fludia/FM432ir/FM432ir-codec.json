@@ -254,7 +254,7 @@
     {
       "id": "number_of_starts",
       "name": "Number of Starts",
-      "value": "0",
+      "value": "",
       "description": "Count of flow start detections by the IR/SML sensor. 1 byte UINT8.",
       "unit": "",
       "access_mode": "R",
@@ -267,7 +267,7 @@
     {
       "id": "param_id",
       "name": "Parameter ID",
-      "value": "0",
+      "value": "",
       "description": "Configuration parameter identifier for the device. 1 byte UINT8.",
       "unit": "",
       "access_mode": "R",
@@ -280,7 +280,7 @@
     {
       "id": "firmware_version",
       "name": "Firmware Version",
-      "value": "10",
+      "value": "",
       "description": "Device firmware version identifier. 1 byte UINT8.",
       "unit": "",
       "access_mode": "R",
@@ -293,7 +293,7 @@
     {
       "id": "meter_type",
       "name": "Meter Type",
-      "value": "e-mech",
+      "value": "",
       "description": "Type of German meter being read via IR/SML protocol.",
       "unit": "",
       "access_mode": "R",
@@ -307,7 +307,7 @@
     {
       "id": "battery_status",
       "name": "Battery Status",
-      "value": "ok",
+      "value": "",
       "description": "Internal battery status indicator. ok = normal, other values indicate low battery.",
       "unit": "",
       "access_mode": "R",
@@ -321,7 +321,7 @@
     {
       "id": "number_of_values",
       "name": "Number of Values",
-      "value": "15",
+      "value": "",
       "description": "Count of energy increment values included in the payload (t0 through t14). 1 byte UINT8.",
       "unit": "",
       "access_mode": "R",
@@ -334,15 +334,21 @@
     {
       "id": "redundancy",
       "name": "Redundancy",
-      "value": "0",
+      "value": "",
       "description": "Redundancy status of the meter reading. 0=No redundancy, 1=Redundancy enabled.",
       "unit": "",
       "access_mode": "R",
       "data_type": "BOOL",
       "value_type": "UINT8",
       "values": [
-        { "value": 0, "name": "No redundancy" },
-        { "value": 1, "name": "Redundancy" }
+        {
+          "value": 0,
+          "name": "No redundancy"
+        },
+        {
+          "value": 1,
+          "name": "Redundancy"
+        }
       ],
       "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
@@ -351,7 +357,7 @@
     {
       "id": "sensitivity",
       "name": "Sensitivity",
-      "value": "0",
+      "value": "",
       "description": "IR/SML sensor sensitivity setting for reading the German meter. 1 byte UINT8.",
       "unit": "",
       "access_mode": "R",
@@ -364,7 +370,7 @@
     {
       "id": "scaler_e_pos",
       "name": "Scaler E-POS",
-      "value": "1",
+      "value": "",
       "description": "Decimal point scaler (exponent) for E-POS (positive active energy) register value. INT8.",
       "unit": "",
       "access_mode": "R",
@@ -377,7 +383,7 @@
     {
       "id": "scaler_e_sum",
       "name": "Scaler E-SUM",
-      "value": "1",
+      "value": "",
       "description": "Decimal point scaler (exponent) for E-SUM (sum active energy) register value. INT8.",
       "unit": "",
       "access_mode": "R",
@@ -390,7 +396,7 @@
     {
       "id": "scaler_e_neg",
       "name": "Scaler E-NEG",
-      "value": "1",
+      "value": "",
       "description": "Decimal point scaler (exponent) for E-NEG (negative active energy) register value. INT8.",
       "unit": "",
       "access_mode": "R",

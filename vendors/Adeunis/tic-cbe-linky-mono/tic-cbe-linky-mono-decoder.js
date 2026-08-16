@@ -17,7 +17,7 @@ function _decode(bytes){
       var p = 3;
       while (p + 3 < bytes.length) {
         var v = _u32be(bytes, p);
-        out.BASE = v;
+        out.base = v;
         p += 4;
       }
       break;

@@ -1863,7 +1863,7 @@ function _atimFlatten(data){
 
 function _atimDecodeWL(bytes,fPort){
   try{
-    var r=decodeUplink({bytes:bytes,fPort:fPort||1});
+    var r=__atimOrigDecodeUplink({bytes:bytes,fPort:fPort||1});
     var out=_atimFlatten(r&&r.data);
   if(out.temperature0!==undefined){out.temperature=out.temperature0;delete out.temperature0;}
   if(out.humidity0!==undefined){out.humidity=out.humidity0;delete out.humidity0;}
@@ -1874,6 +1874,7 @@ function _atimDecodeWL(bytes,fPort){
     var ev=r.data.entree.value;
     if(Array.isArray(ev)&&ev.length>0){var ch0=ev[0];out.leakage=Array.isArray(ch0)?ch0[0]:ch0;}
   }
+  delete out.entree;
     return out;
   }catch(e){return {};}
 }
@@ -1881,3 +1882,6 @@ function Decode(fPort,bytes){return _atimDecodeWL(bytes,fPort);}
 function Decoder(bytes,port){return _atimDecodeWL(bytes,port);}
 function encodeDownlink(input){return _encodeRaw(input&&input.data);}
 if(typeof module!=="undefined"){module.exports={decodeUplink:function(i){return{data:_atimDecodeWL(i.bytes,i.fPort)};},Decode:Decode,Decoder:Decoder};}
+
+var __atimOrigDecodeUplink = decodeUplink;
+decodeUplink = function(input) { return { data: _atimDecodeWL(input.bytes, input.fPort) }; };

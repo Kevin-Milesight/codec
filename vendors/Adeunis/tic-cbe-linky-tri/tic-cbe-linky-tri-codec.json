@@ -76,13 +76,13 @@
       "id": "base",
       "name": "Index base",
       "value": "12345",
-      "unit": "",
+      "unit": "Wh",
       "access_mode": "R",
       "data_type": "NUMBER",
       "value_type": "UINT32",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type_id": 18,
+      "bacnet_unit_type": "UNITS_WATT_HOURS"
     },
     {
       "id": "iinst1",
@@ -170,15 +170,16 @@
     },
     {
       "id": "pmax",
-      "name": "Période maximale",
+      "name": "Puissance maximale",
       "value": "",
-      "unit": "",
+      "unit": "W",
       "access_mode": "R",
       "data_type": "NUMBER",
       "value_type": "UINT32",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type_id": 47,
+      "bacnet_unit_type": "UNITS_WATTS",
+      "description": "Puissance Maximale atteinte"
     },
     {
       "id": "lora_adr",

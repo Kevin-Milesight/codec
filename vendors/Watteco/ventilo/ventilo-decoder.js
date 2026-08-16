@@ -1679,3 +1679,7 @@ if (typeof module !== 'undefined') {
     Decoder: _Decoder
   };
 }
+
+var __wattecoOrigDecodeUplink = decodeUplink;
+decodeUplink = function(input) { return { data: _wattecoDecode(input.bytes, input.fPort) }; };
+if (typeof Decoder === "undefined" && typeof _Decoder !== "undefined") { var Decoder = _Decoder; }

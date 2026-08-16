@@ -42,13 +42,13 @@
       "id": "water_level",
       "name": "Water level",
       "value": "256",
-      "unit": "",
+      "unit": "cm",
       "access_mode": "R",
       "data_type": "NUMBER",
       "value_type": "UINT16",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type_id": 118,
+      "bacnet_unit_type": "UNITS_CENTIMETERS"
     },
     {
       "id": "raw_downlink",
@@ -62,6 +62,18 @@
       "bacnet_type": "character_string_value_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS"
+    },
+    {
+      "id": "soil_ec",
+      "name": "Soil Electrical Conductivity",
+      "value": "",
+      "unit": "S/m",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "FLOAT",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 174,
+      "bacnet_unit_type": "UNITS_SIEMENS_PER_METER"
     }
   ]
 }

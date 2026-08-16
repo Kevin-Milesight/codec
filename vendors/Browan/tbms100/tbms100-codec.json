@@ -31,7 +31,7 @@
     {
       "id": "status",
       "name": "Motion Detected",
-      "value": "false",
+      "value": "1",
       "unit": "",
       "access_mode": "R",
       "data_type": "BOOL",
@@ -53,7 +53,7 @@
     {
       "id": "temperature_board",
       "name": "Board Temperature",
-      "value": "20.0",
+      "value": "20",
       "unit": "°C",
       "access_mode": "R",
       "data_type": "NUMBER",
@@ -65,7 +65,7 @@
     {
       "id": "battery",
       "name": "Battery Voltage",
-      "value": "3.0",
+      "value": "3.6",
       "unit": "V",
       "access_mode": "R",
       "data_type": "NUMBER",
@@ -77,19 +77,19 @@
     {
       "id": "time",
       "name": "Time Since Last Motion",
-      "value": "0",
-      "unit": "",
+      "value": "4",
+      "unit": "min",
       "access_mode": "R",
       "data_type": "NUMBER",
       "value_type": "UINT16",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type_id": 72,
+      "bacnet_unit_type": "UNITS_MINUTES"
     },
     {
       "id": "count",
       "name": "Motion Count",
-      "value": "0",
+      "value": "96476",
       "unit": "",
       "access_mode": "R",
       "data_type": "NUMBER",

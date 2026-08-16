@@ -31,7 +31,7 @@
     {
       "id": "status",
       "name": "Door/Window Status",
-      "value": "false",
+      "value": "0",
       "unit": "",
       "access_mode": "R",
       "data_type": "BOOL",
@@ -53,7 +53,7 @@
     {
       "id": "temperature_board",
       "name": "Board Temperature",
-      "value": "20.0",
+      "value": "21",
       "unit": "°C",
       "access_mode": "R",
       "data_type": "NUMBER",
@@ -65,7 +65,7 @@
     {
       "id": "battery",
       "name": "Battery Voltage",
-      "value": "3.0",
+      "value": "3.6",
       "unit": "V",
       "access_mode": "R",
       "data_type": "NUMBER",
@@ -78,18 +78,18 @@
       "id": "time",
       "name": "Time Since Last Event",
       "value": "0",
-      "unit": "",
+      "unit": "min",
       "access_mode": "R",
       "data_type": "NUMBER",
       "value_type": "UINT16",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type_id": 72,
+      "bacnet_unit_type": "UNITS_MINUTES"
     },
     {
       "id": "count",
       "name": "Event Count",
-      "value": "0",
+      "value": "14986",
       "unit": "",
       "access_mode": "R",
       "data_type": "NUMBER",

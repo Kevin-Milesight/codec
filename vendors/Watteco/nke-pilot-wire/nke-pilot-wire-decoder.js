@@ -1576,7 +1576,7 @@ var driver;
 
 function _wattecoDecode(bytes, fPort) {
   try {
-    var r = decodeUplink({
+    var r = __wattecoOrigDecodeUplink({
       bytes: bytes,
       fPort: fPort,
       recvTime: new Date().toISOString()
@@ -1614,3 +1614,7 @@ if (typeof module !== 'undefined') {
     Decoder: Decoder
   };
 }
+
+var __wattecoOrigDecodeUplink = decodeUplink;
+decodeUplink = function(input) { return { data: _wattecoDecode(input.bytes, input.fPort) }; };
+if (typeof Decoder === "undefined" && typeof _Decoder !== "undefined") { var Decoder = _Decoder; }

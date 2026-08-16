@@ -1863,7 +1863,7 @@ function _atimFlatten(data){
 
 function _atimDecode(bytes,fPort){
   try{
-    var r=decodeUplink({bytes:bytes,fPort:fPort||1});
+    var r=__atimOrigDecodeUplink({bytes:bytes,fPort:fPort||1});
     var out=_atimFlatten(r&&r.data);
   if(out.tensionv!==undefined){out.voltage_idle=out.tensionv;delete out.tensionv;}
   if(out.tensionc!==undefined){out.voltage_tx=out.tensionc;delete out.tensionc;}
@@ -1874,3 +1874,6 @@ function Decode(fPort,bytes){return _atimDecode(bytes,fPort);}
 function Decoder(bytes,port){return _atimDecode(bytes,port);}
 function encodeDownlink(input){return _encodeRaw(input&&input.data);}
 if(typeof module!=="undefined"){module.exports={decodeUplink:function(i){return{data:_atimDecode(i.bytes,i.fPort)};},Decode:Decode,Decoder:Decoder};}
+
+var __atimOrigDecodeUplink = decodeUplink;
+decodeUplink = function(input) { return { data: _atimDecode(input.bytes, input.fPort) }; };

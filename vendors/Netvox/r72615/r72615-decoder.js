@@ -271,7 +271,7 @@ function decodeDownlink(input) {
 
 function decode(bytes, fPort) {
   var input = { bytes: bytes, fPort: fPort };
-  var res = decodeUplink(input);
+  var res = _netvoxOrigDecodeUplink(input);
   if (!res || !res.data) return {};
   var d = res.data;
   var out = {};
@@ -303,3 +303,6 @@ function decode(bytes, fPort) {
 function Decode(fPort, bytes) { return decode(bytes, fPort); }
 function Decoder(bytes, port) { return decode(bytes, port); }
 if (typeof module !== 'undefined') { module.exports = { decodeUplink: function(i){return {data: decode(i.bytes, i.fPort)};}, Decode: Decode, Decoder: Decoder }; }
+
+var _netvoxOrigDecodeUplink = decodeUplink;
+decodeUplink = function(input) { return { data: decode(input.bytes, input.fPort) }; };

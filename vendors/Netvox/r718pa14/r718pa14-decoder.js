@@ -56,7 +56,7 @@ function decode(bytes, fPort) {
       d.soil_humidity = (b[4] << 8 | b[5]) * 0.01;
       d.soil_temperature = (b[6] << 8 | b[7]) * 0.01;
       d.water_level = (b[8] << 8 | b[9]);
-      d.soil_ec = b[10] * 0.1;
+      d.soil_ec = b[10] * 0.01;
     } else if (rt === 0x0B) {
       d.temperature_with_ldo = (b[4] << 8 | b[5]) * 0.01;
       d.ldodo = (b[6] << 8 | b[7]) * 0.01;
@@ -77,7 +77,7 @@ function decode(bytes, fPort) {
     } else if (rt === 0x10) {
       d.soil_humidity = (b[4] << 8 | b[5]) * 0.01;
       d.soil_temperature = (b[6] << 8 | b[7]) * 0.01;
-      d.soil_ec = (b[8] << 8 | b[9]) * 0.001;
+      d.soil_ec = (b[8] << 8 | b[9]) * 0.0001;
     } else if (rt === 0x11) {
       d.velocity = (b[4] << 8 | b[5]) * 0.1;
       d.displacement = (b[6] << 8 | b[7]) * 0.1;
