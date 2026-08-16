@@ -91,9 +91,9 @@ function DecodeElsysPayload(data) {
                 i += 1;
                 break;
             case SENSOR_DATA_TYPES.ACC: // Decode 3-axis acceleration, values in Gs, from 3 bytes.
-                obj.x = bin8dec(data[i + 1]); // X-axis acceleration.
-                obj.y = bin8dec(data[i + 2]); // Y-axis acceleration.
-                obj.z = bin8dec(data[i + 3]); // Z-axis acceleration.
+                obj.x = bin8dec(data[i + 1]) / 63 * 9.80665; // X-axis acceleration in m/s².
+                obj.y = bin8dec(data[i + 2]) / 63 * 9.80665; // Y-axis acceleration in m/s².
+                obj.z = bin8dec(data[i + 3]) / 63 * 9.80665; // Z-axis acceleration in m/s².
                 i += 3;
                 break;
             case SENSOR_DATA_TYPES.LIGHT: // Decode light intensity from 2 bytes, value in Lux.
