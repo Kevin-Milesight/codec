@@ -2,281 +2,60 @@
   "version": "1.0.0",
   "devices": [
     {
-      "id": "sentron-7kn-powercenter-poc-1000",
-      "name": "Siemens - SENTRON 7KN POWERCENTER/POC 1000",
-      "protocol": "modbus tcp",
-      "codec": "vendors/Siemens/sentron-7kn-powercenter-poc-1000/sentron-7kn-powercenter-poc-1000-codec.json",
-      "modbus_default_slave_id": 1
+      "id": "qna2820d-eu",
+      "name": "Siemens - QNA2820D.EU",
+      "description": "Indoor air quality multi-sensor (LoRaWAN EU868, Class C, protobuf payload per A6V14457464): temperature, humidity, CO2, TVOC, PM2.5, PM10, light, sound pressure",
+      "catalog": "qna2820d-eu",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassC-OTAA"
+      ],
+      "codec": "vendors/Siemens/qna2820d-eu/qna2820d-eu-codec.json",
+      "decoder_script": "vendors/Siemens/qna2820d-eu/qna2820d-eu-decoder.js",
+      "encoder_script": "vendors/Siemens/qna2820d-eu/qna2820d-eu-encoder.js"
     },
     {
-      "id": "evf4u20e-acvatix-intelligent-valve",
-      "name": "Siemens - EVF4U20E - ACVATIX INTELLIGENT VALVE",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/evf4u20e-acvatix-intelligent-valve/evf4u20e-acvatix-intelligent-valve-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 19200,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
+      "id": "qna2820d-us",
+      "name": "Siemens - QNA2820D.US",
+      "description": "Indoor air quality multi-sensor (LoRaWAN US902-928, Class C, protobuf payload per A6V14457464): temperature, humidity, CO2, TVOC, PM2.5, PM10, light, sound pressure",
+      "catalog": "qna2820d-us",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassC-OTAA"
+      ],
+      "codec": "vendors/Siemens/qna2820d-us/qna2820d-us-codec.json",
+      "decoder_script": "vendors/Siemens/qna2820d-us/qna2820d-us-decoder.js",
+      "encoder_script": "vendors/Siemens/qna2820d-us/qna2820d-us-encoder.js"
     },
     {
-      "id": "evg4u10e-acvatix-intelligent-valve",
-      "name": "Siemens - EVG4U10E - ACVATIX INTELLIGENT VALVE",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/evg4u10e-acvatix-intelligent-valve/evg4u10e-acvatix-intelligent-valve-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 19200,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
+      "id": "qna2820d-au",
+      "name": "Siemens - QNA2820D.AU",
+      "description": "Indoor air quality multi-sensor (LoRaWAN AU915-928, Class C, protobuf payload per A6V14457464): temperature, humidity, CO2, TVOC, PM2.5, PM10, light, sound pressure",
+      "catalog": "qna2820d-au",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassC-OTAA"
+      ],
+      "codec": "vendors/Siemens/qna2820d-au/qna2820d-au-codec.json",
+      "decoder_script": "vendors/Siemens/qna2820d-au/qna2820d-au-decoder.js",
+      "encoder_script": "vendors/Siemens/qna2820d-au/qna2820d-au-encoder.js"
     },
     {
-      "id": "exf4u20e-acvatix-intelligent-valve",
-      "name": "Siemens - EXF4U20E - ACVATIX INTELLIGENT VALVE",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/exf4u20e-acvatix-intelligent-valve/exf4u20e-acvatix-intelligent-valve-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 19200,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "exg4u10e-acvatix-intelligent-valve",
-      "name": "Siemens - EXG4U10E - ACVATIX INTELLIGENT VALVE",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/exg4u10e-acvatix-intelligent-valve/exg4u10e-acvatix-intelligent-valve-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 19200,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "milltronics-bw500",
-      "name": "Siemens - MILLTRONICS BW500",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/milltronics-bw500/milltronics-bw500-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 9600,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "sentron-7km-pac1020",
-      "name": "Siemens - SENTRON 7KM PAC1020",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/sentron-7km-pac1020/sentron-7km-pac1020-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 9600,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "sentron-7kt-pac1600-3-phases-5a",
-      "name": "Siemens - SENTRON 7KT PAC1600 - 3 PHASES - 5A",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/sentron-7kt-pac1600-3-phases-5a/sentron-7kt-pac1600-3-phases-5a-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 9600,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "sentron-7kt-pac1600-3-phases-80a",
-      "name": "Siemens - SENTRON 7KT PAC1600 - 3 PHASES - 80A",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/sentron-7kt-pac1600-3-phases-80a/sentron-7kt-pac1600-3-phases-80a-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 9600,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "sentron-7km-pac2200",
-      "name": "Siemens - SENTRON 7KM PAC2200",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/sentron-7km-pac2200/sentron-7km-pac2200-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 9600,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "sentron-7km-pac3100",
-      "name": "Siemens - SENTRON 7KM PAC3100",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/sentron-7km-pac3100/sentron-7km-pac3100-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 9600,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "sentron-7km-pac3120",
-      "name": "Siemens - SENTRON 7KM PAC3120",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/sentron-7km-pac3120/sentron-7km-pac3120-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 9600,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "sentron-7km-pac3220",
-      "name": "Siemens - SENTRON 7KM PAC3220",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/sentron-7km-pac3220/sentron-7km-pac3220-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 9600,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "sentron-7km-pac4200",
-      "name": "Siemens - SENTRON 7KM PAC4200",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/sentron-7km-pac4200/sentron-7km-pac4200-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 9600,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "qfa2050-mo",
-      "name": "Siemens - QFA2050/MO",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/qfa2050-mo/qfa2050-mo-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 19200,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "qfa2050d-mo",
-      "name": "Siemens - QFA2050D/MO",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/qfa2050d-mo/qfa2050d-mo-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 19200,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "qfa3150-mo",
-      "name": "Siemens - QFA3150/MO",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/qfa3150-mo/qfa3150-mo-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 19200,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "qpa2052-mo",
-      "name": "Siemens - QPA2052/MO",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/qpa2052-mo/qpa2052-mo-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 19200,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "qpm2102-mo",
-      "name": "Siemens - QPM2102/MO",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/qpm2102-mo/qpm2102-mo-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 19200,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "qpm2150-mo",
-      "name": "Siemens - QPM2150/MO",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/qpm2150-mo/qpm2150-mo-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 19200,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "qpm2152-mo",
-      "name": "Siemens - QPM2152/MO",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/qpm2152-mo/qpm2152-mo-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 19200,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "rdf302-b",
-      "name": "Siemens - RDF302.B",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/rdf302-b/rdf302-b-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 19200,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "rdf302-b",
-      "name": "Siemens - RDF302.B",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/rdf302-b/rdf302-b-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 19200,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "rdf660mb-mm",
-      "name": "Siemens - RDF660MB/MM",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/rdf660mb-mm/rdf660mb-mm-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 19200,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "rdf660mb-mm",
-      "name": "Siemens - RDF660MB/MM",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/rdf660mb-mm/rdf660mb-mm-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 19200,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "rdf870mb",
-      "name": "Siemens - RDF870MB",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/rdf870mb/rdf870mb-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 19200,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "sitrans-mag-6000",
-      "name": "Siemens - SITRANS MAG 6000",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/sitrans-mag-6000/sitrans-mag-6000-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 9600,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
-    },
-    {
-      "id": "sitrans-mag8000-modbus",
-      "name": "Siemens - SITRANS MAG8000 MODBUS",
-      "protocol": "modbus rtu",
-      "codec": "vendors/Siemens/sitrans-mag8000-modbus/sitrans-mag8000-modbus-codec.json",
-      "modbus_default_slave_id": 1,
-      "modbus_baudrate": 9600,
-      "modbus_parity": "even",
-      "modbus_stopbits": 1
+      "id": "qna2700d",
+      "name": "Siemens - QNA2700D",
+      "description": "Indoor air quality multi-sensor (QNA2..D series, LoRaWAN, Class C, protobuf payload per A6V14457464): temperature, humidity, CO2, TVOC, PM2.5, light, sound pressure",
+      "catalog": "qna2700d",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassC-OTAA"
+      ],
+      "codec": "vendors/Siemens/qna2700d/qna2700d-codec.json",
+      "decoder_script": "vendors/Siemens/qna2700d/qna2700d-decoder.js",
+      "encoder_script": "vendors/Siemens/qna2700d/qna2700d-encoder.js"
     }
   ]
 }

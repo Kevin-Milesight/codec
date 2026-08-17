@@ -1,0 +1,117 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "hca-565",
+      "name": "Sontex - HCA 565 (heating cost allocator, Sontex Radio)",
+      "description": "Heating cost allocator with Sontex Radio (433 MHz). OMS/wM-Bus compatible data records (EN 13757-3).",
+      "catalog": "hca-565",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Sontex/hca-565/hca-565-codec.json",
+      "decoder_script": "vendors/Sontex/hca-565/hca-565-decoder.js",
+      "encoder_script": "vendors/Sontex/hca-565/hca-565-encoder.js"
+    },
+    {
+      "id": "hca-566",
+      "name": "Sontex - HCA 566 (heating cost allocator, Sontex Radio)",
+      "description": "Heating cost allocator with Sontex Radio (433 MHz). OMS/wM-Bus compatible data records (EN 13757-3).",
+      "catalog": "hca-566",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Sontex/hca-566/hca-566-codec.json",
+      "decoder_script": "vendors/Sontex/hca-566/hca-566-decoder.js",
+      "encoder_script": "vendors/Sontex/hca-566/hca-566-encoder.js"
+    },
+    {
+      "id": "hca-868",
+      "name": "Sontex - HCA 868 (heating cost allocator, wM-Bus OMS)",
+      "description": "Heating cost allocator with Wireless M-Bus (868 MHz, OMS). Telegram decoded per EN 13757-4/OMS.",
+      "catalog": "hca-868",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Sontex/hca-868/hca-868-codec.json",
+      "decoder_script": "vendors/Sontex/hca-868/hca-868-decoder.js",
+      "encoder_script": "vendors/Sontex/hca-868/hca-868-encoder.js"
+    },
+    {
+      "id": "hca-878",
+      "name": "Sontex - HCA 878 (heating cost allocator, LoRaWAN)",
+      "description": "Heating cost allocator with LoRaWAN radio. Payload follows Sontex \"M-Bus frames\" (OMS based); decoded per EN 13757-3 data records.",
+      "catalog": "hca-878",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Sontex/hca-878/hca-878-codec.json",
+      "decoder_script": "vendors/Sontex/hca-878/hca-878-decoder.js",
+      "encoder_script": "vendors/Sontex/hca-878/hca-878-encoder.js"
+    },
+    {
+      "id": "superaqua-1",
+      "name": "Sontex - SUPERAQUA 1 (electronic water meter)",
+      "description": "Electronic single/multi-jet water meter with optional LoRaWAN/OMS radio. Reports cumulative volume, reading date, monthly values, operating hours, error codes.",
+      "catalog": "superaqua-1",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Sontex/superaqua-1/superaqua-1-codec.json",
+      "decoder_script": "vendors/Sontex/superaqua-1/superaqua-1-decoder.js",
+      "encoder_script": "vendors/Sontex/superaqua-1/superaqua-1-encoder.js"
+    },
+    {
+      "id": "supercal-5s",
+      "name": "Sontex - SUPERCAL 5S (static thermal energy meter)",
+      "description": "Static thermal energy meter with retrofittable LoRaWAN module (REF SC5X00022). Default payload: device identification, fabrication number, RTC, flow, power, energy/volume tariff 0.",
+      "catalog": "supercal-5s",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Sontex/supercal-5s/supercal-5s-codec.json",
+      "decoder_script": "vendors/Sontex/supercal-5s/supercal-5s-decoder.js",
+      "encoder_script": "vendors/Sontex/supercal-5s/supercal-5s-encoder.js"
+    },
+    {
+      "id": "superstatic-789",
+      "name": "Sontex - SUPERSTATIC 789 (ultrasonic compact heat meter)",
+      "description": "Compact static (ultrasonic oscillator) heat meter, LoRaWAN option. Measures heating/cooling energy, volume, flow and temperature difference; 18 months history.",
+      "catalog": "superstatic-789",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Sontex/superstatic-789/superstatic-789-codec.json",
+      "decoder_script": "vendors/Sontex/superstatic-789/superstatic-789-decoder.js",
+      "encoder_script": "vendors/Sontex/superstatic-789/superstatic-789-encoder.js"
+    },
+    {
+      "id": "supercom-w2-l",
+      "name": "Sontex - Supercom W2-L (LoRaWAN radio module for Elster water meters)",
+      "description": "Battery-powered LoRaWAN add-on module for Elster S110 PICOFLUX EF / M140 MODULMETER water meters. Reports cumulative volume, reading date, 15 monthly values, battery operating hours, tamper/error info.",
+      "catalog": "supercom-w2-l",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Sontex/supercom-w2-l/supercom-w2-l-codec.json",
+      "decoder_script": "vendors/Sontex/supercom-w2-l/supercom-w2-l-decoder.js",
+      "encoder_script": "vendors/Sontex/supercom-w2-l/supercom-w2-l-encoder.js"
+    }
+  ]
+}

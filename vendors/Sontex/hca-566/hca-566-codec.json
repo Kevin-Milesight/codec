@@ -1,0 +1,54 @@
+{
+  "version": "1.0.0",
+  "bytes": "040664000000840106320000000259881302fd0c0000",
+  "object": [
+    {
+      "id": "energy",
+      "name": "Energy",
+      "value": "100000",
+      "unit": "Wh",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "FLOAT",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 18,
+      "bacnet_unit_type": "UNITS_WATT_HOURS"
+    },
+    {
+      "id": "energy_s1",
+      "name": "Energy S1",
+      "value": "50000",
+      "unit": "Wh",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "FLOAT",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 18,
+      "bacnet_unit_type": "UNITS_WATT_HOURS"
+    },
+    {
+      "id": "temperature",
+      "name": "Temperature",
+      "value": "50",
+      "unit": "°C",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "FLOAT",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 62,
+      "bacnet_unit_type": "UNITS_DEGREES_CELSIUS"
+    },
+    {
+      "id": "error_flags",
+      "name": "Error Flags",
+      "value": "0",
+      "unit": "",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "FLOAT",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 95,
+      "bacnet_unit_type": "UNITS_NO_UNITS"
+    }
+  ]
+}
