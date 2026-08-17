@@ -1,0 +1,2056 @@
+{
+  "object": [
+    {
+      "id": "active_energy_positive_load1",
+      "name": "Total Positive active Energy : Ea+ (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 19841,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "active_energy_positive_residual_load1",
+      "name": "Total Residual positive active Energy : rEa+ (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19843,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "active_energy_negative_load1",
+      "name": "Total Negative active Energy : Ea- (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 19844,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "active_energy_negative_residual_load1",
+      "name": "Total Residual negative active Energy : rEa- (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19846,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_positive_load1",
+      "name": "Total Positive reactive Energy : Er+ (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 19847,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_positive_residual_load1",
+      "name": "Total Residual positive reactive Energy : rEr+ (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19849,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_negative_load1",
+      "name": "Total Negative reactive Energy : Er- (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 19850,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_negative_residual_load1",
+      "name": "Total Residual negative reactive Energy : rEr- (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19852,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "apparent_energy_load1",
+      "name": "Total Apparent Energy : Eap (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 19853,
+      "modbus_unit_type": "kVAh",
+      "modbus_unit_type_id": 240,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "apparent_energy_residual_load1",
+      "name": "Total Residual apparent Energy : rEap (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19855,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_positive_lagging_load1",
+      "name": "Total positive lagging reactive Energy : Er+ (lagging) (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 19856,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "total_residual_positive_lagging_reactive_energy_rer_lagging_load1",
+      "name": "Total residual positive lagging reactive Energy : rEr+ (lagging) (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19858,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_negative_lagging_load1",
+      "name": "Total negative lagging reactive Energy : Er- (lagging) (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 19859,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "total_residual_negative_lagging_reactive_energy_rer_lagging_load1",
+      "name": "Total residual negative lagging reactive Energy : rEr- (lagging) (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19861,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "total_positive_leading_reactive_energy_er_leading_load1",
+      "name": "Total positive leading reactive Energy : Er+ (leading) (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 19862,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "total_residual_positive_leading_reactive_energy_rer_leading_load1",
+      "name": "Total residual positive leading reactive Energy : rEr+ (leading) (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19864,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "total_negative_leading_reactive_energy_er_leading_load1",
+      "name": "Total negative leading reactive Energy : Er- (leading) (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 19865,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "total_residual_negative_leading_reactive_energy_rer_leading_load1",
+      "name": "Total residual negative leading reactive Energy : rEr- (leading) (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19867,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_positive_active_energy_ea_load1",
+      "name": "Partial positive active Energy : Ea+ (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 19868,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_residual_positive_active_energy_rea_load1",
+      "name": "Partial residual positive active Energy : rEa+ (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19870,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_negative_active_energy_ea_load1",
+      "name": "Partial negative active Energy : Ea- (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 19871,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_residual_negative_active_energy_rea_load1",
+      "name": "Partial residual negative active Energy : rEa- (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19873,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_positive_reactive_energy_er_load1",
+      "name": "Partial positive reactive Energy : Er+ (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 19874,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_residual_positive_reactive_energy_rer_load1",
+      "name": "Partial residual positive reactive Energy : rEr+ (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19876,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_negative_reactive_energy_er_load1",
+      "name": "Partial negative reactive Energy : Er- (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 19877,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_residual_negative_reactive_energy_rer_load1",
+      "name": "Partial residual negative reactive Energy : rEr- (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19879,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_apparent_energy_eap_load1",
+      "name": "Partial Apparent Energy : Eap (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 19880,
+      "modbus_unit_type": "kVAh",
+      "modbus_unit_type_id": 240,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_residual_apparent_energy_reap_load1",
+      "name": "Partial residual apparent Energy : rEap (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19882,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_positive_active_energy_ea_load1",
+      "name": "Last Partial positive active Energy : Ea+ (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 19885,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_residual_positive_active_energy_rea_load1",
+      "name": "Last Partial residual positive active Energy : rEa+ (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19887,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_negative_active_energy_ea_load1",
+      "name": "Last Partial negative active Energy : Ea- (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 19888,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_residual_negative_active_energy_rea_load1",
+      "name": "Last Partial residual negative active Energy : rEa- (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19890,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_positive_reactive_energy_er_load1",
+      "name": "Last Partial positive reactive Energy : Er+ (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 19891,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_residual_positive_reactive_energy_rer_load1",
+      "name": "Last Partial residual positive reactive Energy : rEr+ (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19893,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_negative_reactive_energy_er_load1",
+      "name": "Last Partial negative reactive Energy : Er- (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 19894,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_residual_negative_reactive_energy_rer_load1",
+      "name": "Last Partial residual negative reactive Energy : rEr- (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19896,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_apparent_energy_eap_load1",
+      "name": "Last Partial Apparent Energy : Eap (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 19897,
+      "modbus_unit_type": "kVAh",
+      "modbus_unit_type_id": 240,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_residual_apparent_energy_reap_load1",
+      "name": "Last Partial residual apparent Energy : rEap (Load 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19899,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "active_energy_positive_load2",
+      "name": "Total Positive active Energy : Ea+ (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 21889,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "active_energy_positive_residual_load2",
+      "name": "Total Residual positive active Energy : rEa+ (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21891,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "active_energy_negative_load2",
+      "name": "Total Negative active Energy : Ea- (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 21892,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "active_energy_negative_residual_load2",
+      "name": "Total Residual negative active Energy : rEa- (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21894,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_positive_load2",
+      "name": "Total Positive reactive Energy : Er+ (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 21895,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_positive_residual_load2",
+      "name": "Total Residual positive reactive Energy : rEr+ (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21897,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_negative_load2",
+      "name": "Total Negative reactive Energy : Er- (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 21898,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_negative_residual_load2",
+      "name": "Total Residual negative reactive Energy : rEr- (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21900,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "apparent_energy_load2",
+      "name": "Total Apparent Energy : Eap (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 21901,
+      "modbus_unit_type": "kVAh",
+      "modbus_unit_type_id": 240,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "apparent_energy_residual_load2",
+      "name": "Total Residual apparent Energy : rEap (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21903,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_positive_lagging_load2",
+      "name": "Total positive lagging reactive Energy : Er+ (lagging) (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 21904,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "total_residual_positive_lagging_reactive_energy_rer_lagging_load2",
+      "name": "Total residual positive lagging reactive Energy : rEr+ (lagging) (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21906,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_negative_lagging_load2",
+      "name": "Total negative lagging reactive Energy : Er- (lagging) (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 21907,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "total_residual_negative_lagging_reactive_energy_rer_lagging_load2",
+      "name": "Total residual negative lagging reactive Energy : rEr- (lagging) (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21909,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "total_positive_leading_reactive_energy_er_leading_load2",
+      "name": "Total positive leading reactive Energy : Er+ (leading) (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 21910,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "total_residual_positive_leading_reactive_energy_rer_leading_load2",
+      "name": "Total residual positive leading reactive Energy : rEr+ (leading) (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21912,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "total_negative_leading_reactive_energy_er_leading_load2",
+      "name": "Total negative leading reactive Energy : Er- (leading) (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 21913,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "total_residual_negative_leading_reactive_energy_rer_leading_load2",
+      "name": "Total residual negative leading reactive Energy : rEr- (leading) (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21915,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_positive_active_energy_ea_load2",
+      "name": "Partial positive active Energy : Ea+ (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 21916,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_residual_positive_active_energy_rea_load2",
+      "name": "Partial residual positive active Energy : rEa+ (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21918,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_negative_active_energy_ea_load2",
+      "name": "Partial negative active Energy : Ea- (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 21919,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_residual_negative_active_energy_rea_load2",
+      "name": "Partial residual negative active Energy : rEa- (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21921,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_positive_reactive_energy_er_load2",
+      "name": "Partial positive reactive Energy : Er+ (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 21922,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_residual_positive_reactive_energy_rer_load2",
+      "name": "Partial residual positive reactive Energy : rEr+ (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21924,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_negative_reactive_energy_er_load2",
+      "name": "Partial negative reactive Energy : Er- (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 21925,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_residual_negative_reactive_energy_rer_load2",
+      "name": "Partial residual negative reactive Energy : rEr- (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21927,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_apparent_energy_eap_load2",
+      "name": "Partial Apparent Energy : Eap (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 21928,
+      "modbus_unit_type": "kVAh",
+      "modbus_unit_type_id": 240,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_residual_apparent_energy_reap_load2",
+      "name": "Partial residual apparent Energy : rEap (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21930,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_positive_active_energy_ea_load2",
+      "name": "Last Partial positive active Energy : Ea+ (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 21933,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_residual_positive_active_energy_rea_load2",
+      "name": "Last Partial residual positive active Energy : rEa+ (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21935,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_negative_active_energy_ea_load2",
+      "name": "Last Partial negative active Energy : Ea- (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 21936,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_residual_negative_active_energy_rea_load2",
+      "name": "Last Partial residual negative active Energy : rEa- (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21938,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_positive_reactive_energy_er_load2",
+      "name": "Last Partial positive reactive Energy : Er+ (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 21939,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_residual_positive_reactive_energy_rer_load2",
+      "name": "Last Partial residual positive reactive Energy : rEr+ (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21941,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_negative_reactive_energy_er_load2",
+      "name": "Last Partial negative reactive Energy : Er- (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 21942,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_residual_negative_reactive_energy_rer_load2",
+      "name": "Last Partial residual negative reactive Energy : rEr- (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21944,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_apparent_energy_eap_load2",
+      "name": "Last Partial Apparent Energy : Eap (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 21945,
+      "modbus_unit_type": "kVAh",
+      "modbus_unit_type_id": 240,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_residual_apparent_energy_reap_load2",
+      "name": "Last Partial residual apparent Energy : rEap (Load 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21947,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "active_energy_positive_load3",
+      "name": "Total Positive active Energy : Ea+ (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 23937,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "active_energy_positive_residual_load3",
+      "name": "Total Residual positive active Energy : rEa+ (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23939,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "active_energy_negative_load3",
+      "name": "Total Negative active Energy : Ea- (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 23940,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "active_energy_negative_residual_load3",
+      "name": "Total Residual negative active Energy : rEa- (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23942,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_positive_load3",
+      "name": "Total Positive reactive Energy : Er+ (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 23943,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_positive_residual_load3",
+      "name": "Total Residual positive reactive Energy : rEr+ (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23945,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_negative_load3",
+      "name": "Total Negative reactive Energy : Er- (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 23946,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_negative_residual_load3",
+      "name": "Total Residual negative reactive Energy : rEr- (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23948,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "apparent_energy_load3",
+      "name": "Total Apparent Energy : Eap (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 23949,
+      "modbus_unit_type": "kVAh",
+      "modbus_unit_type_id": 240,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "apparent_energy_residual_load3",
+      "name": "Total Residual apparent Energy : rEap (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23951,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_positive_lagging_load3",
+      "name": "Total positive lagging reactive Energy : Er+ (lagging) (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 23952,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "total_residual_positive_lagging_reactive_energy_rer_lagging_load3",
+      "name": "Total residual positive lagging reactive Energy : rEr+ (lagging) (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23954,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "reactive_energy_negative_lagging_load3",
+      "name": "Total negative lagging reactive Energy : Er- (lagging) (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 23955,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "total_residual_negative_lagging_reactive_energy_rer_lagging_load3",
+      "name": "Total residual negative lagging reactive Energy : rEr- (lagging) (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23957,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "total_positive_leading_reactive_energy_er_leading_load3",
+      "name": "Total positive leading reactive Energy : Er+ (leading) (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 23958,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "total_residual_positive_leading_reactive_energy_rer_leading_load3",
+      "name": "Total residual positive leading reactive Energy : rEr+ (leading) (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23960,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "total_negative_leading_reactive_energy_er_leading_load3",
+      "name": "Total negative leading reactive Energy : Er- (leading) (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 23961,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "total_residual_negative_leading_reactive_energy_rer_leading_load3",
+      "name": "Total residual negative leading reactive Energy : rEr- (leading) (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23963,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_positive_active_energy_ea_load3",
+      "name": "Partial positive active Energy : Ea+ (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 23964,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_residual_positive_active_energy_rea_load3",
+      "name": "Partial residual positive active Energy : rEa+ (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23966,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_negative_active_energy_ea_load3",
+      "name": "Partial negative active Energy : Ea- (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 23967,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_residual_negative_active_energy_rea_load3",
+      "name": "Partial residual negative active Energy : rEa- (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23969,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_positive_reactive_energy_er_load3",
+      "name": "Partial positive reactive Energy : Er+ (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 23970,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_residual_positive_reactive_energy_rer_load3",
+      "name": "Partial residual positive reactive Energy : rEr+ (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23972,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_negative_reactive_energy_er_load3",
+      "name": "Partial negative reactive Energy : Er- (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 23973,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_residual_negative_reactive_energy_rer_load3",
+      "name": "Partial residual negative reactive Energy : rEr- (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23975,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_apparent_energy_eap_load3",
+      "name": "Partial Apparent Energy : Eap (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 23976,
+      "modbus_unit_type": "kVAh",
+      "modbus_unit_type_id": 240,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "partial_residual_apparent_energy_reap_load3",
+      "name": "Partial residual apparent Energy : rEap (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23978,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_positive_active_energy_ea_load3",
+      "name": "Last Partial positive active Energy : Ea+ (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 23981,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_residual_positive_active_energy_rea_load3",
+      "name": "Last Partial residual positive active Energy : rEa+ (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23983,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_negative_active_energy_ea_load3",
+      "name": "Last Partial negative active Energy : Ea- (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 23984,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_residual_negative_active_energy_rea_load3",
+      "name": "Last Partial residual negative active Energy : rEa- (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23986,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_positive_reactive_energy_er_load3",
+      "name": "Last Partial positive reactive Energy : Er+ (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 23987,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_residual_positive_reactive_energy_rer_load3",
+      "name": "Last Partial residual positive reactive Energy : rEr+ (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23989,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_negative_reactive_energy_er_load3",
+      "name": "Last Partial negative reactive Energy : Er- (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 23990,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1000,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_residual_negative_reactive_energy_rer_load3",
+      "name": "Last Partial residual negative reactive Energy : rEr- (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23992,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_apparent_energy_eap_load3",
+      "name": "Last Partial Apparent Energy : Eap (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 23993,
+      "modbus_unit_type": "kVAh",
+      "modbus_unit_type_id": 240,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "last_partial_residual_apparent_energy_reap_load3",
+      "name": "Last Partial residual apparent Energy : rEap (Load 3)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23995,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    }
+  ]
+}
