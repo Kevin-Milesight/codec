@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "imbuildings-comfort-sensor",
+      "name": "Imbuildings - Comfort Sensor",
+      "description": "Sensor for monitoring Indoor Air Quality",
+      "catalog": "imbuildings-comfort-sensor",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Imbuildings/imbuildings-comfort-sensor/imbuildings-comfort-sensor-codec.json",
+      "decoder_script": "vendors/Imbuildings/imbuildings-comfort-sensor/imbuildings-comfort-sensor-decoder.js",
+      "encoder_script": "vendors/Imbuildings/imbuildings-comfort-sensor/imbuildings-comfort-sensor-encoder.js"
+    },
+    {
+      "id": "imbuildings-moodbox",
+      "name": "Imbuildings - Moodbox",
+      "description": "Get user feedback",
+      "catalog": "imbuildings-moodbox",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Imbuildings/imbuildings-moodbox/imbuildings-moodbox-codec.json",
+      "decoder_script": "vendors/Imbuildings/imbuildings-moodbox/imbuildings-moodbox-decoder.js",
+      "encoder_script": "vendors/Imbuildings/imbuildings-moodbox/imbuildings-moodbox-encoder.js"
+    }
+  ]
+}

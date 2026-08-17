@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "mlr003",
+      "name": "Micropelt - MLR003 - LoRaWAN® TRV",
+      "description": "MLR003 is a maintenance free, intelligent thermostatic radiator valve actuator.It is an 868MHz LoRaWAN® Class A device operating in SF7BW125.",
+      "catalog": "mlr003",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Micropelt/mlr003/mlr003-codec.json",
+      "decoder_script": "vendors/Micropelt/mlr003/mlr003-decoder.js",
+      "encoder_script": "vendors/Micropelt/mlr003/mlr003-encoder.js"
+    },
+    {
+      "id": "mlrtps1",
+      "name": "Micropelt - MLRTPS1 - Thermostat",
+      "description": "MLRTPS1 is a wall mount thermostat with presence detection and temperature set point. It is an 868MHz LoRaWAN® Class A device operating in SF7BW125.",
+      "catalog": "mlrtps1",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Micropelt/mlrtps1/mlrtps1-codec.json",
+      "decoder_script": "vendors/Micropelt/mlrtps1/mlrtps1-decoder.js",
+      "encoder_script": "vendors/Micropelt/mlrtps1/mlrtps1-encoder.js"
+    }
+  ]
+}

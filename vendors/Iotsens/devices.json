@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "airquality-device",
+      "name": "Iotsens - Air Quality Monitor",
+      "description": "The IoTsens Air Quality Monitor is a device that consists of a set of environmental sensors for  CO, SO2, NO2, O3, NO, H2S, CO2, PM2.5, PM10, temperature, and humidity detection and measurement. The use of this device is recommended for the evaluation of air conditions, being able to monitor the levels of contamination to make the appropriate decisions.",
+      "catalog": "airquality-device",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Iotsens/airquality-device/airquality-device-codec.json",
+      "decoder_script": "vendors/Iotsens/airquality-device/airquality-device-decoder.js",
+      "encoder_script": "vendors/Iotsens/airquality-device/airquality-device-encoder.js"
+    },
+    {
+      "id": "lidar-device",
+      "name": "Iotsens - Optical Distance Monitor",
+      "description": "The IoTsens LoRaWAN® Optical Distance Monitor is equipped with a LIDAR sensor for monitoring filling levels. Thus, it becomes an optimal tool in waste management, and can also be used in the detection of liquid levels in tanks, among other applications.",
+      "catalog": "lidar-device",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Iotsens/lidar-device/lidar-device-codec.json",
+      "decoder_script": "vendors/Iotsens/lidar-device/lidar-device-decoder.js",
+      "encoder_script": "vendors/Iotsens/lidar-device/lidar-device-encoder.js"
+    },
+    {
+      "id": "sound-device",
+      "name": "Iotsens - Sound Level Meter",
+      "description": "The IoTsens Sound Level Meter has an integrated microphone (sound sensor) that can monitor noise levels. The collected data is transmitted over the LoRaWAN® network for further processing.",
+      "catalog": "sound-device",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Iotsens/sound-device/sound-device-codec.json",
+      "decoder_script": "vendors/Iotsens/sound-device/sound-device-decoder.js",
+      "encoder_script": "vendors/Iotsens/sound-device/sound-device-encoder.js"
+    }
+  ]
+}

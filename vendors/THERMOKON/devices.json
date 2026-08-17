@@ -80,6 +80,76 @@
       "modbus_baudrate": 57600,
       "modbus_parity": "none",
       "modbus_stopbits": 1
+    },
+    {
+      "id": "dpa-lrw",
+      "name": "THERMOKON - DPA+ LRW - Pressure & Volume Flow Sensor",
+      "description": "Differential Pressure and Volume Flow Sensor",
+      "catalog": "dpa-lrw",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/THERMOKON/dpa-lrw/dpa-lrw-codec.json",
+      "decoder_script": "vendors/THERMOKON/dpa-lrw/dpa-lrw-decoder.js",
+      "encoder_script": "vendors/THERMOKON/dpa-lrw/dpa-lrw-encoder.js"
+    },
+    {
+      "id": "ls02-lrw",
+      "name": "THERMOKON - LS02+ LRW - Leakage Sensor",
+      "description": "Leakage detection sensor with relay output",
+      "catalog": "ls02-lrw",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/THERMOKON/ls02-lrw/ls02-lrw-codec.json",
+      "decoder_script": "vendors/THERMOKON/ls02-lrw/ls02-lrw-decoder.js",
+      "encoder_script": "vendors/THERMOKON/ls02-lrw/ls02-lrw-encoder.js"
+    },
+    {
+      "id": "mcs-lrw",
+      "name": "THERMOKON - MCS LRW - Multisensor",
+      "description": "Indoor Multicompact Sensor",
+      "catalog": "mcs-lrw",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/THERMOKON/mcs-lrw/mcs-lrw-codec.json",
+      "decoder_script": "vendors/THERMOKON/mcs-lrw/mcs-lrw-decoder.js",
+      "encoder_script": "vendors/THERMOKON/mcs-lrw/mcs-lrw-encoder.js"
+    },
+    {
+      "id": "novos-3-lrw",
+      "name": "THERMOKON - NOVOS 3 LRW - Room Operating Unit",
+      "description": "Indoor Multifunctional Room Sensor and Operating Unit",
+      "catalog": "novos-3-lrw",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/THERMOKON/novos-3-lrw/novos-3-lrw-codec.json",
+      "decoder_script": "vendors/THERMOKON/novos-3-lrw/novos-3-lrw-decoder.js",
+      "encoder_script": "vendors/THERMOKON/novos-3-lrw/novos-3-lrw-encoder.js"
+    },
+    {
+      "id": "thanos-evo-lrw",
+      "name": "THERMOKON - Thanos Evo LRW - Room Operating Unit",
+      "description": "Full Touch Room Operating Unit for Controlling with optional wired BMS connection",
+      "catalog": "thanos-evo-lrw",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/THERMOKON/thanos-evo-lrw/thanos-evo-lrw-codec.json",
+      "decoder_script": "vendors/THERMOKON/thanos-evo-lrw/thanos-evo-lrw-decoder.js",
+      "encoder_script": "vendors/THERMOKON/thanos-evo-lrw/thanos-evo-lrw-encoder.js"
     }
   ]
 }

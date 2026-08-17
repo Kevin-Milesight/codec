@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "tps110",
+      "name": "Bosch - Parking Lot Sensor",
+      "description": "The BOSCH wireless smart parking sensor is a LoRaWAN® end device that uses a magnetometer and radar which are two independent sensors for parking space occupancy. It enables active parking lot management features, such as search, navigation, and reservation. In addition to that, the BOSCH parking lot sensor has a GPS receiver and a temperature sensor.",
+      "catalog": "tps110",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Bosch/tps110/tps110-codec.json",
+      "decoder_script": "vendors/Bosch/tps110/tps110-decoder.js",
+      "encoder_script": "vendors/Bosch/tps110/tps110-encoder.js"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "version": "1.0.0",
+  "bytes": "01020304",
+  "object": [
+    {
+      "id": "battery_voltage",
+      "name": "Battery Voltage",
+      "value": "0.0",
+      "unit": "V",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "FLOAT",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 5,
+      "bacnet_unit_type": "UNITS_VOLTS"
+    },
+    {
+      "id": "co2",
+      "name": "Co2",
+      "value": "0.0",
+      "unit": "ppm",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "FLOAT",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 96,
+      "bacnet_unit_type": "UNITS_PARTS_PER_MILLION"
+    },
+    {
+      "id": "temperature",
+      "name": "Temperature",
+      "value": "0.0",
+      "unit": "°C",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "FLOAT",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 62,
+      "bacnet_unit_type": "UNITS_DEGREES_CELSIUS"
+    },
+    {
+      "id": "humidity",
+      "name": "Humidity",
+      "value": "0.0",
+      "unit": "%",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "FLOAT",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 98,
+      "bacnet_unit_type": "UNITS_PERCENT"
+    },
+    {
+      "id": "motion",
+      "name": "Motion",
+      "value": "0",
+      "unit": "",
+      "access_mode": "R",
+      "data_type": "NUMBER",
+      "value_type": "BOOL",
+      "bacnet_type": "analog_input_object",
+      "bacnet_unit_type_id": 95,
+      "bacnet_unit_type": "UNITS_NO_UNITS"
+    }
+  ]
+}

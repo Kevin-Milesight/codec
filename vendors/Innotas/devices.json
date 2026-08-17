@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "wireless-water-meter",
+      "name": "Innotas - LoRa wireless water meter",
+      "description": "The Innotas Modularis water meter attachment consists of a pulse sensor that counts pulses for calculating the water flow volume. It can be attached to water meters with Modularis metering shaft (E. Wehrle GmbH, Wasser-Geräte GmbH, Meibes Systemtechnik GmbH, Maddalena GmbH, QUNDIS and others), ingle-jet and multi-jet dry dial water meters, annular piston, and measuring capsule water meters.",
+      "catalog": "wireless-water-meter",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Innotas/wireless-water-meter/wireless-water-meter-codec.json",
+      "decoder_script": "vendors/Innotas/wireless-water-meter/wireless-water-meter-decoder.js",
+      "encoder_script": "vendors/Innotas/wireless-water-meter/wireless-water-meter-encoder.js"
+    }
+  ]
+}
