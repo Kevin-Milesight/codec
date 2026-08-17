@@ -1,0 +1,75 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "aquastream-l8",
+      "name": "INTEGRA Metering - aquastream Radio L8",
+      "description": "Wireless water meter communication module (LoRaWAN), OMS over LoRaWAN payload (main volume, reverse volume, error flag, battery lifetime)",
+      "catalog": "aquastream-l8",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/IntegraMetering/aquastream-l8/aquastream-l8-codec.json",
+      "decoder_script": "vendors/IntegraMetering/aquastream-l8/aquastream-l8-decoder.js",
+      "encoder_script": "vendors/IntegraMetering/aquastream-l8/aquastream-l8-encoder.js"
+    },
+    {
+      "id": "calec-st-iii",
+      "name": "INTEGRA Metering - CALEC ST III",
+      "description": "Multi-protocol heating and cooling energy calculator with LoRa interface (data sets 1-8, Standard/Compact frame)",
+      "catalog": "calec-st-iii",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/IntegraMetering/calec-st-iii/calec-st-iii-codec.json",
+      "decoder_script": "vendors/IntegraMetering/calec-st-iii/calec-st-iii-decoder.js",
+      "encoder_script": "vendors/IntegraMetering/calec-st-iii/calec-st-iii-encoder.js"
+    },
+    {
+      "id": "calec-st3",
+      "name": "INTEGRA Metering - CALEC ST3",
+      "description": "CALEC ST III heating and cooling energy calculator (alternate naming ST3), LoRaWAN data sets 1-8",
+      "catalog": "calec-st3",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/IntegraMetering/calec-st3/calec-st3-codec.json",
+      "decoder_script": "vendors/IntegraMetering/calec-st3/calec-st3-decoder.js",
+      "encoder_script": "vendors/IntegraMetering/calec-st3/calec-st3-encoder.js"
+    },
+    {
+      "id": "rubin-sonic-lw8",
+      "name": "INTEGRA Metering - RUBIN SONIC LW8",
+      "description": "Ultrasonic water network meter with MultiCom radio (LoRaWAN EU868 + wM-Bus), OMS over LoRaWAN payload",
+      "catalog": "rubin-sonic-lw8",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/IntegraMetering/rubin-sonic-lw8/rubin-sonic-lw8-codec.json",
+      "decoder_script": "vendors/IntegraMetering/rubin-sonic-lw8/rubin-sonic-lw8-decoder.js",
+      "encoder_script": "vendors/IntegraMetering/rubin-sonic-lw8/rubin-sonic-lw8-encoder.js"
+    },
+    {
+      "id": "topas-sonic-lw8",
+      "name": "INTEGRA Metering - TOPAS SONIC LW8",
+      "description": "Ultrasonic meter for domestic water networks with MultiCom radio (LoRaWAN EU868 + wM-Bus), OMS over LoRaWAN payload",
+      "catalog": "topas-sonic-lw8",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/IntegraMetering/topas-sonic-lw8/topas-sonic-lw8-codec.json",
+      "decoder_script": "vendors/IntegraMetering/topas-sonic-lw8/topas-sonic-lw8-decoder.js",
+      "encoder_script": "vendors/IntegraMetering/topas-sonic-lw8/topas-sonic-lw8-encoder.js"
+    }
+  ]
+}

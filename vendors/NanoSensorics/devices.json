@@ -1,0 +1,61 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "carbonless",
+      "name": "Nano Sensorics - CARBONLESS",
+      "description": "CO2, temperature and humidity LoRaWAN sensor",
+      "catalog": "carbonless",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/NanoSensorics/carbonless/carbonless-codec.json",
+      "decoder_script": "vendors/NanoSensorics/carbonless/carbonless-decoder.js",
+      "encoder_script": "vendors/NanoSensorics/carbonless/carbonless-encoder.js"
+    },
+    {
+      "id": "ampsense",
+      "name": "Nano Sensorics - AMPSENSE",
+      "description": "3-phase current LoRaWAN sensor",
+      "catalog": "ampsense",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/NanoSensorics/ampsense/ampsense-codec.json",
+      "decoder_script": "vendors/NanoSensorics/ampsense/ampsense-decoder.js",
+      "encoder_script": "vendors/NanoSensorics/ampsense/ampsense-encoder.js"
+    },
+    {
+      "id": "temphu",
+      "name": "Nano Sensorics - TEMPHU",
+      "description": "Temperature and humidity LoRaWAN sensor",
+      "catalog": "temphu",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/NanoSensorics/temphu/temphu-codec.json",
+      "decoder_script": "vendors/NanoSensorics/temphu/temphu-decoder.js",
+      "encoder_script": "vendors/NanoSensorics/temphu/temphu-encoder.js"
+    },
+    {
+      "id": "vocless",
+      "name": "Nano Sensorics - VOCLESS",
+      "description": "VOC, temperature and humidity LoRaWAN sensor",
+      "catalog": "vocless",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/NanoSensorics/vocless/vocless-codec.json",
+      "decoder_script": "vendors/NanoSensorics/vocless/vocless-decoder.js",
+      "encoder_script": "vendors/NanoSensorics/vocless/vocless-encoder.js"
+    }
+  ]
+}

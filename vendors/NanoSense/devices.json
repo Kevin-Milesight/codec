@@ -1,0 +1,75 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "aaq",
+      "name": "NanoSense - AAQ",
+      "description": "Atmospheric/outdoor air quality probe (LoRaWAN Class A): temperature, humidity, PM10/PM2.5/PM1, noise, 3 electrochemical gas channels (NOX/NO2/O3/H2S/SO2/NH3), battery status",
+      "catalog": "aaq",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/NanoSense/aaq/aaq-codec.json",
+      "decoder_script": "vendors/NanoSense/aaq/aaq-decoder.js",
+      "encoder_script": "vendors/NanoSense/aaq/aaq-encoder.js"
+    },
+    {
+      "id": "e4000-ng",
+      "name": "NanoSense - E4000-NG",
+      "description": "Indoor air quality probe E4000-NG (LoRaWAN Class A): CO2, temperature, humidity, VOC, PM10/PM2.5/PM1, occupancy and window states",
+      "catalog": "e4000-ng",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/NanoSense/e4000-ng/e4000-ng-codec.json",
+      "decoder_script": "vendors/NanoSense/e4000-ng/e4000-ng-decoder.js",
+      "encoder_script": "vendors/NanoSense/e4000-ng/e4000-ng-encoder.js"
+    },
+    {
+      "id": "ep5000",
+      "name": "NanoSense - EP5000",
+      "description": "IAQ room multi-sensor EP5000 family (LoRaWAN): CO2, TVOC, formaldehyde, benzene, sulphurous odors, PM10/PM2.5/PM1, temperature, humidity, noise, atmospheric pressure, lux, light color temperature, flickering and physiological indices",
+      "catalog": "ep5000",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/NanoSense/ep5000/ep5000-codec.json",
+      "decoder_script": "vendors/NanoSense/ep5000/ep5000-decoder.js",
+      "encoder_script": "vendors/NanoSense/ep5000/ep5000-encoder.js"
+    },
+    {
+      "id": "ep5000mml",
+      "name": "NanoSense - EP5000MML",
+      "description": "IAQ room multi-sensor EP5000MML-N (Multi-Measurement LoRaWAN variant of the EP5000 family): CO2, TVOC, sulphurous odors, PM10/PM2.5/PM1, temperature, humidity, noise, atmospheric pressure, lux, light color temperature and physiological indices (same 37-byte telegram as EP5000)",
+      "catalog": "ep5000mml",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/NanoSense/ep5000mml/ep5000mml-codec.json",
+      "decoder_script": "vendors/NanoSense/ep5000mml/ep5000mml-decoder.js",
+      "encoder_script": "vendors/NanoSense/ep5000mml/ep5000mml-encoder.js"
+    },
+    {
+      "id": "qaa",
+      "name": "NanoSense - QAA",
+      "description": "Atmospheric air quality probe QAA (LoRaWAN Class A), same telegram as the AAQ: temperature, humidity, PM10/PM2.5/PM1, noise, 3 electrochemical gas channels, battery status",
+      "catalog": "qaa",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/NanoSense/qaa/qaa-codec.json",
+      "decoder_script": "vendors/NanoSense/qaa/qaa-decoder.js",
+      "encoder_script": "vendors/NanoSense/qaa/qaa-encoder.js"
+    }
+  ]
+}
