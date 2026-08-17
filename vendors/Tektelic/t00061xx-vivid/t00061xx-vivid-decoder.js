@@ -1,7 +1,7 @@
 // tektelic t00061xx-vivid — LoRaWAN payload decoder
 // 字段清单来自官方 payload 说明（协议事实）；解析逻辑为自实现。
 "use strict";
-var FIELDS = ["temperature","humidity","light","motion","water_leak","reed_state","raw","port","device_eui","app_eui"];
+var FIELDS = ["temperature","humidity","light","motion","flow","reed_state","raw","port","device_eui","app_eui"];
 function decodeUplink(input) {
   var bytes = (input.bytes || []).slice();
   var data = {};

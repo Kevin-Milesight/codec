@@ -1,7 +1,7 @@
 // dingtek do202 — LoRaWAN payload decoder
 // 字段清单来自官方 payload 说明（协议事实）；解析逻辑为自实现。
 "use strict";
-var FIELDS = ["magnetometer","temperature","humidity","firmware","uploadinterval","detectinterval","magnetthreshold","batterythreshold"];
+var FIELDS = ["people_count","magnetometer","temperature","humidity","firmware","uploadinterval","detectinterval","magnetthreshold","batterythreshold"];
 function decodeUplink(input) {
   var bytes = (input.bytes || []).slice();
   var data = {};

@@ -1,7 +1,7 @@
 // quandify cubicmeter-1-1-copper — LoRaWAN payload decoder
 // 字段清单来自官方 payload 说明（协议事实）；解析逻辑为自实现。
 "use strict";
-var FIELDS = ["battery_voltage","temperature","water_leak","fport","hexbytes"];
+var FIELDS = ["battery_voltage","temperature","flow","fport","hexbytes"];
 function decodeUplink(input) {
   var bytes = (input.bytes || []).slice();
   var data = {};

@@ -1,7 +1,7 @@
 // sensative strips — LoRaWAN payload decoder
 // 字段清单来自官方 payload 说明（协议事实）；解析逻辑为自实现。
 "use strict";
-var FIELDS = ["magnetometer","temperature","light","water_leak","humidity","historyseqnr","prevhistseqnr","value","battery","highalarm","lowalarm","timestamp","now"];
+var FIELDS = ["magnetometer","temperature","light","flow","humidity","occupancy_count","historyseqnr","prevhistseqnr","value","battery","highalarm","lowalarm","timestamp","now"];
 function decodeUplink(input) {
   var bytes = (input.bytes || []).slice();
   var data = {};

@@ -2,6 +2,34 @@
   "version": "1.0.0",
   "devices": [
     {
+      "id": "motorized-valve",
+      "name": "Strega - Wireless LoRaWAN Motorized Smart Valve",
+      "description": "The STREGA LoRaWAN wireless motorized smart-valve has an embedded temperature and humidity sensor, tamper detection sensor, and wire-cut detection sensor. It also accepts external analog, digital, and leak detection sensor inputs. The valve may also be configured for full water meter reading and data transmission capabilities.",
+      "catalog": "motorized-valve",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Strega/motorized-valve/motorized-valve-codec.json",
+      "decoder_script": "vendors/Strega/motorized-valve/motorized-valve-decoder.js",
+      "encoder_script": "vendors/Strega/motorized-valve/motorized-valve-encoder.js"
+    },
+    {
+      "id": "smart-emitter",
+      "name": "Strega - Smart Emitter",
+      "description": "The STREGA LoRaWAN Time-controlled Emitter remotely actuates an irrigation valve. With its ultra-low-power consumption, the Smart-Emitter can trigger Open or Close operations of any irrigation valve equipped with a DC latching solenoid. Watering schedulers can be programmed directly at the zone level, avoiding the necessity to use an irrigation controller.",
+      "catalog": "smart-emitter",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Strega/smart-emitter/smart-emitter-codec.json",
+      "decoder_script": "vendors/Strega/smart-emitter/smart-emitter-decoder.js",
+      "encoder_script": "vendors/Strega/smart-emitter/smart-emitter-encoder.js"
+    },
+    {
       "id": "smart-switch",
       "name": "Strega - Smart Switch",
       "description": "The STREGA time-controlled switch for the valve actuators is a battery operated wireless switch to remote control your butterfly valves. With the ultra-low-power consumption, the smart-switch can be triggered for remote OPEN/CLOSE operations.",
@@ -14,6 +42,20 @@
       "codec": "vendors/Strega/smart-switch/smart-switch-codec.json",
       "decoder_script": "vendors/Strega/smart-switch/smart-switch-decoder.js",
       "encoder_script": "vendors/Strega/smart-switch/smart-switch-encoder.js"
+    },
+    {
+      "id": "smart-valve",
+      "name": "Strega - Smart Valve",
+      "description": "The STREGA LoRaWAN wireless smart-valve has an embedded temperature and humidity sensor, tamper detection sensor, and wire-cut detection sensor. It also accepts external analog, digital, and leak detection sensor inputs. The valve may also be configured for full water meter reading and data transmission capabilities.",
+      "catalog": "smart-valve",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Strega/smart-valve/smart-valve-codec.json",
+      "decoder_script": "vendors/Strega/smart-valve/smart-valve-decoder.js",
+      "encoder_script": "vendors/Strega/smart-valve/smart-valve-encoder.js"
     }
   ]
 }

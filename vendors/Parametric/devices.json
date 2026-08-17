@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "pcr2",
+      "name": "Parametric - PCR2 Radar People Counter",
+      "description": "Parametric‘s PCR2 people counter uses radar signals to provide a camera-less solution. Utilising LoRaWAN™ technology, these sensors transmit data at regular intervals. With bi-directional counting, the Parametric PCR2 people counter registers people passing by from left or right.",
+      "catalog": "pcr2",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Parametric/pcr2/pcr2-codec.json",
+      "decoder_script": "vendors/Parametric/pcr2/pcr2-decoder.js",
+      "encoder_script": "vendors/Parametric/pcr2/pcr2-encoder.js"
+    },
+    {
+      "id": "rdr",
+      "name": "Parametric - RDR LORA NFC/RFID READER",
+      "description": "The device reads NFC tags, stores the content together with a timestamp in an internal data buffer. The data is transmitted via a standard LoRaWAN network. The small and stylish device can be mounted on a wall or used as a table top device. The unit is powered by 4x AAA alkaline or NiMH batteries and a USB power supply.",
+      "catalog": "rdr",
+      "sn": "",
+      "deveui": "000000",
+      "device_profile": [
+        "ClassA-OTAA"
+      ],
+      "codec": "vendors/Parametric/rdr/rdr-codec.json",
+      "decoder_script": "vendors/Parametric/rdr/rdr-decoder.js",
+      "encoder_script": "vendors/Parametric/rdr/rdr-encoder.js"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 // bosch tps110 — LoRaWAN payload decoder
 // 字段清单来自官方 payload 说明（协议事实）；解析逻辑为自实现。
 "use strict";
-var FIELDS = ["magnetometer","gps","temperature","occupied","firmwareversion","resetcause","timestamp","debugcode","sequencenumber"];
+var FIELDS = ["magnetometer","gps","temperature","people_count","occupied","firmwareversion","resetcause","timestamp","debugcode","sequencenumber"];
 function decodeUplink(input) {
   var bytes = (input.bytes || []).slice();
   var data = {};
