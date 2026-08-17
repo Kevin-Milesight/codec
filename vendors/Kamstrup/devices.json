@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "multical403",
+      "name": "Kamstrup - multical403",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Kamstrup/multical403/multical403-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "multical603",
+      "name": "Kamstrup - multical603",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Kamstrup/multical603/multical603-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "multical803",
+      "name": "Kamstrup - multical803",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Kamstrup/multical803/multical803-codec.json",
+      "modbus_default_slave_id": 1
+    }
+  ]
+}
