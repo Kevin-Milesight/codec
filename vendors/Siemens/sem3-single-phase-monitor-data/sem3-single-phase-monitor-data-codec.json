@@ -6,15 +6,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2201,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -24,15 +24,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2203,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -42,15 +42,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2205,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -60,15 +60,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2207,
       "modbus_unit_type": "VA",
       "modbus_unit_type_id": 8,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -78,15 +78,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2209,
       "modbus_unit_type": "var",
       "modbus_unit_type_id": 11,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -96,15 +96,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2211,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -114,15 +114,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2213,
       "modbus_unit_type": "°",
       "modbus_unit_type_id": 90,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -132,15 +132,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2215,
       "modbus_unit_type": "kWh",
       "modbus_unit_type_id": 19,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -150,15 +150,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2217,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -168,15 +168,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2219,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -186,15 +186,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2221,
       "modbus_unit_type": "Hz",
       "modbus_unit_type_id": 27,
-      "modbus_scale": 0.1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -204,15 +204,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2223,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -222,15 +222,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2225,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -240,15 +240,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2227,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -258,15 +258,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2229,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -276,15 +276,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2231,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -294,15 +294,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2233,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -312,15 +312,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2235,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -330,15 +330,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2237,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -348,15 +348,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ab",
+      "modbus_data_format": "uint32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2239,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -371,10 +371,10 @@
       "modbus_register_addr": 2241,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -389,10 +389,10 @@
       "modbus_register_addr": 2242,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -407,10 +407,10 @@
       "modbus_register_addr": 2243,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -425,10 +425,10 @@
       "modbus_register_addr": 2244,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -443,10 +443,10 @@
       "modbus_register_addr": 2245,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -461,10 +461,10 @@
       "modbus_register_addr": 2246,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -474,15 +474,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2247,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -492,15 +492,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2249,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -510,15 +510,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2251,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -528,15 +528,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2253,
       "modbus_unit_type": "VA",
       "modbus_unit_type_id": 8,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -546,15 +546,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2255,
       "modbus_unit_type": "var",
       "modbus_unit_type_id": 11,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -564,15 +564,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2257,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -582,15 +582,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2259,
       "modbus_unit_type": "°",
       "modbus_unit_type_id": 90,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -600,15 +600,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2261,
       "modbus_unit_type": "kWh",
       "modbus_unit_type_id": 19,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -618,15 +618,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2263,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -636,15 +636,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2265,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -654,15 +654,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2267,
       "modbus_unit_type": "Hz",
       "modbus_unit_type_id": 27,
-      "modbus_scale": 0.1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -672,15 +672,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2269,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -690,15 +690,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2271,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -708,15 +708,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2273,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -726,15 +726,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2275,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -744,15 +744,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2277,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -762,15 +762,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2279,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -780,15 +780,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2281,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -798,15 +798,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2283,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -816,15 +816,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ab",
+      "modbus_data_format": "uint32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2285,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -839,10 +839,10 @@
       "modbus_register_addr": 2287,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -857,10 +857,10 @@
       "modbus_register_addr": 2288,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -875,10 +875,10 @@
       "modbus_register_addr": 2289,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -893,10 +893,10 @@
       "modbus_register_addr": 2290,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -911,10 +911,10 @@
       "modbus_register_addr": 2291,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -929,10 +929,10 @@
       "modbus_register_addr": 2292,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -942,15 +942,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2293,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -960,15 +960,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2295,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -978,15 +978,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2297,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -996,15 +996,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2299,
       "modbus_unit_type": "VA",
       "modbus_unit_type_id": 8,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1014,15 +1014,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2301,
       "modbus_unit_type": "var",
       "modbus_unit_type_id": 11,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1032,15 +1032,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2303,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1050,15 +1050,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2305,
       "modbus_unit_type": "°",
       "modbus_unit_type_id": 90,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1068,15 +1068,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2307,
       "modbus_unit_type": "kWh",
       "modbus_unit_type_id": 19,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1086,15 +1086,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2309,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1104,15 +1104,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2311,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1122,15 +1122,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2313,
       "modbus_unit_type": "Hz",
       "modbus_unit_type_id": 27,
-      "modbus_scale": 0.1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1140,15 +1140,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2315,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1158,15 +1158,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2317,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1176,15 +1176,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2319,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1194,15 +1194,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2321,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1212,15 +1212,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2323,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1230,15 +1230,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2325,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1248,15 +1248,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2327,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1266,15 +1266,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2329,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1284,15 +1284,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ab",
+      "modbus_data_format": "uint32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2331,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -1307,10 +1307,10 @@
       "modbus_register_addr": 2333,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -1325,10 +1325,10 @@
       "modbus_register_addr": 2334,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -1343,10 +1343,10 @@
       "modbus_register_addr": 2335,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -1361,10 +1361,10 @@
       "modbus_register_addr": 2336,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -1379,10 +1379,10 @@
       "modbus_register_addr": 2337,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -1397,10 +1397,10 @@
       "modbus_register_addr": 2338,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -1410,15 +1410,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2339,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1428,15 +1428,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2341,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1446,15 +1446,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2343,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1464,15 +1464,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2345,
       "modbus_unit_type": "VA",
       "modbus_unit_type_id": 8,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1482,15 +1482,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2347,
       "modbus_unit_type": "var",
       "modbus_unit_type_id": 11,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1500,15 +1500,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2349,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1518,15 +1518,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2351,
       "modbus_unit_type": "°",
       "modbus_unit_type_id": 90,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1536,15 +1536,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2353,
       "modbus_unit_type": "kWh",
       "modbus_unit_type_id": 19,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1554,15 +1554,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2355,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1572,15 +1572,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2357,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1590,15 +1590,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2359,
       "modbus_unit_type": "Hz",
       "modbus_unit_type_id": 27,
-      "modbus_scale": 0.1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1608,15 +1608,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2361,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1626,15 +1626,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2363,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1644,15 +1644,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2365,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1662,15 +1662,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2367,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1680,15 +1680,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2369,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1698,15 +1698,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2371,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1716,15 +1716,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2373,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1734,15 +1734,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2375,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1752,15 +1752,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ab",
+      "modbus_data_format": "uint32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2377,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -1775,10 +1775,10 @@
       "modbus_register_addr": 2379,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -1793,10 +1793,10 @@
       "modbus_register_addr": 2380,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -1811,10 +1811,10 @@
       "modbus_register_addr": 2381,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -1829,10 +1829,10 @@
       "modbus_register_addr": 2382,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -1847,10 +1847,10 @@
       "modbus_register_addr": 2383,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -1865,10 +1865,10 @@
       "modbus_register_addr": 2384,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -1878,15 +1878,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2385,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1896,15 +1896,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2387,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1914,15 +1914,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2389,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1932,15 +1932,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2391,
       "modbus_unit_type": "VA",
       "modbus_unit_type_id": 8,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1950,15 +1950,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2393,
       "modbus_unit_type": "var",
       "modbus_unit_type_id": 11,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1968,15 +1968,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2395,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1986,15 +1986,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2397,
       "modbus_unit_type": "°",
       "modbus_unit_type_id": 90,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2004,15 +2004,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2399,
       "modbus_unit_type": "kWh",
       "modbus_unit_type_id": 19,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2022,15 +2022,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2401,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2040,15 +2040,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2403,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2058,15 +2058,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2405,
       "modbus_unit_type": "Hz",
       "modbus_unit_type_id": 27,
-      "modbus_scale": 0.1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2076,15 +2076,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2407,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2094,15 +2094,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2409,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2112,15 +2112,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2411,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2130,15 +2130,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2413,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2148,15 +2148,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2415,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2166,15 +2166,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2417,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2184,15 +2184,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2419,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2202,15 +2202,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2421,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2220,15 +2220,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ab",
+      "modbus_data_format": "uint32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2423,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -2243,10 +2243,10 @@
       "modbus_register_addr": 2425,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -2261,10 +2261,10 @@
       "modbus_register_addr": 2426,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -2279,10 +2279,10 @@
       "modbus_register_addr": 2427,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -2297,10 +2297,10 @@
       "modbus_register_addr": 2428,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -2315,10 +2315,10 @@
       "modbus_register_addr": 2429,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -2333,10 +2333,10 @@
       "modbus_register_addr": 2430,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -2346,15 +2346,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2431,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2364,15 +2364,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2433,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2382,15 +2382,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2435,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2400,15 +2400,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2437,
       "modbus_unit_type": "VA",
       "modbus_unit_type_id": 8,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2418,15 +2418,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2439,
       "modbus_unit_type": "var",
       "modbus_unit_type_id": 11,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2436,15 +2436,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2441,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2454,15 +2454,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2443,
       "modbus_unit_type": "°",
       "modbus_unit_type_id": 90,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2472,15 +2472,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2445,
       "modbus_unit_type": "kWh",
       "modbus_unit_type_id": 19,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2490,15 +2490,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2447,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2508,15 +2508,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2449,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2526,15 +2526,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2451,
       "modbus_unit_type": "Hz",
       "modbus_unit_type_id": 27,
-      "modbus_scale": 0.1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2544,15 +2544,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2453,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2562,15 +2562,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2455,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2580,15 +2580,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2457,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2598,15 +2598,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2459,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2616,15 +2616,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2461,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2634,15 +2634,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2463,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2652,15 +2652,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2465,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2670,15 +2670,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2467,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2688,15 +2688,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ab",
+      "modbus_data_format": "uint32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2469,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -2711,10 +2711,10 @@
       "modbus_register_addr": 2471,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -2729,10 +2729,10 @@
       "modbus_register_addr": 2472,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -2747,10 +2747,10 @@
       "modbus_register_addr": 2473,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -2765,10 +2765,10 @@
       "modbus_register_addr": 2474,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -2783,10 +2783,10 @@
       "modbus_register_addr": 2475,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -2801,10 +2801,10 @@
       "modbus_register_addr": 2476,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -2814,15 +2814,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2477,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2832,15 +2832,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2479,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2850,15 +2850,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2481,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2868,15 +2868,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2483,
       "modbus_unit_type": "VA",
       "modbus_unit_type_id": 8,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2886,15 +2886,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2485,
       "modbus_unit_type": "var",
       "modbus_unit_type_id": 11,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2904,15 +2904,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2487,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2922,15 +2922,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2489,
       "modbus_unit_type": "°",
       "modbus_unit_type_id": 90,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2940,15 +2940,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2491,
       "modbus_unit_type": "kWh",
       "modbus_unit_type_id": 19,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2958,15 +2958,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2493,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2976,15 +2976,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2495,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -2994,15 +2994,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2497,
       "modbus_unit_type": "Hz",
       "modbus_unit_type_id": 27,
-      "modbus_scale": 0.1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3012,15 +3012,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2499,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3030,15 +3030,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2501,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3048,15 +3048,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2503,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3066,15 +3066,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2505,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3084,15 +3084,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2507,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3102,15 +3102,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2509,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3120,15 +3120,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2511,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3138,15 +3138,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2513,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3156,15 +3156,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ab",
+      "modbus_data_format": "uint32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2515,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -3179,10 +3179,10 @@
       "modbus_register_addr": 2517,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -3197,10 +3197,10 @@
       "modbus_register_addr": 2518,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -3215,10 +3215,10 @@
       "modbus_register_addr": 2519,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -3233,10 +3233,10 @@
       "modbus_register_addr": 2520,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -3251,10 +3251,10 @@
       "modbus_register_addr": 2521,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -3269,10 +3269,10 @@
       "modbus_register_addr": 2522,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -3282,15 +3282,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2523,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3300,15 +3300,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2525,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3318,15 +3318,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2527,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3336,15 +3336,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2529,
       "modbus_unit_type": "VA",
       "modbus_unit_type_id": 8,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3354,15 +3354,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2531,
       "modbus_unit_type": "var",
       "modbus_unit_type_id": 11,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3372,15 +3372,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2533,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3390,15 +3390,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2535,
       "modbus_unit_type": "°",
       "modbus_unit_type_id": 90,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3408,15 +3408,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2537,
       "modbus_unit_type": "kWh",
       "modbus_unit_type_id": 19,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3426,15 +3426,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2539,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3444,15 +3444,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2541,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3462,15 +3462,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2543,
       "modbus_unit_type": "Hz",
       "modbus_unit_type_id": 27,
-      "modbus_scale": 0.1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3480,15 +3480,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2545,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3498,15 +3498,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2547,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3516,15 +3516,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2549,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3534,15 +3534,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2551,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3552,15 +3552,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2553,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3570,15 +3570,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2555,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3588,15 +3588,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2557,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3606,15 +3606,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2559,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3624,15 +3624,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ab",
+      "modbus_data_format": "uint32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2561,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -3647,10 +3647,10 @@
       "modbus_register_addr": 2563,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -3665,10 +3665,10 @@
       "modbus_register_addr": 2564,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -3683,10 +3683,10 @@
       "modbus_register_addr": 2565,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -3701,10 +3701,10 @@
       "modbus_register_addr": 2566,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -3719,10 +3719,10 @@
       "modbus_register_addr": 2567,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -3737,10 +3737,10 @@
       "modbus_register_addr": 2568,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -3750,15 +3750,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2569,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3768,15 +3768,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2571,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3786,15 +3786,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2573,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3804,15 +3804,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2575,
       "modbus_unit_type": "VA",
       "modbus_unit_type_id": 8,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3822,15 +3822,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2577,
       "modbus_unit_type": "var",
       "modbus_unit_type_id": 11,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3840,15 +3840,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2579,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3858,15 +3858,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2581,
       "modbus_unit_type": "°",
       "modbus_unit_type_id": 90,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3876,15 +3876,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2583,
       "modbus_unit_type": "kWh",
       "modbus_unit_type_id": 19,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3894,15 +3894,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2585,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3912,15 +3912,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2587,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3930,15 +3930,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2589,
       "modbus_unit_type": "Hz",
       "modbus_unit_type_id": 27,
-      "modbus_scale": 0.1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3948,15 +3948,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2591,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3966,15 +3966,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2593,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -3984,15 +3984,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2595,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4002,15 +4002,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2597,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4020,15 +4020,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2599,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4038,15 +4038,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2601,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4056,15 +4056,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2603,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4074,15 +4074,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2605,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4092,15 +4092,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ab",
+      "modbus_data_format": "uint32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2607,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -4115,10 +4115,10 @@
       "modbus_register_addr": 2609,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -4133,10 +4133,10 @@
       "modbus_register_addr": 2610,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -4151,10 +4151,10 @@
       "modbus_register_addr": 2611,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -4169,10 +4169,10 @@
       "modbus_register_addr": 2612,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -4187,10 +4187,10 @@
       "modbus_register_addr": 2613,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -4205,10 +4205,10 @@
       "modbus_register_addr": 2614,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -4218,15 +4218,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2615,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4236,15 +4236,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2617,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4254,15 +4254,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2619,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4272,15 +4272,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2621,
       "modbus_unit_type": "VA",
       "modbus_unit_type_id": 8,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4290,15 +4290,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2623,
       "modbus_unit_type": "var",
       "modbus_unit_type_id": 11,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4308,15 +4308,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2625,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4326,15 +4326,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2627,
       "modbus_unit_type": "°",
       "modbus_unit_type_id": 90,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4344,15 +4344,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2629,
       "modbus_unit_type": "kWh",
       "modbus_unit_type_id": 19,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4362,15 +4362,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2631,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4380,15 +4380,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2633,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4398,15 +4398,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2635,
       "modbus_unit_type": "Hz",
       "modbus_unit_type_id": 27,
-      "modbus_scale": 0.1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4416,15 +4416,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2637,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4434,15 +4434,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2639,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4452,15 +4452,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2641,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4470,15 +4470,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2643,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4488,15 +4488,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2645,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4506,15 +4506,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2647,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4524,15 +4524,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2649,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4542,15 +4542,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2651,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4560,15 +4560,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ab",
+      "modbus_data_format": "uint32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2653,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -4583,10 +4583,10 @@
       "modbus_register_addr": 2655,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -4601,10 +4601,10 @@
       "modbus_register_addr": 2656,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -4619,10 +4619,10 @@
       "modbus_register_addr": 2657,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -4637,10 +4637,10 @@
       "modbus_register_addr": 2658,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -4655,10 +4655,10 @@
       "modbus_register_addr": 2659,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -4673,10 +4673,10 @@
       "modbus_register_addr": 2660,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -4686,15 +4686,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2661,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4704,15 +4704,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2663,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4722,15 +4722,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2665,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4740,15 +4740,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2667,
       "modbus_unit_type": "VA",
       "modbus_unit_type_id": 8,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4758,15 +4758,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2669,
       "modbus_unit_type": "var",
       "modbus_unit_type_id": 11,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4776,15 +4776,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2671,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4794,15 +4794,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2673,
       "modbus_unit_type": "°",
       "modbus_unit_type_id": 90,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4812,15 +4812,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2675,
       "modbus_unit_type": "kWh",
       "modbus_unit_type_id": 19,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4830,15 +4830,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2677,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4848,15 +4848,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2679,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4866,15 +4866,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2681,
       "modbus_unit_type": "Hz",
       "modbus_unit_type_id": 27,
-      "modbus_scale": 0.1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4884,15 +4884,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2683,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4902,15 +4902,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2685,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4920,15 +4920,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2687,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4938,15 +4938,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2689,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4956,15 +4956,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2691,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4974,15 +4974,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2693,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -4992,15 +4992,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2695,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5010,15 +5010,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2697,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5028,15 +5028,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ab",
+      "modbus_data_format": "uint32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2699,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -5051,10 +5051,10 @@
       "modbus_register_addr": 2701,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -5069,10 +5069,10 @@
       "modbus_register_addr": 2702,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -5087,10 +5087,10 @@
       "modbus_register_addr": 2703,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -5105,10 +5105,10 @@
       "modbus_register_addr": 2704,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -5123,10 +5123,10 @@
       "modbus_register_addr": 2705,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -5141,10 +5141,10 @@
       "modbus_register_addr": 2706,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -5154,15 +5154,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2707,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5172,15 +5172,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2709,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5190,15 +5190,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2711,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5208,15 +5208,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2713,
       "modbus_unit_type": "VA",
       "modbus_unit_type_id": 8,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5226,15 +5226,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2715,
       "modbus_unit_type": "var",
       "modbus_unit_type_id": 11,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5244,15 +5244,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2717,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5262,15 +5262,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2719,
       "modbus_unit_type": "°",
       "modbus_unit_type_id": 90,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5280,15 +5280,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2721,
       "modbus_unit_type": "kWh",
       "modbus_unit_type_id": 19,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5298,15 +5298,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2723,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5316,15 +5316,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2725,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5334,15 +5334,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2727,
       "modbus_unit_type": "Hz",
       "modbus_unit_type_id": 27,
-      "modbus_scale": 0.1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5352,15 +5352,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2729,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5370,15 +5370,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2731,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5388,15 +5388,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2733,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5406,15 +5406,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2735,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5424,15 +5424,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2737,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5442,15 +5442,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2739,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5460,15 +5460,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2741,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5478,15 +5478,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2743,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5496,15 +5496,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ab",
+      "modbus_data_format": "uint32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2745,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -5519,10 +5519,10 @@
       "modbus_register_addr": 2747,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -5537,10 +5537,10 @@
       "modbus_register_addr": 2748,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -5555,10 +5555,10 @@
       "modbus_register_addr": 2749,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -5573,10 +5573,10 @@
       "modbus_register_addr": 2750,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -5591,10 +5591,10 @@
       "modbus_register_addr": 2751,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -5609,10 +5609,10 @@
       "modbus_register_addr": 2752,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -5622,15 +5622,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2753,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5640,15 +5640,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2755,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5658,15 +5658,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2757,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5676,15 +5676,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2759,
       "modbus_unit_type": "VA",
       "modbus_unit_type_id": 8,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5694,15 +5694,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2761,
       "modbus_unit_type": "var",
       "modbus_unit_type_id": 11,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5712,15 +5712,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2763,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5730,15 +5730,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2765,
       "modbus_unit_type": "°",
       "modbus_unit_type_id": 90,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5748,15 +5748,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2767,
       "modbus_unit_type": "kWh",
       "modbus_unit_type_id": 19,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5766,15 +5766,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2769,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5784,15 +5784,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2771,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5802,15 +5802,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2773,
       "modbus_unit_type": "Hz",
       "modbus_unit_type_id": 27,
-      "modbus_scale": 0.1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5820,15 +5820,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2775,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5838,15 +5838,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2777,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5856,15 +5856,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2779,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5874,15 +5874,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2781,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5892,15 +5892,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2783,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5910,15 +5910,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2785,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5928,15 +5928,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2787,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5946,15 +5946,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2789,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -5964,15 +5964,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ab",
+      "modbus_data_format": "uint32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2791,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -5987,10 +5987,10 @@
       "modbus_register_addr": 2793,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -6005,10 +6005,10 @@
       "modbus_register_addr": 2794,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -6023,10 +6023,10 @@
       "modbus_register_addr": 2795,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -6041,10 +6041,10 @@
       "modbus_register_addr": 2796,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -6059,10 +6059,10 @@
       "modbus_register_addr": 2797,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -6077,10 +6077,10 @@
       "modbus_register_addr": 2798,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -6090,15 +6090,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2799,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6108,15 +6108,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2801,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6126,15 +6126,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2803,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6144,15 +6144,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2805,
       "modbus_unit_type": "VA",
       "modbus_unit_type_id": 8,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6162,15 +6162,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2807,
       "modbus_unit_type": "var",
       "modbus_unit_type_id": 11,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6180,15 +6180,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2809,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6198,15 +6198,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2811,
       "modbus_unit_type": "°",
       "modbus_unit_type_id": 90,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6216,15 +6216,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2813,
       "modbus_unit_type": "kWh",
       "modbus_unit_type_id": 19,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6234,15 +6234,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2815,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6252,15 +6252,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2817,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6270,15 +6270,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2819,
       "modbus_unit_type": "Hz",
       "modbus_unit_type_id": 27,
-      "modbus_scale": 0.1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6288,15 +6288,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2821,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6306,15 +6306,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2823,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6324,15 +6324,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2825,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6342,15 +6342,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2827,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6360,15 +6360,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2829,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6378,15 +6378,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2831,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6396,15 +6396,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2833,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6414,15 +6414,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2835,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6432,15 +6432,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ab",
+      "modbus_data_format": "uint32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2837,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -6455,10 +6455,10 @@
       "modbus_register_addr": 2839,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -6473,10 +6473,10 @@
       "modbus_register_addr": 2840,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -6491,10 +6491,10 @@
       "modbus_register_addr": 2841,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -6509,10 +6509,10 @@
       "modbus_register_addr": 2842,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -6527,10 +6527,10 @@
       "modbus_register_addr": 2843,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -6545,10 +6545,10 @@
       "modbus_register_addr": 2844,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -6558,15 +6558,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2845,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6576,15 +6576,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2847,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6594,15 +6594,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2849,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6612,15 +6612,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2851,
       "modbus_unit_type": "VA",
       "modbus_unit_type_id": 8,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6630,15 +6630,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2853,
       "modbus_unit_type": "var",
       "modbus_unit_type_id": 11,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6648,15 +6648,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2855,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6666,15 +6666,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2857,
       "modbus_unit_type": "°",
       "modbus_unit_type_id": 90,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6684,15 +6684,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2859,
       "modbus_unit_type": "kWh",
       "modbus_unit_type_id": 19,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6702,15 +6702,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2861,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6720,15 +6720,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2863,
       "modbus_unit_type": "kVArh",
       "modbus_unit_type_id": 243,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6738,15 +6738,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2865,
       "modbus_unit_type": "Hz",
       "modbus_unit_type_id": 27,
-      "modbus_scale": 0.1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6756,15 +6756,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2867,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6774,15 +6774,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2869,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6792,15 +6792,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2871,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6810,15 +6810,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2873,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6828,15 +6828,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2875,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6846,15 +6846,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2877,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6864,15 +6864,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2879,
       "modbus_unit_type": "kW",
       "modbus_unit_type_id": 48,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6882,15 +6882,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "float32_ab",
+      "modbus_data_format": "float32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2881,
       "modbus_unit_type": "V",
       "modbus_unit_type_id": 5,
-      "modbus_scale": 0.001,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -6900,15 +6900,15 @@
       "description": "",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ab",
+      "modbus_data_format": "uint32_abcd",
       "modbus_register_num": 2,
       "modbus_register_addr": 2883,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -6923,10 +6923,10 @@
       "modbus_register_addr": 2885,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -6941,10 +6941,10 @@
       "modbus_register_addr": 2886,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -6959,10 +6959,10 @@
       "modbus_register_addr": 2887,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -6977,10 +6977,10 @@
       "modbus_register_addr": 2888,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -6995,10 +6995,10 @@
       "modbus_register_addr": 2889,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     },
@@ -7013,10 +7013,10 @@
       "modbus_register_addr": 2890,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Value"
+          "type": "Analog-Value",
+          "enable": true
         }
       }
     }

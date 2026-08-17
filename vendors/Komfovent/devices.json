@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "c6-controller-general",
+      "name": "Komfovent - C6 CONTROLLER - GENERAL",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Komfovent/c6-controller-general/c6-controller-general-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "c6m-controller-general",
+      "name": "Komfovent - C6M CONTROLLER - GENERAL",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Komfovent/c6m-controller-general/c6m-controller-general-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "domekt-unit-controller-c6",
+      "name": "Komfovent - DOMEKT (UNIT CONTROLLER C6)",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Komfovent/domekt-unit-controller-c6/domekt-unit-controller-c6-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    }
+  ]
+}

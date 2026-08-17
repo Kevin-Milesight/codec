@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "cvm-c11",
+      "name": "Circutor - CVM-C11",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Circutor/cvm-c11/cvm-c11-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "none",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "cvm-e3-mini",
+      "name": "Circutor - CVM E3 MINI",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Circutor/cvm-e3-mini/cvm-e3-mini-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    }
+  ]
+}

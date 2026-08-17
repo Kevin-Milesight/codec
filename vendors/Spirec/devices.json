@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "ecospi",
+      "name": "Spirec - ECOSPI",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Spirec/ecospi/ecospi-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "ecovap",
+      "name": "Spirec - ECOVAP",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Spirec/ecovap/ecovap-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "spi-maxi",
+      "name": "Spirec - SPI-MAXI",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Spirec/spi-maxi/spi-maxi-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "em120-rtu-2p-2-wire",
+      "name": "Weidmuller - EM120-RTU-2P 2 WIRE",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Weidmuller/em120-rtu-2p-2-wire/em120-rtu-2p-2-wire-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "em120-rtu-2p-3-wire",
+      "name": "Weidmuller - EM120-RTU-2P 3 WIRE",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Weidmuller/em120-rtu-2p-3-wire/em120-rtu-2p-3-wire-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "em120-rtu-2p-4-wire",
+      "name": "Weidmuller - EM120-RTU-2P 4 WIRE ",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Weidmuller/em120-rtu-2p-4-wire/em120-rtu-2p-4-wire-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "em124-rtu-2l",
+      "name": "Weidmuller - EM124-RTU-2L",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Weidmuller/em124-rtu-2l/em124-rtu-2l-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "em220",
+      "name": "Weidmuller - EM220",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Weidmuller/em220/em220-codec.json",
+      "modbus_default_slave_id": 1
+    }
+  ]
+}

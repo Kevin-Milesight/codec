@@ -1,0 +1,112 @@
+{
+  "object": [
+    {
+      "id": "actual_velocity",
+      "name": "Actual Velocity",
+      "description": "4:03000. Actual velocity in mm/s",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_abcd",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 2999,
+      "modbus_unit_type": "mm/s",
+      "modbus_unit_type_id": 161,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "flow_rate",
+      "name": "Flow Rate",
+      "description": "4:03002. Actual flow value; unit per 4:00208 (default m3/h)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_abcd",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 3001,
+      "modbus_unit_type": "m³/h",
+      "modbus_unit_type_id": 135,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "insulation_value",
+      "name": "Insulation Value",
+      "description": "4:03004. Insulation value from last insulation test",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_abcd",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 3003,
+      "modbus_unit_type": "MΩ",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "electrode_impedance_a",
+      "name": "Electrode Impedance A",
+      "description": "4:03008. Electrode impedance A for empty pipe detection",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_abcd",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 3007,
+      "modbus_unit_type": "kΩ",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "electrode_impedance_b",
+      "name": "Electrode Impedance B",
+      "description": "4:03010. Electrode impedance B for empty pipe detection",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_abcd",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 3009,
+      "modbus_unit_type": "kΩ",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "flowrate_percent_value",
+      "name": "Flowrate Percent Value",
+      "description": "4:03012. Flowrate as percent of Qn",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_abcd",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 3011,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    }
+  ]
+}

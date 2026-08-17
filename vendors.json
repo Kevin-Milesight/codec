@@ -1,139 +1,985 @@
 {
-    "vendors": [
-        {
-            "id": "milesight-iot",
-            "name": "Milesight IoT",
-            "logo": "vendors/milesight-iot/logo.png",
-            "website": "https://www.milesight-iot.com",
-            "description": "Make Sensing Matter",
-            "oui": "24e124",
-            "devices": "vendors/milesight-iot/devices.json"
-        },
-        {
-            "id": "elsys",
-            "name": "Elsys",
-            "logo": "",
-            "website": "https://www.elsys.se",
-            "description": "Swedish company providing wireless sensors and IoT solutions for smart buildings and energy management.",
-            "oui": "a81758",
-            "devices": "vendors/Elsys/devices.json"
-        },
-        {
-            "id": "adeunis",
-            "name": "Adeunis",
-            "logo": "",
-            "website": "https://www.adeunis.com",
-            "description": "French manufacturer of LoRaWAN and Sigfox industrial sensors and field test devices.",
-            "oui": "0018b2",
-            "devices": "vendors/Adeunis/devices.json"
-        },
-        {
-            "id": "dragino",
-            "name": "Dragino",
-            "logo": "",
-            "website": "https://www.dragino.com",
-            "description": "Chinese manufacturer of LoRaWAN end nodes, gateways and IoT sensors.",
-            "oui": "a84041",
-            "devices": "vendors/Dragino/devices.json"
-        },
-        {
-            "id": "netvox",
-            "name": "Netvox",
-            "logo": "",
-            "website": "http://www.netvox.com.tw",
-            "description": "Taiwanese manufacturer of LoRaWAN sensors and actuators (R311/R602/R711/R718/R719/R720/R72x/R809/R831/R900/RA/RB series).",
-            "oui": "",
-            "devices": "vendors/Netvox/devices.json"
-        },
-        {
-            "id": "watteco",
-            "name": "Watteco",
-            "logo": "",
-            "website": "https://www.watteco.com",
-            "description": "French manufacturer of LoRaWAN sensors (NKE group); uses ZCL Cluster-based payload format on fPort 125.",
-            "oui": "",
-            "devices": "vendors/Watteco/devices.json"
-        },
-        {
-            "id": "atim",
-            "name": "ATIM",
-            "logo": "",
-            "website": "https://www.atim.com",
-            "description": "French manufacturer of LoRaWAN sensors for building automation and industrial monitoring (ACW series).",
-            "oui": "",
-            "devices": "vendors/ATIM/devices.json"
-        },
-        {
-            "id": "sontay",
-            "name": "Sontay",
-            "logo": "",
-            "website": "https://www.sontay.com",
-            "description": "UK manufacturer of building automation sensors and LoRaWAN wireless sensing solutions (RF-LW series).",
-            "oui": "",
-            "devices": "vendors/Sontay/devices.json"
-        },
-        {
-            "id": "mclimate",
-            "name": "MClimate",
-            "logo": "",
-            "website": "https://mclimate.eu",
-            "description": "Bulgarian IoT manufacturer specializing in LoRaWAN smart building devices including TRVs, CO2 sensors, flood sensors, and water valves.",
-            "oui": "",
-            "devices": "vendors/MClimate/devices.json"
-        },
-        {
-            "id": "sensecap",
-            "name": "SenseCAP",
-            "logo": "",
-            "website": "https://www.seeedstudio.com/sensecap",
-            "description": "Seeed Studio's industrial-grade LoRaWAN sensor series for smart agriculture and environmental monitoring.",
-            "oui": "",
-            "devices": "vendors/SenseCAP/devices.json"
-        },
-        {
-            "id": "enless",
-            "name": "Enless Wireless",
-            "logo": "",
-            "website": "https://enless-wireless.com",
-            "description": "French manufacturer of LoRaWAN sensors for building automation, including T&H, CO2, pulse counters and analog sensors.",
-            "oui": "",
-            "devices": "vendors/Enless/devices.json"
-        },
-        {
-            "id": "browan",
-            "name": "Browan",
-            "logo": "",
-            "website": "https://www.browan.com",
-            "description": "Taiwan-based LoRaWAN sensor manufacturer, TABS product line covering T&H, motion, door/window, water leak, light, sound and IAQ.",
-            "oui": "",
-            "devices": "vendors/Browan/devices.json"
-        },
-        {
-            "id": "decentlab",
-            "name": "Decentlab",
-            "logo": "",
-            "website": "https://www.decentlab.com",
-            "description": "Swiss manufacturer of precision LoRaWAN environmental and agricultural sensors covering weather stations, soil, water quality, distance, PAR, and IAQ.",
-            "oui": "",
-            "devices": "vendors/Decentlab/devices.json"
-        },
-        {
-            "id": "fludia",
-            "name": "Fludia",
-            "logo": "",
-            "website": "https://www.fludia.com",
-            "description": "French manufacturer of LoRaWAN IoT sensors for smart metering and energy monitoring (FM432 series: electricity, gas, pulse, temperature).",
-            "oui": "",
-            "devices": "vendors/Fludia/devices.json"
-        },
-        {
-            "id": "synetica",
-            "name": "Synetica",
-            "logo": "",
-            "website": "https://synetica.net",
-            "description": "UK-based manufacturer of LoRaWAN environmental and air quality sensors under the enLink brand.",
-            "oui": "",
-            "devices": "vendors/Synetica/devices.json"
-        }
-    ]
+  "vendors": [
+    {
+      "id": "ABB",
+      "name": "ABB",
+      "logo": "",
+      "website": "https://global.abb/group/en",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/ABB/devices.json"
+    },
+    {
+      "id": "Accuenergy",
+      "name": "Accuenergy",
+      "logo": "",
+      "website": "https://www.accuenergy.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Accuenergy/devices.json"
+    },
+    {
+      "id": "adeunis",
+      "name": "Adeunis",
+      "logo": "",
+      "website": "https://www.adeunis.com",
+      "description": "French manufacturer of LoRaWAN and Sigfox industrial sensors and field test devices.",
+      "oui": "0018b2",
+      "devices": "vendors/Adeunis/devices.json"
+    },
+    {
+      "id": "Adtek",
+      "name": "Adtek",
+      "logo": "",
+      "website": "https://www.adtek.com.tw/web/index/index.jsp?lang=en",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Adtek/devices.json"
+    },
+    {
+      "id": "Advantech",
+      "name": "Advantech",
+      "logo": "",
+      "website": "https://www.advantech.com/en",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Advantech/devices.json"
+    },
+    {
+      "id": "Aermec",
+      "name": "Aermec",
+      "logo": "",
+      "website": "https://global.aermec.com/en/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Aermec/devices.json"
+    },
+    {
+      "id": "Airzone",
+      "name": "Airzone",
+      "logo": "",
+      "website": "https://www.airzonecontrol.com",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Airzone/devices.json"
+    },
+    {
+      "id": "Aldes",
+      "name": "Aldes",
+      "logo": "",
+      "website": "https://www.aldes.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Aldes/devices.json"
+    },
+    {
+      "id": "Algodue",
+      "name": "Algodue",
+      "logo": "",
+      "website": "https://www.algodue.com/en/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Algodue/devices.json"
+    },
+    {
+      "id": "AntarcAutomation",
+      "name": "Antarc Automation",
+      "logo": "",
+      "website": "https://www.antarc-automation.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/AntarcAutomation/devices.json"
+    },
+    {
+      "id": "Aquaread",
+      "name": "Aquaread",
+      "logo": "",
+      "website": "https://www.aquaread.com",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Aquaread/devices.json"
+    },
+    {
+      "id": "atim",
+      "name": "ATIM",
+      "logo": "",
+      "website": "https://www.atim.com",
+      "description": "French manufacturer of LoRaWAN sensors for building automation and industrial monitoring (ACW series).",
+      "oui": "",
+      "devices": "vendors/ATIM/devices.json"
+    },
+    {
+      "id": "Atlantic",
+      "name": "Atlantic",
+      "logo": "",
+      "website": "https://www.atlantic.fr/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Atlantic/devices.json"
+    },
+    {
+      "id": "BabcockWanson",
+      "name": "BabcockWanson",
+      "logo": "",
+      "website": "https://www.babcock-wanson.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/BabcockWanson/devices.json"
+    },
+    {
+      "id": "Baelz",
+      "name": "Baelz",
+      "logo": "",
+      "website": "https://www.baelz.de/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Baelz/devices.json"
+    },
+    {
+      "id": "Baylan",
+      "name": "Baylan",
+      "logo": "",
+      "website": "https://www.baylanwatermeters.com",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Baylan/devices.json"
+    },
+    {
+      "id": "Belimo",
+      "name": "Belimo",
+      "logo": "",
+      "website": "https://www.belimo.com",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Belimo/devices.json"
+    },
+    {
+      "id": "Belparts",
+      "name": "Belparts",
+      "logo": "",
+      "website": "https://www.belparts.com",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Belparts/devices.json"
+    },
+    {
+      "id": "Biddle",
+      "name": "Biddle",
+      "logo": "",
+      "website": "https://www.biddle.fr",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Biddle/devices.json"
+    },
+    {
+      "id": "browan",
+      "name": "Browan",
+      "logo": "",
+      "website": "https://www.browan.com",
+      "description": "Taiwan-based LoRaWAN sensor manufacturer, TABS product line covering T&H, motion, door/window, water leak, light, sound and IAQ.",
+      "oui": "",
+      "devices": "vendors/Browan/devices.json"
+    },
+    {
+      "id": "CarloGavazzi",
+      "name": "Carlo Gavazzi",
+      "logo": "",
+      "website": "https://www.gavazziautomation.com",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/CarloGavazzi/devices.json"
+    },
+    {
+      "id": "ChauvinArnoux",
+      "name": "ChauvinArnoux",
+      "logo": "",
+      "website": "https://www.chauvin-arnoux.com",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/ChauvinArnoux/devices.json"
+    },
+    {
+      "id": "Ciat",
+      "name": "Ciat",
+      "logo": "",
+      "website": "https://www.ciat.com",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Ciat/devices.json"
+    },
+    {
+      "id": "Circutor",
+      "name": "Circutor",
+      "logo": "",
+      "website": "https://circutor.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Circutor/devices.json"
+    },
+    {
+      "id": "CromptonInstruments",
+      "name": "CromptonInstruments",
+      "logo": "",
+      "website": "https://www.crompton-instruments.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/CromptonInstruments/devices.json"
+    },
+    {
+      "id": "Daikin",
+      "name": "Daikin",
+      "logo": "",
+      "website": "https://www.daikin.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Daikin/devices.json"
+    },
+    {
+      "id": "Danfoss",
+      "name": "Danfoss",
+      "logo": "",
+      "website": "https://www.danfoss.com",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Danfoss/devices.json"
+    },
+    {
+      "id": "decentlab",
+      "name": "Decentlab",
+      "logo": "",
+      "website": "https://www.decentlab.com",
+      "description": "Swiss manufacturer of precision LoRaWAN environmental and agricultural sensors covering weather stations, soil, water quality, distance, PAR, and IAQ.",
+      "oui": "",
+      "devices": "vendors/Decentlab/devices.json"
+    },
+    {
+      "id": "DeDietrich",
+      "name": "DeDietrich",
+      "logo": "",
+      "website": "https://www.dedietrich-thermique.fr/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/DeDietrich/devices.json"
+    },
+    {
+      "id": "DeltaOhm",
+      "name": "DeltaOhm",
+      "logo": "",
+      "website": "https://www.deltaohm.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/DeltaOhm/devices.json"
+    },
+    {
+      "id": "DentInstruments",
+      "name": "DentInstruments",
+      "logo": "",
+      "website": "https://www.dentinstruments.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/DentInstruments/devices.json"
+    },
+    {
+      "id": "Diehl",
+      "name": "Diehl",
+      "logo": "",
+      "website": "https://www.diehl.com/metering/en/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Diehl/devices.json"
+    },
+    {
+      "id": "Dotvision",
+      "name": "Dotvision",
+      "logo": "",
+      "website": "https://dotvision.com/en/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Dotvision/devices.json"
+    },
+    {
+      "id": "dragino",
+      "name": "Dragino",
+      "logo": "",
+      "website": "https://www.dragino.com",
+      "description": "Chinese manufacturer of LoRaWAN end nodes, gateways and IoT sensors.",
+      "oui": "a84041",
+      "devices": "vendors/Dragino/devices.json"
+    },
+    {
+      "id": "Eastron",
+      "name": "Eastron",
+      "logo": "",
+      "website": "https://www.eastroneurope.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Eastron/devices.json"
+    },
+    {
+      "id": "EcoAdapt",
+      "name": "EcoAdapt",
+      "logo": "",
+      "website": "https://www.eco-adapt.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/EcoAdapt/devices.json"
+    },
+    {
+      "id": "Eimeter",
+      "name": "Eimeter",
+      "logo": "",
+      "website": "",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Eimeter/devices.json"
+    },
+    {
+      "id": "Elco",
+      "name": "Elco",
+      "logo": "",
+      "website": "https://elco.fr/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Elco/devices.json"
+    },
+    {
+      "id": "Elnet",
+      "name": "Elnet",
+      "logo": "",
+      "website": "",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Elnet/devices.json"
+    },
+    {
+      "id": "elsys",
+      "name": "Elsys",
+      "logo": "",
+      "website": "https://www.elsys.se",
+      "description": "Swedish company providing wireless sensors and IoT solutions for smart buildings and energy management.",
+      "oui": "a81758",
+      "devices": "vendors/Elsys/devices.json"
+    },
+    {
+      "id": "Embion",
+      "name": "Embion",
+      "logo": "",
+      "website": "https://embion.eu",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Embion/devices.json"
+    },
+    {
+      "id": "EmuMetering",
+      "name": "EmuMetering",
+      "logo": "",
+      "website": "https://www.emu-metering.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/EmuMetering/devices.json"
+    },
+    {
+      "id": "enless",
+      "name": "Enless Wireless",
+      "logo": "",
+      "website": "https://enless-wireless.com",
+      "description": "French manufacturer of LoRaWAN sensors for building automation, including T&H, CO2, pulse counters and analog sensors.",
+      "oui": "",
+      "devices": "vendors/Enless/devices.json"
+    },
+    {
+      "id": "fludia",
+      "name": "Fludia",
+      "logo": "",
+      "website": "https://www.fludia.com",
+      "description": "French manufacturer of LoRaWAN IoT sensors for smart metering and energy monitoring (FM432 series: electricity, gas, pulse, temperature).",
+      "oui": "",
+      "devices": "vendors/Fludia/devices.json"
+    },
+    {
+      "id": "Foobot",
+      "name": "Foobot",
+      "logo": "",
+      "website": "https://foobot.io",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Foobot/devices.json"
+    },
+    {
+      "id": "FranceAir",
+      "name": "FranceAir",
+      "logo": "",
+      "website": "https://www.france-air.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/FranceAir/devices.json"
+    },
+    {
+      "id": "Fujitsu",
+      "name": "Fujitsu",
+      "logo": "",
+      "website": "https://global.fujitsu/en-global",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Fujitsu/devices.json"
+    },
+    {
+      "id": "GossenMetrawatt",
+      "name": "GossenMetrawatt",
+      "logo": "",
+      "website": "https://www.gossenmetrawatt.de/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/GossenMetrawatt/devices.json"
+    },
+    {
+      "id": "Growatt",
+      "name": "Growatt",
+      "logo": "",
+      "website": "https://en.growatt.com",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Growatt/devices.json"
+    },
+    {
+      "id": "Hager",
+      "name": "Hager",
+      "logo": "",
+      "website": "https://hager.com",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Hager/devices.json"
+    },
+    {
+      "id": "Hargassner",
+      "name": "Hargassner",
+      "logo": "",
+      "website": "https://www.hargassner.com",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Hargassner/devices.json"
+    },
+    {
+      "id": "Hesion",
+      "name": "Hesion",
+      "logo": "",
+      "website": "https://hesion.fr/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Hesion/devices.json"
+    },
+    {
+      "id": "Hitachi",
+      "name": "Hitachi",
+      "logo": "",
+      "website": "https://www.hitachiclimat.fr/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Hitachi/devices.json"
+    },
+    {
+      "id": "Honeywell",
+      "name": "Honeywell",
+      "logo": "",
+      "website": "https://www.honeywell.com",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Honeywell/devices.json"
+    },
+    {
+      "id": "Hoval",
+      "name": "Hoval",
+      "logo": "",
+      "website": "https://www.hoval.com/en/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Hoval/devices.json"
+    },
+    {
+      "id": "Huawei",
+      "name": "Huawei",
+      "logo": "",
+      "website": "https://solar.huawei.com/en",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Huawei/devices.json"
+    },
+    {
+      "id": "IME",
+      "name": "IME",
+      "logo": "",
+      "website": "https://www.imeitaly.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/IME/devices.json"
+    },
+    {
+      "id": "Inbiot",
+      "name": "Inbiot",
+      "logo": "",
+      "website": "https://www.inbiot.es",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Inbiot/devices.json"
+    },
+    {
+      "id": "IntegraMetering",
+      "name": "IntegraMetering",
+      "logo": "",
+      "website": "https://fr.integra-metering.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/IntegraMetering/devices.json"
+    },
+    {
+      "id": "Intuis",
+      "name": "Intuis",
+      "logo": "",
+      "website": "https://intuis.fr/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Intuis/devices.json"
+    },
+    {
+      "id": "IPD",
+      "name": "IPD",
+      "logo": "",
+      "website": "https://www.ipd.com.au/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/IPD/devices.json"
+    },
+    {
+      "id": "Isma",
+      "name": "Isma",
+      "logo": "",
+      "website": "https://www.ismacontrolli.com/en",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Isma/devices.json"
+    },
+    {
+      "id": "ITRON",
+      "name": "ITRON",
+      "logo": "",
+      "website": "https://na.itron.com/fr/home",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/ITRON/devices.json"
+    },
+    {
+      "id": "Janitza",
+      "name": "Janitza",
+      "logo": "",
+      "website": "https://www.janitza.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Janitza/devices.json"
+    },
+    {
+      "id": "Kamstrup",
+      "name": "Kamstrup",
+      "logo": "",
+      "website": "https://www.kamstrup.com/en-en",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Kamstrup/devices.json"
+    },
+    {
+      "id": "Komfovent",
+      "name": "Komfovent",
+      "logo": "",
+      "website": "https://www.komfovent.com/en/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Komfovent/devices.json"
+    },
+    {
+      "id": "Legrand",
+      "name": "Legrand",
+      "logo": "",
+      "website": "https://legrand.com",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Legrand/devices.json"
+    },
+    {
+      "id": "Lennox",
+      "name": "Lennox",
+      "logo": "",
+      "website": "https://www.lennox.com",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Lennox/devices.json"
+    },
+    {
+      "id": "Lettel",
+      "name": "Lettel",
+      "logo": "",
+      "website": "https://lettel.fr/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Lettel/devices.json"
+    },
+    {
+      "id": "MarkClimate",
+      "name": "MarkClimate",
+      "logo": "",
+      "website": "https://www.markclimate.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/MarkClimate/devices.json"
+    },
+    {
+      "id": "mclimate",
+      "name": "MClimate",
+      "logo": "",
+      "website": "https://mclimate.eu",
+      "description": "Bulgarian IoT manufacturer specializing in LoRaWAN smart building devices including TRVs, CO2 sensors, flood sensors, and water valves.",
+      "oui": "",
+      "devices": "vendors/MClimate/devices.json"
+    },
+    {
+      "id": "Micronics",
+      "name": "Micronics",
+      "logo": "",
+      "website": "https://micronicsflowmeters.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Micronics/devices.json"
+    },
+    {
+      "id": "milesight-iot",
+      "name": "Milesight IoT",
+      "logo": "vendors/milesight-iot/logo.png",
+      "website": "https://www.milesight-iot.com",
+      "description": "Make Sensing Matter",
+      "oui": "24e124",
+      "devices": "vendors/milesight-iot/devices.json"
+    },
+    {
+      "id": "Mitsubishi",
+      "name": "Mitsubishi",
+      "logo": "",
+      "website": "https://confort.mitsubishielectric.fr/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Mitsubishi/devices.json"
+    },
+    {
+      "id": "Nanosense",
+      "name": "Nanosense",
+      "logo": "",
+      "website": "https://nano-sense.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Nanosense/devices.json"
+    },
+    {
+      "id": "netvox",
+      "name": "Netvox",
+      "logo": "",
+      "website": "http://www.netvox.com.tw",
+      "description": "Taiwanese manufacturer of LoRaWAN sensors and actuators (R311/R602/R711/R718/R719/R720/R72x/R809/R831/R900/RA/RB series).",
+      "oui": "",
+      "devices": "vendors/Netvox/devices.json"
+    },
+    {
+      "id": "NothernDesign",
+      "name": "NothernDesign",
+      "logo": "",
+      "website": "https://www.ndmeter.co.uk/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/NothernDesign/devices.json"
+    },
+    {
+      "id": "Novus",
+      "name": "Novus",
+      "logo": "",
+      "website": "https://www.novusautomation.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Novus/devices.json"
+    },
+    {
+      "id": "OjElectronics",
+      "name": "OjElectronics",
+      "logo": "",
+      "website": "https://ojelectronics.com",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/OjElectronics/devices.json"
+    },
+    {
+      "id": "Orno",
+      "name": "Orno",
+      "logo": "",
+      "website": "https://www.orno.pl/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Orno/devices.json"
+    },
+    {
+      "id": "Pflow",
+      "name": "Pflow",
+      "logo": "",
+      "website": "https://www.pflowmeters.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Pflow/devices.json"
+    },
+    {
+      "id": "Polier",
+      "name": "Polier",
+      "logo": "",
+      "website": "https://www.polier.fr/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Polier/devices.json"
+    },
+    {
+      "id": "Produal",
+      "name": "Produal",
+      "logo": "",
+      "website": "https://www.produal.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Produal/devices.json"
+    },
+    {
+      "id": "RayleighInstruments",
+      "name": "RayleighInstruments",
+      "logo": "",
+      "website": "https://www.rayleigh.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/RayleighInstruments/devices.json"
+    },
+    {
+      "id": "SchneiderElectric",
+      "name": "Schneider Electric",
+      "logo": "",
+      "website": "https://www.se.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/SchneiderElectric/devices.json"
+    },
+    {
+      "id": "Selec",
+      "name": "Selec",
+      "logo": "",
+      "website": "https://www.selec.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Selec/devices.json"
+    },
+    {
+      "id": "sensecap",
+      "name": "SenseCAP",
+      "logo": "",
+      "website": "https://www.seeedstudio.com/sensecap",
+      "description": "Seeed Studio's industrial-grade LoRaWAN sensor series for smart agriculture and environmental monitoring.",
+      "oui": "",
+      "devices": "vendors/SenseCAP/devices.json"
+    },
+    {
+      "id": "Sensecore",
+      "name": "Sensecore",
+      "logo": "",
+      "website": "https://sensecore.ca/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Sensecore/devices.json"
+    },
+    {
+      "id": "Sensus",
+      "name": "Sensus",
+      "logo": "",
+      "website": "https://www.xylem.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Sensus/devices.json"
+    },
+    {
+      "id": "Sentec",
+      "name": "Sentec",
+      "logo": "",
+      "website": "https://cdsentec.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Sentec/devices.json"
+    },
+    {
+      "id": "Shelly",
+      "name": "Shelly",
+      "logo": "",
+      "website": "https://www.shelly.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Shelly/devices.json"
+    },
+    {
+      "id": "Siemens",
+      "name": "Siemens",
+      "logo": "",
+      "website": "https://siemens.com",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Siemens/devices.json"
+    },
+    {
+      "id": "Smappee",
+      "name": "Smappee",
+      "logo": "",
+      "website": "https://www.smappee.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Smappee/devices.json"
+    },
+    {
+      "id": "Snsnorthern",
+      "name": "Snsnorthern",
+      "logo": "",
+      "website": "https://snsnorthern.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Snsnorthern/devices.json"
+    },
+    {
+      "id": "Socomec",
+      "name": "Socomec",
+      "logo": "",
+      "website": "https://www.socomec.fr/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Socomec/devices.json"
+    },
+    {
+      "id": "sontay",
+      "name": "Sontay",
+      "logo": "",
+      "website": "https://www.sontay.com",
+      "description": "UK manufacturer of building automation sensors and LoRaWAN wireless sensing solutions (RF-LW series).",
+      "oui": "",
+      "devices": "vendors/Sontay/devices.json"
+    },
+    {
+      "id": "Spirec",
+      "name": "Spirec",
+      "logo": "",
+      "website": "https://spirec.fr/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Spirec/devices.json"
+    },
+    {
+      "id": "synetica",
+      "name": "Synetica",
+      "logo": "",
+      "website": "https://synetica.net",
+      "description": "UK-based manufacturer of LoRaWAN environmental and air quality sensors under the enLink brand.",
+      "oui": "",
+      "devices": "vendors/Synetica/devices.json"
+    },
+    {
+      "id": "TecnairLv",
+      "name": "TecnairLv",
+      "logo": "",
+      "website": "https://www.tecnairlv.it/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/TecnairLv/devices.json"
+    },
+    {
+      "id": "TeraSensor",
+      "name": "TeraSensor",
+      "logo": "",
+      "website": "https://tera-sensor.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/TeraSensor/devices.json"
+    },
+    {
+      "id": "THERMOKON",
+      "name": "Thermokon",
+      "logo": "",
+      "website": "https://www.thermokon.de/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/THERMOKON/devices.json"
+    },
+    {
+      "id": "Trumeter",
+      "name": "Trumeter",
+      "logo": "",
+      "website": "https://www.trumeter.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Trumeter/devices.json"
+    },
+    {
+      "id": "VIM",
+      "name": "VIM",
+      "logo": "",
+      "website": "https://www.vim.fr",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/VIM/devices.json"
+    },
+    {
+      "id": "watteco",
+      "name": "Watteco",
+      "logo": "",
+      "website": "https://www.watteco.com",
+      "description": "French manufacturer of LoRaWAN sensors (NKE group); uses ZCL Cluster-based payload format on fPort 125.",
+      "oui": "",
+      "devices": "vendors/Watteco/devices.json"
+    },
+    {
+      "id": "Weidmuller",
+      "name": "Weidmuller",
+      "logo": "",
+      "website": "https://www.weidmuller.fr/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Weidmuller/devices.json"
+    },
+    {
+      "id": "Weishaupt",
+      "name": "Weishaupt",
+      "logo": "",
+      "website": "https://www.weishaupt-corp.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Weishaupt/devices.json"
+    },
+    {
+      "id": "Wilo",
+      "name": "Wilo",
+      "logo": "",
+      "website": "https://wilo.com/fr/fr/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Wilo/devices.json"
+    },
+    {
+      "id": "Zelec",
+      "name": "Zelec",
+      "logo": "",
+      "website": "https://zelec.fr/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Zelec/devices.json"
+    },
+    {
+      "id": "Ziegler",
+      "name": "Ziegler",
+      "logo": "",
+      "website": "https://ziegler-instrument.com/",
+      "description": "",
+      "oui": "",
+      "devices": "vendors/Ziegler/devices.json"
+    }
+  ]
 }

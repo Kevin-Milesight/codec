@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "diematic-isystem",
+      "name": "DeDietrich - DIEMATIC ISYSTEM",
+      "protocol": "modbus rtu",
+      "codec": "vendors/DeDietrich/diematic-isystem/diematic-isystem-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "diematic-m-delta",
+      "name": "DeDietrich - DIEMATIC-M DELTA",
+      "protocol": "modbus rtu",
+      "codec": "vendors/DeDietrich/diematic-m-delta/diematic-m-delta-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "diematic-m3-3-4",
+      "name": "DeDietrich - DIEMATIC M3/3/4",
+      "protocol": "modbus rtu",
+      "codec": "vendors/DeDietrich/diematic-m3-3-4/diematic-m3-3-4-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    }
+  ]
+}

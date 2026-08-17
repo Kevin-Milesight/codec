@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "oj-air2-master-controller-ahu",
+      "name": "OjElectronics - OJ AIR2 MASTER CONTROLLER - AHU",
+      "protocol": "modbus rtu",
+      "codec": "vendors/OjElectronics/oj-air2-master-controller-ahu/oj-air2-master-controller-ahu-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "oj-air2-master-controller-fan",
+      "name": "OjElectronics - OJ AIR2 MASTER CONTROLLER - FAN",
+      "protocol": "modbus rtu",
+      "codec": "vendors/OjElectronics/oj-air2-master-controller-fan/oj-air2-master-controller-fan-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "oj-air2-master-controller-general",
+      "name": "OjElectronics - OJ AIR2 MASTER CONTROLLER - GENERAL",
+      "protocol": "modbus rtu",
+      "codec": "vendors/OjElectronics/oj-air2-master-controller-general/oj-air2-master-controller-general-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    }
+  ]
+}

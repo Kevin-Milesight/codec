@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "distalarm-d251",
+      "name": "Hesion - DISTALARM D251",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Hesion/distalarm-d251/distalarm-d251-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "distalarm-d252",
+      "name": "Hesion - DISTALARM D252",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Hesion/distalarm-d252/distalarm-d252-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    }
+  ]
+}

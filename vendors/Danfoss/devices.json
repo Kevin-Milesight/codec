@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "ecl-comfort-210-296-310-modbus-tcp-ip",
+      "name": "Danfoss - ECL COMFORT 210/296/310",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Danfoss/ecl-comfort-210-296-310-modbus-tcp-ip/ecl-comfort-210-296-310-modbus-tcp-ip-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "vlt-hvac-drive-fc-102",
+      "name": "Danfoss - VLT HVAC DRIVE FC 102",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Danfoss/vlt-hvac-drive-fc-102/vlt-hvac-drive-fc-102-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    }
+  ]
+}

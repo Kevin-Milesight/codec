@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "easyvec",
+      "name": "Aldes - EASYVEC",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Aldes/easyvec/easyvec-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "inspirair",
+      "name": "Aldes - INSPIRAIR",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Aldes/inspirair/inspirair-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    }
+  ]
+}

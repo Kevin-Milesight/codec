@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "b21",
+      "name": "ABB - B21",
+      "protocol": "modbus rtu",
+      "codec": "vendors/ABB/b21/b21-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "b23",
+      "name": "ABB - B23",
+      "protocol": "modbus rtu",
+      "codec": "vendors/ABB/b23/b23-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "b24",
+      "name": "ABB - B24",
+      "protocol": "modbus rtu",
+      "codec": "vendors/ABB/b24/b24-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "scu100-part-1",
+      "name": "ABB - SCU100 (PART 1)",
+      "protocol": "modbus tcp",
+      "codec": "vendors/ABB/scu100-part-1/scu100-part-1-codec.json",
+      "modbus_default_slave_id": 1
+    }
+  ]
+}

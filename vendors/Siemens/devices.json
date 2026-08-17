@@ -1,0 +1,779 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "sentron-7kn-powercenter-poc-1000",
+      "name": "Siemens - SENTRON 7KN POWERCENTER/POC 1000",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/sentron-7kn-powercenter-poc-1000/sentron-7kn-powercenter-poc-1000-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 9600,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "climatix-pol638-dh1",
+      "name": "Siemens - CLIMATIX POL638 DH1",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/climatix-pol638-dh1/climatix-pol638-dh1-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "climatix-pol648-dh3-14-circuit-1",
+      "name": "Siemens - CLIMATIX POL648 DH3.14 - CIRCUIT 1",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/climatix-pol648-dh3-14-circuit-1/climatix-pol648-dh3-14-circuit-1-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "climatix-pol648-dh3-14-circuit-2",
+      "name": "Siemens - CLIMATIX POL648 DH3.14 - CIRCUIT 2",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/climatix-pol648-dh3-14-circuit-2/climatix-pol648-dh3-14-circuit-2-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "climatix-pol648-dh3-14-circuit-3",
+      "name": "Siemens - CLIMATIX POL648 DH3.14 - CIRCUIT 3",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/climatix-pol648-dh3-14-circuit-3/climatix-pol648-dh3-14-circuit-3-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "climatix-pol648-dh3-14-circuit-4",
+      "name": "Siemens - CLIMATIX POL648 DH3.14 - CIRCUIT 4",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/climatix-pol648-dh3-14-circuit-4/climatix-pol648-dh3-14-circuit-4-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "climatix-pol648-dh3-14-dhw-1",
+      "name": "Siemens - CLIMATIX POL648 DH3.14 - DHW 1",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/climatix-pol648-dh3-14-dhw-1/climatix-pol648-dh3-14-dhw-1-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "climatix-pol648-dh3-14-dhw-2",
+      "name": "Siemens - CLIMATIX POL648 DH3.14 - DHW 2",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/climatix-pol648-dh3-14-dhw-2/climatix-pol648-dh3-14-dhw-2-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "climatix-pol648-dh3-14-heat-pump-1",
+      "name": "Siemens - CLIMATIX POL648 DH3.14 - HEAT PUMP 1",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/climatix-pol648-dh3-14-heat-pump-1/climatix-pol648-dh3-14-heat-pump-1-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "climatix-pol648-dh3-14-meters",
+      "name": "Siemens - CLIMATIX POL648 DH3.14 - METERS",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/climatix-pol648-dh3-14-meters/climatix-pol648-dh3-14-meters-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "climatix-pol648-dh3-14-pre-controller",
+      "name": "Siemens - CLIMATIX POL648 DH3.14 - PRE CONTROLLER",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/climatix-pol648-dh3-14-pre-controller/climatix-pol648-dh3-14-pre-controller-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "climatix-pol648-dh3-14-solar-panel-1",
+      "name": "Siemens - CLIMATIX POL648 DH3.14 - SOLAR PANEL 1",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/climatix-pol648-dh3-14-solar-panel-1/climatix-pol648-dh3-14-solar-panel-1-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "evf4u20e-acvatix-intelligent-valve",
+      "name": "Siemens - EVF4U20E - ACVATIX INTELLIGENT VALVE",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/evf4u20e-acvatix-intelligent-valve/evf4u20e-acvatix-intelligent-valve-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "evg4u10e-acvatix-intelligent-valve",
+      "name": "Siemens - EVG4U10E - ACVATIX INTELLIGENT VALVE",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/evg4u10e-acvatix-intelligent-valve/evg4u10e-acvatix-intelligent-valve-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "exf4u20e-acvatix-intelligent-valve",
+      "name": "Siemens - EXF4U20E - ACVATIX INTELLIGENT VALVE",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/exf4u20e-acvatix-intelligent-valve/exf4u20e-acvatix-intelligent-valve-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "exg4u10e-acvatix-intelligent-valve",
+      "name": "Siemens - EXG4U10E - ACVATIX INTELLIGENT VALVE",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/exg4u10e-acvatix-intelligent-valve/exg4u10e-acvatix-intelligent-valve-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "fue950-modbus-rtu",
+      "name": "Siemens - FUE950",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/fue950-modbus-rtu/fue950-modbus-rtu-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "gca161-1e-mo",
+      "name": "Siemens - GCA161.1E/MO",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/gca161-1e-mo/gca161-1e-mo-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "gdb111-1e-mo",
+      "name": "Siemens - GDB111.1E/MO",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/gdb111-1e-mo/gdb111-1e-mo-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "gdb111-9e-mo",
+      "name": "Siemens - GDB111.9E/MO",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/gdb111-9e-mo/gdb111-9e-mo-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "gdb161-9e-mo",
+      "name": "Siemens - GDB161.9E/MO",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/gdb161-9e-mo/gdb161-9e-mo-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "gdb181-1e-mo",
+      "name": "Siemens - GDB181.1E/MO",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/gdb181-1e-mo/gdb181-1e-mo-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "geb161-1e-mo",
+      "name": "Siemens - GEB161.1E/MO",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/geb161-1e-mo/geb161-1e-mo-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "gib161-1e-mo",
+      "name": "Siemens - GIB161.1E/MO",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/gib161-1e-mo/gib161-1e-mo-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "glb111-1e-mo",
+      "name": "Siemens - GLB111.1E/MO",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/glb111-1e-mo/glb111-1e-mo-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "glb111-9e-mo",
+      "name": "Siemens - GLB111.9E/MO",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/glb111-9e-mo/glb111-9e-mo-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "glb161-9e-mo",
+      "name": "Siemens - GLB161.9E/MO",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/glb161-9e-mo/glb161-9e-mo-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "glb181-1e-mo",
+      "name": "Siemens - GLB181.1E/MO",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/glb181-1e-mo/glb181-1e-mo-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "gld161-9e-mo",
+      "name": "Siemens - GLD161.9E/MO",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/gld161-9e-mo/gld161-9e-mo-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "gma161-1e-mo",
+      "name": "Siemens - GMA161.1E/MO",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/gma161-1e-mo/gma161-1e-mo-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "gma161-9e-mo",
+      "name": "Siemens - GMA161.9E/MO",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/gma161-9e-mo/gma161-9e-mo-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "milltronics-bw500",
+      "name": "Siemens - MILLTRONICS BW500",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/milltronics-bw500/milltronics-bw500-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 9600,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "oci460-lfs1",
+      "name": "Siemens - OCI460 - LFS1",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/oci460-lfs1/oci460-lfs1-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "sentron-7km-pac1020",
+      "name": "Siemens - SENTRON 7KM PAC1020",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/sentron-7km-pac1020/sentron-7km-pac1020-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 9600,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "sentron-7kt-pac1600-3-phases-5a",
+      "name": "Siemens - SENTRON 7KT PAC1600 - 3 PHASES - 5A",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/sentron-7kt-pac1600-3-phases-5a/sentron-7kt-pac1600-3-phases-5a-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 9600,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "sentron-7kt-pac1600-3-phases-80a",
+      "name": "Siemens - SENTRON 7KT PAC1600 - 3 PHASES - 80A",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/sentron-7kt-pac1600-3-phases-80a/sentron-7kt-pac1600-3-phases-80a-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 9600,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "sentron-7km-pac2200",
+      "name": "Siemens - SENTRON 7KM PAC2200",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/sentron-7km-pac2200/sentron-7km-pac2200-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 9600,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "sentron-7km-pac3100",
+      "name": "Siemens - SENTRON 7KM PAC3100",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/sentron-7km-pac3100/sentron-7km-pac3100-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 9600,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "sentron-7km-pac3120",
+      "name": "Siemens - SENTRON 7KM PAC3120",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/sentron-7km-pac3120/sentron-7km-pac3120-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 9600,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "sentron-7km-pac3220",
+      "name": "Siemens - SENTRON 7KM PAC3220",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/sentron-7km-pac3220/sentron-7km-pac3220-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 9600,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "sentron-7km-pac4200",
+      "name": "Siemens - SENTRON 7KM PAC4200",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/sentron-7km-pac4200/sentron-7km-pac4200-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 9600,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "qbm3700-13-mo",
+      "name": "Siemens - QBM3700-13/MO",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/qbm3700-13-mo/qbm3700-13-mo-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "qbm3700-25-mo",
+      "name": "Siemens - QBM3700-25/MO",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/qbm3700-25-mo/qbm3700-25-mo-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "qfa2050-mo",
+      "name": "Siemens - QFA2050/MO",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/qfa2050-mo/qfa2050-mo-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "qfa2050d-mo",
+      "name": "Siemens - QFA2050D/MO",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/qfa2050d-mo/qfa2050d-mo-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "qfa3150-mo",
+      "name": "Siemens - QFA3150/MO",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/qfa3150-mo/qfa3150-mo-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "qpa2052-mo",
+      "name": "Siemens - QPA2052/MO",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/qpa2052-mo/qpa2052-mo-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "qpm2102-mo",
+      "name": "Siemens - QPM2102/MO",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/qpm2102-mo/qpm2102-mo-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "qpm2150-mo",
+      "name": "Siemens - QPM2150/MO",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/qpm2150-mo/qpm2150-mo-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "qpm2152-mo",
+      "name": "Siemens - QPM2152/MO",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/qpm2152-mo/qpm2152-mo-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "rdf302-b",
+      "name": "Siemens - RDF302.B",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/rdf302-b/rdf302-b-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "rdf302-b",
+      "name": "Siemens - RDF302.B",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/rdf302-b/rdf302-b-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "rdf660mb-mm",
+      "name": "Siemens - RDF660MB/MM",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/rdf660mb-mm/rdf660mb-mm-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "rdf660mb-mm",
+      "name": "Siemens - RDF660MB/MM",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/rdf660mb-mm/rdf660mb-mm-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "rdf870mb",
+      "name": "Siemens - RDF870MB",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/rdf870mb/rdf870mb-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "sas61-03-mo",
+      "name": "Siemens - SAS61.03/MO",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/sas61-03-mo/sas61-03-mo-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "sas61-33-mo",
+      "name": "Siemens - SAS61.33/MO",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/sas61-33-mo/sas61-33-mo-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "sat61-008-mo",
+      "name": "Siemens - SAT61.008/MO",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/sat61-008-mo/sat61-008-mo-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "sat61-51-mo",
+      "name": "Siemens - SAT61.51/MO",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/sat61-51-mo/sat61-51-mo-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "sav61-00-mo",
+      "name": "Siemens - SAV61.00/MO",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/sav61-00-mo/sav61-00-mo-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "sav61p00-mo",
+      "name": "Siemens - SAV61P00/MO",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/sav61p00-mo/sav61p00-mo-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "sax61-03-mo",
+      "name": "Siemens - SAX61.03/MO",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/sax61-03-mo/sax61-03-mo-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "sax61p03-mo",
+      "name": "Siemens - SAX61P03/MO",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/sax61p03-mo/sax61p03-mo-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "say61p03-mo",
+      "name": "Siemens - SAY61P03/MO",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/say61p03-mo/say61p03-mo-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "sem3-energy",
+      "name": "Siemens - SEM3 - ENERGY",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/sem3-energy/sem3-energy-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "sem3-settings",
+      "name": "Siemens - SEM3 - SETTINGS",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/sem3-settings/sem3-settings-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "sem3-single-phase-monitor-data",
+      "name": "Siemens - SEM3 - SINGLE PHASE MONITOR DATA",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/sem3-single-phase-monitor-data/sem3-single-phase-monitor-data-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "sentron-3na-com",
+      "name": "Siemens - SENTRON 3NA COM",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/sentron-3na-com/sentron-3na-com-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "sentron-3rv2-com",
+      "name": "Siemens - SENTRON 3RV2 COM",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/sentron-3rv2-com/sentron-3rv2-com-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "sentron-5sl6-com",
+      "name": "Siemens - SENTRON 5SL6 COM",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/sentron-5sl6-com/sentron-5sl6-com-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "sentron-5st3-com",
+      "name": "Siemens - SENTRON 5ST3 COM",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/sentron-5st3-com/sentron-5st3-com-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "sentron-5sv6-com",
+      "name": "Siemens - SENTRON 5SV6 COM",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/sentron-5sv6-com/sentron-5sv6-com-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "sentron-5ty1-com",
+      "name": "Siemens - SENTRON 5TY1 COM",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/sentron-5ty1-com/sentron-5ty1-com-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "sentron-7km-pac3200",
+      "name": "Siemens - SENTRON 7KM PAC3200",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/sentron-7km-pac3200/sentron-7km-pac3200-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "sentron-7km-pac5100",
+      "name": "Siemens - SENTRON 7KM PAC5100",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/sentron-7km-pac5100/sentron-7km-pac5100-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "sentron-7km-pac5200",
+      "name": "Siemens - SENTRON 7KM PAC5200",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/sentron-7km-pac5200/sentron-7km-pac5200-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "sentron-7kt-pac1600-1-phase",
+      "name": "Siemens - SENTRON 7KT PAC1600 - 1 PHASE",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/sentron-7kt-pac1600-1-phase/sentron-7kt-pac1600-1-phase-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "sentron-7kt1651-1-phase",
+      "name": "Siemens - SENTRON 7KT1651 1 PHASE",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/sentron-7kt1651-1-phase/sentron-7kt1651-1-phase-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "sentron-7kt1652-1-phase-63-a-mid",
+      "name": "Siemens - SENTRON 7KT1652 1 PHASE 63 A MID",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/sentron-7kt1652-1-phase-63-a-mid/sentron-7kt1652-1-phase-63-a-mid-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "sentron-7kt1661-3-phases-5a",
+      "name": "Siemens - SENTRON 7KT1661 3 PHASES 5A",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/sentron-7kt1661-3-phases-5a/sentron-7kt1661-3-phases-5a-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "sentron-7kt1662-3-phase-5-a-mid",
+      "name": "Siemens - SENTRON 7KT1662 3 PHASE 5 A MID",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/sentron-7kt1662-3-phase-5-a-mid/sentron-7kt1662-3-phase-5-a-mid-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "sentron-7kt1665-3-phases-80a",
+      "name": "Siemens - SENTRON 7KT1665 3 PHASES 80A",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/sentron-7kt1665-3-phases-80a/sentron-7kt1665-3-phases-80a-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "sentron-7kt1666-3-phase-80-a-mid",
+      "name": "Siemens - SENTRON 7KT1666 3 PHASE 80 A MID",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/sentron-7kt1666-3-phase-80-a-mid/sentron-7kt1666-3-phase-80-a-mid-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "sitrans-lt500",
+      "name": "Siemens - SITRANS LT500",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/sitrans-lt500/sitrans-lt500-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "sitrans-mag-6000",
+      "name": "Siemens - SITRANS MAG 6000",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/sitrans-mag-6000/sitrans-mag-6000-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 9600,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "sitrans-mag8000-modbus",
+      "name": "Siemens - SITRANS MAG8000 MODBUS",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/sitrans-mag8000-modbus/sitrans-mag8000-modbus-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 9600,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "skb62-mo",
+      "name": "Siemens - SKB62/MO",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/skb62-mo/skb62-mo-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "skc62-mo",
+      "name": "Siemens - SKC62/MO",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/skc62-mo/skc62-mo-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "skd62-mo",
+      "name": "Siemens - SKD62/MO",
+      "protocol": "modbus tcp",
+      "codec": "vendors/Siemens/skd62-mo/skd62-mo-codec.json",
+      "modbus_default_slave_id": 1
+    },
+    {
+      "id": "uh50-wzu-modbus",
+      "name": "Siemens - UH50 (WZU MODBUS)",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Siemens/uh50-wzu-modbus/uh50-wzu-modbus-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    }
+  ]
+}

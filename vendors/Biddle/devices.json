@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "indac2",
+      "name": "Biddle - INDAC2",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Biddle/indac2/indac2-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "noz2",
+      "name": "Biddle - NOZ2",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Biddle/noz2/noz2-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "sensair",
+      "name": "Biddle - SENSAIR",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Biddle/sensair/sensair-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    }
+  ]
+}

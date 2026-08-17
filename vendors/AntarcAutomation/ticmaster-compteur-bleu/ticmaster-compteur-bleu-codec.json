@@ -11,10 +11,10 @@
       "modbus_register_addr": 7,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -29,10 +29,10 @@
       "modbus_register_addr": 11,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -47,10 +47,10 @@
       "modbus_register_addr": 12,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -65,10 +65,10 @@
       "modbus_register_addr": 17,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -78,15 +78,15 @@
       "description": "Compteur d'étiquettes TIC décodées depuis le dernier reset [R]",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 21,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -101,10 +101,10 @@
       "modbus_register_addr": 97,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -119,10 +119,10 @@
       "modbus_register_addr": 100,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -137,10 +137,10 @@
       "modbus_register_addr": 200,
       "modbus_unit_type": "%",
       "modbus_unit_type_id": 98,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -155,10 +155,10 @@
       "modbus_register_addr": 0,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -173,10 +173,10 @@
       "modbus_register_addr": 1,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -191,10 +191,10 @@
       "modbus_register_addr": 6,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -209,10 +209,10 @@
       "modbus_register_addr": 18,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -227,10 +227,10 @@
       "modbus_register_addr": 23,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -240,15 +240,15 @@
       "description": "Avertissement de Depassement d'intensite de reglage pour la phase 1",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 304,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -258,15 +258,15 @@
       "description": "Avertissement de Depassement d'intensite de reglage pour la phase 2",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 306,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -276,15 +276,15 @@
       "description": "Avertissement de Depassement d'intensite de reglage pour la phase 3",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 308,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -294,15 +294,15 @@
       "description": "Avertissement de Depassement De Puissance Souscrite",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 310,
       "modbus_unit_type": "VA",
       "modbus_unit_type_id": 8,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -312,15 +312,15 @@
       "description": "Index du troisieme compteur",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 312,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -330,15 +330,15 @@
       "description": "Index option Base",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 314,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -348,15 +348,15 @@
       "description": "Index option Tempo / Heures Creuses Jours Bleus",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 316,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -366,15 +366,15 @@
       "description": "Index option Tempo / Heures Creuses Jours Rouges",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 318,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -384,15 +384,15 @@
       "description": "Index option Tempo / Heures Creuses Jours Blancs",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 320,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -402,15 +402,15 @@
       "description": "Index option Tempo / Heures Pleines Jours Bleus",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 322,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -420,15 +420,15 @@
       "description": "Index option Tempo / Heures Pleines Jours Rouges",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 324,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -438,15 +438,15 @@
       "description": "Index option Tempo / Heures Pleines Jours Blancs",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 326,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -456,15 +456,15 @@
       "description": "Couleur du lendemain",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 328,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -474,15 +474,15 @@
       "description": "Index option EJP / Heures Normales",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 330,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -492,15 +492,15 @@
       "description": "Index option EJP / Heures de Pointe Mobile",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 332,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -510,15 +510,15 @@
       "description": "Index gaz",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 334,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -528,15 +528,15 @@
       "description": "Index option Heures Creuses / Heures Creuses",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 336,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -546,15 +546,15 @@
       "description": "Index option Heures Creuses / Heures Pleines",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 338,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -564,15 +564,15 @@
       "description": "Horaire Heures Pleines Heures Creuses",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 340,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -582,15 +582,15 @@
       "description": "Intensite Instantanee (Mono)",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 342,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -600,15 +600,15 @@
       "description": "Intensite Instantanee pour la phase 1",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 344,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -618,15 +618,15 @@
       "description": "Intensite Instantanee pour la phase 2",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 346,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -636,15 +636,15 @@
       "description": "Intensite Instantanee pour la phase 3",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 348,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -654,15 +654,15 @@
       "description": "Intensite maximale appelee (Mono)",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 350,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -672,15 +672,15 @@
       "description": "Intensite maximale pour la phase 1",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 352,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -690,15 +690,15 @@
       "description": "Intensite maximale pour la phase 2",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 354,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -708,15 +708,15 @@
       "description": "Intensite maximale pour la phase 3",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 356,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -726,15 +726,15 @@
       "description": "Intensite souscrite",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 358,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -744,15 +744,15 @@
       "description": "Option tarifaire choisie",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 360,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -762,15 +762,15 @@
       "description": "Puissance apparente triphasee",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 362,
       "modbus_unit_type": "VA",
       "modbus_unit_type_id": 8,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -780,15 +780,15 @@
       "description": "Preavis Debut EJP (30 min)",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 364,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -798,15 +798,15 @@
       "description": "Puissance maximale triphasee atteinte",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 366,
       "modbus_unit_type": "W",
       "modbus_unit_type_id": 47,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -816,15 +816,15 @@
       "description": "Presence des potentiels (uniquement second quartet du digit affiche)",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 368,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -834,15 +834,15 @@
       "description": "Periode Tarifaire en cours",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 370,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -852,15 +852,15 @@
       "description": "Cumule des index de soutirage [314-326]+330+332+336+338",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 372,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     }

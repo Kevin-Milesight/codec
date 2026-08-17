@@ -1,0 +1,1426 @@
+{
+  "object": [
+    {
+      "id": "niveau_d_eau_chaudiere",
+      "name": "Niveau d’eau chaudière",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2419,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "pression_vapeur_chaudiere",
+      "name": "Pression vapeur chaudière",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2420,
+      "modbus_unit_type": "bar",
+      "modbus_unit_type_id": 55,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "conductivite_eau_chaudiere",
+      "name": "Conductivité eau chaudière",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2421,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "temperature_fuel",
+      "name": "Température fuel",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2422,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "temperature_eau_entree_economiseur",
+      "name": "Température eau entrée économiseur",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2423,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "temperature_eau_entree_chaudiere",
+      "name": "Température eau entrée chaudière",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2424,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "temperature_fumees_sortie_chaudiere",
+      "name": "Température fumées sortie chaudière",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2425,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "temperature_fumees_sortie_economiseur",
+      "name": "Température fumées sortie économiseur",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2426,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "debit_eau_alimentaire",
+      "name": "Débit eau alimentaire",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2427,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "debit_vapeur",
+      "name": "Débit vapeur",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2428,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "debit_gaz",
+      "name": "Débit gaz",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2429,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "debit_fuel",
+      "name": "Débit fuel",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2430,
+      "modbus_unit_type": "l/h",
+      "modbus_unit_type_id": 136,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "oxygene",
+      "name": "Oxygène",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2431,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "ph_eau_alimentaire",
+      "name": "pH eau alimentaire",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2432,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "temperature_air_assistance",
+      "name": "Température air assistance",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2433,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "valeur_de_charge_interne",
+      "name": "Valeur de charge interne",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2299,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "point_de_charge_le_plus_bas",
+      "name": "Point de charge le plus bas",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2300,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "point_de_charge_le_plus_haut",
+      "name": "Point de charge le plus haut",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2301,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "valeur_de_charge_du_regulateur_interne",
+      "name": "Valeur de charge du régulateur interne",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2302,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "valeur_actuelle_canal_n_1_valeur_absolue",
+      "name": "Valeur actuelle canal n°1 (valeur absolue)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2303,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "valeur_actuelle_canal_n_2_valeur_absolue",
+      "name": "Valeur actuelle canal n°2 (valeur absolue)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2304,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "valeur_actuelle_canal_n_3_valeur_absolue",
+      "name": "Valeur actuelle canal n°3 (valeur absolue)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2305,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "valeur_actuelle_canal_n_4_valeur_absolue",
+      "name": "Valeur actuelle canal n°4 (valeur absolue)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2306,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "valeur_actuelle_canal_n_5_valeur_absolue",
+      "name": "Valeur actuelle canal n°5 (valeur absolue)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2307,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "valeur_actuelle_canal_n_1_en",
+      "name": "Valeur actuelle canal n°1 (en %)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2308,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "valeur_actuelle_canal_n_2_en",
+      "name": "Valeur actuelle canal n°2 (en %)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2309,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "valeur_actuelle_canal_n_3_en",
+      "name": "Valeur actuelle canal n°3 (en %)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2310,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "valeur_actuelle_canal_n_4_en",
+      "name": "Valeur actuelle canal n°4 (en %)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2311,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "valeur_actuelle_canal_n_5_en",
+      "name": "Valeur actuelle canal n°5 (en %)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2312,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "consigne_canal_n_1_processeur_principal",
+      "name": "Consigne canal n°1 (processeur principal)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2313,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "consigne_canal_n_2_processeur_principal",
+      "name": "Consigne canal n°2 (processeur principal)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2314,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "consigne_canal_n_3_processeur_principal",
+      "name": "Consigne canal n°3 (processeur principal)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2315,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "consigne_canal_n_4_processeur_principal",
+      "name": "Consigne canal n°4 (processeur principal)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2316,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "consigne_canal_n_5_processeur_principal",
+      "name": "Consigne canal n°5 (processeur principal)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2317,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "butee_inferieure_canal_n_1_processeur_principal",
+      "name": "Butée inférieure canal n°1 (processeur principal)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2323,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "butee_inferieure_canal_n_2_processeur_principal",
+      "name": "Butée inférieure canal n°2 (processeur principal)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2324,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "butee_inferieure_canal_n_3_processeur_principal",
+      "name": "Butée inférieure canal n°3 (processeur principal)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2325,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "butee_inferieure_canal_n_4_processeur_principal",
+      "name": "Butée inférieure canal n°4 (processeur principal)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2326,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "butee_inferieure_canal_n_5_processeur_principal",
+      "name": "Butée inférieure canal n°5 (processeur principal)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2327,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "butee_superieure_canal_n_1_processeur_principal",
+      "name": "Butée supérieure canal n°1 (processeur principal)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2333,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "butee_superieure_canal_n_2_processeur_principal",
+      "name": "Butée supérieure canal n°2 (processeur principal)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2334,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "butee_superieure_canal_n_3_processeur_principal",
+      "name": "Butée supérieure canal n°3 (processeur principal)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2335,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "butee_superieure_canal_n_5_processeur_principal",
+      "name": "Butée supérieure canal n°5 (processeur principal)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2336,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "butee_superieure_canal_n_5_processeur_principal_2",
+      "name": "Butée supérieure canal n°5 (processeur principal)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2337,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "valeur_charge_interne",
+      "name": "Valeur charge interne",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2346,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "valeur_charge_interne_2",
+      "name": "Valeur charge interne",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2347,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "consigne_de_charge_actuelle_affichage",
+      "name": "Consigne de charge actuelle (affichage)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2348,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "entree_charge_externe_processeur_principal",
+      "name": "Entrée charge externe (processeur principal)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2349,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "consigne_regulateur_de_charge",
+      "name": "Consigne régulateur de charge",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2350,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "valeur_o2_actuelle",
+      "name": "Valeur O2 actuelle",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2351,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "etat_de_la_valeur_actuelle_d_o2",
+      "name": "Etat de la valeur actuelle d’O2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2352,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "consigne_d_o2",
+      "name": "Consigne d’O2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2353,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "etat_du_regulateur_d_o2",
+      "name": "Etat du régulateur d’O2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2354,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "derive_ou_defaut_regulateur_d_o2",
+      "name": "Dérive ou défaut régulateur d’O2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2355,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "etat_du_regulateur_de_co",
+      "name": "Etat du régulateur de CO",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2356,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "derive_ou_defaut_regulateur_de_co",
+      "name": "Dérive ou défaut régulateur de CO",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2357,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "temperature_exterieure_non_signee",
+      "name": "Température extérieure (non signée)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2358,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "niveau_d_acces_libere",
+      "name": "Niveau d’accès libéré",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2361,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "intensite_flamme",
+      "name": "Intensité flamme",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2362,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "bit_field",
+      "name": "Bit field",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2363,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "bit_field_2",
+      "name": "Bit field",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2369,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "mode_manuel",
+      "name": "Mode manuel",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2370,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "bit_field_3",
+      "name": "Bit field",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2371,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "valeur_de_correction_canal_n_1",
+      "name": "Valeur de correction canal n°1",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2383,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "valeur_de_correction_canal_n_2",
+      "name": "Valeur de correction canal n°2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2384,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "code_du_dernier_defaut",
+      "name": "Code du dernier défaut",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2385,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "etat_des_sorties",
+      "name": "Etat des sorties",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2386,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "etat_des_entrees",
+      "name": "Etat des entrées",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2387,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "table_des_alarmes_mot_n_1",
+      "name": "Table des alarmes mot n°1",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2399,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "table_des_alarmes_mot_n_2",
+      "name": "Table des alarmes mot n°2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2400,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "table_des_alarmes_mot_n_3",
+      "name": "Table des alarmes mot n°3",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2401,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "table_des_alarmes_mot_n_4",
+      "name": "Table des alarmes mot n°4",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2402,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "table_des_alarmes_mot_n_5",
+      "name": "Table des alarmes mot n°5",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2403,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "table_des_alarmes_mot_n_6",
+      "name": "Table des alarmes mot n°6",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2404,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "table_des_alarmes_mot_n_8",
+      "name": "Table des alarmes mot n°8",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2406,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "actions_et_choix_operateur_mot_n_1",
+      "name": "Actions et choix opérateur mot n°1",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2409,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "actions_et_choix_operateur_mot_n_2",
+      "name": "Actions et choix opérateur mot n°2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2410,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "actions_et_choix_operateur_mot_n_3",
+      "name": "Actions et choix opérateur mot n°3",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2411,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    },
+    {
+      "id": "etats_des_equipements_mot_n_1",
+      "name": "Etats des équipements mot n°1",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2414,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input",
+          "enable": true
+        }
+      }
+    }
+  ]
+}

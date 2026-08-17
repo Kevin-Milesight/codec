@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "dpt-ctrl-mod",
+      "name": "Produal - DPT-CTRL-MOD",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Produal/dpt-ctrl-mod/dpt-ctrl-mod-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "flta",
+      "name": "Produal - FLTA",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Produal/flta/flta-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    }
+  ]
+}

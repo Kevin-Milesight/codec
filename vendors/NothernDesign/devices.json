@@ -1,0 +1,45 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "multicube-main-unit-1-phase",
+      "name": "NothernDesign - MULTICUBE MAIN UNIT - 1 PHASE",
+      "protocol": "modbus rtu",
+      "codec": "vendors/NothernDesign/multicube-main-unit-1-phase/multicube-main-unit-1-phase-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "multicube-main-unit-3-phases",
+      "name": "NothernDesign - MULTICUBE MAIN UNIT - 3 PHASES",
+      "protocol": "modbus rtu",
+      "codec": "vendors/NothernDesign/multicube-main-unit-3-phases/multicube-main-unit-3-phases-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "multicube-sub-module-mc352-1-phase",
+      "name": "NothernDesign - MULTICUBE SUB MODULE MC352 - 1 PHASE",
+      "protocol": "modbus rtu",
+      "codec": "vendors/NothernDesign/multicube-sub-module-mc352-1-phase/multicube-sub-module-mc352-1-phase-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "multicube-sub-module-mc352-3-phases",
+      "name": "NothernDesign - MULTICUBE SUB MODULE MC352 - 3 PHASES",
+      "protocol": "modbus rtu",
+      "codec": "vendors/NothernDesign/multicube-sub-module-mc352-3-phases/multicube-sub-module-mc352-3-phases-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    }
+  ]
+}

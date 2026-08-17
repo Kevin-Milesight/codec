@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "devices": [
+    {
+      "id": "nrk",
+      "name": "Aermec - NRK",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Aermec/nrk/nrk-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    },
+    {
+      "id": "nrl",
+      "name": "Aermec - NRL",
+      "protocol": "modbus rtu",
+      "codec": "vendors/Aermec/nrl/nrl-codec.json",
+      "modbus_default_slave_id": 1,
+      "modbus_baudrate": 19200,
+      "modbus_parity": "even",
+      "modbus_stopbits": 1
+    }
+  ]
+}
