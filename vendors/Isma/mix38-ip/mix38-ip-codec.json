@@ -1,0 +1,1822 @@
+{
+  "object": [
+    {
+      "id": "version_and_module_type",
+      "name": "Version and Module Type",
+      "description": "Firmware version and module type (low byte = module type, high byte = firmware x10)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30001,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "module_address",
+      "name": "Module Address",
+      "description": "Modbus module address set with switches S1/S2",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30002,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "baud_rate_and_protocol",
+      "name": "Baud Rate and Protocol",
+      "description": "Baud rate and protocol state of S3 switch",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30003,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "up_time",
+      "name": "Up Time",
+      "description": "Module counting time in seconds since last power up or reset",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 30012,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "hardware_version",
+      "name": "Hardware Version",
+      "description": "Current hardware version multiplied by 10",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30130,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "free_modbus_tcp_sockets",
+      "name": "Free Modbus TCP Sockets",
+      "description": "Number of available Modbus TCP sockets",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30293,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "baud_rate",
+      "name": "Baud Rate",
+      "description": "Transmission speed (x10 bps), default 7680 = 76800",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40136,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "stop_bits",
+      "name": "Stop Bits",
+      "description": "Number of stop bits (1 or 2)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40137,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "data_bits",
+      "name": "Data Bits",
+      "description": "Number of data bits (7 or 8)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40138,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "parity_bit",
+      "name": "Parity Bit",
+      "description": "Parity bit (0=None,1=Odd,2=Even,3=Always 1,4=Always 0)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40139,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "response_delay",
+      "name": "Response Delay",
+      "description": "Delay in ms before sending response",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40140,
+      "modbus_unit_type": "ms",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "watchdog_time",
+      "name": "Watchdog Time",
+      "description": "Watchdog reset time in seconds, 0 disables",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40141,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "state_of_digital_inputs",
+      "name": "State of Digital Inputs",
+      "description": "Status of digital inputs DI1-12 (bit map)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30016,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "digital_inputs_command",
+      "name": "Digital Inputs Command",
+      "description": "Digital inputs command register (remote execute)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40020,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "digital_inputs_blocking",
+      "name": "Digital Inputs Blocking",
+      "description": "Digital inputs blocking register",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40021,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "counter_reset",
+      "name": "Counter Reset",
+      "description": "Reset corresponding counter (digital inputs 1-12)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40022,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "counter_1",
+      "name": "Counter 1",
+      "description": "32-bit counter of digital input 1 counting pulses",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 40023,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "counter_2",
+      "name": "Counter 2",
+      "description": "32-bit counter of digital input 2 counting pulses",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 40025,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "counter_3",
+      "name": "Counter 3",
+      "description": "32-bit counter of digital input 3 counting pulses",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 40027,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "counter_4",
+      "name": "Counter 4",
+      "description": "32-bit counter of digital input 4 counting pulses",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 40029,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "counter_5",
+      "name": "Counter 5",
+      "description": "32-bit counter of digital input 5 counting pulses",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 40031,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "counter_6",
+      "name": "Counter 6",
+      "description": "32-bit counter of digital input 6 counting pulses",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 40033,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "counter_7",
+      "name": "Counter 7",
+      "description": "32-bit counter of digital input 7 counting pulses",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 40035,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "counter_8",
+      "name": "Counter 8",
+      "description": "32-bit counter of digital input 8 counting pulses",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 40037,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "counter_9",
+      "name": "Counter 9",
+      "description": "32-bit counter of digital input 9 counting pulses",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 40039,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "counter_10",
+      "name": "Counter 10",
+      "description": "32-bit counter of digital input 10 counting pulses",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 40041,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "counter_11",
+      "name": "Counter 11",
+      "description": "32-bit counter of digital input 11 counting pulses",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 40043,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "counter_12",
+      "name": "Counter 12",
+      "description": "32-bit counter of digital input 12 counting pulses",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 40045,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "di_1_config_mode",
+      "name": "DI1 Config Mode",
+      "description": "Digital input 1 configuration mode (0=Ordinary IO,1=Monostable,2=Bistable,3-6=Time relay,7=Input forwarding,8=Heating,9=Cooling)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40176,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "di_1_time_value",
+      "name": "DI1 Time Value",
+      "description": "Digital input 1 time value in ms or s",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40177,
+      "modbus_unit_type": "ms",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "di_1_setpoint",
+      "name": "DI1 Setpoint",
+      "description": "Digital input 1 setpoint in °C (x10)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40178,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "di_1_differential",
+      "name": "DI1 Differential",
+      "description": "Digital input 1 differential in °C (x10)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40179,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "di_2_config_mode",
+      "name": "DI2 Config Mode",
+      "description": "Digital input 2 configuration mode (0=Ordinary IO,1=Monostable,2=Bistable,3-6=Time relay,7=Input forwarding,8=Heating,9=Cooling)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40180,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "di_2_time_value",
+      "name": "DI2 Time Value",
+      "description": "Digital input 2 time value in ms or s",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40181,
+      "modbus_unit_type": "ms",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "di_2_setpoint",
+      "name": "DI2 Setpoint",
+      "description": "Digital input 2 setpoint in °C (x10)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40182,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "di_2_differential",
+      "name": "DI2 Differential",
+      "description": "Digital input 2 differential in °C (x10)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40183,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "di_3_config_mode",
+      "name": "DI3 Config Mode",
+      "description": "Digital input 3 configuration mode (0=Ordinary IO,1=Monostable,2=Bistable,3-6=Time relay,7=Input forwarding,8=Heating,9=Cooling)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40184,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "di_3_time_value",
+      "name": "DI3 Time Value",
+      "description": "Digital input 3 time value in ms or s",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40185,
+      "modbus_unit_type": "ms",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "di_3_setpoint",
+      "name": "DI3 Setpoint",
+      "description": "Digital input 3 setpoint in °C (x10)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40186,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "di_3_differential",
+      "name": "DI3 Differential",
+      "description": "Digital input 3 differential in °C (x10)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40187,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "di_4_config_mode",
+      "name": "DI4 Config Mode",
+      "description": "Digital input 4 configuration mode (0=Ordinary IO,1=Monostable,2=Bistable,3-6=Time relay,7=Input forwarding,8=Heating,9=Cooling)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40188,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "di_4_time_value",
+      "name": "DI4 Time Value",
+      "description": "Digital input 4 time value in ms or s",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40189,
+      "modbus_unit_type": "ms",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "di_4_setpoint",
+      "name": "DI4 Setpoint",
+      "description": "Digital input 4 setpoint in °C (x10)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40190,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "di_4_differential",
+      "name": "DI4 Differential",
+      "description": "Digital input 4 differential in °C (x10)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40191,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "state_of_universal_inputs_as_di",
+      "name": "State of Universal Inputs as DI",
+      "description": "Status of universal inputs operating as digital inputs",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30017,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "ui_1_voltage",
+      "name": "UI1 Voltage",
+      "description": "Universal input 1 voltage measurement in mV",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30071,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_1_temperature",
+      "name": "UI1 Temperature",
+      "description": "Universal input 1 temperature in °C (x10)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30072,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_2_voltage",
+      "name": "UI2 Voltage",
+      "description": "Universal input 2 voltage measurement in mV",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30073,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_2_temperature",
+      "name": "UI2 Temperature",
+      "description": "Universal input 2 temperature in °C (x10)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30074,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_3_voltage",
+      "name": "UI3 Voltage",
+      "description": "Universal input 3 voltage measurement in mV",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30075,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_3_temperature",
+      "name": "UI3 Temperature",
+      "description": "Universal input 3 temperature in °C (x10)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30076,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_4_voltage",
+      "name": "UI4 Voltage",
+      "description": "Universal input 4 voltage measurement in mV",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30077,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_4_temperature",
+      "name": "UI4 Temperature",
+      "description": "Universal input 4 temperature in °C (x10)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30078,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_5_voltage",
+      "name": "UI5 Voltage",
+      "description": "Universal input 5 voltage measurement in mV",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30079,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_5_temperature",
+      "name": "UI5 Temperature",
+      "description": "Universal input 5 temperature in °C (x10)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30080,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_6_voltage",
+      "name": "UI6 Voltage",
+      "description": "Universal input 6 voltage measurement in mV",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30081,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_6_temperature",
+      "name": "UI6 Temperature",
+      "description": "Universal input 6 temperature in °C (x10)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30082,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_7_voltage",
+      "name": "UI7 Voltage",
+      "description": "Universal input 7 voltage measurement in mV",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30083,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_7_temperature",
+      "name": "UI7 Temperature",
+      "description": "Universal input 7 temperature in °C (x10)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30084,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_8_voltage",
+      "name": "UI8 Voltage",
+      "description": "Universal input 8 voltage measurement in mV",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30085,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_8_temperature",
+      "name": "UI8 Temperature",
+      "description": "Universal input 8 temperature in °C (x10)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30086,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_1_resistance",
+      "name": "UI1 Resistance",
+      "description": "Universal input 1 resistance measurement in Ω",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 30103,
+      "modbus_unit_type": "Ω",
+      "modbus_unit_type_id": 4,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_1_config",
+      "name": "UI1 Config",
+      "description": "Universal input 1 configuration / sensor type",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40151,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "ui_1_filter",
+      "name": "UI1 Filter Time",
+      "description": "Universal input 1 filter time constant 0-60 s",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40159,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_2_resistance",
+      "name": "UI2 Resistance",
+      "description": "Universal input 2 resistance measurement in Ω",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 30105,
+      "modbus_unit_type": "Ω",
+      "modbus_unit_type_id": 4,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_2_config",
+      "name": "UI2 Config",
+      "description": "Universal input 2 configuration / sensor type",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40152,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "ui_2_filter",
+      "name": "UI2 Filter Time",
+      "description": "Universal input 2 filter time constant 0-60 s",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40160,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_3_resistance",
+      "name": "UI3 Resistance",
+      "description": "Universal input 3 resistance measurement in Ω",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 30107,
+      "modbus_unit_type": "Ω",
+      "modbus_unit_type_id": 4,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_3_config",
+      "name": "UI3 Config",
+      "description": "Universal input 3 configuration / sensor type",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40153,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "ui_3_filter",
+      "name": "UI3 Filter Time",
+      "description": "Universal input 3 filter time constant 0-60 s",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40161,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_4_resistance",
+      "name": "UI4 Resistance",
+      "description": "Universal input 4 resistance measurement in Ω",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 30109,
+      "modbus_unit_type": "Ω",
+      "modbus_unit_type_id": 4,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_4_config",
+      "name": "UI4 Config",
+      "description": "Universal input 4 configuration / sensor type",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40154,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "ui_4_filter",
+      "name": "UI4 Filter Time",
+      "description": "Universal input 4 filter time constant 0-60 s",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40162,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_5_resistance",
+      "name": "UI5 Resistance",
+      "description": "Universal input 5 resistance measurement in Ω",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 30111,
+      "modbus_unit_type": "Ω",
+      "modbus_unit_type_id": 4,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_5_config",
+      "name": "UI5 Config",
+      "description": "Universal input 5 configuration / sensor type",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40155,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "ui_5_filter",
+      "name": "UI5 Filter Time",
+      "description": "Universal input 5 filter time constant 0-60 s",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40163,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_6_resistance",
+      "name": "UI6 Resistance",
+      "description": "Universal input 6 resistance measurement in Ω",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 30113,
+      "modbus_unit_type": "Ω",
+      "modbus_unit_type_id": 4,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_6_config",
+      "name": "UI6 Config",
+      "description": "Universal input 6 configuration / sensor type",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40156,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "ui_6_filter",
+      "name": "UI6 Filter Time",
+      "description": "Universal input 6 filter time constant 0-60 s",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40164,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_7_resistance",
+      "name": "UI7 Resistance",
+      "description": "Universal input 7 resistance measurement in Ω",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 30115,
+      "modbus_unit_type": "Ω",
+      "modbus_unit_type_id": 4,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_7_config",
+      "name": "UI7 Config",
+      "description": "Universal input 7 configuration / sensor type",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40157,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "ui_7_filter",
+      "name": "UI7 Filter Time",
+      "description": "Universal input 7 filter time constant 0-60 s",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40165,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_8_resistance",
+      "name": "UI8 Resistance",
+      "description": "Universal input 8 resistance measurement in Ω",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 30117,
+      "modbus_unit_type": "Ω",
+      "modbus_unit_type_id": 4,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ui_8_config",
+      "name": "UI8 Config",
+      "description": "Universal input 8 configuration / sensor type",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40158,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "ui_8_filter",
+      "name": "UI8 Filter Time",
+      "description": "Universal input 8 filter time constant 0-60 s",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40166,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "resolution_of_universal_inputs",
+      "name": "Resolution of Universal Inputs",
+      "description": "Resolution of analog inputs (bit set = 16-bit)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40167,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "state_of_digital_outputs",
+      "name": "State of Digital Outputs",
+      "description": "State of digital outputs (bit map)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40018,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "default_state_of_digital_outputs",
+      "name": "Default State of DO",
+      "description": "State of digital outputs at start / watchdog reset",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40143,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "ao_1_value",
+      "name": "AO1 Value",
+      "description": "Value of analog output 1 in mV (0-10000)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40121,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ao_1_config",
+      "name": "AO1 Config",
+      "description": "Analog output 1 configuration (0=0-10V,1-5=PWM)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40168,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "ao_2_value",
+      "name": "AO2 Value",
+      "description": "Value of analog output 2 in mV (0-10000)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40122,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ao_2_config",
+      "name": "AO2 Config",
+      "description": "Analog output 2 configuration (0=0-10V,1-5=PWM)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40169,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "ao_3_value",
+      "name": "AO3 Value",
+      "description": "Value of analog output 3 in mV (0-10000)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40123,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ao_3_config",
+      "name": "AO3 Config",
+      "description": "Analog output 3 configuration (0=0-10V,1-5=PWM)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40170,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "ao_4_value",
+      "name": "AO4 Value",
+      "description": "Value of analog output 4 in mV (0-10000)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40124,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ao_4_config",
+      "name": "AO4 Config",
+      "description": "Analog output 4 configuration (0=0-10V,1-5=PWM)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40171,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "ao_5_value",
+      "name": "AO5 Value",
+      "description": "Value of analog output 5 in mV (0-10000)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40125,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ao_5_config",
+      "name": "AO5 Config",
+      "description": "Analog output 5 configuration (0=0-10V,1-5=PWM)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40172,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "ao_6_value",
+      "name": "AO6 Value",
+      "description": "Value of analog output 6 in mV (0-10000)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40126,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ao_6_config",
+      "name": "AO6 Config",
+      "description": "Analog output 6 configuration (0=0-10V,1-5=PWM)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40173,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "state_of_analog_outputs_as_do",
+      "name": "State of AO as DO",
+      "description": "State of analog outputs operating as digital outputs",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40019,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    }
+  ]
+}

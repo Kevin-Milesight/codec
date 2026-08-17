@@ -1,0 +1,238 @@
+{
+  "object": [
+    {
+      "id": "version_and_module_type",
+      "name": "Version and Module Type",
+      "description": "Firmware version and module type (low byte = module type, high byte = firmware x10)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30001,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "module_address",
+      "name": "Module Address",
+      "description": "Modbus module address set with switches S1/S2",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30002,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "baud_rate_and_protocol",
+      "name": "Baud Rate and Protocol",
+      "description": "Baud rate and protocol state of S3 switch",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30003,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "up_time",
+      "name": "Up Time",
+      "description": "Module counting time in seconds since last power up or reset",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 30012,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "hardware_version",
+      "name": "Hardware Version",
+      "description": "Current hardware version multiplied by 10",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30130,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "baud_rate",
+      "name": "Baud Rate",
+      "description": "Transmission speed (x10 bps), default 7680 = 76800",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40136,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "stop_bits",
+      "name": "Stop Bits",
+      "description": "Number of stop bits (1 or 2)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40137,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "data_bits",
+      "name": "Data Bits",
+      "description": "Number of data bits (7 or 8)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40138,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "parity_bit",
+      "name": "Parity Bit",
+      "description": "Parity bit (0=None,1=Odd,2=Even,3=Always 1,4=Always 0)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40139,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "response_delay",
+      "name": "Response Delay",
+      "description": "Delay in ms before sending response",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40140,
+      "modbus_unit_type": "ms",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "watchdog_time",
+      "name": "Watchdog Time",
+      "description": "Watchdog reset time in seconds, 0 disables",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40141,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "state_of_digital_outputs",
+      "name": "State of Triac Outputs",
+      "description": "State of triac outputs (bit map)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40018,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "default_state_of_digital_outputs",
+      "name": "Default State of TO",
+      "description": "State of triac outputs at start / watchdog reset",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40143,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    }
+  ]
+}

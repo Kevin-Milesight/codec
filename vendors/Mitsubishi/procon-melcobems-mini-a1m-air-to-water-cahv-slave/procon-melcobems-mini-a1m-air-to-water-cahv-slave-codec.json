@@ -1,0 +1,922 @@
+{
+  "object": [
+    {
+      "id": "modbus_slave_id",
+      "name": "Modbus Slave ID",
+      "description": "Values 1 – 247 valid",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40005,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "modbus_rs_485_baud_rate",
+      "name": "Modbus RS-485 Baud Rate",
+      "description": "0 = 9600 1 = 1200 2 = 2400 3 = 4800 4 = 9600 5 = 14400 6 = 19200 7 = 28800 8 = 38400 9 = 56000 10 = 57600 11 = 115200",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40006,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "rs_485_parity_type",
+      "name": "RS-485 Parity Type",
+      "description": "0 = None 1 = Even 2 = Odd",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40007,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "melcobems_mini_a1m_firmware_version",
+      "name": "MelcoBEMS MINI (A1M) Firmware Version",
+      "description": "MelcoBEMS MINI (A1M) Firmware Version",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40011,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "modbus_comms_counter",
+      "name": "Modbus Comms Counter",
+      "description": "Value of a counter which increments upon every valid Modbus command received. Counter is reset to zero when value exceed",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40012,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "system_type_detected",
+      "name": "System Type Detected",
+      "description": "0 = ATA unit connected 1 = ATW system connected 2 = Lossnay system connected 255 = Undetermined (no unit detected yet)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40014,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "system_on_off",
+      "name": "System On/Off",
+      "description": "0 = System OFF 1 = System ON 2 = Emergency Run (read only value) 3 = Test Run (read only value)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40026,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "operating_mode",
+      "name": "Operating Mode",
+      "description": "0 = Stop 1 = Hot Water 2 = Heating 3 = Cooling 4 = No voltage contact input (hot water storage) 5 = Freeze Stat 6 = Legi",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40027,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "current_hour",
+      "name": "Current Hour",
+      "description": "0 … 23",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40049,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "current_minute",
+      "name": "Current Minute",
+      "description": "0 … 59",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40050,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "own_refrigerant_address",
+      "name": "Own Refrigerant Address",
+      "description": "0 … 32",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40067,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "defrost",
+      "name": "Defrost",
+      "description": "0 = Normal 1 = Standby 2 = Defrost 3 = Waiting Restart",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40068,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "flow_temperature_setpoint_zone_1_signed",
+      "name": "Flow Temperature Setpoint – Zone 1 (signed)",
+      "description": "Temperature value in ºC multiplied by 100. (see note *)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40086,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "flow_temperature_setpoint_zone_1",
+      "name": "Flow Temperature Setpoint – Zone 1",
+      "description": "Temperature value in ºC multiplied by 100. (see note **)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40087,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "water_outlet_temperature_signed",
+      "name": "Water Outlet Temperature (signed)",
+      "description": "Temperature value in ºC multiplied by 100. (see note *)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40102,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "water_outlet_temperature",
+      "name": "Water Outlet Temperature",
+      "description": "Temperature value in ºC multiplied by 100. (see note **)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40103,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "water_inlet_temperature_signed",
+      "name": "Water Inlet Temperature (signed)",
+      "description": "Temperature value in ºC multiplied by 100. (see note *)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40104,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "water_inlet_temperature",
+      "name": "Water Inlet Temperature",
+      "description": "Temperature value in ºC multiplied by 100. (see note **)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40105,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "evaporating_temperature_signed",
+      "name": "Evaporating Temperature (signed)",
+      "description": "Temperature value in ºC multiplied by 100. (see note *)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40231,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "evaporating_temperature",
+      "name": "Evaporating Temperature",
+      "description": "Temperature value in ºC multiplied by 100. (see note **)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40232,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "condensing_temperature_signed",
+      "name": "Condensing Temperature (signed)",
+      "description": "Temperature value in ºC multiplied by 100. (see note *)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40233,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "condensing_temperature",
+      "name": "Condensing Temperature",
+      "description": "Temperature value in ºC multiplied by 100. (see note **)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40234,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "electric_energy_1",
+      "name": "Electric Energy 1",
+      "description": "Electric Energy in kWh multiplied by 100 (see note †)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40235,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "electric_energy_2",
+      "name": "Electric Energy 2",
+      "description": "Electric Energy in kWh multiplied by 100 (see note †)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40236,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "electric_energy_3",
+      "name": "Electric Energy 3",
+      "description": "Electric Energy in kWh multiplied by 100 (see note †)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40237,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "electric_energy_4",
+      "name": "Electric Energy 4",
+      "description": "Electric Energy in kWh multiplied by 100 (see note †)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40238,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "electric_energy_5",
+      "name": "Electric Energy 5",
+      "description": "Electric Energy in kWh multiplied by 100 (see note †)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40239,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "electric_energy_6",
+      "name": "Electric Energy 6",
+      "description": "Electric Energy in kWh multiplied by 100 (see note †)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40240,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "electric_energy_7",
+      "name": "Electric Energy 7",
+      "description": "Electric Energy in kWh multiplied by 100 (see note †)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40241,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "electric_energy_8",
+      "name": "Electric Energy 8",
+      "description": "Electric Energy in kWh multiplied by 100 (see note †)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40242,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "electric_energy_9",
+      "name": "Electric Energy 9",
+      "description": "Electric Energy in kWh multiplied by 100 (see note †)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40243,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "electric_energy_10",
+      "name": "Electric Energy 10",
+      "description": "Electric Energy in kWh multiplied by 100 (see note †)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40244,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "electric_energy_11",
+      "name": "Electric Energy 11",
+      "description": "Electric Energy in kWh multiplied by 100 (see note †)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40245,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "electric_energy_12",
+      "name": "Electric Energy 12",
+      "description": "Electric Energy in kWh multiplied by 100 (see note †)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40246,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "electric_energy_13",
+      "name": "Electric Energy 13",
+      "description": "Electric Energy in kWh multiplied by 100 (see note †)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40247,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "electric_energy_14",
+      "name": "Electric Energy 14",
+      "description": "Electric Energy in kWh multiplied by 100 (see note †)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40248,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "electric_energy_15",
+      "name": "Electric Energy 15",
+      "description": "Electric Energy in kWh multiplied by 100 (see note †)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40249,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "electric_energy_16",
+      "name": "Electric Energy 16",
+      "description": "Electric Energy in kWh multiplied by 100 (see note †)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40250,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "condensing_temperature_2_signed",
+      "name": "Condensing Temperature 2 (signed)",
+      "description": "Temperature value in ºC multiplied by 100. (see note *)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40257,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "condensing_temperature_2",
+      "name": "Condensing Temperature 2",
+      "description": "Temperature value in ºC multiplied by 100. (see note **)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40258,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "water_outlet_temperature_2_signed",
+      "name": "Water Outlet Temperature 2 (signed)",
+      "description": "Temperature value in ºC multiplied by 100. (see note *)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40259,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "water_outlet_temperature_2",
+      "name": "Water Outlet Temperature 2",
+      "description": "Temperature value in ºC multiplied by 100. (see note **)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40260,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "evaporating_temperature_2_signed",
+      "name": "Evaporating Temperature 2 (signed)",
+      "description": "Temperature value in ºC multiplied by 100. (see note *)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40261,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "evaporating_temperature_2",
+      "name": "Evaporating Temperature 2",
+      "description": "Temperature value in ºC multiplied by 100. (see note **)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40262,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "version_of_protocol_upper",
+      "name": "Version of Protocol (upper)",
+      "description": "Version of Protocol is a value in BCD e.g. V3.01 = 3 (upper) and 1 (lower)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40266,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "version_of_protocol_lower",
+      "name": "Version of Protocol (lower)",
+      "description": "Version of Protocol is a value in BCD e.g. V3.01 = 3 (upper) and 1 (lower)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40267,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "version_of_model_upper",
+      "name": "Version of Model (upper)",
+      "description": "Version of Model is a value in BCD e.g. V2.00 = 2 (upper) and 0 (lower)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40268,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "version_of_model_lower",
+      "name": "Version of Model (lower)",
+      "description": "Version of Model is a value in BCD e.g. V2.00 = 2 (upper) and 0 (lower)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40269,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "capacity_of_supplying_electricity",
+      "name": "Capacity of Supplying Electricity",
+      "description": "Value in Watts 0 = 0,0 W … 255 = 25,5 W",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40270,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "model_profile_1",
+      "name": "Model Profile 1",
+      "description": "0 = FTC2B 1 = FTC4 2 = FTC5 3 = FTC6 128 = CAHV1A 129 = CAHV1B 130 = CRHV1A 131 = CRHV1B 132 = EAHV1A 133 = EAHV1B 134 =",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40271,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "model_profile_2_refrigerant_address",
+      "name": "Model Profile 2 (refrigerant address)",
+      "description": "0 = Address 0 … 255 = Address 255 (addresses 7 – 255 not used for FTC)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40272,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    }
+  ]
+}

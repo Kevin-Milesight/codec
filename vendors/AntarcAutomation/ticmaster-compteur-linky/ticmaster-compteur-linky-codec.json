@@ -1,0 +1,1084 @@
+{
+  "object": [
+    {
+      "id": "firmware_version",
+      "name": "Firmware Version",
+      "description": "Version du firmware [R]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 7,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "current_counter",
+      "name": "Current Counter",
+      "description": "Entrée TIC actuellement en écoute [R]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 11,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "max_counter_channels",
+      "name": "Max Counter Channels",
+      "description": "Nombre de voies TIC dont est équipé le TicMaster [R]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 12,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "serial_number",
+      "name": "Serial Number",
+      "description": "Numéro de série [R]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 17,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "tic_messages_counter",
+      "name": "TIC Messages Counter",
+      "description": "Compteur d'étiquettes TIC décodées depuis le dernier reset [R]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 21,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "model_number",
+      "name": "Model Number",
+      "description": "Numéro de modèle [R]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 97,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "counter_1_type",
+      "name": "Counter 1 Type",
+      "description": "Type de compteur de la voie 1. 0:NC, 1:Bleu, 2:Vert, 3:Jaune, 4:PME-PMI, 5:LINKY, 6:SAPHIR [R]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 100,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "counter_1_quality",
+      "name": "Counter 1 Quality",
+      "description": "Qualité de réception des trames téléinformation de la voie 1. 0:mauvais, 100:bon [R]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 200,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "baud_rate",
+      "name": "Baud Rate",
+      "description": "1:1200, 2:2400, 3/4:9600, 5:19200, 6:57600, 7:38400 [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 0,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "modbus_address",
+      "name": "Modbus Address",
+      "description": "Adresse modbus du TicMaster, 1-253 (défaut 20) [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 1,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "communication_watchdog",
+      "name": "Communication Watchdog",
+      "description": "Watchdog sur absence de réception de trame modbus, 0:off [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 6,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "parity",
+      "name": "Parity",
+      "description": "Parité de la communication modbus (0:None, 1:Odd, 2:Even) [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 18,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "preavis_trigger",
+      "name": "Preavis Trigger",
+      "description": "Seuil de reset PREAVIS en nombre de trame [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "ccain",
+      "name": "CCAIN",
+      "description": "Point n de la courbe de charge active injectee",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 388,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ccasn",
+      "name": "CCASN",
+      "description": "Point n de la courbe de charge active soutiree",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 390,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "east",
+      "name": "EAST",
+      "description": "Energie Active Soutiree Totale",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 392,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "easd01",
+      "name": "EASD01",
+      "description": "Energie Active Soutiree Distributeur Index 01",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 394,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "easd02",
+      "name": "EASD02",
+      "description": "Energie Active Soutiree Distributeur Index 02",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 396,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "easd03",
+      "name": "EASD03",
+      "description": "Energie Active Soutiree Distributeur Index 03",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 398,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "easd04",
+      "name": "EASD04",
+      "description": "Energie Active Soutiree Distributeur Index 04",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 400,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "easf01",
+      "name": "EASF01",
+      "description": "Energie Active Soutiree Fournisseur Index 01",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 402,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "easf02",
+      "name": "EASF02",
+      "description": "Energie Active Soutiree Fournisseur Index 02",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 404,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "easf03",
+      "name": "EASF03",
+      "description": "Energie Active Soutiree Fournisseur Index 03",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 406,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "easf04",
+      "name": "EASF04",
+      "description": "Energie Active Soutiree Fournisseur Index 04",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 408,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "easf05",
+      "name": "EASF05",
+      "description": "Energie Active Soutiree Fournisseur Index 05",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 410,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "easf06",
+      "name": "EASF06",
+      "description": "Energie Active Soutiree Fournisseur Index 06",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 412,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "easf07",
+      "name": "EASF07",
+      "description": "Energie Active Soutiree Fournisseur Index 07",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 414,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "easf08",
+      "name": "EASF08",
+      "description": "Energie Active Soutiree Fournisseur Index 08",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 416,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "easf09",
+      "name": "EASF09",
+      "description": "Energie Active Soutiree Fournisseur Index 09",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 418,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "easf10",
+      "name": "EASF10",
+      "description": "Energie Active Soutiree Fournisseur Index 10",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 420,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eait",
+      "name": "EAIT",
+      "description": "Energie Active Injectee Totale",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 422,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erq1",
+      "name": "ERQ1",
+      "description": "Energie Reactive Q1 Totale",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 424,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erq2",
+      "name": "ERQ2",
+      "description": "Energie Reactive Q2 Totale",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 426,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erq3",
+      "name": "ERQ3",
+      "description": "Energie Reactive Q3 Totale",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 428,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erq4",
+      "name": "ERQ4",
+      "description": "Energie Reactive Q4 Totale",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 430,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "irms1",
+      "name": "IRMS1",
+      "description": "Courant Efficace Phase 1",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 432,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "irms2",
+      "name": "IRMS2",
+      "description": "Courant Efficace Phase 2",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 434,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "irms3",
+      "name": "IRMS3",
+      "description": "Courant Efficace Phase 3",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 436,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "pcoup",
+      "name": "PCOUP",
+      "description": "Puissance Apparente de Coupure",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 438,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "pref",
+      "name": "PREF",
+      "description": "Puissance Apparente de Reference",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 440,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "sinsts",
+      "name": "SINSTS",
+      "description": "Puissance app. Instantanee soutiree",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 442,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "sinsts1",
+      "name": "SINSTS1",
+      "description": "Puissance app. Instantanee soutiree phase 1",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 444,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "sinsts2",
+      "name": "SINSTS2",
+      "description": "Puissance app. Instantanee soutiree phase 2",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 446,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "sinsts3",
+      "name": "SINSTS3",
+      "description": "Puissance app. Instantanee soutiree phase 3",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 448,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "smaxin",
+      "name": "SMAXIN",
+      "description": "Puissance app. max. injectee n",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 450,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "smaxsn",
+      "name": "SMAXSN",
+      "description": "Puissance app. max. soutiree n",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 452,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "smaxsn1",
+      "name": "SMAXSN1",
+      "description": "Puissance app. max. soutiree n phase 1",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 454,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "smaxsn2",
+      "name": "SMAXSN2",
+      "description": "Puissance app. max. soutiree n phase 2",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 456,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "smaxsn3",
+      "name": "SMAXSN3",
+      "description": "Puissance app. max. soutiree n phase 3",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 458,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ntarf",
+      "name": "NTARF",
+      "description": "Numero de l’index tarifaire en cours (1, 2, … 10) - Denomination non standardise",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 460,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "sinsti",
+      "name": "SINSTI",
+      "description": "Puissance app. Instantanee injectee",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 462,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "umoy1",
+      "name": "UMOY1",
+      "description": "Tension moy. ph. 1 / Mono    -    SAPHIR Tension Moy de la dernière période Tc",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 464,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "umoy2",
+      "name": "UMOY2",
+      "description": "Tension moy. ph. 2    -    SAPHIR Tension Moy de l'avant dernière période Tc",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 466,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "umoy3",
+      "name": "UMOY3",
+      "description": "Tension moy. ph. 3    -    SAPHIR Tension Moy de l'avant, avant dernière période",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 468,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "urms1",
+      "name": "URMS1",
+      "description": "Tension efficace, phase 1 / Mono",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 470,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "urms2",
+      "name": "URMS2",
+      "description": "Tension efficace, phase 2",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 472,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "urms3",
+      "name": "URMS3",
+      "description": "Tension efficace, phase 3",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 474,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "njourf",
+      "name": "NJOURF",
+      "description": "Numero du jour en cours calendrier fournisseur",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 476,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "relais",
+      "name": "RELAIS",
+      "description": "Un bit par relais",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 484,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "stge",
+      "name": "STGE",
+      "description": "Contact sec / État du cache-bornes distributeur",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 486,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    }
+  ]
+}

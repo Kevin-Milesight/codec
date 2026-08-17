@@ -1,0 +1,400 @@
+{
+  "object": [
+    {
+      "id": "firmware_version",
+      "name": "Firmware Version",
+      "description": "Version du firmware [R]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 7,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "serial_number",
+      "name": "Serial Number",
+      "description": "Numéro de série [R]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 17,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "model_number",
+      "name": "Model Number",
+      "description": "Numéro de modèle [R]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 97,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "temperature_1",
+      "name": "Temperature 1",
+      "description": "Température 01 en dixième de degré [R]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 15,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "temperature_1_shift",
+      "name": "Temperature 1 Shift",
+      "description": "Décalage de la mesure de température 01 en dixième de degré [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 14,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "baud_rate",
+      "name": "Baud Rate",
+      "description": "1:1200, 2:2400, 3/4:9600, 5:19200, 6:57600, 7:38400 [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 0,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "modbus_address",
+      "name": "Modbus Address",
+      "description": "Adresse modbus du FpController, 1-253 (défaut 20) [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 1,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "communication_watchdog",
+      "name": "Communication Watchdog",
+      "description": "Watchdog sur absence de réception de trame modbus, 0:off [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 6,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "parity",
+      "name": "Parity",
+      "description": "Parité de la communication modbus (0:None, 1:Odd, 2:Even) [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 18,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "fp01_mode",
+      "name": "FP01 Mode",
+      "description": "Mode Fil pilote de la sortie 1 (5:Confort, 4:Confort-1°C, 3:Confort-2°C, 2:Réduit, 1:Hors Gel, 0:Off) [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "fp02_mode",
+      "name": "FP02 Mode",
+      "description": "Mode Fil pilote de la sortie 2 (5:Confort, 4:Confort-1°C, 3:Confort-2°C, 2:Réduit, 1:Hors Gel, 0:Off) [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "fp03_mode",
+      "name": "FP03 Mode",
+      "description": "Mode Fil pilote de la sortie 3 (5:Confort, 4:Confort-1°C, 3:Confort-2°C, 2:Réduit, 1:Hors Gel, 0:Off) [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 22,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "fp04_mode",
+      "name": "FP04 Mode",
+      "description": "Mode Fil pilote de la sortie 4 (5:Confort, 4:Confort-1°C, 3:Confort-2°C, 2:Réduit, 1:Hors Gel, 0:Off) [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "fp05_mode",
+      "name": "FP05 Mode",
+      "description": "Mode Fil pilote de la sortie 5 (5:Confort, 4:Confort-1°C, 3:Confort-2°C, 2:Réduit, 1:Hors Gel, 0:Off) [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 24,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "fp06_mode",
+      "name": "FP06 Mode",
+      "description": "Mode Fil pilote de la sortie 6 (5:Confort, 4:Confort-1°C, 3:Confort-2°C, 2:Réduit, 1:Hors Gel, 0:Off) [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 25,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "fp07_mode",
+      "name": "FP07 Mode",
+      "description": "Mode Fil pilote de la sortie 7 (5:Confort, 4:Confort-1°C, 3:Confort-2°C, 2:Réduit, 1:Hors Gel, 0:Off) [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 26,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "fp08_mode",
+      "name": "FP08 Mode",
+      "description": "Mode Fil pilote de la sortie 8 (5:Confort, 4:Confort-1°C, 3:Confort-2°C, 2:Réduit, 1:Hors Gel, 0:Off) [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 27,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "fp_all_outputs_mode",
+      "name": "FP All Outputs Mode",
+      "description": "Mode Fil pilote pour toutes les sorties (one-shot, revient à 6) [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 28,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "default_mode_fp1_4",
+      "name": "Default Mode FP1-4",
+      "description": "Mode appliqué aux sorties 1-4 en cas de reboot ou time out (4 quartets 0-5) [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 11,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "default_mode_fp5_8",
+      "name": "Default Mode FP5-8",
+      "description": "Mode appliqué aux sorties 5-8 en cas de reboot ou time out (4 quartets 0-5) [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 12,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "seconds_counter",
+      "name": "Seconds Counter",
+      "description": "Compteur de secondes [R]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 50,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "fp_display_channel",
+      "name": "FP Display Channel",
+      "description": "Voie FP en cours d'affichage [R]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 53,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    }
+  ]
+}

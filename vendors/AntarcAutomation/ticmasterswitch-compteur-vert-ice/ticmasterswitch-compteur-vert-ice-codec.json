@@ -1,0 +1,3406 @@
+{
+  "object": [
+    {
+      "id": "firmware_version",
+      "name": "Firmware Version",
+      "description": "Version du firmware [R]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 7,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "serial_number",
+      "name": "Serial Number",
+      "description": "Numéro de série [R]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 17,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "model_number",
+      "name": "Model Number",
+      "description": "Numéro de modèle [R]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 97,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "counter_type",
+      "name": "Counter Type",
+      "description": "Type de compteur TIC. 0:NC, 1:Bleu, 2:Vert, 3:Jaune, 4:PME-PMI, 5:LINKY, 6:SAPHIR [R]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 100,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "counter_quality",
+      "name": "Counter Quality",
+      "description": "Qualité de réception des trames téléinformation du compteur. 0:mauvais, 100:bon [R]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 200,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "baud_rate",
+      "name": "Baud Rate",
+      "description": "1:1200, 2:2400, 3/4:9600, 5:19200, 6:57600, 7:38400 [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 0,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "modbus_address",
+      "name": "Modbus Address",
+      "description": "Adresse modbus du TicMaster, 1-253 (défaut 20) [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 1,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "ptcour_selection",
+      "name": "PtCour Selection",
+      "description": "Sélection du type de tranche tarifaire (0:D, 1:F) [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "communication_watchdog",
+      "name": "Communication Watchdog",
+      "description": "Watchdog sur absence de réception de trame modbus, 0:off [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 6,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "tor_output_mask",
+      "name": "TOR Output Mask",
+      "description": "Masque pour passer des sorties en commande manuelle (bit à 0 = tranche tarifaire) [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 11,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "tor_manual_output",
+      "name": "TOR Manual Output",
+      "description": "Commande manuelle des sorties TOR, 1 bit par sortie [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 12,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "parity",
+      "name": "Parity",
+      "description": "Parité de la communication modbus (0:None, 1:Odd, 2:Even) [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 18,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "preavis_trigger",
+      "name": "Preavis Trigger",
+      "description": "Seuil de reset PREAVIS en nombre de trame [R/W]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "cafp",
+      "name": "CAFp",
+      "description": "Code Action Facturation de la periode p",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1420,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "contrat",
+      "name": "CONTRAT",
+      "description": "Type de tarif et option tarifaire",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1422,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "ea",
+      "name": "EA*",
+      "description": "Energie active soutiree depuis le dernier Top10",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1424,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eapcour",
+      "name": "EApCour",
+      "description": "Energie active injectee de la periode tarifaire en cours sur la periode p",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1426,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eapdsm",
+      "name": "EApDSM",
+      "description": "Energie active soutiree de la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1428,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eaphcd",
+      "name": "EApHCD",
+      "description": "Energie active soutiree de la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1430,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eaphce",
+      "name": "EApHCE",
+      "description": "Energie active soutiree de la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1432,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eaphch",
+      "name": "EApHCH",
+      "description": "Energie active soutiree de la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1434,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eaphd",
+      "name": "EApHD",
+      "description": "Energie active soutiree de la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1436,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eaphh",
+      "name": "EApHH",
+      "description": "Energie active soutiree de la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1438,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eaphm",
+      "name": "EApHM",
+      "description": "Energie active soutiree de la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1440,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eaphpd",
+      "name": "EApHPD",
+      "description": "Energie active soutiree de la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1442,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eaphpe",
+      "name": "EApHPE",
+      "description": "Energie active soutiree de la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1444,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eaphph",
+      "name": "EApHPH",
+      "description": "Energie active soutiree de la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1446,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eapja",
+      "name": "EApJA",
+      "description": "Energie active soutiree de la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1448,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eapp",
+      "name": "EApP",
+      "description": "Energie active soutiree de la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1450,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eappm",
+      "name": "EApPM",
+      "description": "Energie active soutiree de la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1452,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eapscm",
+      "name": "EApSCM",
+      "description": "Energie active soutiree de la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1454,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap_minus_cumule",
+      "name": "EAp - Cumule",
+      "description": "Cumule Energie Active soutiree [1428-1454]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1456,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ern",
+      "name": "ERN",
+      "description": "Energie reactive negative injectee depuis le dernier Top10",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1458,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernpcour",
+      "name": "ERNpCour",
+      "description": "Energie reactive negative injectee de la periode tarifaire en cours sur la perio",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1460,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernpdsm",
+      "name": "ERNpDSM",
+      "description": "Energie reactive negative soutiree sur periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1462,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernphcd",
+      "name": "ERNpHCD",
+      "description": "Energie reactive negative soutiree sur periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1464,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernphce",
+      "name": "ERNpHCE",
+      "description": "Energie reactive negative soutiree sur periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1466,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernphch",
+      "name": "ERNpHCH",
+      "description": "Energie reactive negative soutiree sur periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1468,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernphd",
+      "name": "ERNpHD",
+      "description": "Energie reactive negative soutiree sur periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1470,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernphh",
+      "name": "ERNpHH",
+      "description": "Energie reactive negative soutiree sur periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1472,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernphm",
+      "name": "ERNpHM",
+      "description": "Energie reactive negative soutiree sur periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1474,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernphpd",
+      "name": "ERNpHPD",
+      "description": "Energie reactive negative soutiree sur periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1476,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernphpe",
+      "name": "ERNpHPE",
+      "description": "Energie reactive negative soutiree sur periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1478,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernphph",
+      "name": "ERNpHPH",
+      "description": "Energie reactive negative soutiree sur periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1480,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernpja",
+      "name": "ERNpJA",
+      "description": "Energie reactive negative soutiree sur periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1482,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernpp",
+      "name": "ERNpP",
+      "description": "Energie reactive negative soutiree sur periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1484,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernppm",
+      "name": "ERNpPM",
+      "description": "Energie reactive negative soutiree sur periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1486,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernpscm",
+      "name": "ERNpSCM",
+      "description": "Energie reactive negative soutiree sur periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1488,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp_minus_cumule",
+      "name": "ERNp - Cumule",
+      "description": "Cumule Energie Reactive negative soutiree [1462-1488]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1490,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erp",
+      "name": "ERP*",
+      "description": "Energie reactive positive soutiree depuis le dernier Top10",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1492,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erppcour",
+      "name": "ERPpCour",
+      "description": "Energie reactive positive injectee de la periode tarifaire en cours sur la perio",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1494,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erppdsm",
+      "name": "ERPpDSM",
+      "description": "Energie reactive positive soutiree sur la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1496,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpphcd",
+      "name": "ERPpHCD",
+      "description": "Energie reactive positive soutiree sur la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1498,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpphce",
+      "name": "ERPpHCE",
+      "description": "Energie reactive positive soutiree sur la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1500,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpphch",
+      "name": "ERPpHCH",
+      "description": "Energie reactive positive soutiree sur la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1502,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpphd",
+      "name": "ERPpHD",
+      "description": "Energie reactive positive soutiree sur la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1504,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpphh",
+      "name": "ERPpHH",
+      "description": "Energie reactive positive soutiree sur la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1506,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpphm",
+      "name": "ERPpHM",
+      "description": "Energie reactive positive soutiree sur la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1508,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpphpd",
+      "name": "ERPpHPD",
+      "description": "Energie reactive positive soutiree sur la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1510,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpphpe",
+      "name": "ERPpHPE",
+      "description": "Energie reactive positive soutiree sur la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1512,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpphph",
+      "name": "ERPpHPH",
+      "description": "Energie reactive positive soutiree sur la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1514,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erppja",
+      "name": "ERPpJA",
+      "description": "Energie reactive positive soutiree sur la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1516,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erppp",
+      "name": "ERPpP",
+      "description": "Energie reactive positive soutiree sur la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1518,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpppm",
+      "name": "ERPpPM",
+      "description": "Energie reactive positive soutiree sur la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1520,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erppscm",
+      "name": "ERPpSCM",
+      "description": "Energie reactive positive soutiree sur la periode p en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1522,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp_minus_cumule",
+      "name": "ERPp - Cumule",
+      "description": "Cumule Energie Reactive positive soutiree [1496-1522]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1524,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "i1",
+      "name": "I1",
+      "description": "Courant injecte mesure sur la phase 1",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1526,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "i2",
+      "name": "I2",
+      "description": "Courant injecte mesure sur la phase 2",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1528,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "i3",
+      "name": "I3",
+      "description": "Courant injecte mesure sur la phase 3",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1530,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ipa1mn",
+      "name": "IPA1MN",
+      "description": "Puissance Active moyenne injectee mesuree sur une periode de 1 minute, non gliss",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1532,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ipatmn",
+      "name": "IPATMN",
+      "description": "Puissance Active moyenne injectee mesuree sur une periode de 10 minutes, non gli",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1534,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "kdc",
+      "name": "KDC",
+      "description": "Coefficient de preavis de depassement",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1536,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "kdcd",
+      "name": "KDCD",
+      "description": "Coefficient de degagement de preavis de depassement",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1538,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "pa10mn",
+      "name": "PA10MN",
+      "description": "Puissance Active moyenne soutiree mesuree sur une periode de 10 minutes, non gli",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1540,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "pa1mn",
+      "name": "PA1MN",
+      "description": "Puissance Active moyenne soutiree mesuree sur une periode de 1 minute, non gliss",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1542,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "pa1",
+      "name": "PA1",
+      "description": "Puissance Active moyenne soutiree sur la periode Top10 n 1 (la derniere)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1544,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "pa2",
+      "name": "PA2",
+      "description": "Puissance Active moyenne soutiree sur la periode Top10 n 2",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1546,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "pa3",
+      "name": "PA3",
+      "description": "Puissance Active moyenne soutiree sur la periode Top10 n 3",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1548,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "pa4",
+      "name": "PA4",
+      "description": "Puissance Active moyenne soutiree sur la periode Top10 n 4",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1550,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "pa5",
+      "name": "PA5",
+      "description": "Puissance Active moyenne soutiree sur la periode Top10 n 5",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1552,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "pa6",
+      "name": "PA6",
+      "description": "Puissance Active moyenne soutiree sur la periode Top10 n 6",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1554,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "prapcour",
+      "name": "PRapCour",
+      "description": "Puissance de raccordement en injection de la periode tarifaire en cours",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1556,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "prea10mn",
+      "name": "PREA10MN",
+      "description": "Puissance reactive moyenne 10 minutes signee",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1558,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "prea1mn",
+      "name": "PREA1MN",
+      "description": "Puissance reactive moyenne 1 minute signee",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1560,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "psdsm",
+      "name": "PSDSM",
+      "description": "Puissance souscrite en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1562,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "pshcd",
+      "name": "PSHCD",
+      "description": "Puissance souscrite en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1564,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "pshce",
+      "name": "PSHCE",
+      "description": "Puissance souscrite en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1566,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "pshch",
+      "name": "PSHCH",
+      "description": "Puissance souscrite en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1568,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "pshd",
+      "name": "PSHD",
+      "description": "Puissance souscrite en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1570,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "pshh",
+      "name": "PSHH",
+      "description": "Puissance souscrite en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1572,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "pshm",
+      "name": "PSHM",
+      "description": "Puissance souscrite en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1574,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "pshpd",
+      "name": "PSHPD",
+      "description": "Puissance souscrite en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1576,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "pshpe",
+      "name": "PSHPE",
+      "description": "Puissance souscrite en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1578,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "pshph",
+      "name": "PSHPH",
+      "description": "Puissance souscrite en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1580,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "psja",
+      "name": "PSJA",
+      "description": "Puissance souscrite en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1582,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "psp",
+      "name": "PSP",
+      "description": "Puissance souscrite en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1584,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "pspm",
+      "name": "PSPM",
+      "description": "Puissance souscrite en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1586,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "psscm",
+      "name": "PSSCM",
+      "description": "Puissance souscrite en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1588,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ptcour_sout",
+      "name": "PTCOUR (Sout)*",
+      "description": "Periode tarifaire courante pour le soutirage",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1590,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "tgphi",
+      "name": "TGPHI*",
+      "description": "Tangente phi moyenne mesuree sur une periode de 10 minutes, non glissante",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1592,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "u10mn",
+      "name": "U10MN",
+      "description": "Valeur moyenne des 3 tensions composees mesuree sur une periode de 10 minutes, n",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1594,
+      "modbus_unit_type": "V",
+      "modbus_unit_type_id": 5,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1dsm",
+      "name": "EAp1DSM",
+      "description": "Energie Active soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1596,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1hcd",
+      "name": "EAp1HCD",
+      "description": "Energie Active soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1598,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1hce",
+      "name": "EAp1HCE",
+      "description": "Energie Active soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1600,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1hch",
+      "name": "EAp1HCH",
+      "description": "Energie Active soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1602,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1hd",
+      "name": "EAp1HD",
+      "description": "Energie Active soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1604,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1hh",
+      "name": "EAp1HH",
+      "description": "Energie Active soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1606,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1hm",
+      "name": "EAp1HM",
+      "description": "Energie Active soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1608,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1hpd",
+      "name": "EAp1HPD",
+      "description": "Energie Active soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1610,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1hpe",
+      "name": "EAp1HPE",
+      "description": "Energie Active soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1612,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1hph",
+      "name": "EAp1HPH",
+      "description": "Energie Active soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1614,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1ja",
+      "name": "EAp1JA",
+      "description": "Energie Active soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1616,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1p",
+      "name": "EAp1P",
+      "description": "Energie Active soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1618,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1pm",
+      "name": "EAp1PM",
+      "description": "Energie Active soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1620,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1scm",
+      "name": "EAp1SCM",
+      "description": "Energie Active soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1622,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1_minus_cumule",
+      "name": "EAp1 - Cumule",
+      "description": "Cumule Energie Active Soutiree sur la periode p-1 [1596-1622]",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1624,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1dsm",
+      "name": "ERNp1DSM",
+      "description": "Energie Reactive negative soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1626,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1hcd",
+      "name": "ERNp1HCD",
+      "description": "Energie Reactive negative soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1628,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1hce",
+      "name": "ERNp1HCE",
+      "description": "Energie Reactive negative soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1630,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1hch",
+      "name": "ERNp1HCH",
+      "description": "Energie Reactive negative soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1632,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1hd",
+      "name": "ERNp1HD",
+      "description": "Energie Reactive negative soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1634,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1hh",
+      "name": "ERNp1HH",
+      "description": "Energie Reactive negative soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1636,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1hm",
+      "name": "ERNp1HM",
+      "description": "Energie Reactive negative soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1638,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1hpd",
+      "name": "ERNp1HPD",
+      "description": "Energie Reactive negative soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1640,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1hpe",
+      "name": "ERNp1HPE",
+      "description": "Energie Reactive negative soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1642,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1hph",
+      "name": "ERNp1HPH",
+      "description": "Energie Reactive negative soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1644,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1ja",
+      "name": "ERNp1JA",
+      "description": "Energie Reactive negative soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1646,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1p",
+      "name": "ERNp1P",
+      "description": "Energie Reactive negative soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1648,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1pm",
+      "name": "ERNp1PM",
+      "description": "Energie Reactive negative soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1650,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1scm",
+      "name": "ERNp1SCM",
+      "description": "Energie Reactive negative soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1652,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1dsm",
+      "name": "ERPp1DSM",
+      "description": "Energie Reactive positive soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1656,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1hcd",
+      "name": "ERPp1HCD",
+      "description": "Energie Reactive positive soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1658,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1hce",
+      "name": "ERPp1HCE",
+      "description": "Energie Reactive positive soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1660,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1hch",
+      "name": "ERPp1HCH",
+      "description": "Energie Reactive positive soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1662,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1hd",
+      "name": "ERPp1HD",
+      "description": "Energie Reactive positive soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1664,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1hh",
+      "name": "ERPp1HH",
+      "description": "Energie Reactive positive soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1666,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1hm",
+      "name": "ERPp1HM",
+      "description": "Energie Reactive positive soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1668,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1hpd",
+      "name": "ERPp1HPD",
+      "description": "Energie Reactive positive soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1670,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1hpe",
+      "name": "ERPp1HPE",
+      "description": "Energie Reactive positive soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1672,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1hph",
+      "name": "ERPp1HPH",
+      "description": "Energie Reactive positive soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1674,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1ja",
+      "name": "ERPp1JA",
+      "description": "Energie Reactive positive soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1676,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1p",
+      "name": "ERPp1P",
+      "description": "Energie Reactive positive soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1678,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1pm",
+      "name": "ERPp1PM",
+      "description": "Energie Reactive positive soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1680,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1scm",
+      "name": "ERPp1SCM",
+      "description": "Energie Reactive positive soutiree de la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1682,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "iprea1mn",
+      "name": "IPREA1MN",
+      "description": "Puissance Reactive injectee moyenne mesuree sur une periode de 1 minute, non gli",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1686,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ipreatmn",
+      "name": "IPREATMN",
+      "description": "Puissance Reactive injectee moyenne mesuree sur une periode de 10 minutes, non g",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1688,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "appli",
+      "name": "Appli",
+      "description": "Mode : Soutirage (39) / Injection (40)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1690,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    },
+    {
+      "id": "ptcour_inj",
+      "name": "PTCOUR (Inj)",
+      "description": "Periode tarifaire courante pour l'injection",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1692,
+      "modbus_unit_type": "A",
+      "modbus_unit_type_id": 3,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ea_4q_sout",
+      "name": "EA (4Q Sout)",
+      "description": "Energie Active soutiree depuis le dernier Top10",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1694,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ea_4q_inj",
+      "name": "EA (4Q Inj)",
+      "description": "Energie Active injectee depuis le dernier Top10",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1696,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erp_4q_sout",
+      "name": "ERP (4Q Sout)",
+      "description": "Energie Reactive positive soutiree depuis le dernier Top10",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1698,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erp_4q_inj",
+      "name": "ERP (4Q Inj)",
+      "description": "Energie Reactive positive injectee depuis le dernier Top10",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1700,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "tgphi_4q_sout",
+      "name": "TGPHI (4Q Sout)",
+      "description": "Tangente phi moyenne 10 minutes en soutirage",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1702,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "tgphi_4q_inj",
+      "name": "TGPHI (4Q Inj)",
+      "description": "Tangente phi moyenne 10 minutes en injection",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1704,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1p1",
+      "name": "EAp1P1",
+      "description": "Energie Active injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1710,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1p2",
+      "name": "EAp1P2",
+      "description": "Energie Active injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1712,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1p3",
+      "name": "EAp1P3",
+      "description": "Energie Active injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1714,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1p4",
+      "name": "EAp1P4",
+      "description": "Energie Active injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1716,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1p5",
+      "name": "EAp1P5",
+      "description": "Energie Active injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1718,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1p6",
+      "name": "EAp1P6",
+      "description": "Energie Active injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1720,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1p7",
+      "name": "EAp1P7",
+      "description": "Energie Active injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1722,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "eap1p8",
+      "name": "EAp1P8",
+      "description": "Energie Active injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1724,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1p1",
+      "name": "ERNp1P1",
+      "description": "Energie Reactive negative injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1728,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1p2",
+      "name": "ERNp1P2",
+      "description": "Energie Reactive negative injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1730,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1p3",
+      "name": "ERNp1P3",
+      "description": "Energie Reactive negative injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1732,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1p4",
+      "name": "ERNp1P4",
+      "description": "Energie Reactive negative injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1734,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1p5",
+      "name": "ERNp1P5",
+      "description": "Energie Reactive negative injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1736,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1p6",
+      "name": "ERNp1P6",
+      "description": "Energie Reactive negative injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1738,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1p7",
+      "name": "ERNp1P7",
+      "description": "Energie Reactive negative injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1740,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ernp1p8",
+      "name": "ERNp1P8",
+      "description": "Energie Reactive negative injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1742,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1p1",
+      "name": "ERPp1P1",
+      "description": "Energie Reactive positive injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1746,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1p2",
+      "name": "ERPp1P2",
+      "description": "Energie Reactive positive injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1748,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1p3",
+      "name": "ERPp1P3",
+      "description": "Energie Reactive positive injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1750,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1p4",
+      "name": "ERPp1P4",
+      "description": "Energie Reactive positive injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1752,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1p5",
+      "name": "ERPp1P5",
+      "description": "Energie Reactive positive injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1754,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1p6",
+      "name": "ERPp1P6",
+      "description": "Energie Reactive positive injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1756,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1p7",
+      "name": "ERPp1P7",
+      "description": "Energie Reactive positive injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1758,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "erpp1p8",
+      "name": "ERPp1P8",
+      "description": "Energie Reactive positive injectee sur la periode p-1 en periode tarifaire >",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1760,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "p1",
+      "name": "P1",
+      "description": "Puissance Active moyenne sur la periode Top10 n 1 (la derniere)",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1764,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "p2",
+      "name": "P2",
+      "description": "Puissance Active moyenne sur la periode Top10 n 2",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1766,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "p3",
+      "name": "P3",
+      "description": "Puissance Active moyenne sur la periode Top10 n 3",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1768,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "p4",
+      "name": "P4",
+      "description": "Puissance Active moyenne sur la periode Top10 n 4",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1770,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "p5",
+      "name": "P5",
+      "description": "Puissance Active moyenne sur la periode Top10 n 5",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1772,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "p6",
+      "name": "P6",
+      "description": "Puissance Active moyenne sur la periode Top10 n 6",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1774,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "cosphi_4q_sout",
+      "name": "COSPHI (4Q Sout)",
+      "description": "Cosinus phi moyen 10 minutes en soutirage",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1864,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "sinphi_4q_sout",
+      "name": "SINPHI (4Q Sout)",
+      "description": "Sinus phi moyen 10 minutes en soutirage",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1866,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "cosphi_4q_inj",
+      "name": "COSPHI (4Q Inj)",
+      "description": "Cosinus phi moyen 10 minutes en injection",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1868,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "sinphi_4q_inj",
+      "name": "SINPHI (4Q Inj)",
+      "description": "Sinus phi moyen 10 minutes en injection",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1870,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "preavis",
+      "name": "PREAVIS",
+      "description": "Preavis de depassement de puissance (Rien ou PME (DEP), ICE (DEP, EJP, HM, DSM, ",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ba",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 1984,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "MultiState-Value"
+        }
+      }
+    }
+  ]
+}
