@@ -11,10 +11,10 @@
       "modbus_register_addr": 7,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -29,10 +29,10 @@
       "modbus_register_addr": 17,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -47,10 +47,10 @@
       "modbus_register_addr": 97,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -65,10 +65,10 @@
       "modbus_register_addr": 100,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -83,10 +83,10 @@
       "modbus_register_addr": 200,
       "modbus_unit_type": "%",
       "modbus_unit_type_id": 98,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -101,10 +101,10 @@
       "modbus_register_addr": 0,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -119,10 +119,10 @@
       "modbus_register_addr": 1,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -137,10 +137,10 @@
       "modbus_register_addr": 2,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -155,10 +155,10 @@
       "modbus_register_addr": 6,
       "modbus_unit_type": "s",
       "modbus_unit_type_id": 73,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -173,10 +173,10 @@
       "modbus_register_addr": 11,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -191,10 +191,10 @@
       "modbus_register_addr": 12,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -209,10 +209,10 @@
       "modbus_register_addr": 18,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -227,10 +227,10 @@
       "modbus_register_addr": 23,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -240,15 +240,15 @@
       "description": "Prend la valeur CONSO (soutirage) ou PROD (soutirage et injection)",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 586,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -258,15 +258,15 @@
       "description": "Energie Active soutiree (au primaire) depuis dernier Top10",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 588,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -276,15 +276,15 @@
       "description": "Energie Active injectee (au primaire) depuis dernier Top10",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 590,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -294,15 +294,15 @@
       "description": "Energie Active soutiree de la periode P pour la periode tarifaire en cours",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 592,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -312,15 +312,15 @@
       "description": "Energie Active injectee de la periode P pour la periode tarifaire en cours",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 594,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -330,15 +330,15 @@
       "description": "Energie Apparente soutiree (au primaire) depuis dernier top Top10",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 596,
       "modbus_unit_type": "VAh",
       "modbus_unit_type_id": 239,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -348,15 +348,15 @@
       "description": "Energie Apparente injectee (au primaire) depuis dernier top Top10",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 598,
       "modbus_unit_type": "VAh",
       "modbus_unit_type_id": 239,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -366,15 +366,15 @@
       "description": "Energie Reactive negative soutiree (au primaire) depuis dernier Top10",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 600,
       "modbus_unit_type": "VArh",
       "modbus_unit_type_id": 242,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -384,15 +384,15 @@
       "description": "Energie Reactive negative injectee (au primaire) depuis dernier Top10",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 602,
       "modbus_unit_type": "VArh",
       "modbus_unit_type_id": 242,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -402,15 +402,15 @@
       "description": "Energie Reactive positive soutiree (au primaire) depuis dernier Top10",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 604,
       "modbus_unit_type": "VArh",
       "modbus_unit_type_id": 242,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -420,15 +420,15 @@
       "description": "Energie Reactive positive injectee (au primaire) depuis dernier Top10",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 606,
       "modbus_unit_type": "VArh",
       "modbus_unit_type_id": 242,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -438,15 +438,15 @@
       "description": "Energie Reactive positive soutiree de la periode P pour la periode tarifaire en ",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 608,
       "modbus_unit_type": "VArh",
       "modbus_unit_type_id": 242,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -456,15 +456,15 @@
       "description": "Energie Reactive positive injectee de la periode P pour la periode tarifaire en ",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 610,
       "modbus_unit_type": "VArh",
       "modbus_unit_type_id": 242,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -474,15 +474,15 @@
       "description": "Energie Active soutiree de la periode P pour la periode tarifaire en cours pour ",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 612,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -492,15 +492,15 @@
       "description": "Energie Reactive negative soutiree de la periode P pour la periode tarifaire en ",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 614,
       "modbus_unit_type": "VArh",
       "modbus_unit_type_id": 242,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -510,15 +510,15 @@
       "description": "Energie Reactive negative injectee de la periode P pour la periode tarifaire en ",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 616,
       "modbus_unit_type": "VArh",
       "modbus_unit_type_id": 242,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -528,15 +528,15 @@
       "description": "Energie Active soutiree de la periode P-1 pour la periode tarifaire en cours",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 618,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -546,15 +546,15 @@
       "description": "Energie Active injectee de la periode P-1 pour la periode tarifaire en cours",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 620,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -564,15 +564,15 @@
       "description": "Energie Reactive positive de la periode P-1 pour la periode tarifaire en cours e",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 622,
       "modbus_unit_type": "VArh",
       "modbus_unit_type_id": 242,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -582,15 +582,15 @@
       "description": "Energie Reactive positive de la periode P-1 pour la periode tarifaire en cours e",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 624,
       "modbus_unit_type": "VArh",
       "modbus_unit_type_id": 242,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -600,15 +600,15 @@
       "description": "Energie Reactive negative de la periode P-1 pour la periode tarifaire en cours e",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 626,
       "modbus_unit_type": "VArh",
       "modbus_unit_type_id": 242,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -618,15 +618,15 @@
       "description": "Energie Reactive negative pour la periode P-1 pour la periode tarifaire en cours",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 628,
       "modbus_unit_type": "VArh",
       "modbus_unit_type_id": 242,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -636,15 +636,15 @@
       "description": "Energie Active soutiree de la periode P-1 pour la periode tarifaire en cours pou",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 630,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -654,15 +654,15 @@
       "description": "Puissance maximale atteinte en soutirage pour la periode tarifaire en cours",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 632,
       "modbus_unit_type": "W",
       "modbus_unit_type_id": 47,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -672,15 +672,15 @@
       "description": "Puissance maximale atteinte en injection pour la periode tarifaire en cours",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 634,
       "modbus_unit_type": "W",
       "modbus_unit_type_id": 47,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -690,15 +690,15 @@
       "description": "Tangente phi moyenne 10 minutes en soutirage",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 636,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -708,15 +708,15 @@
       "description": "Tangente phi moyenne 10 minutes en injection",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 638,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -726,15 +726,15 @@
       "description": "Puissance Active moyenne en soutirage sur la derniere periode Top10",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 640,
       "modbus_unit_type": "W",
       "modbus_unit_type_id": 47,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -744,15 +744,15 @@
       "description": "Puissance Active moyenne en injection sur la derniere periode Top10",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 642,
       "modbus_unit_type": "W",
       "modbus_unit_type_id": 47,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -762,15 +762,15 @@
       "description": "Puissance souscrite de la periode tarifaire en cours",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 644,
       "modbus_unit_type": "VA",
       "modbus_unit_type_id": 8,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -780,15 +780,15 @@
       "description": "Nom du calendrier numero 1",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 676,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -798,15 +798,15 @@
       "description": "Nom du calendrier numero 2",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 678,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -816,15 +816,15 @@
       "description": "Periode tarifaire courante (calendrier numero 1)",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 680,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -834,15 +834,15 @@
       "description": "Periode tarifaire courante (calendrier numero 2)",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 682,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -852,15 +852,15 @@
       "description": "Indication de la presence du signal tarifaire externe.",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 684,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -870,15 +870,15 @@
       "description": "Periode tarifaire de la periode dynamique courante du calendrier numero 1",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 686,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -888,15 +888,15 @@
       "description": "Periode tarifaire, du calendrier n 1, faisant l’objet du preavis en cours (Rien ",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 688,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -906,15 +906,15 @@
       "description": "Periode tarifaire de la periode dynamique courante du calendrier n 2",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 714,
       "modbus_unit_type": "A",
       "modbus_unit_type_id": 3,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -924,15 +924,15 @@
       "description": "Periode tarifaire, du calendrier n 2, faisant l’objet du preavis en cours (Rien ",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 716,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     },
@@ -942,15 +942,15 @@
       "description": "Cosinus phi moyen 10 minutes en soutirage",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 742,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -960,15 +960,15 @@
       "description": "Sinus phi moyen 10 minutes en soutirage",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 744,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -978,15 +978,15 @@
       "description": "Cosinus phi moyen 10 minutes en injection",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 746,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -996,15 +996,15 @@
       "description": "Sinus phi moyen 10 minutes en injection",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 748,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1014,15 +1014,15 @@
       "description": "Cumule Energie Active Soutiree sur la periode P [754-782]",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 784,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1032,15 +1032,15 @@
       "description": "Cumule Energie Active injectee sur la periode P [786-814]",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 816,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1050,15 +1050,15 @@
       "description": "Cumule Energie Reactive Positive Soutiree sur la periode P [818-846]",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 848,
       "modbus_unit_type": "VArh",
       "modbus_unit_type_id": 242,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1068,15 +1068,15 @@
       "description": "Cumule Energie Reactive Positive injectee sur la periode P [850-878]",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 880,
       "modbus_unit_type": "VArh",
       "modbus_unit_type_id": 242,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1086,15 +1086,15 @@
       "description": "Cumule Energie Reactive Negative Soutiree sur la periode P [882-910]",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 912,
       "modbus_unit_type": "VArh",
       "modbus_unit_type_id": 242,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1104,15 +1104,15 @@
       "description": "Cumule Energie Reactive Negative injectee sur la periode P [914-942]",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 944,
       "modbus_unit_type": "VArh",
       "modbus_unit_type_id": 242,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1122,15 +1122,15 @@
       "description": "Cumule Energie Active soutiree sur la periode P-1 [946-974]",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 976,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1140,15 +1140,15 @@
       "description": "Cumule Energie Active injectee sur la periode P-1 [978-1006]",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 1008,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1158,15 +1158,15 @@
       "description": "Cumule Energie Reactive Positive soutiree sur la periode P-1 [1010-1038]",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 1040,
       "modbus_unit_type": "VArh",
       "modbus_unit_type_id": 242,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1176,15 +1176,15 @@
       "description": "Cumule Energie Reactive Positive injectee sur la periode P-1 [1042-1070]",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 1072,
       "modbus_unit_type": "VArh",
       "modbus_unit_type_id": 242,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1194,15 +1194,15 @@
       "description": "Cumule Energie Reactive Negative Soutiree sur la periode P-1 [1074-1102]",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 1104,
       "modbus_unit_type": "VArh",
       "modbus_unit_type_id": 242,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1212,15 +1212,15 @@
       "description": "Cumule Energie Reactive Negative injectee sur la periode P-1 [1106-1134]",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 1136,
       "modbus_unit_type": "VArh",
       "modbus_unit_type_id": 242,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1230,15 +1230,15 @@
       "description": "Cumule Energie Active Soutiree, pour MESURES2 [1234-1262]",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 1264,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1248,15 +1248,15 @@
       "description": "Cumule Energie Active Soutiree sur la periode P-1, pour MESURES2 [1266-1294]",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 1296,
       "modbus_unit_type": "Wh",
       "modbus_unit_type_id": 18,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1266,15 +1266,15 @@
       "description": "Puissance Active moyenne soutiree mesuree sur une periode de 1 minute, non gliss",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 1542,
       "modbus_unit_type": "W",
       "modbus_unit_type_id": 47,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "Analog-Input"
+          "type": "Analog-Input",
+          "enable": true
         }
       }
     },
@@ -1284,15 +1284,15 @@
       "description": "Preavis de depassement de puissance (Rien ou PME (DEP), ICE (DEP, EJP, HM, DSM, ",
       "bacnet_instance_id": 0,
       "modbus_register_type": "holding_register",
-      "modbus_data_format": "uint32_ba",
+      "modbus_data_format": "uint32_cdab",
       "modbus_register_num": 2,
       "modbus_register_addr": 1984,
       "modbus_unit_type": "",
       "modbus_unit_type_id": 95,
-      "modbus_scale": 1,
       "target": {
         "bacnet": {
-          "type": "MultiState-Value"
+          "type": "MultiState-Value",
+          "enable": true
         }
       }
     }
