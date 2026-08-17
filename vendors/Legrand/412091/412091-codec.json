@@ -1,0 +1,1264 @@
+{
+  "object": [
+    {
+      "id": "external_input_current_active_tariff",
+      "name": "External Input - Current active tariff",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 4096,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_1_current_value_r",
+      "name": "Three-phase Electric Measurement - Phase 1 Current Value (R)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20480,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_2_current_value_s",
+      "name": "Three-phase Electric Measurement - Phase 2 Current Value (S)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20482,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_3_current_value_t",
+      "name": "Three-phase Electric Measurement - Phase 3 Current Value (T)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20484,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_1_n_voltage",
+      "name": "Three-phase Electric Measurement - 1-N Voltage",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20509,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_2_n_voltage",
+      "name": "Three-phase Electric Measurement - 2-N Voltage",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20511,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_3_n_voltage",
+      "name": "Three-phase Electric Measurement - 3-N Voltage",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20513,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_1_2_voltage",
+      "name": "Three-phase Electric Measurement - 1-2 Voltage",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20515,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_2_3_voltage",
+      "name": "Three-phase Electric Measurement - 2-3 Voltage",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20517,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_3_1_voltage",
+      "name": "Three-phase Electric Measurement - 3-1 Voltage",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20519,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_three_phase_frequency",
+      "name": "Three-phase Electric Measurement - Three-phase frequency",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20537,
+      "modbus_unit_type": "Hz",
+      "modbus_unit_type_id": 27,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_three_phase_active_power",
+      "name": "Three-phase Electric Measurement - Three-phase Active Power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20538,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_three_phase_reactive_power",
+      "name": "Three-phase Electric Measurement - Three-phase reactive power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20540,
+      "modbus_unit_type": "var",
+      "modbus_unit_type_id": 11,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_threee_phase_apparent_power",
+      "name": "Three-phase Electric Measurement - Threee-Phase Apparent Power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20544,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_three_phase_power_factor_pf",
+      "name": "Three-phase Electric Measurement - Three-phase Power Factor (PF)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20548,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_power_factor_pf_sector",
+      "name": "Three-phase Electric Measurement - Power Factor (PF) sector",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20550,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_1_active_power",
+      "name": "Three-phase Electric Measurement - Phase 1 Active Power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20551,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_2_active_power",
+      "name": "Three-phase Electric Measurement - Phase 2 Active Power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20553,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_3_active_power",
+      "name": "Three-phase Electric Measurement - Phase 3 Active Power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20555,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_1_reactive_power",
+      "name": "Three-phase Electric Measurement - Phase 1 Reactive power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20557,
+      "modbus_unit_type": "var",
+      "modbus_unit_type_id": 11,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_2_reactive_power",
+      "name": "Three-phase Electric Measurement - Phase 2 Reactive power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20559,
+      "modbus_unit_type": "var",
+      "modbus_unit_type_id": 11,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_3_reactive_power",
+      "name": "Three-phase Electric Measurement - Phase 3 Reactive power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "int32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20561,
+      "modbus_unit_type": "var",
+      "modbus_unit_type_id": 11,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_1_apparent_power",
+      "name": "Three-phase Electric Measurement - Phase 1 Apparent Power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20569,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_2_apparent_power",
+      "name": "Three-phase Electric Measurement - Phase 2 Apparent Power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20571,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_3_apparent_power",
+      "name": "Three-phase Electric Measurement - Phase 3 Apparent Power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20573,
+      "modbus_unit_type": "VA",
+      "modbus_unit_type_id": 8,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_positive_three_phase_active_energy",
+      "name": "Three-phase Electric Measurement - Positive Three-phase Active Energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20592,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_negative_three_phase_active_energy",
+      "name": "Three-phase Electric Measurement - Negative Three-phase Active Energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20594,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_positive_three_phase_reactive_energy",
+      "name": "Three-phase Electric Measurement - Positive Three-phase Reactive Energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20598,
+      "modbus_unit_type": "kVArh",
+      "modbus_unit_type_id": 243,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_negative_three_phase_reactive_energy",
+      "name": "Three-phase Electric Measurement - Negative Three-phase Reactive Energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20600,
+      "modbus_unit_type": "kVArh",
+      "modbus_unit_type_id": 243,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_positive_three_phase_active_energy_tariff_1",
+      "name": "Three-phase Electric Measurement - Positive Three-phase Active Energy (Tariff 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20604,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_negative_three_phase_active_energy_tariff_1",
+      "name": "Three-phase Electric Measurement - Negative Three-phase Active Energy (Tariff 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20606,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_positive_three_phase_reactive_energy_tariff_1",
+      "name": "Three-phase Electric Measurement - Positive Three-phase Reactive Energy (Tariff 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20608,
+      "modbus_unit_type": "kVArh",
+      "modbus_unit_type_id": 243,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_negative_three_phase_reactive_energy_tariff_1",
+      "name": "Three-phase Electric Measurement - Negative Three-phase Reactive Energy (Tariff 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20610,
+      "modbus_unit_type": "kVArh",
+      "modbus_unit_type_id": 243,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_positive_three_phase_active_energy_tariff_2",
+      "name": "Three-phase Electric Measurement - Positive Three-phase Active Energy (Tariff 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20612,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_negative_three_phase_active_energy_tariff_2",
+      "name": "Three-phase Electric Measurement - Negative Three-phase Active Energy (Tariff 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20614,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_positive_three_phase_reactive_energy_tariff_2",
+      "name": "Three-phase Electric Measurement - Positive Three-phase Reactive Energy (Tariff 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20616,
+      "modbus_unit_type": "kVArh",
+      "modbus_unit_type_id": 243,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_negative_three_phase_reactive_energy_tariff_2",
+      "name": "Three-phase Electric Measurement - Negative Three-phase Reactive Energy (Tariff 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20618,
+      "modbus_unit_type": "kVArh",
+      "modbus_unit_type_id": 243,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_shift_between_v1_v2",
+      "name": "Three-phase Electric Measurement - Phase shift between V1 - V2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20725,
+      "modbus_unit_type": "°",
+      "modbus_unit_type_id": 90,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_shift_between_v2_v3",
+      "name": "Three-phase Electric Measurement - Phase shift between V2 - V3",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20726,
+      "modbus_unit_type": "°",
+      "modbus_unit_type_id": 90,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_shift_between_v3_v1",
+      "name": "Three-phase Electric Measurement - Phase shift between V3 - V1",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20727,
+      "modbus_unit_type": "°",
+      "modbus_unit_type_id": 90,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_shift_between_u12_u23",
+      "name": "Three-phase Electric Measurement - Phase shift between U12 - U23",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20728,
+      "modbus_unit_type": "°",
+      "modbus_unit_type_id": 90,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_shift_between_u23_u31",
+      "name": "Three-phase Electric Measurement - Phase shift between U23 - U31",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20729,
+      "modbus_unit_type": "°",
+      "modbus_unit_type_id": 90,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_shift_between_u31_u12",
+      "name": "Three-phase Electric Measurement - Phase shift between U31 - U12",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20730,
+      "modbus_unit_type": "°",
+      "modbus_unit_type_id": 90,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_shift_between_i1_i2",
+      "name": "Three-phase Electric Measurement - Phase shift between I1 - I2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20731,
+      "modbus_unit_type": "°",
+      "modbus_unit_type_id": 90,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_shift_between_i2_i3",
+      "name": "Three-phase Electric Measurement - Phase shift between I2 - I3",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20732,
+      "modbus_unit_type": "°",
+      "modbus_unit_type_id": 90,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_shift_between_i3_i1",
+      "name": "Three-phase Electric Measurement - Phase shift between I3 - I1",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20733,
+      "modbus_unit_type": "°",
+      "modbus_unit_type_id": 90,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_shift_between_v1_i1",
+      "name": "Three-phase Electric Measurement - Phase shift between V1 - I1",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20734,
+      "modbus_unit_type": "°",
+      "modbus_unit_type_id": 90,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_shift_between_v2_i2",
+      "name": "Three-phase Electric Measurement - Phase shift between V2 - I2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20735,
+      "modbus_unit_type": "°",
+      "modbus_unit_type_id": 90,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "three_phase_electric_measurement_phase_shift_between_v3_i3",
+      "name": "Three-phase Electric Measurement - Phase shift between V3 - I3",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20736,
+      "modbus_unit_type": "°",
+      "modbus_unit_type_id": 90,
+      "modbus_scale": 0.1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "modbus_settings_protocol_type",
+      "name": "Modbus settings - Protocol type",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 0,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "external_input_configuration_of_external_input",
+      "name": "External input - Configuration of external input",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 4097,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "measure_configuration_measurement_system_features",
+      "name": "Measure configuration - Measurement System Features",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20480,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "measure_configuration_phase_currents_transformation_ratio_kta",
+      "name": "Measure configuration - Phase Currents Transformation Ratio (KTA)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20481,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "measure_configuration_voltage_transformation_ratio_ktv",
+      "name": "Measure configuration - Voltage Transformation Ratio (KTV)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20484,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "measure_configuration_calculation_settings_requirement",
+      "name": "Measure configuration - Calculation Settings Requirement",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20485,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "measure_configuration_partial_positive_three_phase_active_energy",
+      "name": "Measure configuration - Partial Positive Three-phase Active Energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20558,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "measure_configuration_partial_negative_three_phase_active_energy",
+      "name": "Measure configuration - Partial Negative Three-phase Active Energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20560,
+      "modbus_unit_type": "kWh",
+      "modbus_unit_type_id": 19,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "measure_configuration_partial_positive_three_phase_reactive_energy",
+      "name": "Measure configuration - Partial Positive Three-phase Reactive Energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20564,
+      "modbus_unit_type": "kVArh",
+      "modbus_unit_type_id": 243,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "measure_configuration_partial_negative_three_phase_reactive_energy",
+      "name": "Measure configuration - Partial Negative Three-phase Reactive Energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20566,
+      "modbus_unit_type": "kVArh",
+      "modbus_unit_type_id": 243,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "measure_configuration_total_active_power_requirement_md",
+      "name": "Measure configuration - Total Active Power Requirement (MD)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20636,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "measure_configuration_maximum_total_active_power_requirement_pmd",
+      "name": "Measure configuration - Maximum Total Active Power Requirement (PMD)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20638,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "measure_configuration_maximum_total_active_power_requirement_tariff_1_pmd_t1",
+      "name": "Measure configuration - Maximum Total Active Power Requirement Tariff 1 (PMD T1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20672,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "measure_configuration_maximum_total_active_power_requirement_tariff_2_pmd_t2",
+      "name": "Measure configuration - Maximum Total Active Power Requirement Tariff 2 (PMD T2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20678,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "measure_configuration_run_hour_meter_threshold",
+      "name": "Measure configuration - Run hour meter threshold",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20696,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "measure_configuration_run_hour_meter_tot",
+      "name": "Measure configuration - Run hour meter (TOT)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20697,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "measure_configuration_run_hour_meter_tariff_1",
+      "name": "Measure configuration - Run hour meter (Tariff 1)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20699,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "measure_configuration_run_hour_meter_tariff_2",
+      "name": "Measure configuration - Run hour meter (Tariff 2)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 20701,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "pulse_measurement_measurement_unit_input",
+      "name": "Pulse measurement - Measurement unit input",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 29696,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "pulse_measurement_pulse_weight_input",
+      "name": "Pulse measurement - Pulse weight input",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 29697,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "pulse_measurement_pulse_pulse_input",
+      "name": "Pulse measurement - Pulse pulse input",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 29698,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    }
+  ]
+}

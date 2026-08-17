@@ -1,0 +1,1822 @@
+{
+  "object": [
+    {
+      "id": "phase_1_n_voltage",
+      "name": "Phase 1-N voltage",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4096,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_n_voltage",
+      "name": "Phase 2-N voltage",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4098,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_n_voltage",
+      "name": "Phase 3-N voltage",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4100,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "line_12_voltage",
+      "name": "Line 12 voltage",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4102,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "line_23_voltage",
+      "name": "Line 23 voltage",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4104,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "line_31_voltage",
+      "name": "Line 31 voltage",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4106,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "system_voltage",
+      "name": "System voltage",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4108,
+      "modbus_unit_type": "mV",
+      "modbus_unit_type_id": 124,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_1_current",
+      "name": "Phase 1 current",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4110,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_current",
+      "name": "Phase 2 current",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4112,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_current",
+      "name": "Phase 3 current",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4114,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "neutral_current",
+      "name": "Neutral current",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4116,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "system_current",
+      "name": "System current",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4118,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_1_active_power",
+      "name": "Phase 1 active power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4120,
+      "modbus_unit_type": "mW",
+      "modbus_unit_type_id": 132,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_active_power",
+      "name": "Phase 2 active power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4122,
+      "modbus_unit_type": "mW",
+      "modbus_unit_type_id": 132,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_active_power",
+      "name": "Phase 3 active power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4124,
+      "modbus_unit_type": "mW",
+      "modbus_unit_type_id": 132,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "system_active_power",
+      "name": "System active power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4126,
+      "modbus_unit_type": "mW",
+      "modbus_unit_type_id": 132,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_1_apparent_power",
+      "name": "Phase 1 apparent power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4128,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_apparent_power",
+      "name": "Phase 2 apparent power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4130,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_apparent_power",
+      "name": "Phase 3 apparent power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4132,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "system_apparent_power",
+      "name": "System apparent power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4134,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_1_reactive_power",
+      "name": "Phase 1 reactive power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4136,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_reactive_power",
+      "name": "Phase 2 reactive power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4138,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_reactive_power",
+      "name": "Phase 3 reactive power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4140,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "system_reactive_power",
+      "name": "System reactive power",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4142,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_1_power_factor",
+      "name": "Phase 1 power factor",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4144,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_power_factor",
+      "name": "Phase 2 power factor",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4146,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_power_factor",
+      "name": "Phase 3 power factor",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4148,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "system_power_factor",
+      "name": "System power factor",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4150,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_1_dpf",
+      "name": "Phase 1 DPF",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4152,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_dpf",
+      "name": "Phase 2 DPF",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4154,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_dpf",
+      "name": "Phase 3 DPF",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4156,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_1_tangent",
+      "name": "Phase 1 tangent Ø",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4158,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_tangent",
+      "name": "Phase 2 tangent Ø",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4160,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_tangent",
+      "name": "Phase 3 tangent Ø",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4162,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "system_tangent",
+      "name": "System tangent Ø",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4164,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_1_n_voltage_thd",
+      "name": "Phase 1-N voltage THD",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4166,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_n_voltage_thd",
+      "name": "Phase 2-N voltage THD",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4168,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_n_voltage_thd",
+      "name": "Phase 3-N voltage THD",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4170,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "line_12_voltage_thd",
+      "name": "Line 12 voltage THD",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4172,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "line_23_voltage_thd",
+      "name": "Line 23 voltage THD",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4174,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "line_31_voltage_thd",
+      "name": "Line 31 voltage THD",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4176,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_1_current_thd",
+      "name": "Phase 1 current THD",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4178,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_current_thd",
+      "name": "Phase 2 current THD",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4180,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_current_thd",
+      "name": "Phase 3 current THD",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4182,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "neutral_current_thd",
+      "name": "Neutral current THD",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 4184,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_1_imported_active_energy",
+      "name": "Phase 1 imported active energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5120,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_1_exported_active_energy",
+      "name": "Phase 1 exported active energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5122,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_imported_active_energ",
+      "name": "Phase 2 imported active energ",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5124,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_exported_active_energy",
+      "name": "Phase 2 exported active energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5126,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_imported_active_energy",
+      "name": "Phase 3 imported active energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5128,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_exported_active_energy",
+      "name": "Phase 3 exported active energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5130,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "system_imported_active_energy",
+      "name": "System imported active energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5132,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "system_exported_active_energy",
+      "name": "System exported active energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5134,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "balance_of_system_active_energy_imp_exp",
+      "name": "Balance of system active energy (imp-exp)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5136,
+      "modbus_unit_type": "Wh",
+      "modbus_unit_type_id": 18,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_1_imported_capacitive_apparent_energy",
+      "name": "Phase 1 imported capacitive apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5138,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_1_exported_capacitive_apparent_energy",
+      "name": "Phase 1 exported capacitive apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5140,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_1_imported_inductive_apparent_energy",
+      "name": "Phase 1 imported inductive apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5142,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_1_exported_inductive_apparent_energy",
+      "name": "Phase 1 exported inductive apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5144,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_1_imported_apparent_energy",
+      "name": "Phase 1 imported apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5146,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_1_exported_apparent_energy",
+      "name": "Phase 1 exported apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5148,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_imported_capacitive_apparent_energy",
+      "name": "Phase 2 imported capacitive apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5150,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_exported_capacitive_apparent_energy",
+      "name": "Phase 2 exported capacitive apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5152,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_imported_inductive_apparent_energy",
+      "name": "Phase 2 imported inductive apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5154,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_exported_inductive_apparent_energy",
+      "name": "Phase 2 exported inductive apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5156,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_imported_apparent_energy",
+      "name": "Phase 2 imported apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5158,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_exported_apparent_energy",
+      "name": "Phase 2 exported apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5160,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_imported_capacitive_apparent_energy",
+      "name": "Phase 3 imported capacitive apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5162,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_exported_capacitive_apparent_energy",
+      "name": "Phase 3 exported capacitive apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5164,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_imported_inductive_apparent_energy",
+      "name": "Phase 3 imported inductive apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5166,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_exported_inductive_apparent_energy",
+      "name": "Phase 3 exported inductive apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5168,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_imported_apparent_energy",
+      "name": "Phase 3 imported apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5170,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_exported_apparent_energy",
+      "name": "Phase 3 exported apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5172,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "system_imported_capacitive_apparent_energy",
+      "name": "System imported capacitive apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5174,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "system_exported_capacitive_apparent_energy",
+      "name": "System exported capacitive apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5176,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "system_imported_inductive_apparent_energy",
+      "name": "System imported inductive apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5178,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "system_exported_inductive_apparent_energy",
+      "name": "System exported inductive apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5180,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "system_imported_apparent_energy",
+      "name": "System imported apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5182,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "system_exported_apparent_energy",
+      "name": "System exported apparent energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5184,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "balance_of_system_capacitive_apparent_en_imp_exp",
+      "name": "Balance of system capacitive apparent en. (imp-exp)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5186,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "balance_of_system_inductive_apparent_en_imp_exp",
+      "name": "Balance of system inductive apparent en. (imp-exp)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5188,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "balance_of_system_apparent_energy_bal_c_bal_l",
+      "name": "Balance of system apparent energy (BAL-C + BAL-L)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5190,
+      "modbus_unit_type": "VAh",
+      "modbus_unit_type_id": 239,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_1_imported_capacitive_reactive_energy",
+      "name": "Phase 1 imported capacitive reactive energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5192,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_1_exported_capacitive_reactive_energy",
+      "name": "Phase 1 exported capacitive reactive energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5194,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_1_imported_inductive_reactive_energy",
+      "name": "Phase 1 imported inductive reactive energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5196,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_1_exported_inductive_reactive_energy",
+      "name": "Phase 1 exported inductive reactive energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5198,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_imported_capacitive_reactive_energy",
+      "name": "Phase 2 imported capacitive reactive energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5200,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_exported_capacitive_reactive_energy",
+      "name": "Phase 2 exported capacitive reactive energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5202,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_imported_inductive_reactive_energy",
+      "name": "Phase 2 imported inductive reactive energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5204,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_2_exported_inductive_reactive_energy",
+      "name": "Phase 2 exported inductive reactive energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5206,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_imported_capacitive_reactive_energy",
+      "name": "Phase 3 imported capacitive reactive energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5208,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_exported_capacitive_reactive_energy",
+      "name": "Phase 3 exported capacitive reactive energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5210,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_imported_inductive_reactive_energy",
+      "name": "Phase 3 imported inductive reactive energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5212,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "phase_3_exported_inductive_reactive_energy",
+      "name": "Phase 3 exported inductive reactive energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5214,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "system_imported_capacitive_reactive_energy",
+      "name": "System imported capacitive reactive energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5216,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "system_exported_capacitive_reactive_energy",
+      "name": "System exported capacitive reactive energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5218,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "system_imported_inductive_reactive_energy",
+      "name": "System imported inductive reactive energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5220,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "system_exported_inductive_reactive_energy",
+      "name": "System exported inductive reactive energy",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5222,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "balance_of_system_capacitive_reactive_en_imp_exp",
+      "name": "Balance of system capacitive reactive en. (imp-exp)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5224,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "balance_of_system_inductive_reactive_en_imp_exp",
+      "name": "Balance of system inductive reactive en. (imp-exp)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5226,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "balance_of_system_reactive_energy_bal_c_bal_l",
+      "name": "Balance of system reactive energy (BAL-C + BAL-L)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 5228,
+      "modbus_unit_type": "VArh",
+      "modbus_unit_type_id": 242,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "serial_number",
+      "name": "Serial number",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "float32_ab",
+      "modbus_register_num": 2,
+      "modbus_register_addr": 8192,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    }
+  ]
+}

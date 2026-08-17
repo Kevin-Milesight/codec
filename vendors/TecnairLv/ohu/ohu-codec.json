@@ -1,0 +1,2254 @@
+{
+  "object": [
+    {
+      "id": "room_temperature",
+      "name": "Room temperature",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 1,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ambient_humidity",
+      "name": "Ambient humidity",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "supply_air_temperature",
+      "name": "Supply air temperature",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 3,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "antifreeze_temperature",
+      "name": "Antifreeze temperature",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 4,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "outside_air_temperature",
+      "name": "Outside air temperature",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 5,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "internal_humidifier_absorbed_current",
+      "name": "Internal humidifier absorbed current",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 6,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "steam_production_kg_h",
+      "name": "Steam production (Kg / h)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 7,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "set_point_temperature",
+      "name": "Set-point temperature",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 8,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "proportional_band_temperature",
+      "name": "Proportional band temperature",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 9,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "set_point_minimo_temperatura_in_stand_by",
+      "name": "Set-point minimo temperatura in stand-by",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 10,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "set_point_massimo_temperatura_in_stand_by",
+      "name": "Set-point massimo temperatura in stand-by",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 11,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "humidity_set_point",
+      "name": "Humidity set-point",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 12,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "humidity_proportional_band",
+      "name": "Humidity proportional band",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 13,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "minimum_humidity_set_point_in_stand_by",
+      "name": "Minimum humidity set-point in stand-by",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 14,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "maximum_humidity_set_point_in_stand_by",
+      "name": "Maximum humidity set-point in stand-by",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 15,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "high_temperature_alarm_threshold",
+      "name": "High temperature alarm threshold",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 16,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "low_temperature_alarm_threshold",
+      "name": "Low temperature alarm threshold",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 17,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "high_temperature_alarm_threshold_in_stand_by",
+      "name": "High temperature alarm threshold in stand-by",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 18,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "low_temperature_alarm_threshold_in_stand_by",
+      "name": "Low temperature alarm threshold in stand-by",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "high_flow_temperature_alarm_threshold",
+      "name": "High flow temperature alarm threshold",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "low_flow_temperature_alarm_threshold_high_temperature_alarm",
+      "name": "Low flow temperature alarm threshold High temperature alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "threshold_in_stand_by",
+      "name": "threshold in stand-by",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 22,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "low_temp_alarm_threshold_in_stand_by",
+      "name": "Low temp. Alarm threshold in stand-by",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "high_humidity_alarm_threshold",
+      "name": "High humidity alarm threshold",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 24,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "low_humidity_alarm_threshold",
+      "name": "Low humidity alarm threshold",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 25,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "high_humidity_alarm_threshold_in_stand_by",
+      "name": "High humidity alarm threshold in stand-by",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 26,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "low_humidity_alarm_threshold_in_stand_by",
+      "name": "Low humidity alarm threshold in stand-by",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 27,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "delta_heat_recovery_temperature",
+      "name": "Delta heat recovery temperature",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 28,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "current_flow",
+      "name": "Current flow",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 129,
+      "modbus_unit_type": "m³/h",
+      "modbus_unit_type_id": 135,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "discharge_pressure",
+      "name": "Discharge pressure",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 130,
+      "modbus_unit_type": "Pa",
+      "modbus_unit_type_id": 53,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "return_pressure",
+      "name": "Return pressure",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 131,
+      "modbus_unit_type": "Pa",
+      "modbus_unit_type_id": 53,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "hot_gas_by_pass_cold_modulating_valve",
+      "name": "Hot gas by-pass Cold modulating valve",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 132,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "modulating_valve_electric_heater",
+      "name": "Modulating valve / electric heater",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 133,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "inverter_messages",
+      "name": "Inverter messages (%)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 134,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "inverter_expulsion_damper",
+      "name": "Inverter expulsion damper",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 135,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "recirculation",
+      "name": "Recirculation",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 136,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "modulating_valve_post_heating_electric_coil",
+      "name": "Modulating valve post-heating electric coil.",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 137,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "network_steam",
+      "name": "Network steam",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 138,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "drive_status",
+      "name": "Drive status",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 139,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "unit_operating_hours",
+      "name": "Unit operating hours",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 140,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "compressor_1_operating_hours",
+      "name": "Compressor 1 operating hours",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 141,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "compressor_2_operating_hours",
+      "name": "Compressor 2 operating hours",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 142,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "conductivity_humidifier",
+      "name": "Conductivity humidifier",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 143,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "humidifier_working_mode",
+      "name": "Humidifier working mode:",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 144,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "humidifier_status",
+      "name": "Humidifier status:",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 145,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "gsm_modem_status",
+      "name": "GSM modem status:",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 146,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "campo_modem_gsm",
+      "name": "Campo modem GSM",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 147,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "set_point_aria",
+      "name": "Set-point aria",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 148,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "set_point_portata_aria_in_stand_by",
+      "name": "Set-point portata aria in stand-by",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 149,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "room_pressure_set_point",
+      "name": "Room pressure set-point",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 150,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "set_point_pressione_sala_in_stand_by",
+      "name": "Set-point pressione sala in stand-by",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 151,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "discharge_pressure_set_point",
+      "name": "Discharge pressure set-point",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 152,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "delivery_pressure_set_point_in_stand_by",
+      "name": "Delivery pressure set-point in stand-by",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 153,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "ejection_pressure_set_point",
+      "name": "Ejection pressure set-point",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 154,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "expulsion_pressure_set_point_in_stand_by",
+      "name": "Expulsion pressure set-point in stand-by",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 155,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "percentage_of_recirculation",
+      "name": "Percentage of recirculation",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 156,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "percentage_of_recirculation_in_stand_by",
+      "name": "Percentage of recirculation in stand-by",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 157,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "integration_time_temperature",
+      "name": "Integration time (temperature)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 158,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "derivation_time_temperature",
+      "name": "Derivation time (temperature)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 159,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "percentage_of_humidifier_production",
+      "name": "Percentage of humidifier production",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 160,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "humidifier_inactivity_time",
+      "name": "Humidifier inactivity time",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 161,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "humidifier_drain_period",
+      "name": "Humidifier drain period",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 162,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "supply_fan_control_1",
+      "name": "Supply fan control 1",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 1,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "exhaust_fan_control_1",
+      "name": "Exhaust fan control 1",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 2,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "supply_fan_control_2",
+      "name": "Supply fan control 2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 3,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "exhaust_fan_control_2",
+      "name": "Exhaust fan control 2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 4,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "control_of_motorized_shutters",
+      "name": "Control of motorized shutters",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 5,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "humidifier_control",
+      "name": "Humidifier control",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 6,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "loading_valve_control",
+      "name": "Loading valve control",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 7,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "commando_drain_valve",
+      "name": "Commando drain valve",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 8,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "compressor_1_command",
+      "name": "Compressor 1 command",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 9,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "compressor_2_control",
+      "name": "Compressor 2 control",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 10,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "motorized_expulsion_shutter_control",
+      "name": "Motorized expulsion shutter control",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 11,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "heat_recovery_pump_control",
+      "name": "Heat recovery pump control",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 12,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "dirty_filters_alarm_signal",
+      "name": "Dirty filters alarm signal",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 13,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "minor_alarm_signal",
+      "name": "Minor alarm signal",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 14,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "serious_alarm_signal",
+      "name": "Serious alarm signal",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 15,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "unit_status_indication_on_off",
+      "name": "Unit status indication (ON-OFF)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 16,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "unit_in_night_stand_by",
+      "name": "Unit in night stand-by",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 17,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "unit_under_ups_operation",
+      "name": "Unit under UPS operation",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 18,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "unit_in_sterilization_cycle",
+      "name": "Unit in sterilization cycle",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "antifreeze_function_intervention_fans_off",
+      "name": "Antifreeze function intervention (fans OFF)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "active_emergency_depression",
+      "name": "Active emergency depression",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "off_from_supervisor",
+      "name": "OFF from supervisor",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 22,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Value"
+        }
+      }
+    },
+    {
+      "id": "enabling_night_stand_by_from_supervisor",
+      "name": "Enabling night stand-by from supervisor",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Value"
+        }
+      }
+    },
+    {
+      "id": "enable_cold_humidification",
+      "name": "Enable cold  humidification",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 24,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Value"
+        }
+      }
+    },
+    {
+      "id": "enable_drain_for_inactivity_internal_humid",
+      "name": "Enable drain for inactivity (internal humid.)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 25,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Value"
+        }
+      }
+    },
+    {
+      "id": "enable_periodic_drain_internal_humid",
+      "name": "Enable periodic drain (internal humid.)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 26,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Value"
+        }
+      }
+    },
+    {
+      "id": "humidification_enabling",
+      "name": "Humidification enabling",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 27,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Value"
+        }
+      }
+    },
+    {
+      "id": "supply_fan_general_alarm_1_unit_off_in_case_of_unit_without_emergency_fan",
+      "name": "Supply fan general alarm 1\n(Unit OFF in case of unit without emergency fan)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 28,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "supply_fan_general_alarm_2",
+      "name": "Supply fan general alarm 2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 29,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "supply_fans_general_alarm_unit_off",
+      "name": "Supply fans general alarm (unit OFF)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 30,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "general_exhaust_fan_alarm_1",
+      "name": "General exhaust fan alarm 1",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 31,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "unit_off_in_case_of_unit_without_emergency_fan_with_depression_adjustment",
+      "name": "(Unit OFF in case of unit without emergency fan with depression adjustment)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 32,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "general_exhaust_fan_alarm_2",
+      "name": "General exhaust fan alarm 2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 33,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "general_alarm_for_expulsion_fans_unit_off_in_case_of_unit_with_vacuum_regulation",
+      "name": "General alarm for expulsion fans\n(Unit OFF in case of unit with vacuum regulation)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 34,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "motorized_shutters_status_alarm_unit_off",
+      "name": "Motorized shutters status alarm (unit OFF)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 35,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "smoke_fire_alarm_unit_off",
+      "name": "Smoke / Fire Alarm (unit OFF)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 36,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "antifreeze_system_alarm_unit_off",
+      "name": "Antifreeze System Alarm (unit OFF)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 37,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "electric_heating_coil_safety_thermostat",
+      "name": "Electric heating coil safety thermostat",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 38,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "post_heating_electric_coil_safety_thermostat",
+      "name": "Post-heating electric coil safety thermostat.",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 39,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "low_pressure_compressor_1",
+      "name": "Low pressure compressor 1",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "low_pressure_compressor_2",
+      "name": "Low pressure compressor 2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 41,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "general_compressor_1",
+      "name": "General compressor 1",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 42,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "general_compressor_2",
+      "name": "General compressor 2",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 43,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "flooding_alarm",
+      "name": "Flooding alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 44,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "heat_recovery_circulator_pump_alarm",
+      "name": "Heat recovery circulator pump alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 45,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "external_humidifier_alarm",
+      "name": "External humidifier alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 46,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "external_air_filter_clogged_alarm",
+      "name": "External air filter clogged alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 47,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "clogged_supply_air_filter_alarm",
+      "name": "Clogged supply air filter alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 48,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "clogged_return_air_filter_alarm",
+      "name": "Clogged return air filter alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 49,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "terminal_air_filter_clogged_alarm",
+      "name": "Terminal air filter clogged alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 50,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "high_ambient_temperature",
+      "name": "High ambient temperature",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 51,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "low_ambient_temperature",
+      "name": "Low ambient temperature",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 52,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "high_ambient_humidity",
+      "name": "High ambient humidity",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 53,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "low_ambient_humidity",
+      "name": "Low ambient humidity",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 54,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "high_delivery_temperature",
+      "name": "High delivery temperature",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 55,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "low_flow_temperature",
+      "name": "Low flow temperature",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 56,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "humidity_probe_broken_or_disconnected",
+      "name": "Humidity probe broken or disconnected",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 57,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "room_temperature_probe_broken_or_disconnected",
+      "name": "Room temperature probe broken or disconnected",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 58,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "delivery_pressure_switch_1_broken_or_disconnected",
+      "name": "Delivery pressure switch 1 broken or disconnected",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 59,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "broken_or_disconnected_flow_temperature_probe",
+      "name": "Broken or disconnected flow temperature probe",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 60,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "broken_or_disconnected_antifreeze_temperature_probe",
+      "name": "Broken or disconnected antifreeze temperature probe",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 61,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "return_pressure_switch_broken_or_disconnected",
+      "name": "Return pressure switch broken or disconnected",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 62,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "broken_or_disconnected_external_temperature_probe",
+      "name": "Broken or disconnected external temperature probe",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 63,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    }
+  ]
+}

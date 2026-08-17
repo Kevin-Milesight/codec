@@ -1,0 +1,3658 @@
+{
+  "object": [
+    {
+      "id": "flwtmpcmpfunc_flow_outdoor_temperature_compensation",
+      "name": "FlwTmpCmpFunc.Flow/outdoor temperature compensation",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 5,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Value"
+        }
+      }
+    },
+    {
+      "id": "coolflwforcefc_forced_flow_with_cooling_demand",
+      "name": "CoolFlwForceFc.Forced flow with cooling demand",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 7,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Value"
+        }
+      }
+    },
+    {
+      "id": "extdrfhiperiod_input_for_forced_high_speed",
+      "name": "ExtDrfHiPeriod.Input for forced high speed",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 9,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Value"
+        }
+      }
+    },
+    {
+      "id": "extdrfperiodon_run_on_time_for_forced_high_speed_active",
+      "name": "ExtDrfPeriodON.Run-on time for forced high speed active",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 16,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Value"
+        }
+      }
+    },
+    {
+      "id": "extdrfmeperiod_input_for_forced_medium_speed",
+      "name": "ExtDrfMePeriod.Input for forced medium speed",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "coil",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 18,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Value"
+        }
+      }
+    },
+    {
+      "id": "extdrfmespeed_extended_medium_speed_active",
+      "name": "ExtDrfMeSpeed.Extended medium speed  –> Active",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 7,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "supductminflow_supply_duct_pressure_controller_reduced_to_min_flow",
+      "name": "SupDuctMinFlow.Supply duct pressure controller reduced to min. flow",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 25,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "supductmaxflow_supply_duct_pressure_controller_increased_to_max_flow",
+      "name": "SupDuctMaxFlow.Supply duct pressure controller increased to max. flow",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 32,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "extductminflow_extract_duct_pressure_controller_reduced_to_min_flow",
+      "name": "ExtDuctMinFlow.Extract duct pressure controller reduced to min. flow",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 33,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "extductmaxflow_extract_duct_pressure_controller_increased_to_max_flow",
+      "name": "ExtDuctMaxFlow.Extract duct pressure controller increased to max. flow",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 34,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "supmotoron_supply_motor",
+      "name": "SupMotorON.Supply motor",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 112,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "supmotoralarm_supply_motor_alarm",
+      "name": "SupMotorAlarm.Supply Motor Alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 113,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "fcsupmtralrvlo_supply_motor_low_voltage_alarm_only_with_oj_fc",
+      "name": "FCsupMtrAlrVlo.Supply motor low voltage alarm (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 114,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "fcsupmtralrvhi_supply_motor_high_voltage_alarm_only_with_oj_fc",
+      "name": "FCsupMtrAlrVhi.Supply motor high voltage alarm(only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 115,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "fcsupmtralrihi_supply_motor_high_current_alarm_only_with_oj_fc_motor_protection",
+      "name": "FCsupMtrAlrIhi.Supply motor high current alarm (only with OJ-FC), motor protection",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 116,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "fcsupmtralrtmp_supply_motor_temperature_alarm_only_with_oj_fc",
+      "name": "FCsupMtrAlrTmp.Supply motor temperature alarm (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 117,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "fcsupmtralrphs_supply_motor_phase_fault_alarm_only_with_oj_fc",
+      "name": "FCsupMtrAlrPhs.Supply motor phase fault alarm (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 118,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "fcalrsupoldrip_supply_motor_ripple_voltage_alarm_only_with_oj_fc",
+      "name": "FCAlrSupOldRip.Supply motor ripple voltage alarm (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 119,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "fcsupmtrihilim_supply_motor_high_current_limit_short_circuit_protection_only_with_oj_fc",
+      "name": "FCsupMtrIhiLim.Supply motor high current limit: short-circuit protection (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 120,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "fcsupmtralrrip_supplymotor_v_ripple_alarm",
+      "name": "FCsupMtrAlrRip.SupplyMotor V Ripple Alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 121,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "extmotoron_extract_motor_only_with_oj_fc",
+      "name": "ExtMotorON.Extract motor (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 128,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "fcextmtralrvlo_extract_motor_low_voltage_alarm_only_with_oj_fc",
+      "name": "FCextMtrAlrVlo.Extract motor low voltage alarm (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 130,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "fcextmtralrvhi_extract_motor_high_voltage_alarm_only_with_oj_fc",
+      "name": "FCextMtrAlrVhi.Extract motor high voltage alarm (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 131,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "fcextmtralrihi_extract_motor_high_current_alarm_only_with_oj_fc",
+      "name": "FCextMtrAlrIhi.Extract motor high current alarm (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 132,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "fcextmtralrtmp_extract_motor_temperature_alarm_only_with_oj_fc",
+      "name": "FCextMtrAlrTmp.Extract motor temperature alarm (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 133,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "fcextmtralrphs_extract_motor_phase_fault_alarm_only_with_oj_fc",
+      "name": "FCextMtrAlrPhs.Extract motor phase fault alarm (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 134,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "fcalrextoldrip_extract_motor_ripple_voltage_alarm_only_with_oj_fc",
+      "name": "FCAlrExtOldRip.Extract motor ripple voltage alarm (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 135,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "fcextmtrihilim_extract_motor_high_current_limit_only_with_oj_fc",
+      "name": "FCextMtrIhiLim.Extract motor high current limit (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 136,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "fcextmtralrrip_extractmotor_v_ripple_alarm",
+      "name": "FCextMtrAlrRip.ExtractMotor V Ripple Alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 137,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "supbmotoralarm_supply_backup_motor_alarm",
+      "name": "SupBMotorAlarm.Supply Backup Motor Alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 281,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2supmtalrvlo_oj_ec_dv_2_supply_air_motor_voltage_low_alarm",
+      "name": "EC2supMtAlrVlo.OJ-EC/-DV 2-supply air motor voltage low alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 389,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2supmtalrvhi_oj_ec_dv_2_supply_air_motor_voltage_high_alarm",
+      "name": "EC2supMtAlrVhi.OJ-EC/-DV 2-supply air motor voltage high alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 390,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2supmtalrihi_oj_ec_dv_2_supply_air_motor_high_current_limit_alarm",
+      "name": "EC2supMtAlrIhi.OJ-EC/-DV 2-supply air motor high current limit alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 391,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2supmtalrtmp_oj_ec_dv_2_supply_air_motor_temperature_alarm",
+      "name": "EC2supMtAlrTmp.OJ-EC/-DV 2-supply air motor temperature alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 392,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2supmtalrphs_oj_ec_dv_2_supply_air_motor_alarm_for_phase_error",
+      "name": "EC2supMtAlrPhs.OJ-EC/-DV 2-supply air motor alarm for phase error",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 393,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2suprotblok_oj_ec_dv_2_supply_air_motor_alarm_for_blocked_rotor",
+      "name": "EC2supRotBlok.OJ-EC/-DV 2-supply air motor alarm for blocked rotor",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 400,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2supmtihilim_oj_ec_dv_2_supply_supply_air_motor_high_current_limit_shortcuit_protection",
+      "name": "EC2supMtIhiLim.OJ-EC/-DV 2-supply/supply air motor high current limit; shortcuit protection",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 401,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2extmtalrvlo_oj_ec_dv_2_extract_exhaust_motor_voltage_low_alarm",
+      "name": "EC2extMtAlrVlo.OJ-EC/-DV 2-extract/exhaust motor voltage low alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 402,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2extmtalrvhi_oj_ec_dv_2_extract_exhaust_motor_voltage_high_alarm",
+      "name": "EC2extMtAlrVhi.OJ-EC/-DV 2-extract/exhaust motor voltage high alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 403,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2extmtalrihi_oj_ec_dv_2_extract_exhaust_motor_high_current_limit_alarm",
+      "name": "EC2extMtAlrIhi.OJ-EC/-DV 2-extract/exhaust motor high current limit alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 404,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2extmtalrtmp_oj_ec_dv_2_extract_exhaust_motor_temperature_alarm",
+      "name": "EC2extMtAlrTmp.OJ-EC/-DV 2-extract/exhaust motor temperature alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 405,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2extmtalrphs_oj_ec_dv_2_extract_exhaust_motor_alarm_for_phase_error",
+      "name": "EC2extMtAlrPhs.OJ-EC/-DV 2-extract/exhaust motor alarm for phase error",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 406,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2extrotblok_oj_ec_dv_2_extract_exhaust_motor_alarm_for_blocked_rotor",
+      "name": "EC2extRotBlok.OJ-EC/-DV 2-extract/exhaust motor alarm for blocked rotor",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 407,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2extmtihilim_oj_ec_dv_2_extract_exhaust_motor_high_current_limit_shortcuit_protection",
+      "name": "EC2extMtIhiLim.OJ-EC/-DV 2-extract/exhaust motor high current limit; shortcuit protection",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 408,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ecsupmtralrvlo_oj_ec_dv_supply_air_motor_voltage_low_alarm",
+      "name": "ECsupMtrAlrVlo.OJ-EC/-DV-supply air motor voltage low alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 512,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ecsupmtralrvhi_oj_ec_dv_supply_air_motor_voltage_high_alarm",
+      "name": "ECsupMtrAlrVhi.OJ-EC/-DV-supply air motor voltage high alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 513,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ecsupmtralrihi_oj_ec_dv_supply_air_motor_high_current_limit_alarm",
+      "name": "ECsupMtrAlrIhi.OJ-EC/-DV-supply air motor high current limit alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 514,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ecsupmtralrtmp_oj_ec_dv_supply_air_motor_temperature_alarm",
+      "name": "ECsupMtrAlrTmp.OJ-EC/-DV-supply air motor temperature alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 515,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ecsupmtralrphs_oj_ec_dv_supply_air_motor_alarm_for_phase_error",
+      "name": "ECsupMtrAlrPhs.OJ-EC/-DV-supply air motor alarm for phase error",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 516,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ecsuprotbloked_oj_ec_dv_supply_air_motor_alarm_for_blocked_rotor",
+      "name": "ECsupRotBloked.OJ-EC/-DV-supply air motor alarm for blocked rotor",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 517,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ecsupmtrihilim_oj_ec_dv_supply_air_motor_high_current_limit_shortcuit_protection",
+      "name": "ECsupMtrIhiLim.OJ-EC/-DV-supply air motor high current limit; shortcuit protection",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 518,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ecextmtralrvlo_oj_ec_dv_extract_exhaust_motor_voltage_low_alarm",
+      "name": "ECextMtrAlrVlo.OJ-EC/-DV-extract/exhaust motor voltage low alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 519,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ecextmtralrvhi_oj_ec_dv_extract_exhaust_motor_voltage_high_alarm",
+      "name": "ECextMtrAlrVhi.OJ-EC/-DV-extract/exhaust motor voltage high alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 520,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ecextmtralrihi_oj_ec_dv_extract_exhaust_motor_high_current_limit_alarm",
+      "name": "ECextMtrAlrIhi.OJ-EC/-DV-extract/exhaust motor high current limit alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 521,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ecextmtralrtmp_oj_ec_dv_extract_exhaust_motor_temperature_alarm",
+      "name": "ECextMtrAlrTmp.OJ-EC/-DV-extract/exhaust motor temperature alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 528,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ecextmtralrphs_oj_ec_dv_extract_exhaust_motor_alarm_for_phase_error",
+      "name": "ECextMtrAlrPhs.OJ-EC/-DV-extract/exhaust motor alarm for phase error",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 529,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ecextrotbloked_oj_ec_dv_extract_exhaust_motor_alarm_for_blocked_rotor",
+      "name": "ECextRotBloked.OJ-EC/-DV-extract/exhaust motor alarm for blocked rotor",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 530,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ecextmtrihilim_oj_ec_dv_extract_exhaust_motor_high_current_limit_shortcuit_protection",
+      "name": "ECextMtrIhiLim.OJ-EC/-DV-extract/exhaust motor high current limit; shortcuit protection",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 531,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ecsupeep_err_supply_air_fan_eeprom_error",
+      "name": "ECsupEEP_Err.Supply air fan EEprom error",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 552,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2supeep_err_supply_air_fan_2_eeprom_error",
+      "name": "EC2supEEP_Err.Supply air fan 2 EEprom error",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 553,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ecexteep_err_exhaust_air_fan_eeprom_error",
+      "name": "ECextEEP_Err.Exhaust air fan EEprom error",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 560,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2exteep_err_exhaust_air_fan_2_eeeprom_error",
+      "name": "EC2extEEP_Err.Exhaust air fan 2 EEeprom error",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 561,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "alrsmokevafan_smoke_evacuation_fan_alarm",
+      "name": "AlrSmokEvaFan.Smoke evacuation fan alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 568,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "fcalrsuppolim_alarm_supply_air_fan_power_limit",
+      "name": "FCAlrSupPoLim.Alarm - Supply air fan, Power limit",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 594,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "fcalrextpolim_alarm_exhaust_air_fan_power_limit",
+      "name": "FCAlrExtPoLim.Alarm - Exhaust air fan, Power limit",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 595,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "fcalrsupdvrblk_alarm_supply_air_fan_dv_fc_rotor_bloked",
+      "name": "FCAlrSupDVRBlk.Alarm - Supply air fan DV-FC Rotor bloked",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 596,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "fcalrextdvrblk_alarm_exhaust_air_fan_dv_fc_rotor_bloked",
+      "name": "FCAlrExtDVRBlk.Alarm - Exhaust air fan, DV-FC Rotor bloked",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 597,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "dvalrsupistop_alarm_supply_air_fan1_high_current_stop",
+      "name": "DVAlrSupIStop.Alarm - Supply air fan1, High Current Stop",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 598,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "dv2alrsupistop_alarm_supply_air_fan2_high_current_stop",
+      "name": "DV2AlrSupIStop.Alarm - Supply air fan2, High Current Stop",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 599,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "dvalrextistop_alarm_exhaust_air_fan1_high_current_stop",
+      "name": "DVAlrExtIStop.Alarm - Exhaust air fan1, High Current Stop",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 600,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "dv2alrextistop_alarm_exhaust_air_fan2_high_current_stop",
+      "name": "DV2AlrExtIStop.Alarm - Exhaust air fan2, High Current Stop",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 601,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ecsuphiioalr_alarm_oj_ec_dv_supply_air_high_io_current",
+      "name": "ECSupHiIOAlr.Alarm OJ-EC/-DV supply air = High IO current",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 612,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ecexthiioalr_alarm_oj_ec_dv_extract_air_high_io_current",
+      "name": "ECExtHiIOAlr.Alarm OJ-EC/-DV extract air = High IO current",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 613,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2suphiioalr_alarm_oj_ec_dv2_supply_air_high_io_current",
+      "name": "EC2SupHiIOAlr.Alarm OJ-EC/-DV2 supply air = High IO current",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 614,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2exthiioalr_alarm_oj_ec_dv2_extract_air_high_io_current",
+      "name": "EC2ExtHiIOAlr.Alarm OJ-EC/-DV2 extract air = High IO current",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 615,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "alrsupfanstop_b_alr_supfan_is_stopped",
+      "name": "AlrSupFanStop.B-Alr SupFan is stopped",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 624,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2sup_errdir_oj_ec_dv2_supply_air_motor_direction_error",
+      "name": "EC2sup_ErrDir.OJ-EC/-DV2-Supply air motor Direction error",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 642,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2ext_errdir_oj_ec_dv_extractmotor_direction_error",
+      "name": "EC2ext_ErrDir.OJ-EC/-DV-ExtractMotor Direction error",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 643,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "alrec2supcom_oj_ec_dv2_supply_comm_alarm",
+      "name": "AlrEC2SupCom.OJ-EC/-DV2 Supply Comm Alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 644,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "alrec2extcom_oj_ec_dv2_extract_comm_alarm",
+      "name": "AlrEC2ExtCom.OJ-EC/-DV2 Extract Comm Alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 645,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ecsup_errdir_oj_ec_dv_supplymotor_direction_error",
+      "name": "ECsup_ErrDir.OJ-EC/-DV-SupplyMotor Direction error",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 646,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "ecext_errdir_oj_ec_dv_extractmotor_direction_error",
+      "name": "ECext_ErrDir.OJ-EC/-DV-ExtractMotor Direction error",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 647,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "alroj_ecs_comm_oj_ec_dv_supply_comm_alarm",
+      "name": "AlrOJ_ECS_Comm.OJ-EC/-DV Supply Comm Alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 648,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "alroj_ece_comm_oj_ec_dv_extract_comm_alarm",
+      "name": "AlrOJ_ECE_Comm.OJ-EC/-DV Extract Comm Alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 649,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "alrsupmtr_supmotor_alarm",
+      "name": "AlrSupMtr.SupMotor Alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 659,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "alrextmtr_extmotor_alarm",
+      "name": "AlrExtMtr.ExtMotor Alarm",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 660,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "alratvsupcomm_alarm_atv_communication_alarm_supply",
+      "name": "AlrAtvSupComm.Alarm Atv Communication alarm Supply",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 661,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "alratvextcomm_alarm_atv_ccommunication_alarm_extract",
+      "name": "AlrAtvExtComm.Alarm Atv Ccommunication alarm Extract",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 662,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "alratvsupfc_alarm_atv_fc_supply",
+      "name": "AlrAtvSupFC.Alarm Atv FC Supply",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 663,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "alratvextfc_alarm_atv_fc_extract",
+      "name": "AlrAtvExtFC.Alarm Atv FC Extract",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 664,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "extmotoralarm_extractmotor_on_off",
+      "name": "ExtMotorAlarm.ExtractMotor ON/OFF",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 770,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "supfanwallalr_supply_fan_wall_alarm_b",
+      "name": "SupFanWallAlr.Supply Fan wall Alarm (B)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 803,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "extfanwallalr_extract_fan_wall_alarm_b",
+      "name": "ExtFanWallAlr.Extract Fan wall Alarm (B)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 804,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "alrcomsupfan_common_alarm_supply_air_fan",
+      "name": "AlrComSupFan.Common Alarm - supply air fan",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 1280,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "alrcomsupfldu_common_alarm_supply_pressure_flow",
+      "name": "AlrComSupFlDu.Common Alarm - supply pressure/flow",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 1281,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "alrcomextfan_common_alarm_extract_fan",
+      "name": "AlrComExtFan.Common Alarm - extract fan",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 1282,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "alrcomextfldu_common_alarm_extract_pressure_flow",
+      "name": "AlrComExtFlDu.Common Alarm - extract pressure/flow",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "discrete",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 1283,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Binary-Input"
+        }
+      }
+    },
+    {
+      "id": "supflow_actual_supply_flow_l_s_or_m3_h_or_cfm",
+      "name": "SupFlow.Actual supply flow [l/s] or [m3/h] or [CFM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 7,
+      "modbus_unit_type": "l/s",
+      "modbus_unit_type_id": 87,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "supflowregset_setpoint_for_supply_flow_controller_l_s_or_m3_h_or_cfm",
+      "name": "SupFlowRegSet.Setpoint for supply flow controller [l/s] or [m3/h] or [CFM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 8,
+      "modbus_unit_type": "l/s",
+      "modbus_unit_type_id": 87,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "extflow_actual_extract_flow_l_s_or_m3_h_or_cfm",
+      "name": "ExtFlow.Actual extract flow [l/s] or [m3/h] or [CFM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 9,
+      "modbus_unit_type": "l/s",
+      "modbus_unit_type_id": 87,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "extflowregset_setpoint_for_extract_flow_controller_l_s_or_m3_h_or_cfm",
+      "name": "ExtFlowRegSet.Setpoint for extract flow controller [l/s] or [m3/h] or [CFM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 16,
+      "modbus_unit_type": "l/s",
+      "modbus_unit_type_id": 87,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "mtrfansupvin_0_10_v_dc_signal_to_supply_motor",
+      "name": "MtrFanSupVin.0-10 V DC signal to supply motor",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 18,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "mtrfanextvin_0_10_v_dc_signal_to_extract_motor",
+      "name": "MtrFanExtVin.0-10 V DC signal to extract motor",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 19,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "fan_supprcmeas_voltage_on_fan_optimizer_input_supply_signal_1_100",
+      "name": "FAN_SupPrcMeas.Voltage on fan optimizer input: supply signal [1/100%]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "fan_extprcmeas_voltage_on_fan_optimizer_input_extract_signal_1_100",
+      "name": "FAN_ExtPrcMeas.Voltage on fan optimizer input: extract signal [1/100%]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "supfc_maxflow_supply_fc_max_flow_l_s_or_m3_h_or_cfm",
+      "name": "SupFC_MaxFlow.Supply FC max. flow [l/s] or [m3/h] or [CFM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 22,
+      "modbus_unit_type": "l/s",
+      "modbus_unit_type_id": 87,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "extfc_maxflow_extract_fc_max_flow_l_s_or_m3_h_or_cfm",
+      "name": "ExtFC_MaxFlow.Extract FC max. flow [l/s] or [m3/h] or [CFM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23,
+      "modbus_unit_type": "l/s",
+      "modbus_unit_type_id": 87,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "supmotorset_supply_motor_signal_setpoint_1_100",
+      "name": "SupMotorSet.supply motor signal setpoint [1/100%]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 52,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "extmotorset_extract_motor_signal_setpoint",
+      "name": "ExtMotorSet.Extract motor signal setpoint [%]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 54,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "atvsupfctype_supply_atv_frequency_converter_actual_fc_type",
+      "name": "AtvSupFCType.Supply ATV frequency converter - Actual FC type",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 67,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "atvextfctype_exhaust_atv_frequency_converter_actual_fc_type",
+      "name": "AtvExtFCType.Exhaust ATV frequency converter - Actual FC type",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 68,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "fcsupmtrtype_supply_motor_type_only_with_oj_fc",
+      "name": "FCsupMtrType.Supply motor type (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 112,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "fcsupmtrfc_sw_supply_motor_software_version_1_100_only_with_oj_fc",
+      "name": "FCsupMtrFC_SW.Supply motor software version [1/100] (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 113,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "fcsupmtrio_sw_supply_motor_io_card_software_version_1_100_only_with_oj_fc",
+      "name": "FCsupMtrIO_SW.Supply motor IO card software version [1/100] (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 114,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "fcsupmtrprcout_supply_motor_output_percentage_1_100_only_with_oj_fc",
+      "name": "FCsupMtrPrcOut.Supply motor output percentage [1/100%] (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 115,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "fcsupmtrhzout_supply_motor_frequency_output_1_100_hz_only_with_oj_fc",
+      "name": "FCsupMtrHzOut.Supply motor frequency output [1/100 Hz] (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 116,
+      "modbus_unit_type": "Hz",
+      "modbus_unit_type_id": 27,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "fcsupmtriout_supply_motor_actual_current_output_ma_only_with_oj_fc",
+      "name": "FCsupMtrIout.Supply motor actual current output [mA] (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 117,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "fcsupmtrpowout_supply_motor_actual_power_output_watt_only_with_oj_fc",
+      "name": "FCsupMtrPowOut.Supply motor actual power output [Watt] (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 118,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "fcsupmtrprcset_supply_motor_setpoint",
+      "name": "FCsupMtrPrcSet.Supply motor setpoint [%]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 119,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "supsfp_specific_fan_power_sfp_supply_w_s_m3_j_m3_only_with_oj_fc",
+      "name": "SupSFP.Specific fan power (SFP), supply [W·s/m3 = J/m3] (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 120,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "fcextmtrtype_extract_motor_type_only_with_oj_fc",
+      "name": "FCextMtrType.Extract motor type (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 128,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "fcextmtrfc_sw_extract_motor_software_version_1_100_only_with_oj_fc",
+      "name": "FCextMtrFC_SW.Extract motor software version [1/100] (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 129,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "fcextmtrio_sw_extract_motor_io_card_software_version_1_100_only_with_oj_fc",
+      "name": "FCextMtrIO_SW.Extract motor IO card software version [1/100] (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 130,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "fcextmtrprcout_extract_motor_output_percentage_1_100_only_with_oj_fc",
+      "name": "FCextMtrPrcOut.Extract motor output percentage [1/100%] (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 131,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "fcextmtrhzout_extract_motor_frequency_output_1_100_hz_only_with_oj_fc",
+      "name": "FCextMtrHzOut.Extract motor frequency output [1/100 Hz] (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 132,
+      "modbus_unit_type": "Hz",
+      "modbus_unit_type_id": 27,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "fcextmtriout_extract_motor_actual_current_output_ma_only_with_oj_fc",
+      "name": "FCextMtrIout.Extract motor actual current output [mA] (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 133,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "fcextmtrpowout_extract_motor_actual_power_output_watt_only_with_oj_fc",
+      "name": "FCextMtrPowOut.Extract motor actual power output [Watt] (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 134,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "fcextmtrprcset_extract_motor_output_setpoint_1_100",
+      "name": "FCextMtrPrcSet.Extract motor output setpoint [1/100%]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 135,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "extsfp_specific_fan_power_sfp_extract_w_s_m3_j_m3_only_with_oj_fc",
+      "name": "ExtSFP.Specific fan power (SFP), extract [W·s/m3 = J/m3] (only with OJ-FC)",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 136,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2supmttype_only_special_customer_code_oj_ec_dv_2_supply_supply_air_motor_type",
+      "name": "EC2supMtType.Only special customer code: OJ-EC/-DV 2-supply/Supply air motor Type",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 377,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2supmtec_sw_only_special_customer_code_oj_ec_dv_2_supply_supply_air_motor_software_ver_1_100",
+      "name": "EC2supMtEC_SW.Only special customer code: OJ-EC/-DV 2-supply/Supply air motor Software Ver [1/100]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 384,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2supboot_sw_only_special_customer_code_oj_ec_dv_2_supply_supply_air_motor_boot_software_ver_1_100",
+      "name": "EC2supBoot_SW.Only special customer code: OJ-EC/-DV 2-supply/Supply air motor Boot Software Ver [1/100]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 385,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2supmtprcout_only_special_customer_code_oj_ec_dv_2_supply_supply_air_motor_percent_output_1_100",
+      "name": "EC2supMtPrcOut.Only special customer code: OJ-EC/-DV 2-supply/Supply air motor percent output  [1/100%]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 386,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2supmtrpmout_only_special_customer_code_oj_ec_dv_2_supply_supply_air_motor_actual_rpm_rpm",
+      "name": "EC2supMtRPMOut.Only special customer code: OJ-EC/-DV 2-supply/Supply air motor actual RPM  [RPM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 387,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2supmtiout_only_special_customer_code_oj_ec_dv_2_supply_supply_air_motor_actual_current_output_ma",
+      "name": "EC2supMtIout.Only special customer code: OJ-EC/-DV 2-supply/Supply air motor actual current output [mA]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 388,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2supmtpowout_only_special_customer_code_oj_ec_dv_2_supply_supply_air_motor_actual_power_output_watt",
+      "name": "EC2supMtPowOut.Only special customer code: OJ-EC/-DV 2-supply/Supply air motor actual power output  [Watt]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 389,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2supdriftmin_only_special_customer_code_oj_ec_dv_2_supply_supply_air_motor_actual_running_time_minutes",
+      "name": "EC2supDriftMin.Only special customer code: OJ-EC/-DV 2-supply/Supply air motor actual running time [minutes]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 390,
+      "modbus_unit_type": "min",
+      "modbus_unit_type_id": 72,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2supdriftday_only_special_customer_code_oj_ec_dv_2_supply_supply_air_motor_actual_running_time_days",
+      "name": "EC2supDriftDay.Only special customer code: OJ-EC/-DV 2-supply/Supply air motor actual running time [days]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 391,
+      "modbus_unit_type": "d",
+      "modbus_unit_type_id": 70,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2supmtprcset_only_special_customer_code_oj_ec_dv_2_supply_supply_air_motor_setpoint_1_100",
+      "name": "EC2supMtPrcSet.Only special customer code: OJ-EC/-DV 2-supply/Supply air motor setpoint [1/100%]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 392,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2extmttype_only_special_customer_code_oj_ec_dv_2_extract_exhaust_air_motor_type",
+      "name": "EC2extMtType.Only special customer code: OJ-EC/-DV 2-Extract/Exhaust air motor Type",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 393,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2extmtec_sw_only_special_customer_code_oj_ec_dv_2_extract_exhaust_air_motor_software_ver_1_100",
+      "name": "EC2extMtEC_SW.Only special customer code: OJ-EC/-DV 2-Extract/Exhaust air motor Software Ver [1/100]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 400,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2extboot_sw_only_special_customer_code_oj_ec_dv_2_extract_exhaust_air_motor_boot_software_ver_1_100",
+      "name": "EC2extBoot_SW.Only special customer code: OJ-EC/-DV 2-Extract/Exhaust air motor Boot Software Ver [1/100]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 401,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2extmtprcout_only_special_customer_code_oj_ec_dv_2_extract_exhaust_air_motor_percent_output_1_100",
+      "name": "EC2extMtPrcOut.Only special customer code: OJ-EC/-DV 2-Extract/Exhaust air motor percent output  [1/100%]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 402,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2extmtrpmout_only_special_customer_code_oj_ec_dv_2_extract_exhaust_air_motor_actual_rpm_rpm",
+      "name": "EC2extMtRPMOut.Only special customer code: OJ-EC/-DV 2-Extract/Exhaust air motor actual RPM  [RPM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 403,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2extmtiout_only_special_customer_code_oj_ec_dv_2_extract_exhaust_air_motor_actual_current_output_ma",
+      "name": "EC2extMtIout.Only special customer code: OJ-EC/-DV 2-Extract/Exhaust air motor actual current output [mA]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 404,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2extmtpowout_only_special_customer_code_oj_ec_dv_2_extract_exhaust_air_motor_actual_power_output_watt",
+      "name": "EC2extMtPowOut.Only special customer code: OJ-EC/-DV 2-Extract/Exhaust air motor actual power output  [Watt]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 405,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2extdriftmin_only_special_customer_code_oj_ec_dv_2_extract_exhaust_air_motor_actual_running_time_minutes",
+      "name": "EC2extDriftMin.Only special customer code: OJ-EC/-DV 2-Extract/Exhaust air motor actual running time [minutes]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 406,
+      "modbus_unit_type": "min",
+      "modbus_unit_type_id": 72,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2extdriftday_only_special_customer_code_oj_ec_dv_2_extract_exhaust_air_motor_actual_running_time_days",
+      "name": "EC2extDriftDay.Only special customer code: OJ-EC/-DV 2-Extract/Exhaust air motor actual running time [days]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 407,
+      "modbus_unit_type": "d",
+      "modbus_unit_type_id": 70,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ec2extmtprcset_only_special_customer_code_oj_ec_dv_2_extract_exhaust_air_motor_setpoint_1_100",
+      "name": "EC2extMtPrcSet.Only special customer code: OJ-EC/-DV 2-Extract/Exhaust air motor setpoint [1/100%]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 408,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ecsupmtrtype_oj_ec_dv_supply_supply_air_motor_type",
+      "name": "ECsupMtrType.OJ-EC/-DV-supply/Supply air motor Type",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 512,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ecsupmtrfc_sw_oj_ec_dv_supply_supply_air_motor_software_ver_1_100",
+      "name": "ECsupMtrFC_SW.OJ-EC/-DV-supply/Supply air motor Software Ver [1/100]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 513,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ecsupboot_sw_oj_ec_dv_supply_supply_air_motor_boot_software_ver_1_100",
+      "name": "ECsupBoot_SW.OJ-EC/-DV-supply/Supply air motor Boot Software Ver [1/100]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 514,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ecsupmtrprcout_oj_ec_dv_supply_supply_air_motor_procent_udgang_1_100",
+      "name": "ECsupMtrPrcOut.OJ-EC/-DV-supply/Supply air motor procent udgang  [1/100%]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 515,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ecsupmtrrpmout_oj_ec_dv_supply_supply_air_motor_actual_rpm_rpm",
+      "name": "ECsupMtrRPMOut.OJ-EC/-DV-supply/Supply air motor actual RPM  [RPM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 516,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ecsupmtriout_oj_ec_dv_supply_supply_air_motor_actual_current_output_1_100ma",
+      "name": "ECsupMtrIout.OJ-EC/-DV-supply/Supply air motor actual current output [1/100mA]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 517,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ecsupmtrpowout_oj_ec_dv_supply_supply_air_motor_actual_power_output_watt",
+      "name": "ECsupMtrPowOut.OJ-EC/-DV-supply/Supply air motor actual power output  [Watt]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 518,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ecsupdriftmin_oj_ec_dv_supply_supply_air_motor_actual_running_time_minutes",
+      "name": "ECsupDriftMin.OJ-EC/-DV-supply/Supply air motor actual running time [minutes]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 519,
+      "modbus_unit_type": "min",
+      "modbus_unit_type_id": 72,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ecsupdriftday_oj_ec_dv_supply_supply_air_motor_actual_running_time_days",
+      "name": "ECsupDriftDay.OJ-EC/-DV-supply/Supply air motor actual running time [days]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 520,
+      "modbus_unit_type": "d",
+      "modbus_unit_type_id": 70,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ecsupmtrprcset_oj_ec_dv_supply_supply_air_motor_setpoint_1_100",
+      "name": "ECsupMtrPrcSet.OJ-EC/-DV-supply/Supply air motor setpoint [1/100%]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 521,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ecextboot_sw_oj_ec_dv_extract_exhaust_air_motor_boot_software_ver_1_100",
+      "name": "ECextBoot_SW.OJ-EC/-DV-Extract/Exhaust air motor Boot Software Ver [1/100]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 528,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ecextmtrprcout_oj_ec_dv_extract_exhaust_air_motor_procent_udgang_1_100",
+      "name": "ECextMtrPrcOut.OJ-EC/-DV-Extract/Exhaust air motor procent udgang  [1/100%]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 529,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ecextmtrrpmout_oj_ec_dv_extract_exhaust_air_motor_actual_rpm_rpm",
+      "name": "ECextMtrRPMOut.OJ-EC/-DV-Extract/Exhaust air motor actual RPM  [RPM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 530,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ecextmtriout_oj_ec_dv_extract_exhaust_air_motor_actual_current_output_1_100ma",
+      "name": "ECextMtrIout.OJ-EC/-DV-Extract/Exhaust air motor actual current output [1/100mA]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 531,
+      "modbus_unit_type": "mA",
+      "modbus_unit_type_id": 2,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ecextmtrpowout_oj_ec_dv_extract_exhaust_air_motor_actual_power_output_watt",
+      "name": "ECextMtrPowOut.OJ-EC/-DV-Extract/Exhaust air motor actual power output  [Watt]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 532,
+      "modbus_unit_type": "W",
+      "modbus_unit_type_id": 47,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ecextdriftmin_oj_ec_dv_extract_exhaust_air_motor_actual_running_time_minutes",
+      "name": "ECextDriftMin.OJ-EC/-DV-Extract/Exhaust air motor actual running time [minutes]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 533,
+      "modbus_unit_type": "min",
+      "modbus_unit_type_id": 72,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ecextdriftday_oj_ec_dv_extract_exhaust_air_motor_actual_running_time_days",
+      "name": "ECextDriftDay.OJ-EC/-DV-Extract/Exhaust air motor actual running time [days]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 534,
+      "modbus_unit_type": "d",
+      "modbus_unit_type_id": 70,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ecextmtrprcset_oj_ec_dv_extract_exhaust_air_motor_setpoint_1_100",
+      "name": "ECextMtrPrcSet.OJ-EC/-DV-Extract/Exhaust air motor setpoint [1/100%]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 535,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ecextmtrtype_oj_ec_dv_extract_exhaust_air_motor_type",
+      "name": "ECextMtrType.OJ-EC/-DV-Extract/Exhaust air motor Type",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 536,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "ecextmtrfc_sw_oj_ec_dv_extract_exhaust_air_motor_software_ver_1_100",
+      "name": "ECextMtrFC_SW.OJ-EC/-DV-Extract/Exhaust air motor Software Ver [1/100]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 537,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "atvextpower_atv_extract_air_actual_power_1_100_kw",
+      "name": "AtvExtPower.ATV extract air actual power [1/100 kW]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 551,
+      "modbus_unit_type": "kW",
+      "modbus_unit_type_id": 48,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "atvsuppower_atv_supply_air_actual_power_1_100_kw",
+      "name": "AtvSupPower.ATV supply air actual power [1/100 kW]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "input_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 552,
+      "modbus_unit_type": "kW",
+      "modbus_unit_type_id": 48,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Input"
+        }
+      }
+    },
+    {
+      "id": "supductminflow_min_supply_duct_flow_l_s_or_m3_h_or_cfm",
+      "name": "SupDuctMinFlow.Min. supply duct flow [l/s] or [m3/h] or [CFM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 5,
+      "modbus_unit_type": "l/s",
+      "modbus_unit_type_id": 87,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "supductmaxflow_max_supply_duct_flow_p322",
+      "name": "SupDuctMaxFlow.Max. supply duct flow P322",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 6,
+      "modbus_unit_type": "l/s",
+      "modbus_unit_type_id": 87,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "extductminflow_min_extract_duct_flow_l_s_or_m3_h_or_cfm",
+      "name": "ExtDuctMinFlow.Min. extract duct flow [l/s] or [m3/h] or [CFM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 9,
+      "modbus_unit_type": "l/s",
+      "modbus_unit_type_id": 87,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "extductmaxflow_max_extract_duct_flow_l_s_or_m3_h_or_cfm",
+      "name": "ExtDuctMaxFlow.Max. extract duct flow [l/s] or [m3/h] or [CFM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 16,
+      "modbus_unit_type": "l/s",
+      "modbus_unit_type_id": 87,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "suplospeedset_setpoint_for_supply_flow_low_speed_l_s_or_m3_h_or_cfm",
+      "name": "SupLoSpeedSet.Setpoint for supply flow, low speed [l/s] or [m3/h] or [CFM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 17,
+      "modbus_unit_type": "l/s",
+      "modbus_unit_type_id": 87,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "suphispeedset_setpoint_for_supply_flow_high_speed_l_s_or_m3_h_or_cfm",
+      "name": "SupHiSpeedSet.Setpoint for supply flow, high speed [l/s] or [m3/h] or [CFM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 18,
+      "modbus_unit_type": "l/s",
+      "modbus_unit_type_id": 87,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "extlospeedset_setpoint_for_extract_flow_low_speed_l_s_or_m3_h_or_cfm",
+      "name": "ExtLoSpeedSet.Setpoint for extract flow, low speed [l/s] or [m3/h] or [CFM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 20,
+      "modbus_unit_type": "l/s",
+      "modbus_unit_type_id": 87,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "exthispeedset_setpoint_for_extract_flow_high_speed_l_s_or_m3_h_or_cfm",
+      "name": "ExtHiSpeedSet.Setpoint for extract flow, high speed [l/s] or [m3/h] or [CFM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 21,
+      "modbus_unit_type": "l/s",
+      "modbus_unit_type_id": 87,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "mtrregoffset_supply_extract_motor_offset_slave_and_co2_control_1_100",
+      "name": "MtrRegOffset.Supply/extract motor offset, slave and CO2 control [1/100%]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 23,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "fan_supminflow_fan_optimizer_supply_control_min_flow_l_s_or_m3_h_or_cfm",
+      "name": "FAN_SupMinFlow.Fan optimizer supply control: min. flow [l/s] or [m3/h] or [CFM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 40,
+      "modbus_unit_type": "l/s",
+      "modbus_unit_type_id": 87,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "fan_supmaxflow_fan_optimizer_extract_control_min_flow_l_s_or_m3_h_or_cfm",
+      "name": "FAN_SupMaxFlow.Fan optimizer extract control: min. flow [l/s] or [m3/h] or [CFM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 41,
+      "modbus_unit_type": "l/s",
+      "modbus_unit_type_id": 87,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "fan_extminflow_fan_optimizer_supply_control_max_flow_l_s_or_m3_h_or_cfm",
+      "name": "FAN_ExtMinFlow.Fan optimizer supply control: max. flow [l/s] or [m3/h] or [CFM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 48,
+      "modbus_unit_type": "l/s",
+      "modbus_unit_type_id": 87,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "fan_extmaxflow_fan_optimizer_extract_control_max_flow_l_s_or_m3_h_or_cfm",
+      "name": "FAN_ExtMaxFlow.Fan optimizer extract control: max. flow [l/s] or [m3/h] or [CFM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 49,
+      "modbus_unit_type": "l/s",
+      "modbus_unit_type_id": 87,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "fan_extflwoffs_fan_optimizer_extract_control_flow_offset_1_100",
+      "name": "FAN_ExtFlwOffs.Fan optimizer extract control: flow offset [1/100%]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 50,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "supmtr_i_time_supply_motor_control_i_time_setpoint_sec",
+      "name": "SupMtr_I_Time.Supply motor control: I-time setpoint [sec]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 51,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "extmtr_i_time_extract_motor_control_i_time_setpoint_sec",
+      "name": "ExtMtr_I_Time.Extract motor control: I-time setpoint [sec]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 52,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "supflowfireset_supply_motor_speed_setpoint_in_case_of_fire_alarm",
+      "name": "SupFlowFireSet.Supply motor speed setpoint in case of fire alarm [%]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 53,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "extflowfireset_extract_motor_speed_setpoint_in_case_of_fire_alarm",
+      "name": "ExtFlowFireSet.Extract motor speed setpoint in case of fire alarm [%]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 54,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "hs_afterrunset_run_on_time_high_speed_min",
+      "name": "HS_AfterRunSet.Run-on time, high speed [min]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 55,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "flwtmpcmpset_reduction_of_flow_percentage_of_setpoint_1_100",
+      "name": "FlwTmpCmpSet.Reduction of flow / percentage of setpoint [1/100%]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 64,
+      "modbus_unit_type": "%",
+      "modbus_unit_type_id": 98,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "flwtmpcmpstart_reduction_of_flow_start_temp_setpoint_1_100_c",
+      "name": "FlwTmpCmpStart.Reduction of flow / start temp. setpoint [1/100°C]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 65,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "flwtmpcmpstop_reduction_of_flow_stop_temp_setpoint_1_100_c",
+      "name": "FlwTmpCmpStop.Reduction of flow / stop temp. setpoint [1/100°C]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "int16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 66,
+      "modbus_unit_type": "°C",
+      "modbus_unit_type_id": 62,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "suptempdnregit_i_time_for_supply_flow_reduction_in_case_of_low_supply_temperature_sec",
+      "name": "SupTempDnRegIt.I-time for supply flow reduction in case of low supply temperature [sec]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 353,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "exttempdnregit_i_time_for_extract_flow_reduction_in_case_of_low_supply_temperature_sec",
+      "name": "ExtTempDnRegIt.I-time for extract flow reduction in case of low supply temperature [sec]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 368,
+      "modbus_unit_type": "s",
+      "modbus_unit_type_id": 73,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "supmedspeedset_setpoint_supply_air_flow_medium_speed_l_s_or_m3_h_or_cfm",
+      "name": "SupMedSpeedSet.Setpoint supply air flow - medium speed [l/s] or [m3/h] or [CFM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 800,
+      "modbus_unit_type": "l/s",
+      "modbus_unit_type_id": 87,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "extmedspeedset_setpoint_exhaust_air_flow_medium_speed_l_s_or_m3_h_or_cfm",
+      "name": "ExtMedSpeedSet.Setpoint exhaust air flow - medium speed [l/s] or [m3/h] or [CFM]",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 801,
+      "modbus_unit_type": "l/s",
+      "modbus_unit_type_id": 87,
+      "modbus_scale": 1,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "supfixmeprcset_supply_motor_mediumspeed_1_100_fixed_fan_speed",
+      "name": "SupFixMePrcSet.Supply Motor Mediumspeed [1/100%], Fixed Fan Speed",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 851,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "supfixloprcset_supply_motor_lowspeed_1_100_fixed_fan_speed",
+      "name": "SupFixLoPrcSet.Supply Motor Lowspeed [1/100%], Fixed Fan Speed",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 852,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "supfixhiprcset_supply_motor_highspeed_1_100_fixed_fan_speed",
+      "name": "SupFixHiPrcSet.Supply Motor Highspeed [1/100%], Fixed Fan Speed",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 853,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "extfixmeprcset_extract_motor_mediumspeed_1_100_fixed_fan_speed",
+      "name": "ExtFixMePrcSet.Extract Motor Mediumspeed [1/100%], Fixed Fan Speed",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 854,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "extfixloprcset_extract_motor_lowspeed_1_100_fixed_fan_speed",
+      "name": "ExtFixLoPrcSet.Extract Motor Lowspeed [1/100%], Fixed Fan Speed",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 855,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    },
+    {
+      "id": "extfixhiprcset_extract_motor_highspeed_1_100_fixed_fan_speed",
+      "name": "ExtFixHiPrcSet.Extract Motor Highspeed [1/100%], Fixed Fan Speed",
+      "description": "",
+      "bacnet_instance_id": 0,
+      "modbus_register_type": "holding_register",
+      "modbus_data_format": "uint16_ab",
+      "modbus_register_num": 1,
+      "modbus_register_addr": 856,
+      "modbus_unit_type": "",
+      "modbus_unit_type_id": 95,
+      "modbus_scale": 0.01,
+      "target": {
+        "bacnet": {
+          "type": "Analog-Value"
+        }
+      }
+    }
+  ]
+}
