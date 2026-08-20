@@ -292,7 +292,7 @@ function milesightDeviceDecode(bytes) {
 						decoded.als_level = readUInt8(bytes, counterObj, 1);
 						break;
 					case 0x9d:
-						decoded.Lux = readUInt16LE(bytes, counterObj, 2);
+						decoded.lux = readUInt16LE(bytes, counterObj, 2);
 						break;
 				}
 				break;
@@ -333,9 +333,9 @@ function milesightDeviceDecode(bytes) {
 						decoded.illuminace_collection_anomaly.type = readUInt8(bytes, counterObj, 1);
 						break;
 					case 0x9d:
-						decoded.Lux_collection_anomaly = decoded.Lux_collection_anomaly || {};
+						decoded.lux_collection_anomaly = decoded.lux_collection_anomaly || {};
 						// 0:collect abnormal, 1:collect out of range
-						decoded.Lux_collection_anomaly.type = readUInt8(bytes, counterObj, 1);
+						decoded.lux_collection_anomaly.type = readUInt8(bytes, counterObj, 1);
 						break;
 				}
 				break;
@@ -365,11 +365,11 @@ function milesightDeviceDecode(bytes) {
 				var ipso_type_v1 = bytes[counterObj.i++];
 				switch (ipso_type_v1) {
 					case 0x9d:
-						decoded.Lux_alarm = decoded.Lux_alarm || {};
-						decoded.Lux_alarm.Lux = readUInt16LE(bytes, counterObj, 2);
-						decoded.Lux = decoded.Lux_alarm.Lux;
+						decoded.lux_alarm = decoded.lux_alarm || {};
+						decoded.lux_alarm.Lux = readUInt16LE(bytes, counterObj, 2);
+						decoded.lux = decoded.lux_alarm.Lux;
 						// 16:dim, 17:bright
-						decoded.Lux_alarm.alarm_type = readUInt8(bytes, counterObj, 1);
+						decoded.lux_alarm.alarm_type = readUInt8(bytes, counterObj, 1);
 						break;
 				}
 				break;

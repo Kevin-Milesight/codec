@@ -85,9 +85,9 @@ function milesightDeviceDecode(bytes) {
             var freq_weight = readFrequencyWeight(weight & 0x03);
             var time_weight = readTimeWeight((weight >> 2) & 0x03);
 
-            var sound_level_name = "L" + freq_weight + time_weight;
-            var sound_level_eq_name = "L" + freq_weight + "eq";
-            var sound_level_max_name = "L" + freq_weight + time_weight + "max";
+            var sound_level_name = ("L" + freq_weight + time_weight).toLowerCase();
+            var sound_level_eq_name = ("L" + freq_weight + "eq").toLowerCase();
+            var sound_level_max_name = (("L" + freq_weight + time_weight).toLowerCase() + "max").toLowerCase();
             decoded[sound_level_name] = readUInt16LE(bytes.slice(i + 1, i + 3)) / 10;
             decoded[sound_level_eq_name] = readUInt16LE(bytes.slice(i + 3, i + 5)) / 10;
             decoded[sound_level_max_name] = readUInt16LE(bytes.slice(i + 5, i + 7)) / 10;

@@ -44,11 +44,21 @@
       "value": "0",
       "unit": "V",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 5,
-      "bacnet_unit_type": "UNITS_VOLTS"
+      "bacnet_unit_type": "UNITS_VOLTS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "room_temperature_enabled",
@@ -56,11 +66,21 @@
       "value": "0",
       "unit": "°C",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 62,
-      "bacnet_unit_type": "UNITS_DEGREES_CELSIUS"
+      "bacnet_unit_type": "UNITS_DEGREES_CELSIUS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "set_point_temperature_enabled",
@@ -68,11 +88,21 @@
       "value": "0",
       "unit": "°C",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 62,
-      "bacnet_unit_type": "UNITS_DEGREES_CELSIUS"
+      "bacnet_unit_type": "UNITS_DEGREES_CELSIUS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "valve_position_enabled",
@@ -80,11 +110,21 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "controller_gains_enabled",
@@ -92,11 +132,21 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "device_flags_enabled",
@@ -104,11 +154,21 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     }
   ]
 }

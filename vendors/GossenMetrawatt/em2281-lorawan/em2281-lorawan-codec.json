@@ -17,14 +17,15 @@
     {
       "id": "datetime",
       "name": "Date and Time",
-      "value": "2025-05-12T14:45:30",
+      "value": "2025-05-12T14:45",
       "unit": "",
       "access_mode": "R",
-      "data_type": "STRING",
+      "data_type": "TEXT",
       "value_type": "STRING",
       "bacnet_type": "analog_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "max_length": 64
     },
     {
       "id": "year",
@@ -119,8 +120,8 @@
       "data_type": "NUMBER",
       "value_type": "FLOAT",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 18,
-      "bacnet_unit_type": "UNITS_WATT_HOURS"
+      "bacnet_unit_type_id": 19,
+      "bacnet_unit_type": "UNITS_KILOWATT_HOURS"
     },
     {
       "id": "energy_export_identifier",
@@ -143,8 +144,8 @@
       "data_type": "NUMBER",
       "value_type": "FLOAT",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 18,
-      "bacnet_unit_type": "UNITS_WATT_HOURS"
+      "bacnet_unit_type_id": 19,
+      "bacnet_unit_type": "UNITS_KILOWATT_HOURS"
     },
     {
       "id": "error_status_identifier",
@@ -176,11 +177,21 @@
       "value": "1",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "error_voltage_high",
@@ -188,11 +199,21 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "error_overcurrent",
@@ -200,11 +221,21 @@
       "value": "1",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "error_frequency_sync",
@@ -212,11 +243,21 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "error_reset",
@@ -224,11 +265,21 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "error_internal_comm",
@@ -236,11 +287,21 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "error_dc_offset",
@@ -248,11 +309,21 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     }
   ]
 }

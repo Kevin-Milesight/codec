@@ -44,11 +44,21 @@
       "value": "0",
       "unit": "V",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 5,
-      "bacnet_unit_type": "UNITS_VOLTS"
+      "bacnet_unit_type": "UNITS_VOLTS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "sabotage_contact_states_enabled",
@@ -56,11 +66,21 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "hall_sensore_states_enabled",
@@ -68,11 +88,21 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "input_clamp_states_enabled",
@@ -80,11 +110,21 @@
       "value": "0",
       "unit": "A",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 3,
-      "bacnet_unit_type": "UNITS_AMPERES"
+      "bacnet_unit_type": "UNITS_AMPERES",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     }
   ]
 }

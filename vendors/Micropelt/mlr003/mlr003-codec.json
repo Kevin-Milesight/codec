@@ -35,7 +35,7 @@
       "data_type": "NUMBER",
       "value_type": "FLOAT",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 16,
+      "bacnet_unit_type_id": 80,
       "bacnet_unit_type": "UNITS_CUBIC_METERS"
     },
     {
@@ -131,7 +131,7 @@
       "data_type": "NUMBER",
       "value_type": "FLOAT",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 16,
+      "bacnet_unit_type_id": 80,
       "bacnet_unit_type": "UNITS_CUBIC_METERS"
     },
     {
@@ -248,11 +248,21 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "user_mode",
@@ -260,11 +270,21 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "user_value",
@@ -335,7 +355,7 @@
       "data_type": "NUMBER",
       "value_type": "FLOAT",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 6,
+      "bacnet_unit_type_id": 31,
       "bacnet_unit_type": "UNITS_METERS"
     },
     {
@@ -380,11 +400,21 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "action",
@@ -428,11 +458,21 @@
       "value": "0",
       "unit": "°C",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 62,
-      "bacnet_unit_type": "UNITS_DEGREES_CELSIUS"
+      "bacnet_unit_type": "UNITS_DEGREES_CELSIUS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "p_coefficient",
@@ -515,7 +555,7 @@
       "data_type": "NUMBER",
       "value_type": "FLOAT",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 16,
+      "bacnet_unit_type_id": 80,
       "bacnet_unit_type": "UNITS_CUBIC_METERS"
     },
     {
@@ -560,11 +600,21 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "operating_status",
@@ -572,11 +622,21 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
-      "bacnet_type": "analog_input_object",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
+      "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     }
   ]
 }

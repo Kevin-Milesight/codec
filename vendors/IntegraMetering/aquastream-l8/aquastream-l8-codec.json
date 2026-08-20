@@ -8,11 +8,12 @@
       "value": "INTEGRA Metering",
       "unit": "",
       "access_mode": "R",
-      "data_type": "STRING",
+      "data_type": "TEXT",
       "value_type": "STRING",
-      "bacnet_type": "characterstring_object",
+      "bacnet_type": "character_string_value_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "max_length": 64
     },
     {
       "id": "serial_number",
@@ -20,11 +21,12 @@
       "value": "08000020",
       "unit": "",
       "access_mode": "R",
-      "data_type": "STRING",
+      "data_type": "TEXT",
       "value_type": "STRING",
-      "bacnet_type": "characterstring_object",
+      "bacnet_type": "character_string_value_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "max_length": 64
     },
     {
       "id": "identification_number",
@@ -32,11 +34,12 @@
       "value": "05000000",
       "unit": "",
       "access_mode": "R",
-      "data_type": "STRING",
+      "data_type": "TEXT",
       "value_type": "STRING",
-      "bacnet_type": "characterstring_object",
+      "bacnet_type": "character_string_value_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "max_length": 64
     },
     {
       "id": "device_version",
@@ -59,7 +62,7 @@
       "data_type": "NUMBER",
       "value_type": "FLOAT",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 16,
+      "bacnet_unit_type_id": 80,
       "bacnet_unit_type": "UNITS_CUBIC_METERS"
     },
     {
@@ -71,7 +74,7 @@
       "data_type": "NUMBER",
       "value_type": "FLOAT",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 16,
+      "bacnet_unit_type_id": 80,
       "bacnet_unit_type": "UNITS_CUBIC_METERS"
     },
     {
@@ -92,11 +95,21 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
       "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "alarm_burst",
@@ -104,11 +117,21 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
       "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "alarm_leakage",
@@ -116,11 +139,21 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
       "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "alarm_no_consumption",
@@ -128,11 +161,21 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
       "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "alarm_battery_low",
@@ -140,11 +183,21 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
       "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "alarm_reverse_flow",
@@ -152,11 +205,21 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
       "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "alarm_overflow",
@@ -164,17 +227,27 @@
       "value": "0",
       "unit": "",
       "access_mode": "R",
-      "data_type": "NUMBER",
-      "value_type": "BOOL",
+      "data_type": "BOOL",
+      "value_type": "UINT8",
       "bacnet_type": "binary_input_object",
       "bacnet_unit_type_id": 95,
-      "bacnet_unit_type": "UNITS_NO_UNITS"
+      "bacnet_unit_type": "UNITS_NO_UNITS",
+      "values": [
+        {
+          "value": 0,
+          "name": "0"
+        },
+        {
+          "value": 1,
+          "name": "1"
+        }
+      ]
     },
     {
       "id": "battery_life",
       "name": "Remaining Battery Lifetime",
       "value": "5833",
-      "unit": "days",
+      "unit": "d",
       "access_mode": "R",
       "data_type": "NUMBER",
       "value_type": "UINT16",

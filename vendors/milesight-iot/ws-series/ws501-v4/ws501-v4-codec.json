@@ -71,7 +71,7 @@
           "name": "Class C"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS"
     },
@@ -134,8 +134,8 @@
         100
       ],
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 98,
-      "bacnet_unit_type": "UNITS_PERCENT"
+      "bacnet_unit_type_id": 15,
+      "bacnet_unit_type": "UNITS_POWER_FACTOR"
     },
     {
       "id": "power_consumption",
@@ -179,7 +179,7 @@
           "name": "On"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": []
@@ -222,7 +222,7 @@
           "name": "Turn to On"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_output_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS"
     },
@@ -421,7 +421,7 @@
           "name": "On"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_output_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": []
@@ -444,7 +444,7 @@
           "name": "Enable"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_output_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
@@ -469,7 +469,7 @@
           "name": "Enable"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_output_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
@@ -634,7 +634,7 @@
           "name": "UTC+14(LINT)"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_output_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS"
     },
@@ -729,7 +729,7 @@
           "name": "Dec."
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_output_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
@@ -774,7 +774,7 @@
           "name": "last"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_output_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
@@ -827,7 +827,7 @@
           "name": "Sun."
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_output_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
@@ -948,7 +948,7 @@
           "name": "23:00"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_output_object",
       "bacnet_unit_type_id": 72,
       "bacnet_unit_type": "UNITS_MINUTES",
       "reference": [
@@ -1021,7 +1021,7 @@
           "name": "Dec."
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_output_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
@@ -1066,7 +1066,7 @@
           "name": "last"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_output_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
@@ -1119,7 +1119,7 @@
           "name": "Sun."
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_output_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
@@ -1240,7 +1240,7 @@
           "name": "23:00"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_output_object",
       "bacnet_unit_type_id": 72,
       "bacnet_unit_type": "UNITS_MINUTES",
       "reference": [
@@ -1315,7 +1315,7 @@
           "name": "Overcurrent"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
@@ -1340,7 +1340,7 @@
           "name": "Abnormal"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": []
@@ -1363,7 +1363,7 @@
           "name": "Overtemperature"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": []
@@ -1386,7 +1386,7 @@
           "name": "Collect_error"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": []
@@ -1409,7 +1409,7 @@
           "name": "Collect_error"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": []
@@ -1432,7 +1432,7 @@
           "name": "Collect_error"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": []
@@ -1455,7 +1455,7 @@
           "name": "Collect_error"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": []
@@ -1478,7 +1478,7 @@
           "name": "Collect_error"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": []

@@ -73,8 +73,8 @@
       "data_type": "NUMBER",
       "value_type": "FLOAT",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 98,
-      "bacnet_unit_type": "UNITS_PERCENT"
+      "bacnet_unit_type_id": 15,
+      "bacnet_unit_type": "UNITS_POWER_FACTOR"
     },
     {
       "id": "motor_range",
@@ -109,8 +109,8 @@
       "data_type": "NUMBER",
       "value_type": "UINT8",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 98,
-      "bacnet_unit_type": "UNITS_PERCENT"
+      "bacnet_unit_type_id": 15,
+      "bacnet_unit_type": "UNITS_POWER_FACTOR"
     },
     {
       "id": "battery_voltage",
@@ -127,7 +127,7 @@
     {
       "id": "open_window_status",
       "name": "Open Window Status",
-      "value": "false",
+      "value": "0",
       "unit": "",
       "access_mode": "R",
       "data_type": "BOOL",
@@ -171,7 +171,7 @@
     {
       "id": "high_motor_consumption_alarm",
       "name": "High Motor Consumption",
-      "value": "false",
+      "value": "0",
       "unit": "",
       "access_mode": "R",
       "data_type": "BOOL",
@@ -193,7 +193,7 @@
     {
       "id": "low_motor_consumption_alarm",
       "name": "Low Motor Consumption",
-      "value": "false",
+      "value": "0",
       "unit": "",
       "access_mode": "R",
       "data_type": "BOOL",
@@ -215,7 +215,7 @@
     {
       "id": "broken_sensor_alarm",
       "name": "Broken Sensor Alarm",
-      "value": "false",
+      "value": "0",
       "unit": "",
       "access_mode": "R",
       "data_type": "BOOL",
@@ -237,7 +237,7 @@
     {
       "id": "attached_backplate",
       "name": "Attached Backplate",
-      "value": "false",
+      "value": "0",
       "unit": "",
       "access_mode": "R",
       "data_type": "BOOL",
@@ -265,8 +265,8 @@
       "data_type": "NUMBER",
       "value_type": "UINT8",
       "bacnet_type": "analog_input_object",
-      "bacnet_unit_type_id": 98,
-      "bacnet_unit_type": "UNITS_PERCENT"
+      "bacnet_unit_type_id": 15,
+      "bacnet_unit_type": "UNITS_POWER_FACTOR"
     }
   ]
 }

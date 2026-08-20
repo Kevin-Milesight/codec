@@ -51,7 +51,7 @@
           "name": "trigger"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
@@ -94,7 +94,7 @@
       "bacnet_unit_type": "UNITS_NO_UNITS"
     },
     {
-      "id": "Lux",
+      "id": "lux",
       "name": "Illuminance Value",
       "value": "",
       "unit": "lx",
@@ -199,7 +199,7 @@
           "name": "fahrenheit"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_output_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": []
@@ -222,7 +222,7 @@
           "name": "enable"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_output_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS"
     },
@@ -329,7 +329,7 @@
           "name": "condition: x<A or x>B"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_output_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
@@ -506,7 +506,7 @@
           "name": "illuminance value"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_output_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": []
@@ -893,7 +893,7 @@
           "name": "trigger"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": []
@@ -916,7 +916,7 @@
           "name": "collect out of range"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": []
@@ -939,7 +939,7 @@
           "name": "collect abnormal"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": []
@@ -962,13 +962,13 @@
           "name": "collect abnormal"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": []
     },
     {
-      "id": "Lux_collection_anomaly.type",
+      "id": "lux_collection_anomaly.type",
       "name": "Abnormal illuminace Value",
       "value": "",
       "unit": "",
@@ -985,7 +985,7 @@
           "name": "collect out of range"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": []
@@ -1047,7 +1047,7 @@
           "name": "exceed tolerance alarm"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
@@ -1055,7 +1055,7 @@
       ]
     },
     {
-      "id": "Lux_alarm.Lux",
+      "id": "lux_alarm.lux",
       "name": "Illuminace Value",
       "value": "",
       "unit": "lx",
@@ -1066,11 +1066,11 @@
       "bacnet_unit_type_id": 37,
       "bacnet_unit_type": "UNITS_LUXES",
       "reference": [
-        "Lux_alarm.alarm_type"
+        "lux_alarm.alarm_type"
       ]
     },
     {
-      "id": "Lux_alarm.alarm_type",
+      "id": "lux_alarm.alarm_type",
       "name": "Alarm Type",
       "value": "",
       "unit": "",
@@ -1087,11 +1087,11 @@
           "name": "bright"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
-        "Lux_alarm.Lux"
+        "lux_alarm.lux"
       ]
     },
     {
@@ -1143,7 +1143,7 @@
           "name": "data collect abnormal"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
@@ -1207,7 +1207,7 @@
           "name": "data collect abnormal"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
@@ -1263,7 +1263,7 @@
           "name": "data valid"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
@@ -1296,7 +1296,7 @@
           "name": "trigger"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
@@ -1360,7 +1360,7 @@
           "name": "data collect abnormal"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
@@ -1399,7 +1399,7 @@
       ]
     },
     {
-      "id": "historical_data_retrieval_Lux.timestamp",
+      "id": "historical_data_retrieval_lux.timestamp",
       "name": "Timestamp",
       "value": "",
       "unit": "s",
@@ -1410,19 +1410,19 @@
       "bacnet_unit_type_id": 73,
       "bacnet_unit_type": "UNITS_SECONDS",
       "reference": [
-        "historical_data_retrieval_Lux.temperature_type",
-        "historical_data_retrieval_Lux.temperature",
-        "historical_data_retrieval_Lux.humidity_type",
-        "historical_data_retrieval_Lux.humidity",
-        "historical_data_retrieval_Lux.pir_type",
-        "historical_data_retrieval_Lux.pir_status",
-        "historical_data_retrieval_Lux.pir_count",
-        "historical_data_retrieval_Lux.Lux_type",
-        "historical_data_retrieval_Lux.Lux"
+        "historical_data_retrieval_lux.temperature_type",
+        "historical_data_retrieval_lux.temperature",
+        "historical_data_retrieval_lux.humidity_type",
+        "historical_data_retrieval_lux.humidity",
+        "historical_data_retrieval_lux.pir_type",
+        "historical_data_retrieval_lux.pir_status",
+        "historical_data_retrieval_lux.pir_count",
+        "historical_data_retrieval_lux.lux_type",
+        "historical_data_retrieval_lux.lux"
       ]
     },
     {
-      "id": "historical_data_retrieval_Lux.temperature_type",
+      "id": "historical_data_retrieval_lux.temperature_type",
       "name": "Temperature type",
       "value": "",
       "unit": "",
@@ -1447,23 +1447,23 @@
           "name": "data collect abnormal"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
-        "historical_data_retrieval_Lux.timestamp",
-        "historical_data_retrieval_Lux.temperature",
-        "historical_data_retrieval_Lux.humidity_type",
-        "historical_data_retrieval_Lux.humidity",
-        "historical_data_retrieval_Lux.pir_type",
-        "historical_data_retrieval_Lux.pir_status",
-        "historical_data_retrieval_Lux.pir_count",
-        "historical_data_retrieval_Lux.Lux_type",
-        "historical_data_retrieval_Lux.Lux"
+        "historical_data_retrieval_lux.timestamp",
+        "historical_data_retrieval_lux.temperature",
+        "historical_data_retrieval_lux.humidity_type",
+        "historical_data_retrieval_lux.humidity",
+        "historical_data_retrieval_lux.pir_type",
+        "historical_data_retrieval_lux.pir_status",
+        "historical_data_retrieval_lux.pir_count",
+        "historical_data_retrieval_lux.lux_type",
+        "historical_data_retrieval_lux.lux"
       ]
     },
     {
-      "id": "historical_data_retrieval_Lux.temperature",
+      "id": "historical_data_retrieval_lux.temperature",
       "name": "Temperature",
       "value": "",
       "unit": "°C",
@@ -1474,19 +1474,19 @@
       "bacnet_unit_type_id": 62,
       "bacnet_unit_type": "UNITS_DEGREES_CELSIUS",
       "reference": [
-        "historical_data_retrieval_Lux.timestamp",
-        "historical_data_retrieval_Lux.temperature_type",
-        "historical_data_retrieval_Lux.humidity_type",
-        "historical_data_retrieval_Lux.humidity",
-        "historical_data_retrieval_Lux.pir_type",
-        "historical_data_retrieval_Lux.pir_status",
-        "historical_data_retrieval_Lux.pir_count",
-        "historical_data_retrieval_Lux.Lux_type",
-        "historical_data_retrieval_Lux.Lux"
+        "historical_data_retrieval_lux.timestamp",
+        "historical_data_retrieval_lux.temperature_type",
+        "historical_data_retrieval_lux.humidity_type",
+        "historical_data_retrieval_lux.humidity",
+        "historical_data_retrieval_lux.pir_type",
+        "historical_data_retrieval_lux.pir_status",
+        "historical_data_retrieval_lux.pir_count",
+        "historical_data_retrieval_lux.lux_type",
+        "historical_data_retrieval_lux.lux"
       ]
     },
     {
-      "id": "historical_data_retrieval_Lux.humidity_type",
+      "id": "historical_data_retrieval_lux.humidity_type",
       "name": "Humidity Type",
       "value": "",
       "unit": "",
@@ -1511,23 +1511,23 @@
           "name": "data collect abnormal"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
-        "historical_data_retrieval_Lux.timestamp",
-        "historical_data_retrieval_Lux.temperature_type",
-        "historical_data_retrieval_Lux.temperature",
-        "historical_data_retrieval_Lux.humidity",
-        "historical_data_retrieval_Lux.pir_type",
-        "historical_data_retrieval_Lux.pir_status",
-        "historical_data_retrieval_Lux.pir_count",
-        "historical_data_retrieval_Lux.Lux_type",
-        "historical_data_retrieval_Lux.Lux"
+        "historical_data_retrieval_lux.timestamp",
+        "historical_data_retrieval_lux.temperature_type",
+        "historical_data_retrieval_lux.temperature",
+        "historical_data_retrieval_lux.humidity",
+        "historical_data_retrieval_lux.pir_type",
+        "historical_data_retrieval_lux.pir_status",
+        "historical_data_retrieval_lux.pir_count",
+        "historical_data_retrieval_lux.lux_type",
+        "historical_data_retrieval_lux.lux"
       ]
     },
     {
-      "id": "historical_data_retrieval_Lux.humidity",
+      "id": "historical_data_retrieval_lux.humidity",
       "name": "Humidity",
       "value": "",
       "unit": "%RH",
@@ -1538,19 +1538,19 @@
       "bacnet_unit_type_id": 29,
       "bacnet_unit_type": "UNITS_PERCENT_RELATIVE_HUMIDITY",
       "reference": [
-        "historical_data_retrieval_Lux.timestamp",
-        "historical_data_retrieval_Lux.temperature_type",
-        "historical_data_retrieval_Lux.temperature",
-        "historical_data_retrieval_Lux.humidity_type",
-        "historical_data_retrieval_Lux.pir_type",
-        "historical_data_retrieval_Lux.pir_status",
-        "historical_data_retrieval_Lux.pir_count",
-        "historical_data_retrieval_Lux.Lux_type",
-        "historical_data_retrieval_Lux.Lux"
+        "historical_data_retrieval_lux.timestamp",
+        "historical_data_retrieval_lux.temperature_type",
+        "historical_data_retrieval_lux.temperature",
+        "historical_data_retrieval_lux.humidity_type",
+        "historical_data_retrieval_lux.pir_type",
+        "historical_data_retrieval_lux.pir_status",
+        "historical_data_retrieval_lux.pir_count",
+        "historical_data_retrieval_lux.lux_type",
+        "historical_data_retrieval_lux.lux"
       ]
     },
     {
-      "id": "historical_data_retrieval_Lux.pir_type",
+      "id": "historical_data_retrieval_lux.pir_type",
       "name": "PIR Type",
       "value": "",
       "unit": "",
@@ -1567,23 +1567,23 @@
           "name": "data valid"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
-        "historical_data_retrieval_Lux.timestamp",
-        "historical_data_retrieval_Lux.temperature_type",
-        "historical_data_retrieval_Lux.temperature",
-        "historical_data_retrieval_Lux.humidity_type",
-        "historical_data_retrieval_Lux.humidity",
-        "historical_data_retrieval_Lux.pir_status",
-        "historical_data_retrieval_Lux.pir_count",
-        "historical_data_retrieval_Lux.Lux_type",
-        "historical_data_retrieval_Lux.Lux"
+        "historical_data_retrieval_lux.timestamp",
+        "historical_data_retrieval_lux.temperature_type",
+        "historical_data_retrieval_lux.temperature",
+        "historical_data_retrieval_lux.humidity_type",
+        "historical_data_retrieval_lux.humidity",
+        "historical_data_retrieval_lux.pir_status",
+        "historical_data_retrieval_lux.pir_count",
+        "historical_data_retrieval_lux.lux_type",
+        "historical_data_retrieval_lux.lux"
       ]
     },
     {
-      "id": "historical_data_retrieval_Lux.pir_status",
+      "id": "historical_data_retrieval_lux.pir_status",
       "name": "PIR Status",
       "value": "",
       "unit": "",
@@ -1600,23 +1600,23 @@
           "name": "trigger"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
-        "historical_data_retrieval_Lux.timestamp",
-        "historical_data_retrieval_Lux.temperature_type",
-        "historical_data_retrieval_Lux.temperature",
-        "historical_data_retrieval_Lux.humidity_type",
-        "historical_data_retrieval_Lux.humidity",
-        "historical_data_retrieval_Lux.pir_type",
-        "historical_data_retrieval_Lux.pir_count",
-        "historical_data_retrieval_Lux.Lux_type",
-        "historical_data_retrieval_Lux.Lux"
+        "historical_data_retrieval_lux.timestamp",
+        "historical_data_retrieval_lux.temperature_type",
+        "historical_data_retrieval_lux.temperature",
+        "historical_data_retrieval_lux.humidity_type",
+        "historical_data_retrieval_lux.humidity",
+        "historical_data_retrieval_lux.pir_type",
+        "historical_data_retrieval_lux.pir_count",
+        "historical_data_retrieval_lux.lux_type",
+        "historical_data_retrieval_lux.lux"
       ]
     },
     {
-      "id": "historical_data_retrieval_Lux.pir_count",
+      "id": "historical_data_retrieval_lux.pir_count",
       "name": "PIR Count",
       "value": "",
       "unit": "",
@@ -1627,19 +1627,19 @@
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
-        "historical_data_retrieval_Lux.timestamp",
-        "historical_data_retrieval_Lux.temperature_type",
-        "historical_data_retrieval_Lux.temperature",
-        "historical_data_retrieval_Lux.humidity_type",
-        "historical_data_retrieval_Lux.humidity",
-        "historical_data_retrieval_Lux.pir_type",
-        "historical_data_retrieval_Lux.pir_status",
-        "historical_data_retrieval_Lux.Lux_type",
-        "historical_data_retrieval_Lux.Lux"
+        "historical_data_retrieval_lux.timestamp",
+        "historical_data_retrieval_lux.temperature_type",
+        "historical_data_retrieval_lux.temperature",
+        "historical_data_retrieval_lux.humidity_type",
+        "historical_data_retrieval_lux.humidity",
+        "historical_data_retrieval_lux.pir_type",
+        "historical_data_retrieval_lux.pir_status",
+        "historical_data_retrieval_lux.lux_type",
+        "historical_data_retrieval_lux.lux"
       ]
     },
     {
-      "id": "historical_data_retrieval_Lux.Lux_type",
+      "id": "historical_data_retrieval_lux.lux_type",
       "name": "Illuminace Value Type",
       "value": "",
       "unit": "",
@@ -1664,23 +1664,23 @@
           "name": "data collect abnormal"
         }
       ],
-      "bacnet_type": "multistate_value_object",
+      "bacnet_type": "multistate_input_object",
       "bacnet_unit_type_id": 95,
       "bacnet_unit_type": "UNITS_NO_UNITS",
       "reference": [
-        "historical_data_retrieval_Lux.timestamp",
-        "historical_data_retrieval_Lux.temperature_type",
-        "historical_data_retrieval_Lux.temperature",
-        "historical_data_retrieval_Lux.humidity_type",
-        "historical_data_retrieval_Lux.humidity",
-        "historical_data_retrieval_Lux.pir_type",
-        "historical_data_retrieval_Lux.pir_status",
-        "historical_data_retrieval_Lux.pir_count",
-        "historical_data_retrieval_Lux.Lux"
+        "historical_data_retrieval_lux.timestamp",
+        "historical_data_retrieval_lux.temperature_type",
+        "historical_data_retrieval_lux.temperature",
+        "historical_data_retrieval_lux.humidity_type",
+        "historical_data_retrieval_lux.humidity",
+        "historical_data_retrieval_lux.pir_type",
+        "historical_data_retrieval_lux.pir_status",
+        "historical_data_retrieval_lux.pir_count",
+        "historical_data_retrieval_lux.lux"
       ]
     },
     {
-      "id": "historical_data_retrieval_Lux.Lux",
+      "id": "historical_data_retrieval_lux.lux",
       "name": "Illuminace Value",
       "value": "",
       "unit": "lx",
@@ -1691,15 +1691,15 @@
       "bacnet_unit_type_id": 37,
       "bacnet_unit_type": "UNITS_LUXES",
       "reference": [
-        "historical_data_retrieval_Lux.timestamp",
-        "historical_data_retrieval_Lux.temperature_type",
-        "historical_data_retrieval_Lux.temperature",
-        "historical_data_retrieval_Lux.humidity_type",
-        "historical_data_retrieval_Lux.humidity",
-        "historical_data_retrieval_Lux.pir_type",
-        "historical_data_retrieval_Lux.pir_status",
-        "historical_data_retrieval_Lux.pir_count",
-        "historical_data_retrieval_Lux.Lux_type"
+        "historical_data_retrieval_lux.timestamp",
+        "historical_data_retrieval_lux.temperature_type",
+        "historical_data_retrieval_lux.temperature",
+        "historical_data_retrieval_lux.humidity_type",
+        "historical_data_retrieval_lux.humidity",
+        "historical_data_retrieval_lux.pir_type",
+        "historical_data_retrieval_lux.pir_status",
+        "historical_data_retrieval_lux.pir_count",
+        "historical_data_retrieval_lux.lux_type"
       ]
     }
   ]
